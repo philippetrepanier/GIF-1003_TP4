@@ -1,0 +1,12 @@
+#include "ajouterpersonne.h"
+
+ajouterPersonne::ajouterPersonne(QWidget *parent)
+    : QWidget(parent)
+{
+	ui.setupUi(this);
+}
+
+ajouterPersonne::~ajouterPersonne()
+{
+
+}

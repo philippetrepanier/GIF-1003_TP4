@@ -6,6 +6,7 @@
 <includePath path="/usr/include/qt4/QtCore"/>
 <includePath path="/usr/include/qt4/QtGui"/>
 <includePath path="/usr/include/qt4"/>
+<includePath path="/home/etudiant/Bureau/GIT/111155105_tp4/PersonneLib"/>
 <includePath path="/home/etudiant/Bureau/GIT/111155105_tp4/PersonneGUI/debug"/>
 <includePath path="/usr/include/c++/5"/>
 <includePath path="/usr/include/i386-linux-gnu/c++/5"/>

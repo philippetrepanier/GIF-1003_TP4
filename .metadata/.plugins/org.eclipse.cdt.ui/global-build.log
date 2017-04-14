@@ -1,153 +1,568 @@
-15:10:23 **** Incremental Build of configuration Debug for project PersonneLib ****
+18:04:44 **** Incremental Build of configuration Debug for project PersonneLib ****
 make all 
-Building file: ../Annuaire.cpp
+make: rien à faire pour « all ».
+18:04:53 **** Incremental Build of configuration Debug for project Personne ****
+make all 
+make: rien à faire pour « all ».
+18:04:53 **** Incremental Build of project PersonneGUI ****
+make debug 
+make -f Makefile.Debug
+make[1] : on entre dans le répertoire « /home/etudiant/Bureau/GIT/111155105_tp4/PersonneGUI »
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. -o debug/main.o main.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. -o debug/personnegui.o personnegui.cpp
+/usr/lib/i386-linux-gnu/qt4/bin/moc -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. personnegui.h -o debug/moc_personnegui.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. -o debug/moc_personnegui.o debug/moc_personnegui.cpp
+g++  -o PersonneGUI debug/ajouterentraineur.o debug/ajouterpersonne.o debug/main.o debug/personnegui.o debug/moc_ajouterentraineur.o debug/moc_ajouterpersonne.o debug/moc_personnegui.o    -L/usr/lib/i386-linux-gnu ../PersonneLib/Debug/libPersonneLib.a -lQtGui -lQtCore -lpthread 
+debug/moc_personnegui.o : Dans la fonction « PersonneGUI::qt_static_metacall(QObject*, QMetaObject::Call, int, void**) » :
+/home/etudiant/Bureau/GIT/111155105_tp4/PersonneGUI/debug/moc_personnegui.cpp:52 : référence indéfinie vers « PersonneGUI::dialogJoueur() »
+/home/etudiant/Bureau/GIT/111155105_tp4/PersonneGUI/debug/moc_personnegui.cpp:53 : référence indéfinie vers « PersonneGUI::dialogSupprimer() »
+collect2: error: ld returned 1 exit status
+make[1]: *** [PersonneGUI] Erreur 1
+make: *** [debug] Erreur 2
+Makefile.Debug:115 : la recette pour la cible « PersonneGUI » a échouée
+make[1] : on quitte le répertoire « /home/etudiant/Bureau/GIT/111155105_tp4/PersonneGUI »
+Makefile:50 : la recette pour la cible « debug » a échouée
+18:04:58 **** Incremental Build of configuration Debug for project PersonneLib ****
+make all 
+make: rien à faire pour « all ».
+18:04:58 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+make: rien à faire pour « all ».
+18:05:45 **** Incremental Build of configuration Debug for project Personne ****
+make all 
+make: rien à faire pour « all ».
+18:05:45 **** Incremental Build of project PersonneGUI ****
+make debug 
+make -f Makefile.Debug
+make[1] : on entre dans le répertoire « /home/etudiant/Bureau/GIT/111155105_tp4/PersonneGUI »
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. -o debug/main.o main.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. -o debug/personnegui.o personnegui.cpp
+/usr/lib/i386-linux-gnu/qt4/bin/moc -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. personnegui.h -o debug/moc_personnegui.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. -o debug/moc_personnegui.o debug/moc_personnegui.cpp
+g++  -o PersonneGUI debug/ajouterentraineur.o debug/ajouterpersonne.o debug/main.o debug/personnegui.o debug/moc_ajouterentraineur.o debug/moc_ajouterpersonne.o debug/moc_personnegui.o    -L/usr/lib/i386-linux-gnu ../PersonneLib/Debug/libPersonneLib.a -lQtGui -lQtCore -lpthread 
+{ test -n "" && DESTDIR="" || DESTDIR=.; } && test $(gdb --version | sed -e 's,[^0-9][^0-9]*\([0-9]\)\.\([0-9]\).*,\1\2,;q') -gt 72 && gdb --nx --batch --quiet -ex 'set confirm off' -ex "save gdb-index $DESTDIR" -ex quit 'PersonneGUI' && test -f PersonneGUI.gdb-index && objcopy --add-section '.gdb_index=PersonneGUI.gdb-index' --set-section-flags '.gdb_index=readonly' 'PersonneGUI' 'PersonneGUI' && rm -f PersonneGUI.gdb-index || true
+make[1] : on quitte le répertoire « /home/etudiant/Bureau/GIT/111155105_tp4/PersonneGUI »
+18:05:50 **** Incremental Build of configuration Debug for project PersonneLib ****
+make all 
+make: rien à faire pour « all ».
+18:05:50 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+make: rien à faire pour « all ».
+18:06:40 **** Incremental Build of configuration Debug for project Personne ****
+make all 
+make: rien à faire pour « all ».
+18:06:40 **** Incremental Build of project PersonneGUI ****
+make debug 
+make -f Makefile.Debug
+make[1] : on entre dans le répertoire « /home/etudiant/Bureau/GIT/111155105_tp4/PersonneGUI »
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. -o debug/main.o main.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. -o debug/personnegui.o personnegui.cpp
+/usr/lib/i386-linux-gnu/qt4/bin/moc -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. personnegui.h -o debug/moc_personnegui.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. -o debug/moc_personnegui.o debug/moc_personnegui.cpp
+g++  -o PersonneGUI debug/ajouterentraineur.o debug/ajouterpersonne.o debug/main.o debug/personnegui.o debug/moc_ajouterentraineur.o debug/moc_ajouterpersonne.o debug/moc_personnegui.o    -L/usr/lib/i386-linux-gnu ../PersonneLib/Debug/libPersonneLib.a -lQtGui -lQtCore -lpthread 
+{ test -n "" && DESTDIR="" || DESTDIR=.; } && test $(gdb --version | sed -e 's,[^0-9][^0-9]*\([0-9]\)\.\([0-9]\).*,\1\2,;q') -gt 72 && gdb --nx --batch --quiet -ex 'set confirm off' -ex "save gdb-index $DESTDIR" -ex quit 'PersonneGUI' && test -f PersonneGUI.gdb-index && objcopy --add-section '.gdb_index=PersonneGUI.gdb-index' --set-section-flags '.gdb_index=readonly' 'PersonneGUI' 'PersonneGUI' && rm -f PersonneGUI.gdb-index || true
+make[1] : on quitte le répertoire « /home/etudiant/Bureau/GIT/111155105_tp4/PersonneGUI »
+18:06:45 **** Incremental Build of configuration Debug for project PersonneLib ****
+make all 
+make: rien à faire pour « all ».
+18:06:45 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+make: rien à faire pour « all ».
+18:08:54 **** Incremental Build of configuration Debug for project Personne ****
+make all 
+make: rien à faire pour « all ».
+18:08:54 **** Incremental Build of project PersonneGUI ****
+make debug 
+make -f Makefile.Debug
+make[1] : on entre dans le répertoire « /home/etudiant/Bureau/GIT/111155105_tp4/PersonneGUI »
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. -o debug/personnegui.o personnegui.cpp
+g++  -o PersonneGUI debug/ajouterentraineur.o debug/ajouterpersonne.o debug/main.o debug/personnegui.o debug/moc_ajouterentraineur.o debug/moc_ajouterpersonne.o debug/moc_personnegui.o    -L/usr/lib/i386-linux-gnu ../PersonneLib/Debug/libPersonneLib.a -lQtGui -lQtCore -lpthread 
+{ test -n "" && DESTDIR="" || DESTDIR=.; } && test $(gdb --version | sed -e 's,[^0-9][^0-9]*\([0-9]\)\.\([0-9]\).*,\1\2,;q') -gt 72 && gdb --nx --batch --quiet -ex 'set confirm off' -ex "save gdb-index $DESTDIR" -ex quit 'PersonneGUI' && test -f PersonneGUI.gdb-index && objcopy --add-section '.gdb_index=PersonneGUI.gdb-index' --set-section-flags '.gdb_index=readonly' 'PersonneGUI' 'PersonneGUI' && rm -f PersonneGUI.gdb-index || true
+make[1] : on quitte le répertoire « /home/etudiant/Bureau/GIT/111155105_tp4/PersonneGUI »
+18:08:56 **** Incremental Build of configuration Debug for project PersonneLib ****
+make all 
+make: rien à faire pour « all ».
+18:08:56 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+make: rien à faire pour « all ».
+/usr/lib/i386-linux-gnu/qt4/bin/qmake -recursive CONFIG+=debug_and_release PersonneGUI.pro 
+WARNING: Failure to find: ajouterpersonne.cpp
+WARNING: Failure to find: ajouterpersonne.h
+WARNING: Failure to find: ajouterpersonne.ui
+WARNING: Failure to find: ajouterpersonne.cpp
+WARNING: Failure to find: ajouterpersonne.h
+WARNING: Failure to find: ajouterpersonne.ui
+18:11:40 **** Incremental Build of configuration Debug for project Personne ****
+make all 
+make: rien à faire pour « all ».
+18:11:40 **** Incremental Build of project PersonneGUI ****
+make debug 
+/usr/lib/i386-linux-gnu/qt4/bin/qmake CONFIG+=debug_and_release -o Makefile PersonneGUI.pro
+make -f Makefile.Debug
+make[1] : on entre dans le répertoire « /home/etudiant/Bureau/GIT/111155105_tp4/PersonneGUI »
+/usr/lib/i386-linux-gnu/qt4/bin/uic supprimerpersonne.ui -o ui_supprimerpersonne.h
+/usr/lib/i386-linux-gnu/qt4/bin/uic ajouterjoueur.ui -o ui_ajouterjoueur.h
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. -o debug/supprimerpersonne.o supprimerpersonne.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. -o debug/ajouterjoueur.o ajouterjoueur.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. -o debug/personnegui.o personnegui.cpp
+personnegui.cpp: In member function ‘void PersonneGUI::dialogJoueur()’:
+personnegui.cpp:31:2: error: ‘ajouterJoueur’ was not declared in this scope
+  ajouterJoueur saisieJoueur(this);
+  ^
+personnegui.cpp:32:2: error: ‘saisieJoueur’ was not declared in this scope
+  saisieJoueur.exec();
+  ^
+personnegui.cpp: In member function ‘void PersonneGUI::dialogSupprimer()’:
+personnegui.cpp:37:2: error: ‘supprimerPersonne’ was not declared in this scope
+  supprimerPersonne saisieSupprimer(this);
+  ^
+personnegui.cpp:38:2: error: ‘saisieSupprimer’ was not declared in this scope
+  saisieSupprimer.exec();
+  ^
+make[1]: *** [debug/personnegui.o] Erreur 1
+Makefile.Debug:219 : la recette pour la cible « debug/personnegui.o » a échouée
+make[1] : on quitte le répertoire « /home/etudiant/Bureau/GIT/111155105_tp4/PersonneGUI »
+make: *** [debug] Erreur 2
+Makefile:50 : la recette pour la cible « debug » a échouée
+18:11:42 **** Incremental Build of configuration Debug for project PersonneLib ****
+make all 
+make: rien à faire pour « all ».
+18:11:42 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+make: rien à faire pour « all ».
+18:12:20 **** Incremental Build of configuration Debug for project Personne ****
+make all 
+make: rien à faire pour « all ».
+18:12:20 **** Incremental Build of project PersonneGUI ****
+make debug 
+make -f Makefile.Debug
+make[1] : on entre dans le répertoire « /home/etudiant/Bureau/GIT/111155105_tp4/PersonneGUI »
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. -o debug/personnegui.o personnegui.cpp
+personnegui.cpp: In member function ‘void PersonneGUI::dialogJoueur()’:
+personnegui.cpp:34:15: error: ‘class ajouterJoueur’ has no member named ‘exec’
+  saisieJoueur.exec();
+               ^
+personnegui.cpp: In member function ‘void PersonneGUI::dialogSupprimer()’:
+personnegui.cpp:40:18: error: ‘class supprimerPersonne’ has no member named ‘exec’
+  saisieSupprimer.exec();
+                  ^
+Makefile.Debug:219 : la recette pour la cible « debug/personnegui.o » a échouée
+make[1] : on quitte le répertoire « /home/etudiant/Bureau/GIT/111155105_tp4/PersonneGUI »
+make[1]: *** [debug/personnegui.o] Erreur 1
+Makefile:50 : la recette pour la cible « debug » a échouée
+make: *** [debug] Erreur 2
+18:12:21 **** Incremental Build of configuration Debug for project PersonneLib ****
+make all 
+make: rien à faire pour « all ».
+18:12:21 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+make: rien à faire pour « all ».
+/usr/lib/i386-linux-gnu/qt4/bin/qmake -recursive CONFIG+=debug_and_release PersonneGUI.pro 
+18:13:38 **** Incremental Build of configuration Debug for project Personne ****
+make all 
+make: rien à faire pour « all ».
+18:13:38 **** Incremental Build of project PersonneGUI ****
+make debug 
+make -f Makefile.Debug
+make[1] : on entre dans le répertoire « /home/etudiant/Bureau/GIT/111155105_tp4/PersonneGUI »
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. -o debug/personnegui.o personnegui.cpp
+personnegui.cpp: In member function ‘void PersonneGUI::dialogJoueur()’:
+personnegui.cpp:34:15: error: ‘class ajouterJoueur’ has no member named ‘exec’
+  saisieJoueur.exec();
+               ^
+personnegui.cpp: In member function ‘void PersonneGUI::dialogSupprimer()’:
+personnegui.cpp:40:18: error: ‘class supprimerPersonne’ has no member named ‘exec’
+  saisieSupprimer.exec();
+                  ^
+Makefile.Debug:223 : la recette pour la cible « debug/personnegui.o » a échouée
+make[1] : on quitte le répertoire « /home/etudiant/Bureau/GIT/111155105_tp4/PersonneGUI »
+Makefile:50 : la recette pour la cible « debug » a échouée
+make[1]: *** [debug/personnegui.o] Erreur 1
+make: *** [debug] Erreur 2
+18:13:39 **** Incremental Build of configuration Debug for project PersonneLib ****
+make all 
+make: rien à faire pour « all ».
+18:13:39 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+make: rien à faire pour « all ».
+18:16:03 **** Incremental Build of configuration Debug for project Personne ****
+make all 
+make: rien à faire pour « all ».
+18:16:04 **** Incremental Build of configuration Debug for project PersonneLib ****
+make all 
+make: rien à faire pour « all ».
+18:16:04 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+make: rien à faire pour « all ».
+18:16:08 **** Clean-only build of configuration Debug for project Personne ****
+make clean 
+rm -rf  ./main.o  ./main.d  Personne
+ 
+18:16:08 **** Clean-only build of configuration Debug for project PersonneLib ****
+make clean 
+rm -rf  ./Annuaire.o ./ContratException.o ./Date.o ./Entraineur.o ./Joueur.o ./Personne.o ./PersonneException.o ./validationFormat.o  ./Annuaire.d ./ContratException.d ./Date.d ./Entraineur.d ./Joueur.d ./Personne.d ./PersonneException.d ./validationFormat.d  libPersonneLib.a
+ 
+18:16:08 **** Clean-only build of configuration Debug for project Testeur ****
+make clean 
+rm -rf  ./AnnuaireTesteur.o ./EntraineurTesteur.o ./JoueurTesteur.o ./PersonneTesteur.o  ./AnnuaireTesteur.d ./EntraineurTesteur.d ./JoueurTesteur.d ./PersonneTesteur.d  Testeur
+ 
+18:16:08 **** Clean-only build of project PersonneGUI ****
+make clean 
+make -f Makefile.Release clean
+make[1] : on entre dans le répertoire « /home/etudiant/Bureau/GIT/111155105_tp4/PersonneGUI »
+rm -f release/moc_supprimerpersonne.cpp release/moc_ajouterjoueur.cpp release/moc_ajouterentraineur.cpp release/moc_personnegui.cpp
+rm -f ui_supprimerpersonne.h ui_ajouterjoueur.h ui_ajouterentraineur.h ui_personnegui.h
+rm -f release/supprimerpersonne.o release/ajouterjoueur.o release/ajouterentraineur.o release/main.o release/personnegui.o release/moc_supprimerpersonne.o release/moc_ajouterjoueur.o release/moc_ajouterentraineur.o release/moc_personnegui.o
+rm -f *~ core *.core
+make[1] : on quitte le répertoire « /home/etudiant/Bureau/GIT/111155105_tp4/PersonneGUI »
+make -f Makefile.Debug clean
+make[1] : on entre dans le répertoire « /home/etudiant/Bureau/GIT/111155105_tp4/PersonneGUI »
+rm -f debug/moc_supprimerpersonne.cpp debug/moc_ajouterjoueur.cpp debug/moc_ajouterentraineur.cpp debug/moc_personnegui.cpp
+rm -f ui_supprimerpersonne.h ui_ajouterjoueur.h ui_ajouterentraineur.h ui_personnegui.h
+rm -f debug/supprimerpersonne.o debug/ajouterjoueur.o debug/ajouterentraineur.o debug/main.o debug/personnegui.o debug/moc_supprimerpersonne.o debug/moc_ajouterjoueur.o debug/moc_ajouterentraineur.o debug/moc_personnegui.o
+rm -f *~ core *.core
+make[1] : on quitte le répertoire « /home/etudiant/Bureau/GIT/111155105_tp4/PersonneGUI »
+18:16:13 **** Build of configuration Debug for project Personne ****
+make all 
+Building file: ../main.cpp
 Invoking: GCC C++ Compiler
-g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Annuaire.d" -MT"Annuaire.o" -o "Annuaire.o" "../Annuaire.cpp"
-../Annuaire.cpp: In member function ‘void tp::Annuaire::supprimerPersonne(const string&, const string&)’:
-../Annuaire.cpp:110:24: error: no matching function for call to ‘std::vector<tp::Personne*>::erase(tp::Personne* const&)’
-    m_vMembres.erase(*it);
-                        ^
-In file included from /usr/include/c++/5/vector:64:0,
-                 from ../Annuaire.h:11,
-                 from ../Annuaire.cpp:8:
-/usr/include/c++/5/bits/stl_vector.h:1149:7: note: candidate: std::vector<_Tp, _Alloc>::iterator std::vector<_Tp, _Alloc>::erase(std::vector<_Tp, _Alloc>::iterator) [with _Tp = tp::Personne*; _Alloc = std::allocator<tp::Personne*>; std::vector<_Tp, _Alloc>::iterator = __gnu_cxx::__normal_iterator<tp::Personne**, std::vector<tp::Personne*> >; typename std::_Vector_base<_Tp, _Alloc>::pointer = tp::Personne**]
-       erase(iterator __position)
-       ^
-/usr/include/c++/5/bits/stl_vector.h:1149:7: note:   no known conversion for argument 1 from ‘tp::Personne* const’ to ‘std::vector<tp::Personne*>::iterator {aka __gnu_cxx::__normal_iterator<tp::Personne**, std::vector<tp::Personne*> >}’
-/usr/include/c++/5/bits/stl_vector.h:1180:7: note: candidate: std::vector<_Tp, _Alloc>::iterator std::vector<_Tp, _Alloc>::erase(std::vector<_Tp, _Alloc>::iterator, std::vector<_Tp, _Alloc>::iterator) [with _Tp = tp::Personne*; _Alloc = std::allocator<tp::Personne*>; std::vector<_Tp, _Alloc>::iterator = __gnu_cxx::__normal_iterator<tp::Personne**, std::vector<tp::Personne*> >; typename std::_Vector_base<_Tp, _Alloc>::pointer = tp::Personne**]
-       erase(iterator __first, iterator __last)
-       ^
-/usr/include/c++/5/bits/stl_vector.h:1180:7: note:   candidate expects 2 arguments, 1 provided
-make: *** [Annuaire.o] Erreur 1
-subdir.mk:36 : la recette pour la cible « Annuaire.o » a échouée
-15:10:38 **** Incremental Build of configuration Debug for project Personne ****
-make all 
-make: rien à faire pour « all ».
-15:10:39 **** Incremental Build of configuration Debug for project PersonneLib ****
-make all 
-Building file: ../Annuaire.cpp
-Invoking: GCC C++ Compiler
-g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Annuaire.d" -MT"Annuaire.o" -o "Annuaire.o" "../Annuaire.cpp"
-../Annuaire.cpp: In member function ‘void tp::Annuaire::supprimerPersonne(const string&, const string&)’:
-../Annuaire.cpp:110:24: error: no matching function for call to ‘std::vector<tp::Personne*>::erase(std::vector<tp::Personne*>::const_iterator*)’
-    m_vMembres.erase(&it);
-                        ^
-In file included from /usr/include/c++/5/vector:64:0,
-                 from ../Annuaire.h:11,
-                 from ../Annuaire.cpp:8:
-/usr/include/c++/5/bits/stl_vector.h:1149:7: note: candidate: std::vector<_Tp, _Alloc>::iterator std::vector<_Tp, _Alloc>::erase(std::vector<_Tp, _Alloc>::iterator) [with _Tp = tp::Personne*; _Alloc = std::allocator<tp::Personne*>; std::vector<_Tp, _Alloc>::iterator = __gnu_cxx::__normal_iterator<tp::Personne**, std::vector<tp::Personne*> >; typename std::_Vector_base<_Tp, _Alloc>::pointer = tp::Personne**]
-       erase(iterator __position)
-       ^
-/usr/include/c++/5/bits/stl_vector.h:1149:7: note:   no known conversion for argument 1 from ‘std::vector<tp::Personne*>::const_iterator* {aka __gnu_cxx::__normal_iterator<tp::Personne* const*, std::vector<tp::Personne*> >*}’ to ‘std::vector<tp::Personne*>::iterator {aka __gnu_cxx::__normal_iterator<tp::Personne**, std::vector<tp::Personne*> >}’
-/usr/include/c++/5/bits/stl_vector.h:1180:7: note: candidate: std::vector<_Tp, _Alloc>::iterator std::vector<_Tp, _Alloc>::erase(std::vector<_Tp, _Alloc>::iterator, std::vector<_Tp, _Alloc>::iterator) [with _Tp = tp::Personne*; _Alloc = std::allocator<tp::Personne*>; std::vector<_Tp, _Alloc>::iterator = __gnu_cxx::__normal_iterator<tp::Personne**, std::vector<tp::Personne*> >; typename std::_Vector_base<_Tp, _Alloc>::pointer = tp::Personne**]
-       erase(iterator __first, iterator __last)
-       ^
-/usr/include/c++/5/bits/stl_vector.h:1180:7: note:   candidate expects 2 arguments, 1 provided
-subdir.mk:36 : la recette pour la cible « Annuaire.o » a échouée
-make: *** [Annuaire.o] Erreur 1
-15:10:39 **** Incremental Build of configuration Debug for project Testeur ****
-make all 
-make: rien à faire pour « all ».
-15:10:43 **** Incremental Build of configuration Debug for project Personne ****
-make all 
-make: rien à faire pour « all ».
-15:10:43 **** Incremental Build of configuration Debug for project PersonneLib ****
-make all 
-Building file: ../Annuaire.cpp
-Invoking: GCC C++ Compiler
-g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Annuaire.d" -MT"Annuaire.o" -o "Annuaire.o" "../Annuaire.cpp"
-../Annuaire.cpp: In member function ‘void tp::Annuaire::supprimerPersonne(const string&, const string&)’:
-../Annuaire.cpp:110:24: error: no matching function for call to ‘std::vector<tp::Personne*>::erase(tp::Personne* const&)’
-    m_vMembres.erase(*it);
-                        ^
-In file included from /usr/include/c++/5/vector:64:0,
-                 from ../Annuaire.h:11,
-                 from ../Annuaire.cpp:8:
-/usr/include/c++/5/bits/stl_vector.h:1149:7: note: candidate: std::vector<_Tp, _Alloc>::iterator std::vector<_Tp, _Alloc>::erase(std::vector<_Tp, _Alloc>::iterator) [with _Tp = tp::Personne*; _Alloc = std::allocator<tp::Personne*>; std::vector<_Tp, _Alloc>::iterator = __gnu_cxx::__normal_iterator<tp::Personne**, std::vector<tp::Personne*> >; typename std::_Vector_base<_Tp, _Alloc>::pointer = tp::Personne**]
-       erase(iterator __position)
-       ^
-/usr/include/c++/5/bits/stl_vector.h:1149:7: note:   no known conversion for argument 1 from ‘tp::Personne* const’ to ‘std::vector<tp::Personne*>::iterator {aka __gnu_cxx::__normal_iterator<tp::Personne**, std::vector<tp::Personne*> >}’
-/usr/include/c++/5/bits/stl_vector.h:1180:7: note: candidate: std::vector<_Tp, _Alloc>::iterator std::vector<_Tp, _Alloc>::erase(std::vector<_Tp, _Alloc>::iterator, std::vector<_Tp, _Alloc>::iterator) [with _Tp = tp::Personne*; _Alloc = std::allocator<tp::Personne*>; std::vector<_Tp, _Alloc>::iterator = __gnu_cxx::__normal_iterator<tp::Personne**, std::vector<tp::Personne*> >; typename std::_Vector_base<_Tp, _Alloc>::pointer = tp::Personne**]
-       erase(iterator __first, iterator __last)
-       ^
-/usr/include/c++/5/bits/stl_vector.h:1180:7: note:   candidate expects 2 arguments, 1 provided
-subdir.mk:36 : la recette pour la cible « Annuaire.o » a échouée
-make: *** [Annuaire.o] Erreur 1
-15:10:43 **** Incremental Build of configuration Debug for project Testeur ****
-make all 
-make: rien à faire pour « all ».
-15:13:29 **** Incremental Build of configuration Debug for project Personne ****
-make all 
-make: rien à faire pour « all ».
-15:13:29 **** Incremental Build of configuration Debug for project PersonneLib ****
-make all 
-Building file: ../Annuaire.cpp
-Invoking: GCC C++ Compiler
-g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Annuaire.d" -MT"Annuaire.o" -o "Annuaire.o" "../Annuaire.cpp"
-../Annuaire.cpp: In member function ‘void tp::Annuaire::supprimerPersonne(const string&, const string&)’:
-../Annuaire.cpp:109:23: error: no matching function for call to ‘std::vector<tp::Personne*>::erase(std::vector<tp::Personne*>::const_iterator&)’
-    m_vMembres.erase(it);
-                       ^
-In file included from /usr/include/c++/5/vector:64:0,
-                 from ../Annuaire.h:11,
-                 from ../Annuaire.cpp:8:
-/usr/include/c++/5/bits/stl_vector.h:1149:7: note: candidate: std::vector<_Tp, _Alloc>::iterator std::vector<_Tp, _Alloc>::erase(std::vector<_Tp, _Alloc>::iterator) [with _Tp = tp::Personne*; _Alloc = std::allocator<tp::Personne*>; std::vector<_Tp, _Alloc>::iterator = __gnu_cxx::__normal_iterator<tp::Personne**, std::vector<tp::Personne*> >; typename std::_Vector_base<_Tp, _Alloc>::pointer = tp::Personne**]
-       erase(iterator __position)
-       ^
-/usr/include/c++/5/bits/stl_vector.h:1149:7: note:   no known conversion for argument 1 from ‘std::vector<tp::Personne*>::const_iterator {aka __gnu_cxx::__normal_iterator<tp::Personne* const*, std::vector<tp::Personne*> >}’ to ‘std::vector<tp::Personne*>::iterator {aka __gnu_cxx::__normal_iterator<tp::Personne**, std::vector<tp::Personne*> >}’
-/usr/include/c++/5/bits/stl_vector.h:1180:7: note: candidate: std::vector<_Tp, _Alloc>::iterator std::vector<_Tp, _Alloc>::erase(std::vector<_Tp, _Alloc>::iterator, std::vector<_Tp, _Alloc>::iterator) [with _Tp = tp::Personne*; _Alloc = std::allocator<tp::Personne*>; std::vector<_Tp, _Alloc>::iterator = __gnu_cxx::__normal_iterator<tp::Personne**, std::vector<tp::Personne*> >; typename std::_Vector_base<_Tp, _Alloc>::pointer = tp::Personne**]
-       erase(iterator __first, iterator __last)
-       ^
-/usr/include/c++/5/bits/stl_vector.h:1180:7: note:   candidate expects 2 arguments, 1 provided
-subdir.mk:36 : la recette pour la cible « Annuaire.o » a échouée
-make: *** [Annuaire.o] Erreur 1
-15:13:30 **** Incremental Build of configuration Debug for project Testeur ****
-make all 
-make: rien à faire pour « all ».
-15:13:42 **** Incremental Build of configuration Debug for project Personne ****
-make all 
-make: rien à faire pour « all ».
-15:13:42 **** Incremental Build of configuration Debug for project PersonneLib ****
-make all 
-Building file: ../Annuaire.cpp
-Invoking: GCC C++ Compiler
-g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Annuaire.d" -MT"Annuaire.o" -o "Annuaire.o" "../Annuaire.cpp"
-../Annuaire.cpp: In member function ‘void tp::Annuaire::supprimerPersonne(const string&, const string&)’:
-../Annuaire.cpp:109:23: error: no matching function for call to ‘std::vector<tp::Personne*>::erase(std::vector<tp::Personne*>::const_iterator&)’
-    m_vMembres.erase(it);
-                       ^
-In file included from /usr/include/c++/5/vector:64:0,
-                 from ../Annuaire.h:11,
-                 from ../Annuaire.cpp:8:
-/usr/include/c++/5/bits/stl_vector.h:1149:7: note: candidate: std::vector<_Tp, _Alloc>::iterator std::vector<_Tp, _Alloc>::erase(std::vector<_Tp, _Alloc>::iterator) [with _Tp = tp::Personne*; _Alloc = std::allocator<tp::Personne*>; std::vector<_Tp, _Alloc>::iterator = __gnu_cxx::__normal_iterator<tp::Personne**, std::vector<tp::Personne*> >; typename std::_Vector_base<_Tp, _Alloc>::pointer = tp::Personne**]
-       erase(iterator __position)
-       ^
-/usr/include/c++/5/bits/stl_vector.h:1149:7: note:   no known conversion for argument 1 from ‘std::vector<tp::Personne*>::const_iterator {aka __gnu_cxx::__normal_iterator<tp::Personne* const*, std::vector<tp::Personne*> >}’ to ‘std::vector<tp::Personne*>::iterator {aka __gnu_cxx::__normal_iterator<tp::Personne**, std::vector<tp::Personne*> >}’
-/usr/include/c++/5/bits/stl_vector.h:1180:7: note: candidate: std::vector<_Tp, _Alloc>::iterator std::vector<_Tp, _Alloc>::erase(std::vector<_Tp, _Alloc>::iterator, std::vector<_Tp, _Alloc>::iterator) [with _Tp = tp::Personne*; _Alloc = std::allocator<tp::Personne*>; std::vector<_Tp, _Alloc>::iterator = __gnu_cxx::__normal_iterator<tp::Personne**, std::vector<tp::Personne*> >; typename std::_Vector_base<_Tp, _Alloc>::pointer = tp::Personne**]
-       erase(iterator __first, iterator __last)
-       ^
-/usr/include/c++/5/bits/stl_vector.h:1180:7: note:   candidate expects 2 arguments, 1 provided
-subdir.mk:36 : la recette pour la cible « Annuaire.o » a échouée
-make: *** [Annuaire.o] Erreur 1
-15:13:43 **** Incremental Build of configuration Debug for project Testeur ****
-make all 
-make: rien à faire pour « all ».
-15:14:28 **** Incremental Build of configuration Debug for project Personne ****
-make all 
-make: rien à faire pour « all ».
-15:14:28 **** Incremental Build of configuration Debug for project PersonneLib ****
+g++ -std=c++98 -I"/home/etudiant/Bureau/GIT/111155105_tp4/PersonneLib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: Personne
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/GIT/111155105_tp4/PersonneLib/Debug" -o "Personne"  ./main.o   -lPersonneLib
+/usr/bin/ld : ne peut trouver -lPersonneLib
+collect2: error: ld returned 1 exit status
+makefile:44 : la recette pour la cible « Personne » a échouée
+make: *** [Personne] Erreur 1
+18:16:13 **** Build of project PersonneGUI ****
+make debug 
+make -f Makefile.Debug
+make[1] : on entre dans le répertoire « /home/etudiant/Bureau/GIT/111155105_tp4/PersonneGUI »
+/usr/lib/i386-linux-gnu/qt4/bin/uic supprimerpersonne.ui -o ui_supprimerpersonne.h
+/usr/lib/i386-linux-gnu/qt4/bin/uic ajouterjoueur.ui -o ui_ajouterjoueur.h
+/usr/lib/i386-linux-gnu/qt4/bin/uic ajouterentraineur.ui -o ui_ajouterentraineur.h
+/usr/lib/i386-linux-gnu/qt4/bin/uic personnegui.ui -o ui_personnegui.h
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. -o debug/supprimerpersonne.o supprimerpersonne.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. -o debug/ajouterjoueur.o ajouterjoueur.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. -o debug/ajouterentraineur.o ajouterentraineur.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. -o debug/main.o main.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. -o debug/personnegui.o personnegui.cpp
+personnegui.cpp: In member function ‘void PersonneGUI::dialogJoueur()’:
+personnegui.cpp:34:15: error: ‘class ajouterJoueur’ has no member named ‘exec’
+  saisieJoueur.exec();
+               ^
+personnegui.cpp: In member function ‘void PersonneGUI::dialogSupprimer()’:
+personnegui.cpp:40:18: error: ‘class supprimerPersonne’ has no member named ‘exec’
+  saisieSupprimer.exec();
+                  ^
+Makefile.Debug:223 : la recette pour la cible « debug/personnegui.o » a échouée
+make[1] : on quitte le répertoire « /home/etudiant/Bureau/GIT/111155105_tp4/PersonneGUI »
+Makefile:50 : la recette pour la cible « debug » a échouée
+make[1]: *** [debug/personnegui.o] Erreur 1
+make: *** [debug] Erreur 2
+18:16:17 **** Build of configuration Debug for project PersonneLib ****
 make all 
 Building file: ../Annuaire.cpp
 Invoking: GCC C++ Compiler
 g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Annuaire.d" -MT"Annuaire.o" -o "Annuaire.o" "../Annuaire.cpp"
 Finished building: ../Annuaire.cpp
  
+Building file: ../ContratException.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"ContratException.d" -MT"ContratException.o" -o "ContratException.o" "../ContratException.cpp"
+Finished building: ../ContratException.cpp
+ 
+Building file: ../Date.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Date.d" -MT"Date.o" -o "Date.o" "../Date.cpp"
+Finished building: ../Date.cpp
+ 
+Building file: ../Entraineur.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Entraineur.d" -MT"Entraineur.o" -o "Entraineur.o" "../Entraineur.cpp"
+Finished building: ../Entraineur.cpp
+ 
+Building file: ../Joueur.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Joueur.d" -MT"Joueur.o" -o "Joueur.o" "../Joueur.cpp"
+Finished building: ../Joueur.cpp
+ 
+Building file: ../Personne.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Personne.d" -MT"Personne.o" -o "Personne.o" "../Personne.cpp"
+Finished building: ../Personne.cpp
+ 
+Building file: ../PersonneException.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"PersonneException.d" -MT"PersonneException.o" -o "PersonneException.o" "../PersonneException.cpp"
+Finished building: ../PersonneException.cpp
+ 
+Building file: ../validationFormat.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"validationFormat.d" -MT"validationFormat.o" -o "validationFormat.o" "../validationFormat.cpp"
+Finished building: ../validationFormat.cpp
+ 
 Building target: libPersonneLib.a
 Invoking: GCC Archiver
-ar -r  "libPersonneLib.a"  ./Annuaire.o ./ContratException.o ./Date.o ./Entraineur.o ./Joueur.o ./Personne.o ./validationFormat.o   
+ar -r  "libPersonneLib.a"  ./Annuaire.o ./ContratException.o ./Date.o ./Entraineur.o ./Joueur.o ./Personne.o ./PersonneException.o ./validationFormat.o   
 ar: création de libPersonneLib.a
 Finished building target: libPersonneLib.a
  
-15:14:29 **** Incremental Build of configuration Debug for project Testeur ****
+18:16:19 **** Build of configuration Debug for project Testeur ****
+make all 
+Building file: ../AnnuaireTesteur.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -I"/home/etudiant/Bureau/GIT/111155105_tp4/PersonneLib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"AnnuaireTesteur.d" -MT"AnnuaireTesteur.o" -o "AnnuaireTesteur.o" "../AnnuaireTesteur.cpp"
+../AnnuaireTesteur.cpp:64:19: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+  string nomClub = "NOM DU CLUB";
+                   ^
+../AnnuaireTesteur.cpp:66:22: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+  string nom_joueur = "Hockey";
+                      ^
+../AnnuaireTesteur.cpp:67:25: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+  string prenom_joueur = "Joueur";
+                         ^
+../AnnuaireTesteur.cpp:68:45: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+  Date dateNaissance_joueur = Date(5, 5, 2001);
+                                             ^
+../AnnuaireTesteur.cpp:69:28: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+  string telephone_joueur = "418 658-2222";
+                            ^
+../AnnuaireTesteur.cpp:70:27: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+  string position_joueur = "CENTRE";
+                           ^
+../AnnuaireTesteur.cpp:72:19: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+  string nom_ent = "Thibault";
+                   ^
+../AnnuaireTesteur.cpp:73:22: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+  string prenom_ent = "Marc";
+                      ^
+../AnnuaireTesteur.cpp:74:42: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+  Date dateNaissance_ent = Date(5, 5, 1980);
+                                          ^
+../AnnuaireTesteur.cpp:75:25: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+  string telephone_ent = "418 656-2177";
+                         ^
+../AnnuaireTesteur.cpp:76:18: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+  char sexe_ent = 'M';
+                  ^
+../AnnuaireTesteur.cpp:77:20: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+  string RAMQ_ent = "THIM 8005 0522";
+                    ^
+Finished building: ../AnnuaireTesteur.cpp
+ 
+Building file: ../EntraineurTesteur.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -I"/home/etudiant/Bureau/GIT/111155105_tp4/PersonneLib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"EntraineurTesteur.d" -MT"EntraineurTesteur.o" -o "EntraineurTesteur.o" "../EntraineurTesteur.cpp"
+Finished building: ../EntraineurTesteur.cpp
+ 
+Building file: ../JoueurTesteur.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -I"/home/etudiant/Bureau/GIT/111155105_tp4/PersonneLib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"JoueurTesteur.d" -MT"JoueurTesteur.o" -o "JoueurTesteur.o" "../JoueurTesteur.cpp"
+Finished building: ../JoueurTesteur.cpp
+ 
+Building file: ../PersonneTesteur.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -I"/home/etudiant/Bureau/GIT/111155105_tp4/PersonneLib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"PersonneTesteur.d" -MT"PersonneTesteur.o" -o "PersonneTesteur.o" "../PersonneTesteur.cpp"
+Finished building: ../PersonneTesteur.cpp
+ 
+Building target: Testeur
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/GIT/111155105_tp4/PersonneLib/Debug" -o "Testeur"  ./AnnuaireTesteur.o ./EntraineurTesteur.o ./JoueurTesteur.o ./PersonneTesteur.o   -lPersonneLib -lgtest_main -lgtest -lpthread
+Finished building target: Testeur
+ 
+18:18:23 **** Incremental Build of configuration Debug for project Personne ****
+make all 
+Building target: Personne
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/GIT/111155105_tp4/PersonneLib/Debug" -o "Personne"  ./main.o   -lPersonneLib
+Finished building target: Personne
+ 
+18:18:23 **** Incremental Build of configuration Debug for project PersonneLib ****
+make all 
+make: rien à faire pour « all ».
+18:18:23 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+make: rien à faire pour « all ».
+18:19:32 **** Incremental Build of configuration Debug for project Personne ****
+make all 
+make: rien à faire pour « all ».
+18:19:32 **** Incremental Build of project PersonneGUI ****
+make debug 
+make -f Makefile.Debug
+make[1] : on entre dans le répertoire « /home/etudiant/Bureau/GIT/111155105_tp4/PersonneGUI »
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. -o debug/personnegui.o personnegui.cpp
+/usr/lib/i386-linux-gnu/qt4/bin/moc -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. supprimerpersonne.h -o debug/moc_supprimerpersonne.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. -o debug/moc_supprimerpersonne.o debug/moc_supprimerpersonne.cpp
+/usr/lib/i386-linux-gnu/qt4/bin/moc -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. ajouterjoueur.h -o debug/moc_ajouterjoueur.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. -o debug/moc_ajouterjoueur.o debug/moc_ajouterjoueur.cpp
+/usr/lib/i386-linux-gnu/qt4/bin/moc -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. ajouterentraineur.h -o debug/moc_ajouterentraineur.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. -o debug/moc_ajouterentraineur.o debug/moc_ajouterentraineur.cpp
+/usr/lib/i386-linux-gnu/qt4/bin/moc -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. personnegui.h -o debug/moc_personnegui.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. -o debug/moc_personnegui.o debug/moc_personnegui.cpp
+g++  -o PersonneGUI debug/supprimerpersonne.o debug/ajouterjoueur.o debug/ajouterentraineur.o debug/main.o debug/personnegui.o debug/moc_supprimerpersonne.o debug/moc_ajouterjoueur.o debug/moc_ajouterentraineur.o debug/moc_personnegui.o    -L/usr/lib/i386-linux-gnu ../PersonneLib/Debug/libPersonneLib.a -lQtGui -lQtCore -lpthread 
+debug/moc_personnegui.o : Dans la fonction « PersonneGUI::qt_static_metacall(QObject*, QMetaObject::Call, int, void**) » :
+Makefile.Debug:119 : la recette pour la cible « PersonneGUI » a échouée
+make[1] : on quitte le répertoire « /home/etudiant/Bureau/GIT/111155105_tp4/PersonneGUI »
+/home/etudiant/Bureau/GIT/111155105_tp4/PersonneGUI/debug/moc_personnegui.cpp:52 : référence indéfinie vers « PersonneGUI::dialogJoueur() »
+/home/etudiant/Bureau/GIT/111155105_tp4/PersonneGUI/debug/moc_personnegui.cpp:53 : référence indéfinie vers « PersonneGUI::dialogSupprimer() »
+collect2: error: ld returned 1 exit status
+make[1]: *** [PersonneGUI] Erreur 1
+Makefile:50 : la recette pour la cible « debug » a échouée
+make: *** [debug] Erreur 2
+18:19:36 **** Incremental Build of configuration Debug for project PersonneLib ****
+make all 
+make: rien à faire pour « all ».
+18:19:36 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+make: rien à faire pour « all ».
+18:19:47 **** Incremental Build of configuration Debug for project Personne ****
+make all 
+make: rien à faire pour « all ».
+18:19:47 **** Incremental Build of project PersonneGUI ****
+make debug 
+make -f Makefile.Debug
+make[1] : on entre dans le répertoire « /home/etudiant/Bureau/GIT/111155105_tp4/PersonneGUI »
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. -o debug/personnegui.o personnegui.cpp
+personnegui.cpp: In member function ‘void PersonneGUI::dialogJoueur()’:
+personnegui.cpp:34:15: error: ‘class ajouterJoueur’ has no member named ‘exec’
+  saisieJoueur.exec();
+               ^
+personnegui.cpp: In member function ‘void PersonneGUI::dialogSupprimer()’:
+personnegui.cpp:40:18: error: ‘class supprimerPersonne’ has no member named ‘exec’
+  saisieSupprimer.exec();
+                  ^
+Makefile.Debug:223 : la recette pour la cible « debug/personnegui.o » a échouée
+make[1] : on quitte le répertoire « /home/etudiant/Bureau/GIT/111155105_tp4/PersonneGUI »
+make[1]: *** [debug/personnegui.o] Erreur 1
+make: *** [debug] Erreur 2
+Makefile:50 : la recette pour la cible « debug » a échouée
+18:19:48 **** Incremental Build of configuration Debug for project PersonneLib ****
+make all 
+make: rien à faire pour « all ».
+18:19:48 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+make: rien à faire pour « all ».
+18:19:58 **** Incremental Build of configuration Debug for project Personne ****
+make all 
+make: rien à faire pour « all ».
+18:19:58 **** Incremental Build of project PersonneGUI ****
+make debug 
+make -f Makefile.Debug
+make[1] : on entre dans le répertoire « /home/etudiant/Bureau/GIT/111155105_tp4/PersonneGUI »
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. -o debug/personnegui.o personnegui.cpp
+g++  -o PersonneGUI debug/supprimerpersonne.o debug/ajouterjoueur.o debug/ajouterentraineur.o debug/main.o debug/personnegui.o debug/moc_supprimerpersonne.o debug/moc_ajouterjoueur.o debug/moc_ajouterentraineur.o debug/moc_personnegui.o    -L/usr/lib/i386-linux-gnu ../PersonneLib/Debug/libPersonneLib.a -lQtGui -lQtCore -lpthread 
+debug/moc_personnegui.o : Dans la fonction « PersonneGUI::qt_static_metacall(QObject*, QMetaObject::Call, int, void**) » :
+Makefile.Debug:119 : la recette pour la cible « PersonneGUI » a échouée
+make[1] : on quitte le répertoire « /home/etudiant/Bureau/GIT/111155105_tp4/PersonneGUI »
+/home/etudiant/Bureau/GIT/111155105_tp4/PersonneGUI/debug/moc_personnegui.cpp:52 : référence indéfinie vers « PersonneGUI::dialogJoueur() »
+/home/etudiant/Bureau/GIT/111155105_tp4/PersonneGUI/debug/moc_personnegui.cpp:53 : référence indéfinie vers « PersonneGUI::dialogSupprimer() »
+collect2: error: ld returned 1 exit status
+make[1]: *** [PersonneGUI] Erreur 1
+Makefile:50 : la recette pour la cible « debug » a échouée
+make: *** [debug] Erreur 2
+18:19:59 **** Incremental Build of configuration Debug for project PersonneLib ****
+make all 
+make: rien à faire pour « all ».
+18:19:59 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+make: rien à faire pour « all ».
+18:20:19 **** Incremental Build of configuration Debug for project Personne ****
+make all 
+make: rien à faire pour « all ».
+18:20:19 **** Incremental Build of project PersonneGUI ****
+make debug 
+make -f Makefile.Debug
+make[1] : on entre dans le répertoire « /home/etudiant/Bureau/GIT/111155105_tp4/PersonneGUI »
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. -o debug/main.o main.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. -o debug/personnegui.o personnegui.cpp
+/usr/lib/i386-linux-gnu/qt4/bin/moc -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. personnegui.h -o debug/moc_personnegui.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. -o debug/moc_personnegui.o debug/moc_personnegui.cpp
+g++  -o PersonneGUI debug/supprimerpersonne.o debug/ajouterjoueur.o debug/ajouterentraineur.o debug/main.o debug/personnegui.o debug/moc_supprimerpersonne.o debug/moc_ajouterjoueur.o debug/moc_ajouterentraineur.o debug/moc_personnegui.o    -L/usr/lib/i386-linux-gnu ../PersonneLib/Debug/libPersonneLib.a -lQtGui -lQtCore -lpthread 
+{ test -n "" && DESTDIR="" || DESTDIR=.; } && test $(gdb --version | sed -e 's,[^0-9][^0-9]*\([0-9]\)\.\([0-9]\).*,\1\2,;q') -gt 72 && gdb --nx --batch --quiet -ex 'set confirm off' -ex "save gdb-index $DESTDIR" -ex quit 'PersonneGUI' && test -f PersonneGUI.gdb-index && objcopy --add-section '.gdb_index=PersonneGUI.gdb-index' --set-section-flags '.gdb_index=readonly' 'PersonneGUI' 'PersonneGUI' && rm -f PersonneGUI.gdb-index || true
+make[1] : on quitte le répertoire « /home/etudiant/Bureau/GIT/111155105_tp4/PersonneGUI »
+18:20:24 **** Incremental Build of configuration Debug for project PersonneLib ****
+make all 
+make: rien à faire pour « all ».
+18:20:24 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+make: rien à faire pour « all ».
+/usr/lib/i386-linux-gnu/qt4/bin/qmake -recursive CONFIG+=debug_and_release PersonneGUI.pro 
+18:20:58 **** Incremental Build of configuration Debug for project Personne ****
+make all 
+make: rien à faire pour « all ».
+18:20:59 **** Incremental Build of project PersonneGUI ****
+make debug 
+make -f Makefile.Debug
+make[1] : on entre dans le répertoire « /home/etudiant/Bureau/GIT/111155105_tp4/PersonneGUI »
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. -o debug/main.o main.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. -o debug/personnegui.o personnegui.cpp
+/usr/lib/i386-linux-gnu/qt4/bin/moc -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. personnegui.h -o debug/moc_personnegui.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. -o debug/moc_personnegui.o debug/moc_personnegui.cpp
+g++  -o PersonneGUI debug/supprimerpersonne.o debug/ajouterjoueur.o debug/ajouterentraineur.o debug/main.o debug/personnegui.o debug/moc_supprimerpersonne.o debug/moc_ajouterjoueur.o debug/moc_ajouterentraineur.o debug/moc_personnegui.o    -L/usr/lib/i386-linux-gnu ../PersonneLib/Debug/libPersonneLib.a -lQtGui -lQtCore -lpthread 
+{ test -n "" && DESTDIR="" || DESTDIR=.; } && test $(gdb --version | sed -e 's,[^0-9][^0-9]*\([0-9]\)\.\([0-9]\).*,\1\2,;q') -gt 72 && gdb --nx --batch --quiet -ex 'set confirm off' -ex "save gdb-index $DESTDIR" -ex quit 'PersonneGUI' && test -f PersonneGUI.gdb-index && objcopy --add-section '.gdb_index=PersonneGUI.gdb-index' --set-section-flags '.gdb_index=readonly' 'PersonneGUI' 'PersonneGUI' && rm -f PersonneGUI.gdb-index || true
+make[1] : on quitte le répertoire « /home/etudiant/Bureau/GIT/111155105_tp4/PersonneGUI »
+18:21:03 **** Incremental Build of configuration Debug for project PersonneLib ****
+make all 
+make: rien à faire pour « all ».
+18:21:03 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+make: rien à faire pour « all ».
+18:21:24 **** Incremental Build of configuration Debug for project Personne ****
+make all 
+make: rien à faire pour « all ».
+18:21:24 **** Incremental Build of configuration Debug for project PersonneLib ****
+make all 
+make: rien à faire pour « all ».
+18:21:24 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+make: rien à faire pour « all ».
+18:22:07 **** Incremental Build of configuration Debug for project Personne ****
+make all 
+make: rien à faire pour « all ».
+18:22:07 **** Incremental Build of project PersonneGUI ****
+make debug 
+make -f Makefile.Debug
+make[1] : on entre dans le répertoire « /home/etudiant/Bureau/GIT/111155105_tp4/PersonneGUI »
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. -o debug/main.o main.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. -o debug/personnegui.o personnegui.cpp
+personnegui.cpp: In member function ‘void PersonneGUI::dialogJoueur()’:
+personnegui.cpp:34:15: error: ‘class ajouterJoueur’ has no member named ‘exec’
+  saisieJoueur.exec();
+               ^
+make[1]: *** [debug/personnegui.o] Erreur 1
+Makefile.Debug:223 : la recette pour la cible « debug/personnegui.o » a échouée
+make[1] : on quitte le répertoire « /home/etudiant/Bureau/GIT/111155105_tp4/PersonneGUI »
+make: *** [debug] Erreur 2
+Makefile:50 : la recette pour la cible « debug » a échouée
+18:22:10 **** Incremental Build of configuration Debug for project PersonneLib ****
+make all 
+make: rien à faire pour « all ».
+18:22:11 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+make: rien à faire pour « all ».
+18:22:38 **** Incremental Build of configuration Debug for project Personne ****
+make all 
+make: rien à faire pour « all ».
+18:22:38 **** Incremental Build of project PersonneGUI ****
+make debug 
+make -f Makefile.Debug
+make[1] : on entre dans le répertoire « /home/etudiant/Bureau/GIT/111155105_tp4/PersonneGUI »
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. -o debug/personnegui.o personnegui.cpp
+personnegui.cpp: In member function ‘void PersonneGUI::dialogJoueur()’:
+personnegui.cpp:28:15: error: ‘class ajouterJoueur’ has no member named ‘exec’
+  saisieJoueur.exec();
+               ^
+Makefile.Debug:223 : la recette pour la cible « debug/personnegui.o » a échouée
+make[1] : on quitte le répertoire « /home/etudiant/Bureau/GIT/111155105_tp4/PersonneGUI »
+Makefile:50 : la recette pour la cible « debug » a échouée
+make[1]: *** [debug/personnegui.o] Erreur 1
+make: *** [debug] Erreur 2
+18:22:39 **** Incremental Build of configuration Debug for project PersonneLib ****
+make all 
+make: rien à faire pour « all ».
+18:22:39 **** Incremental Build of configuration Debug for project Testeur ****
 make all 
 make: rien à faire pour « all ».

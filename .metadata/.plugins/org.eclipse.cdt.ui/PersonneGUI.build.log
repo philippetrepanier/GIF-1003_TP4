@@ -1,9 +1,17 @@
-14:39:14 **** Incremental Build of project PersonneGUI ****
+18:22:38 **** Incremental Build of project PersonneGUI ****
 make debug 
 make -f Makefile.Debug
 make[1] : on entre dans le répertoire « /home/etudiant/Bureau/GIT/111155105_tp4/PersonneGUI »
-make[1]: rien à faire pour « first ».
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. -o debug/personnegui.o personnegui.cpp
+personnegui.cpp: In member function ‘void PersonneGUI::dialogJoueur()’:
+personnegui.cpp:28:15: error: ‘class ajouterJoueur’ has no member named ‘exec’
+  saisieJoueur.exec();
+               ^
+Makefile.Debug:223 : la recette pour la cible « debug/personnegui.o » a échouée
 make[1] : on quitte le répertoire « /home/etudiant/Bureau/GIT/111155105_tp4/PersonneGUI »
+Makefile:50 : la recette pour la cible « debug » a échouée
+make[1]: *** [debug/personnegui.o] Erreur 1
+make: *** [debug] Erreur 2
 
-14:39:14 Build Finished (took 72ms)
+18:22:39 Build Finished (took 625ms)
 

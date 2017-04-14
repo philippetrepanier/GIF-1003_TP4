@@ -3,17 +3,23 @@
 
 #include <QtGui/QMainWindow>
 #include "ui_personnegui.h"
+#include "Annuaire.h"
 
-class PersonneGUI : public QMainWindow
+class PersonneGUI: public QMainWindow
 {
-    Q_OBJECT
+	Q_OBJECT
 
 public:
-    PersonneGUI(QWidget *parent = 0);
-    ~PersonneGUI();
+	PersonneGUI(QWidget *parent = 0);
+	~PersonneGUI();
+
+private slots:
+	void dialogEntraineur();
+	void dialogJoueur();
+//	void dialogSupprimer();
 
 private:
-    Ui::PersonneGUIClass ui;
+	Ui::PersonneGUIClass ui;
 };
 
 #endif // PERSONNEGUI_H

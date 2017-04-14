@@ -2,9 +2,16 @@
 <section name="Workbench">
 	<item value="${workspace_loc:/PersonneLib/Debug}" key="org.eclipse.cdt.utils.ui.controls.FileListControl"/>
 	<item value="Default C++ source template" key="LastUsedSourceTemplate"/>
+	<item value="Default C++ header template" key="LastUsedHeaderTemplate"/>
+	<section name="CPathContainerSelectionPage">
+		<item value="0" key="index"/>
+	</section>
 	<section name="org.eclipse.cdt.ui.text.hover.CMacroExpansionExploration.internal">
 		<item value="226" key="size.height"/>
 		<item value="800" key="size.width"/>
+	</section>
+	<section name="CPathsPropertyPage">
+		<item value="4" key="pageIndex"/>
 	</section>
 	<section name="org.eclipse.cdt.ui.text.hover.CMacroExpansionExploration">
 	</section>

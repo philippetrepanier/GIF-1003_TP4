@@ -30,7 +30,7 @@ Annuaire::Annuaire(const string& p_nomClub) :
 Annuaire::~Annuaire()
 {
 	vector<Personne*>::iterator it;
-	for (it = m_vMembres.begin(); it != m_vMembres.end(); it++)
+	for (it = m_vMembres.begin(); it < m_vMembres.end(); it++)
 	{
 		delete *it;
 	}
@@ -72,8 +72,7 @@ void Annuaire::ajouterPersonne(const Personne& p_personne)
 	}
 	else
 	{
-		string PersonneDejaPresenteException = p_personne.reqPersonneFormate();
-		throw PersonneDejaPresenteException;
+		throw PersonneDejaPresenteException(p_personne.reqPersonneFormate());
 	}
 
 	INVARIANTS();
@@ -89,7 +88,7 @@ void Annuaire::verifieInvariant() const
 bool Annuaire::PersonneEstDejaPresente(const Personne& p_personne) const
 {
 	vector<Personne*>::const_iterator it;
-	for (it = m_vMembres.begin(); it != m_vMembres.end(); it++)
+	for (it = m_vMembres.begin(); it < m_vMembres.end(); it++)
 	{
 //		if ((*it) == p_personne)
 //		{
@@ -103,7 +102,7 @@ void Annuaire::supprimerPersonne(const std::string& p_nom, const std::string& p_
 {
 	unsigned int supprime = 0;
 	vector<Personne*>::iterator it;
-	for (it = m_vMembres.begin(); it != m_vMembres.end(); it++)
+	for (it = m_vMembres.begin(); it < m_vMembres.end(); it++)
 	{
 		if ((*it)->reqNom() == p_nom && (*it)->reqPrenom() == p_prenom)
 		{
@@ -114,7 +113,7 @@ void Annuaire::supprimerPersonne(const std::string& p_nom, const std::string& p_
 	}
 	if (supprime == 0)
 	{
-		throw PersonneAbsenteException;
+		throw PersonneAbsenteException(p_nom);
 	}
 }
 

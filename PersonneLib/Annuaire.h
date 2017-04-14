@@ -11,6 +11,7 @@
 #include <vector>
 #include "Joueur.h"
 #include "Entraineur.h"
+#include "PersonneException.h"
 #include "ContratException.h"
 
 namespace tp

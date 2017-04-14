@@ -34,6 +34,7 @@
 			</target>
 		</buildTargets>
 	</storageModule>
+	<storageModule moduleId="org.eclipse.cdt.core.LanguageSettingsProviders"/>
 	<storageModule moduleId="org.eclipse.cdt.core.pathentry">
 		<pathentry kind="src" path=""/>
 		<pathentry kind="out" path=""/>
@@ -60,5 +61,4 @@
 		<pathentry base-path="/usr/include/qt4" include="QtNetwork" kind="inc" path="" system="true"/>
 		<pathentry base-path="/usr/include/qt4" include="QtTest" kind="inc" path="" system="true"/>
 	</storageModule>
-	<storageModule moduleId="org.eclipse.cdt.core.LanguageSettingsProviders"/>
 </cproject>

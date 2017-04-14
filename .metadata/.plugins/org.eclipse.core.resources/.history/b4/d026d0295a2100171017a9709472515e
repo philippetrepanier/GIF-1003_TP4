@@ -1,0 +1,14 @@
+#include "personnegui.h"
+#include "Annuaire.h"
+using namespace std;
+
+PersonneGUI::PersonneGUI(QWidget *parent) :
+		QMainWindow(parent)
+{
+	ui.setupUi(this);
+}
+
+PersonneGUI::~PersonneGUI()
+{
+
+}

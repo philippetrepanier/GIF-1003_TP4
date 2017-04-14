@@ -1,0 +1,17 @@
+TEMPLATE = app
+TARGET = PersonneGUI
+QT += core \
+    gui
+HEADERS += ajouterentraineur.h \
+    ajouterpersonne.h \
+    personnegui.h
+SOURCES += ajouterentraineur.cpp \
+    ajouterpersonne.cpp \
+    main.cpp \
+    personnegui.cpp
+FORMS += ajouterentraineur.ui \
+    ajouterpersonne.ui \
+    personnegui.ui
+RESOURCES += 
+LIBS += "../PersonneLib/Debug/libPersonneLib.a"
+INCLUDEPATH += "../PersonneLib/."

@@ -14,7 +14,11 @@ PersonneException::PersonneException(const std::string& raison) :
 }
 
 PersonneDejaPresenteException::PersonneDejaPresenteException(const std::string& raison) :
-		runtime_error(raison)
+		PersonneException(raison)
 {
+}
 
+PersonneAbsenteException::PersonneAbsenteException(const std::string& raison) :
+		PersonneException(raison)
+{
 }

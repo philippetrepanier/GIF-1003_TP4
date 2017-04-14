@@ -251,14 +251,14 @@ int main()
 	cout << "|  Fin du programme  |" << endl;
 	cout << "======================" << endl << endl;
 
-	util::Date naissanceVirge(18, 05, 1997);
-	tp::Entraineur virginie("Beaudoin", "Virginie", naissanceVirge, "581 998-3637", "BEAV 9705 1818", 'M');
-
-	tp::Annuaire annuaire_1("Club d'Alice");
-	annuaire_1.ajouterPersonne(virginie);
-	annuaire_1.ajouterPersonne(virginie);
-	cout << annuaire_1.reqAnnuaireFormate() << endl;
-	cout << "Bonjour :)" << endl;
+//	util::Date naissanceVirge(18, 05, 1997);
+//	tp::Entraineur virginie("Beaudoin", "Virginie", naissanceVirge, "581 998-3637", "BEAV 9705 1818", 'M');
+//
+//	tp::Annuaire annuaire_1("Club d'Alice");
+//	annuaire_1.ajouterPersonne(virginie);
+//	annuaire_1.ajouterPersonne(virginie);
+//	cout << annuaire_1.reqAnnuaireFormate() << endl;
+//	cout << "Bonjour :)" << endl;
 	return 0;
 
 }

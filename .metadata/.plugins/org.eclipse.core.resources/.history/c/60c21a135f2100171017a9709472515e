@@ -1,0 +1,19 @@
+#ifndef AJOUTERPERSONNE_H
+#define AJOUTERPERSONNE_H
+
+#include <QtGui/QWidget>
+#include "ui_ajouterpersonne.h"
+
+class ajouterPersonne : public QWidget
+{
+    Q_OBJECT
+
+public:
+    ajouterPersonne(QWidget *parent = 0);
+    ~ajouterPersonne();
+
+private:
+    Ui::ajouterPersonneClass ui;
+};
+
+#endif // AJOUTERPERSONNE_H

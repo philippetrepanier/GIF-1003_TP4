@@ -1,0 +1,12 @@
+TEMPLATE = app
+TARGET = PersonneGUI
+QT += core \
+    gui
+HEADERS += ajouterentraineur.h \
+    personnegui.h
+SOURCES += ajouterentraineur.cpp \
+    main.cpp \
+    personnegui.cpp
+FORMS += ajouterentraineur.ui \
+    personnegui.ui
+RESOURCES += 

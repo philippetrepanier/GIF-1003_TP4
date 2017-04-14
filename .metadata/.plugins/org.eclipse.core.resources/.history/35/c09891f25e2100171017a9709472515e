@@ -1,0 +1,37 @@
+#include "personnegui.h"
+#include "Annuaire.h"
+#include "ajouterentraineur.h"
+#include <QMessageBox>
+
+using namespace std;
+using namespace tp;
+
+PersonneGUI::PersonneGUI(QWidget *parent) :
+		QMainWindow(parent)
+{
+	ui.setupUi(this);
+	QObject::connect(ui.actionEntraineur, SIGNAL(triggered()), this, SLOT(dialogEntraineur()));
+}
+
+PersonneGUI::~PersonneGUI()
+{
+
+}
+
+void PersonneGUI::dialogEntraineur()
+{
+	ajouterEntraineur saisieEntraineur(this);
+	saisieEntraineur.exec();
+}
+
+void PersonneGUI::dialogJoueur()
+{
+	ajouterEntraineur saisieEntraineur(this);
+	saisieEntraineur.exec();
+}
+
+void PersonneGUI::dialogSupprimer()
+{
+	ajouterEntraineur saisieEntraineur(this);
+	saisieEntraineur.exec();
+}

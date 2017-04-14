@@ -36,7 +36,7 @@ public:
 class PersonneAbsenteException: public PersonneException
 {
 public:
-	PersonneAbsenteException(std::string, unsigned int, std::string);
+	PersonneAbsenteException(const std::string& raison);
 };
 
 // --- Définition des macros de contrôle de la théorie du contrat

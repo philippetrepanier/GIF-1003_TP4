@@ -13,4 +13,6 @@
 			<item value="org.eclipse.cdt.ui.newCWizards"/>
 		</list>
 	</section>
+	<section name="BasicNewProjectResourceWizard">
+	</section>
 </section>
