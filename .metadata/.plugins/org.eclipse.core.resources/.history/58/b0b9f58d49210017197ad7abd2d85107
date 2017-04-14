@@ -13,10 +13,20 @@
  * \class PersonneException
  * \brief Classe de base des exceptions de Personne.
  */
-class PersonneException: public std::runtime_error
+class PersonneException: public std::logic_error
 {
 public:
-	PersonneException(const std::string& raison);
+	PersonneException(std::string, unsigned int, std::string, std::string);
+	~PersonneException() throw ()
+	{
+	}
+	;
+	std::string reqTexteException() const;
+
+private:
+	std::string m_expression;
+	std::string m_fichier;
+	unsigned int m_ligne;
 };
 /**
  * \class PersonneDejaPresenteException
@@ -26,7 +36,7 @@ public:
 class PersonneDejaPresenteException: public PersonneException
 {
 public:
-	PersonneDejaPresenteException(const std::string& raison);
+	PersonneDejaPresenteException(std::string, unsigned int, std::string);
 };
 /**
  * \class PreconditionException

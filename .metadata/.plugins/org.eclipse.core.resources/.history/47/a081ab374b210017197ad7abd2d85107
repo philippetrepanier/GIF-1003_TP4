@@ -26,7 +26,7 @@ public:
 class PersonneDejaPresenteException: public PersonneException
 {
 public:
-	PersonneDejaPresenteException(const std::string& raison);
+	PersonneDejaPresenteException(std::string, unsigned int, std::string);
 };
 /**
  * \class PreconditionException
