@@ -1,640 +1,153 @@
-01:32:26 **** Incremental Build of configuration Debug for project Testeur ****
+15:10:23 **** Incremental Build of configuration Debug for project PersonneLib ****
+make all 
+Building file: ../Annuaire.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Annuaire.d" -MT"Annuaire.o" -o "Annuaire.o" "../Annuaire.cpp"
+../Annuaire.cpp: In member function ‘void tp::Annuaire::supprimerPersonne(const string&, const string&)’:
+../Annuaire.cpp:110:24: error: no matching function for call to ‘std::vector<tp::Personne*>::erase(tp::Personne* const&)’
+    m_vMembres.erase(*it);
+                        ^
+In file included from /usr/include/c++/5/vector:64:0,
+                 from ../Annuaire.h:11,
+                 from ../Annuaire.cpp:8:
+/usr/include/c++/5/bits/stl_vector.h:1149:7: note: candidate: std::vector<_Tp, _Alloc>::iterator std::vector<_Tp, _Alloc>::erase(std::vector<_Tp, _Alloc>::iterator) [with _Tp = tp::Personne*; _Alloc = std::allocator<tp::Personne*>; std::vector<_Tp, _Alloc>::iterator = __gnu_cxx::__normal_iterator<tp::Personne**, std::vector<tp::Personne*> >; typename std::_Vector_base<_Tp, _Alloc>::pointer = tp::Personne**]
+       erase(iterator __position)
+       ^
+/usr/include/c++/5/bits/stl_vector.h:1149:7: note:   no known conversion for argument 1 from ‘tp::Personne* const’ to ‘std::vector<tp::Personne*>::iterator {aka __gnu_cxx::__normal_iterator<tp::Personne**, std::vector<tp::Personne*> >}’
+/usr/include/c++/5/bits/stl_vector.h:1180:7: note: candidate: std::vector<_Tp, _Alloc>::iterator std::vector<_Tp, _Alloc>::erase(std::vector<_Tp, _Alloc>::iterator, std::vector<_Tp, _Alloc>::iterator) [with _Tp = tp::Personne*; _Alloc = std::allocator<tp::Personne*>; std::vector<_Tp, _Alloc>::iterator = __gnu_cxx::__normal_iterator<tp::Personne**, std::vector<tp::Personne*> >; typename std::_Vector_base<_Tp, _Alloc>::pointer = tp::Personne**]
+       erase(iterator __first, iterator __last)
+       ^
+/usr/include/c++/5/bits/stl_vector.h:1180:7: note:   candidate expects 2 arguments, 1 provided
+make: *** [Annuaire.o] Erreur 1
+subdir.mk:36 : la recette pour la cible « Annuaire.o » a échouée
+15:10:38 **** Incremental Build of configuration Debug for project Personne ****
 make all 
 make: rien à faire pour « all ».
-01:32:27 **** Incremental Build of configuration Debug for project Testeur ****
+15:10:39 **** Incremental Build of configuration Debug for project PersonneLib ****
+make all 
+Building file: ../Annuaire.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Annuaire.d" -MT"Annuaire.o" -o "Annuaire.o" "../Annuaire.cpp"
+../Annuaire.cpp: In member function ‘void tp::Annuaire::supprimerPersonne(const string&, const string&)’:
+../Annuaire.cpp:110:24: error: no matching function for call to ‘std::vector<tp::Personne*>::erase(std::vector<tp::Personne*>::const_iterator*)’
+    m_vMembres.erase(&it);
+                        ^
+In file included from /usr/include/c++/5/vector:64:0,
+                 from ../Annuaire.h:11,
+                 from ../Annuaire.cpp:8:
+/usr/include/c++/5/bits/stl_vector.h:1149:7: note: candidate: std::vector<_Tp, _Alloc>::iterator std::vector<_Tp, _Alloc>::erase(std::vector<_Tp, _Alloc>::iterator) [with _Tp = tp::Personne*; _Alloc = std::allocator<tp::Personne*>; std::vector<_Tp, _Alloc>::iterator = __gnu_cxx::__normal_iterator<tp::Personne**, std::vector<tp::Personne*> >; typename std::_Vector_base<_Tp, _Alloc>::pointer = tp::Personne**]
+       erase(iterator __position)
+       ^
+/usr/include/c++/5/bits/stl_vector.h:1149:7: note:   no known conversion for argument 1 from ‘std::vector<tp::Personne*>::const_iterator* {aka __gnu_cxx::__normal_iterator<tp::Personne* const*, std::vector<tp::Personne*> >*}’ to ‘std::vector<tp::Personne*>::iterator {aka __gnu_cxx::__normal_iterator<tp::Personne**, std::vector<tp::Personne*> >}’
+/usr/include/c++/5/bits/stl_vector.h:1180:7: note: candidate: std::vector<_Tp, _Alloc>::iterator std::vector<_Tp, _Alloc>::erase(std::vector<_Tp, _Alloc>::iterator, std::vector<_Tp, _Alloc>::iterator) [with _Tp = tp::Personne*; _Alloc = std::allocator<tp::Personne*>; std::vector<_Tp, _Alloc>::iterator = __gnu_cxx::__normal_iterator<tp::Personne**, std::vector<tp::Personne*> >; typename std::_Vector_base<_Tp, _Alloc>::pointer = tp::Personne**]
+       erase(iterator __first, iterator __last)
+       ^
+/usr/include/c++/5/bits/stl_vector.h:1180:7: note:   candidate expects 2 arguments, 1 provided
+subdir.mk:36 : la recette pour la cible « Annuaire.o » a échouée
+make: *** [Annuaire.o] Erreur 1
+15:10:39 **** Incremental Build of configuration Debug for project Testeur ****
 make all 
 make: rien à faire pour « all ».
-01:32:37 **** Incremental Build of configuration Debug for project Testeur ****
-make all 
-Building file: ../AnnuaireTesteur.cpp
-Invoking: GCC C++ Compiler
-g++ -std=c++98 -I"/home/etudiant/Bureau/GIT/111155105_laboratoirecplusplus/TP3/PersonneLib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"AnnuaireTesteur.d" -MT"AnnuaireTesteur.o" -o "AnnuaireTesteur.o" "../AnnuaireTesteur.cpp"
-../AnnuaireTesteur.cpp:45:19: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
-  string nomClub = "NOM DU CLUB";
-                   ^
-../AnnuaireTesteur.cpp:47:22: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
-  string nom_joueur = "Hockey";
-                      ^
-../AnnuaireTesteur.cpp:48:25: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
-  string prenom_joueur = "Joueur";
-                         ^
-../AnnuaireTesteur.cpp:49:45: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
-  Date dateNaissance_joueur = Date(5, 5, 2001);
-                                             ^
-../AnnuaireTesteur.cpp:50:28: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
-  string telephone_joueur = "418 658-2222";
-                            ^
-../AnnuaireTesteur.cpp:51:27: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
-  string position_joueur = "CENTRE";
-                           ^
-../AnnuaireTesteur.cpp:53:19: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
-  string nom_ent = "Thibault";
-                   ^
-../AnnuaireTesteur.cpp:54:22: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
-  string prenom_ent = "Marc";
-                      ^
-../AnnuaireTesteur.cpp:55:42: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
-  Date dateNaissance_ent = Date(5, 5, 1980);
-                                          ^
-../AnnuaireTesteur.cpp:56:25: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
-  string telephone_ent = "418 656-2177";
-                         ^
-../AnnuaireTesteur.cpp:57:18: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
-  char sexe_ent = 'M';
-                  ^
-../AnnuaireTesteur.cpp:58:20: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
-  string RAMQ_ent = "THIM 8005 0522";
-                    ^
-Finished building: ../AnnuaireTesteur.cpp
- 
-Building target: Testeur
-Invoking: GCC C++ Linker
-g++ -L"/home/etudiant/Bureau/GIT/111155105_laboratoirecplusplus/TP3/PersonneLib/Debug" -o "Testeur"  ./AnnuaireTesteur.o ./EntraineurTesteur.o ./JoueurTesteur.o   -lPersonneLib -lgtest_main -lgtest -lpthread
-Finished building target: Testeur
- 
-01:32:43 **** Incremental Build of configuration Debug for project Testeur ****
-make all 
-Building file: ../AnnuaireTesteur.cpp
-Invoking: GCC C++ Compiler
-g++ -std=c++98 -I"/home/etudiant/Bureau/GIT/111155105_laboratoirecplusplus/TP3/PersonneLib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"AnnuaireTesteur.d" -MT"AnnuaireTesteur.o" -o "AnnuaireTesteur.o" "../AnnuaireTesteur.cpp"
-../AnnuaireTesteur.cpp:45:19: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
-  string nomClub = "NOM DU CLUB";
-                   ^
-../AnnuaireTesteur.cpp:47:22: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
-  string nom_joueur = "Hockey";
-                      ^
-../AnnuaireTesteur.cpp:48:25: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
-  string prenom_joueur = "Joueur";
-                         ^
-../AnnuaireTesteur.cpp:49:45: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
-  Date dateNaissance_joueur = Date(5, 5, 2001);
-                                             ^
-../AnnuaireTesteur.cpp:50:28: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
-  string telephone_joueur = "418 658-2222";
-                            ^
-../AnnuaireTesteur.cpp:51:27: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
-  string position_joueur = "CENTRE";
-                           ^
-../AnnuaireTesteur.cpp:53:19: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
-  string nom_ent = "Thibault";
-                   ^
-../AnnuaireTesteur.cpp:54:22: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
-  string prenom_ent = "Marc";
-                      ^
-../AnnuaireTesteur.cpp:55:42: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
-  Date dateNaissance_ent = Date(5, 5, 1980);
-                                          ^
-../AnnuaireTesteur.cpp:56:25: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
-  string telephone_ent = "418 656-2177";
-                         ^
-../AnnuaireTesteur.cpp:57:18: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
-  char sexe_ent = 'M';
-                  ^
-../AnnuaireTesteur.cpp:58:20: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
-  string RAMQ_ent = "THIM 8005 0522";
-                    ^
-Finished building: ../AnnuaireTesteur.cpp
- 
-Building target: Testeur
-Invoking: GCC C++ Linker
-g++ -L"/home/etudiant/Bureau/GIT/111155105_laboratoirecplusplus/TP3/PersonneLib/Debug" -o "Testeur"  ./AnnuaireTesteur.o ./EntraineurTesteur.o ./JoueurTesteur.o   -lPersonneLib -lgtest_main -lgtest -lpthread
-Finished building target: Testeur
- 
-01:43:33 **** Incremental Build of configuration Debug for project Testeur ****
-make all 
-Building file: ../EntraineurTesteur.cpp
-Invoking: GCC C++ Compiler
-g++ -std=c++98 -I"/home/etudiant/Bureau/GIT/111155105_laboratoirecplusplus/TP3/PersonneLib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"EntraineurTesteur.d" -MT"EntraineurTesteur.o" -o "EntraineurTesteur.o" "../EntraineurTesteur.cpp"
-Finished building: ../EntraineurTesteur.cpp
- 
-Building file: ../PersonneTesteur.cpp
-Invoking: GCC C++ Compiler
-g++ -std=c++98 -I"/home/etudiant/Bureau/GIT/111155105_laboratoirecplusplus/TP3/PersonneLib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"PersonneTesteur.d" -MT"PersonneTesteur.o" -o "PersonneTesteur.o" "../PersonneTesteur.cpp"
-Finished building: ../PersonneTesteur.cpp
- 
-Building target: Testeur
-Invoking: GCC C++ Linker
-g++ -L"/home/etudiant/Bureau/GIT/111155105_laboratoirecplusplus/TP3/PersonneLib/Debug" -o "Testeur"  ./AnnuaireTesteur.o ./EntraineurTesteur.o ./JoueurTesteur.o ./PersonneTesteur.o   -lPersonneLib -lgtest_main -lgtest -lpthread
-Finished building target: Testeur
- 
-01:43:55 **** Incremental Build of configuration Debug for project Testeur ****
-make all 
-Building file: ../PersonneTesteur.cpp
-Invoking: GCC C++ Compiler
-g++ -std=c++98 -I"/home/etudiant/Bureau/GIT/111155105_laboratoirecplusplus/TP3/PersonneLib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"PersonneTesteur.d" -MT"PersonneTesteur.o" -o "PersonneTesteur.o" "../PersonneTesteur.cpp"
-Finished building: ../PersonneTesteur.cpp
- 
-Building target: Testeur
-Invoking: GCC C++ Linker
-g++ -L"/home/etudiant/Bureau/GIT/111155105_laboratoirecplusplus/TP3/PersonneLib/Debug" -o "Testeur"  ./AnnuaireTesteur.o ./EntraineurTesteur.o ./JoueurTesteur.o ./PersonneTesteur.o   -lPersonneLib -lgtest_main -lgtest -lpthread
-Finished building target: Testeur
- 
-01:48:36 **** Incremental Build of configuration Debug for project Testeur ****
-make all 
-Building file: ../PersonneTesteur.cpp
-Invoking: GCC C++ Compiler
-g++ -std=c++98 -I"/home/etudiant/Bureau/GIT/111155105_laboratoirecplusplus/TP3/PersonneLib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"PersonneTesteur.d" -MT"PersonneTesteur.o" -o "PersonneTesteur.o" "../PersonneTesteur.cpp"
-Finished building: ../PersonneTesteur.cpp
- 
-Building target: Testeur
-Invoking: GCC C++ Linker
-g++ -L"/home/etudiant/Bureau/GIT/111155105_laboratoirecplusplus/TP3/PersonneLib/Debug" -o "Testeur"  ./AnnuaireTesteur.o ./EntraineurTesteur.o ./JoueurTesteur.o ./PersonneTesteur.o   -lPersonneLib -lgtest_main -lgtest -lpthread
-Finished building target: Testeur
- 
-01:49:06 **** Incremental Build of configuration Debug for project Testeur ****
-make all 
-Building file: ../PersonneTesteur.cpp
-Invoking: GCC C++ Compiler
-g++ -std=c++98 -I"/home/etudiant/Bureau/GIT/111155105_laboratoirecplusplus/TP3/PersonneLib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"PersonneTesteur.d" -MT"PersonneTesteur.o" -o "PersonneTesteur.o" "../PersonneTesteur.cpp"
-Finished building: ../PersonneTesteur.cpp
- 
-Building target: Testeur
-Invoking: GCC C++ Linker
-g++ -L"/home/etudiant/Bureau/GIT/111155105_laboratoirecplusplus/TP3/PersonneLib/Debug" -o "Testeur"  ./AnnuaireTesteur.o ./EntraineurTesteur.o ./JoueurTesteur.o ./PersonneTesteur.o   -lPersonneLib -lgtest_main -lgtest -lpthread
-Finished building target: Testeur
- 
-10:05:11 **** Incremental Build of configuration Debug for project Personne ****
-make all 
-Building target: Personne
-Invoking: GCC C++ Linker
-g++ -L"/home/etudiant/Bureau/GIT/111155105_laboratoirecplusplus/TP3/PersonneLib/Debug" -o "Personne"  ./main.o   -lPersonneLib
-Finished building target: Personne
- 
-10:05:11 **** Incremental Build of configuration Debug for project PersonneLib ****
-make all 
-Building file: ../Entraineur.cpp
-Invoking: GCC C++ Compiler
-g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Entraineur.d" -MT"Entraineur.o" -o "Entraineur.o" "../Entraineur.cpp"
-Finished building: ../Entraineur.cpp
- 
-Building target: libPersonneLib.a
-Invoking: GCC Archiver
-ar -r  "libPersonneLib.a"  ./Annuaire.o ./ContratException.o ./Date.o ./Entraineur.o ./Joueur.o ./Personne.o ./validationFormat.o   
-ar: création de libPersonneLib.a
-Finished building target: libPersonneLib.a
- 
-10:05:12 **** Incremental Build of configuration Debug for project Testeur ****
-make all 
-Building file: ../PersonneTesteur.cpp
-Invoking: GCC C++ Compiler
-g++ -std=c++98 -I"/home/etudiant/Bureau/GIT/111155105_laboratoirecplusplus/TP3/PersonneLib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"PersonneTesteur.d" -MT"PersonneTesteur.o" -o "PersonneTesteur.o" "../PersonneTesteur.cpp"
-Finished building: ../PersonneTesteur.cpp
- 
-Building target: Testeur
-Invoking: GCC C++ Linker
-g++ -L"/home/etudiant/Bureau/GIT/111155105_laboratoirecplusplus/TP3/PersonneLib/Debug" -o "Testeur"  ./AnnuaireTesteur.o ./EntraineurTesteur.o ./JoueurTesteur.o ./PersonneTesteur.o   -lPersonneLib -lgtest_main -lgtest -lpthread
-Finished building target: Testeur
- 
-10:05:16 **** Incremental Build of configuration Debug for project Testeur ****
+15:10:43 **** Incremental Build of configuration Debug for project Personne ****
 make all 
 make: rien à faire pour « all ».
-10:05:49 **** Incremental Build of configuration Debug for project Personne ****
+15:10:43 **** Incremental Build of configuration Debug for project PersonneLib ****
 make all 
-Building target: Personne
-Invoking: GCC C++ Linker
-g++ -L"/home/etudiant/Bureau/GIT/111155105_laboratoirecplusplus/TP3/PersonneLib/Debug" -o "Personne"  ./main.o   -lPersonneLib
-Finished building target: Personne
- 
-10:05:49 **** Incremental Build of configuration Debug for project PersonneLib ****
+Building file: ../Annuaire.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Annuaire.d" -MT"Annuaire.o" -o "Annuaire.o" "../Annuaire.cpp"
+../Annuaire.cpp: In member function ‘void tp::Annuaire::supprimerPersonne(const string&, const string&)’:
+../Annuaire.cpp:110:24: error: no matching function for call to ‘std::vector<tp::Personne*>::erase(tp::Personne* const&)’
+    m_vMembres.erase(*it);
+                        ^
+In file included from /usr/include/c++/5/vector:64:0,
+                 from ../Annuaire.h:11,
+                 from ../Annuaire.cpp:8:
+/usr/include/c++/5/bits/stl_vector.h:1149:7: note: candidate: std::vector<_Tp, _Alloc>::iterator std::vector<_Tp, _Alloc>::erase(std::vector<_Tp, _Alloc>::iterator) [with _Tp = tp::Personne*; _Alloc = std::allocator<tp::Personne*>; std::vector<_Tp, _Alloc>::iterator = __gnu_cxx::__normal_iterator<tp::Personne**, std::vector<tp::Personne*> >; typename std::_Vector_base<_Tp, _Alloc>::pointer = tp::Personne**]
+       erase(iterator __position)
+       ^
+/usr/include/c++/5/bits/stl_vector.h:1149:7: note:   no known conversion for argument 1 from ‘tp::Personne* const’ to ‘std::vector<tp::Personne*>::iterator {aka __gnu_cxx::__normal_iterator<tp::Personne**, std::vector<tp::Personne*> >}’
+/usr/include/c++/5/bits/stl_vector.h:1180:7: note: candidate: std::vector<_Tp, _Alloc>::iterator std::vector<_Tp, _Alloc>::erase(std::vector<_Tp, _Alloc>::iterator, std::vector<_Tp, _Alloc>::iterator) [with _Tp = tp::Personne*; _Alloc = std::allocator<tp::Personne*>; std::vector<_Tp, _Alloc>::iterator = __gnu_cxx::__normal_iterator<tp::Personne**, std::vector<tp::Personne*> >; typename std::_Vector_base<_Tp, _Alloc>::pointer = tp::Personne**]
+       erase(iterator __first, iterator __last)
+       ^
+/usr/include/c++/5/bits/stl_vector.h:1180:7: note:   candidate expects 2 arguments, 1 provided
+subdir.mk:36 : la recette pour la cible « Annuaire.o » a échouée
+make: *** [Annuaire.o] Erreur 1
+15:10:43 **** Incremental Build of configuration Debug for project Testeur ****
 make all 
 make: rien à faire pour « all ».
-10:05:49 **** Incremental Build of configuration Debug for project Testeur ****
-make all 
-Building file: ../PersonneTesteur.cpp
-Invoking: GCC C++ Compiler
-g++ -std=c++98 -I"/home/etudiant/Bureau/GIT/111155105_laboratoirecplusplus/TP3/PersonneLib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"PersonneTesteur.d" -MT"PersonneTesteur.o" -o "PersonneTesteur.o" "../PersonneTesteur.cpp"
-Finished building: ../PersonneTesteur.cpp
- 
-Building target: Testeur
-Invoking: GCC C++ Linker
-g++ -L"/home/etudiant/Bureau/GIT/111155105_laboratoirecplusplus/TP3/PersonneLib/Debug" -o "Testeur"  ./AnnuaireTesteur.o ./EntraineurTesteur.o ./JoueurTesteur.o ./PersonneTesteur.o   -lPersonneLib -lgtest_main -lgtest -lpthread
-Finished building target: Testeur
- 
-10:05:51 **** Incremental Build of configuration Debug for project Testeur ****
+15:13:29 **** Incremental Build of configuration Debug for project Personne ****
 make all 
 make: rien à faire pour « all ».
-10:08:50 **** Incremental Build of configuration Debug for project Testeur ****
+15:13:29 **** Incremental Build of configuration Debug for project PersonneLib ****
 make all 
-Building file: ../PersonneTesteur.cpp
+Building file: ../Annuaire.cpp
 Invoking: GCC C++ Compiler
-g++ -std=c++98 -I"/home/etudiant/Bureau/GIT/111155105_laboratoirecplusplus/TP3/PersonneLib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"PersonneTesteur.d" -MT"PersonneTesteur.o" -o "PersonneTesteur.o" "../PersonneTesteur.cpp"
-Finished building: ../PersonneTesteur.cpp
- 
-Building target: Testeur
-Invoking: GCC C++ Linker
-g++ -L"/home/etudiant/Bureau/GIT/111155105_laboratoirecplusplus/TP3/PersonneLib/Debug" -o "Testeur"  ./AnnuaireTesteur.o ./EntraineurTesteur.o ./JoueurTesteur.o ./PersonneTesteur.o   -lPersonneLib -lgtest_main -lgtest -lpthread
-Finished building target: Testeur
- 
-10:13:04 **** Incremental Build of configuration Debug for project Testeur ****
-make all 
-Building file: ../PersonneTesteur.cpp
-Invoking: GCC C++ Compiler
-g++ -std=c++98 -I"/home/etudiant/Bureau/GIT/111155105_laboratoirecplusplus/TP3/PersonneLib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"PersonneTesteur.d" -MT"PersonneTesteur.o" -o "PersonneTesteur.o" "../PersonneTesteur.cpp"
-Finished building: ../PersonneTesteur.cpp
- 
-Building target: Testeur
-Invoking: GCC C++ Linker
-g++ -L"/home/etudiant/Bureau/GIT/111155105_laboratoirecplusplus/TP3/PersonneLib/Debug" -o "Testeur"  ./AnnuaireTesteur.o ./EntraineurTesteur.o ./JoueurTesteur.o ./PersonneTesteur.o   -lPersonneLib -lgtest_main -lgtest -lpthread
-Finished building target: Testeur
- 
-10:17:24 **** Incremental Build of configuration Debug for project Testeur ****
+g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Annuaire.d" -MT"Annuaire.o" -o "Annuaire.o" "../Annuaire.cpp"
+../Annuaire.cpp: In member function ‘void tp::Annuaire::supprimerPersonne(const string&, const string&)’:
+../Annuaire.cpp:109:23: error: no matching function for call to ‘std::vector<tp::Personne*>::erase(std::vector<tp::Personne*>::const_iterator&)’
+    m_vMembres.erase(it);
+                       ^
+In file included from /usr/include/c++/5/vector:64:0,
+                 from ../Annuaire.h:11,
+                 from ../Annuaire.cpp:8:
+/usr/include/c++/5/bits/stl_vector.h:1149:7: note: candidate: std::vector<_Tp, _Alloc>::iterator std::vector<_Tp, _Alloc>::erase(std::vector<_Tp, _Alloc>::iterator) [with _Tp = tp::Personne*; _Alloc = std::allocator<tp::Personne*>; std::vector<_Tp, _Alloc>::iterator = __gnu_cxx::__normal_iterator<tp::Personne**, std::vector<tp::Personne*> >; typename std::_Vector_base<_Tp, _Alloc>::pointer = tp::Personne**]
+       erase(iterator __position)
+       ^
+/usr/include/c++/5/bits/stl_vector.h:1149:7: note:   no known conversion for argument 1 from ‘std::vector<tp::Personne*>::const_iterator {aka __gnu_cxx::__normal_iterator<tp::Personne* const*, std::vector<tp::Personne*> >}’ to ‘std::vector<tp::Personne*>::iterator {aka __gnu_cxx::__normal_iterator<tp::Personne**, std::vector<tp::Personne*> >}’
+/usr/include/c++/5/bits/stl_vector.h:1180:7: note: candidate: std::vector<_Tp, _Alloc>::iterator std::vector<_Tp, _Alloc>::erase(std::vector<_Tp, _Alloc>::iterator, std::vector<_Tp, _Alloc>::iterator) [with _Tp = tp::Personne*; _Alloc = std::allocator<tp::Personne*>; std::vector<_Tp, _Alloc>::iterator = __gnu_cxx::__normal_iterator<tp::Personne**, std::vector<tp::Personne*> >; typename std::_Vector_base<_Tp, _Alloc>::pointer = tp::Personne**]
+       erase(iterator __first, iterator __last)
+       ^
+/usr/include/c++/5/bits/stl_vector.h:1180:7: note:   candidate expects 2 arguments, 1 provided
+subdir.mk:36 : la recette pour la cible « Annuaire.o » a échouée
+make: *** [Annuaire.o] Erreur 1
+15:13:30 **** Incremental Build of configuration Debug for project Testeur ****
 make all 
 make: rien à faire pour « all ».
-10:40:13 **** Incremental Build of configuration Debug for project Testeur ****
-make all 
-Building file: ../AnnuaireTesteur.cpp
-Invoking: GCC C++ Compiler
-g++ -std=c++98 -I"/home/etudiant/Bureau/GIT/111155105_laboratoirecplusplus/TP3/PersonneLib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"AnnuaireTesteur.d" -MT"AnnuaireTesteur.o" -o "AnnuaireTesteur.o" "../AnnuaireTesteur.cpp"
-../AnnuaireTesteur.cpp:49:19: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
-  string nomClub = "NOM DU CLUB";
-                   ^
-../AnnuaireTesteur.cpp:51:22: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
-  string nom_joueur = "Hockey";
-                      ^
-../AnnuaireTesteur.cpp:52:25: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
-  string prenom_joueur = "Joueur";
-                         ^
-../AnnuaireTesteur.cpp:53:45: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
-  Date dateNaissance_joueur = Date(5, 5, 2001);
-                                             ^
-../AnnuaireTesteur.cpp:54:28: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
-  string telephone_joueur = "418 658-2222";
-                            ^
-../AnnuaireTesteur.cpp:55:27: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
-  string position_joueur = "CENTRE";
-                           ^
-../AnnuaireTesteur.cpp:57:19: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
-  string nom_ent = "Thibault";
-                   ^
-../AnnuaireTesteur.cpp:58:22: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
-  string prenom_ent = "Marc";
-                      ^
-../AnnuaireTesteur.cpp:59:42: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
-  Date dateNaissance_ent = Date(5, 5, 1980);
-                                          ^
-../AnnuaireTesteur.cpp:60:25: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
-  string telephone_ent = "418 656-2177";
-                         ^
-../AnnuaireTesteur.cpp:61:18: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
-  char sexe_ent = 'M';
-                  ^
-../AnnuaireTesteur.cpp:62:20: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
-  string RAMQ_ent = "THIM 8005 0522";
-                    ^
-Finished building: ../AnnuaireTesteur.cpp
- 
-Building file: ../EntraineurTesteur.cpp
-Invoking: GCC C++ Compiler
-g++ -std=c++98 -I"/home/etudiant/Bureau/GIT/111155105_laboratoirecplusplus/TP3/PersonneLib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"EntraineurTesteur.d" -MT"EntraineurTesteur.o" -o "EntraineurTesteur.o" "../EntraineurTesteur.cpp"
-Finished building: ../EntraineurTesteur.cpp
- 
-Building file: ../PersonneTesteur.cpp
-Invoking: GCC C++ Compiler
-g++ -std=c++98 -I"/home/etudiant/Bureau/GIT/111155105_laboratoirecplusplus/TP3/PersonneLib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"PersonneTesteur.d" -MT"PersonneTesteur.o" -o "PersonneTesteur.o" "../PersonneTesteur.cpp"
-Finished building: ../PersonneTesteur.cpp
- 
-Building target: Testeur
-Invoking: GCC C++ Linker
-g++ -L"/home/etudiant/Bureau/GIT/111155105_laboratoirecplusplus/TP3/PersonneLib/Debug" -o "Testeur"  ./AnnuaireTesteur.o ./EntraineurTesteur.o ./JoueurTesteur.o ./PersonneTesteur.o   -lPersonneLib -lgtest_main -lgtest -lpthread
-Finished building target: Testeur
- 
-10:44:37 **** Incremental Build of configuration Debug for project Testeur ****
-make all 
-Building file: ../AnnuaireTesteur.cpp
-Invoking: GCC C++ Compiler
-g++ -std=c++98 -I"/home/etudiant/Bureau/GIT/111155105_laboratoirecplusplus/TP3/PersonneLib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"AnnuaireTesteur.d" -MT"AnnuaireTesteur.o" -o "AnnuaireTesteur.o" "../AnnuaireTesteur.cpp"
-../AnnuaireTesteur.cpp:64:19: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
-  string nomClub = "NOM DU CLUB";
-                   ^
-../AnnuaireTesteur.cpp:66:22: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
-  string nom_joueur = "Hockey";
-                      ^
-../AnnuaireTesteur.cpp:67:25: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
-  string prenom_joueur = "Joueur";
-                         ^
-../AnnuaireTesteur.cpp:68:45: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
-  Date dateNaissance_joueur = Date(5, 5, 2001);
-                                             ^
-../AnnuaireTesteur.cpp:69:28: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
-  string telephone_joueur = "418 658-2222";
-                            ^
-../AnnuaireTesteur.cpp:70:27: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
-  string position_joueur = "CENTRE";
-                           ^
-../AnnuaireTesteur.cpp:72:19: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
-  string nom_ent = "Thibault";
-                   ^
-../AnnuaireTesteur.cpp:73:22: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
-  string prenom_ent = "Marc";
-                      ^
-../AnnuaireTesteur.cpp:74:42: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
-  Date dateNaissance_ent = Date(5, 5, 1980);
-                                          ^
-../AnnuaireTesteur.cpp:75:25: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
-  string telephone_ent = "418 656-2177";
-                         ^
-../AnnuaireTesteur.cpp:76:18: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
-  char sexe_ent = 'M';
-                  ^
-../AnnuaireTesteur.cpp:77:20: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
-  string RAMQ_ent = "THIM 8005 0522";
-                    ^
-Finished building: ../AnnuaireTesteur.cpp
- 
-Building file: ../JoueurTesteur.cpp
-Invoking: GCC C++ Compiler
-g++ -std=c++98 -I"/home/etudiant/Bureau/GIT/111155105_laboratoirecplusplus/TP3/PersonneLib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"JoueurTesteur.d" -MT"JoueurTesteur.o" -o "JoueurTesteur.o" "../JoueurTesteur.cpp"
-Finished building: ../JoueurTesteur.cpp
- 
-Building target: Testeur
-Invoking: GCC C++ Linker
-g++ -L"/home/etudiant/Bureau/GIT/111155105_laboratoirecplusplus/TP3/PersonneLib/Debug" -o "Testeur"  ./AnnuaireTesteur.o ./EntraineurTesteur.o ./JoueurTesteur.o ./PersonneTesteur.o   -lPersonneLib -lgtest_main -lgtest -lpthread
-Finished building target: Testeur
- 
-10:48:58 **** Incremental Build of configuration Debug for project Personne ****
+15:13:42 **** Incremental Build of configuration Debug for project Personne ****
 make all 
 make: rien à faire pour « all ».
-10:48:58 **** Incremental Build of configuration Debug for project PersonneLib ****
+15:13:42 **** Incremental Build of configuration Debug for project PersonneLib ****
+make all 
+Building file: ../Annuaire.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Annuaire.d" -MT"Annuaire.o" -o "Annuaire.o" "../Annuaire.cpp"
+../Annuaire.cpp: In member function ‘void tp::Annuaire::supprimerPersonne(const string&, const string&)’:
+../Annuaire.cpp:109:23: error: no matching function for call to ‘std::vector<tp::Personne*>::erase(std::vector<tp::Personne*>::const_iterator&)’
+    m_vMembres.erase(it);
+                       ^
+In file included from /usr/include/c++/5/vector:64:0,
+                 from ../Annuaire.h:11,
+                 from ../Annuaire.cpp:8:
+/usr/include/c++/5/bits/stl_vector.h:1149:7: note: candidate: std::vector<_Tp, _Alloc>::iterator std::vector<_Tp, _Alloc>::erase(std::vector<_Tp, _Alloc>::iterator) [with _Tp = tp::Personne*; _Alloc = std::allocator<tp::Personne*>; std::vector<_Tp, _Alloc>::iterator = __gnu_cxx::__normal_iterator<tp::Personne**, std::vector<tp::Personne*> >; typename std::_Vector_base<_Tp, _Alloc>::pointer = tp::Personne**]
+       erase(iterator __position)
+       ^
+/usr/include/c++/5/bits/stl_vector.h:1149:7: note:   no known conversion for argument 1 from ‘std::vector<tp::Personne*>::const_iterator {aka __gnu_cxx::__normal_iterator<tp::Personne* const*, std::vector<tp::Personne*> >}’ to ‘std::vector<tp::Personne*>::iterator {aka __gnu_cxx::__normal_iterator<tp::Personne**, std::vector<tp::Personne*> >}’
+/usr/include/c++/5/bits/stl_vector.h:1180:7: note: candidate: std::vector<_Tp, _Alloc>::iterator std::vector<_Tp, _Alloc>::erase(std::vector<_Tp, _Alloc>::iterator, std::vector<_Tp, _Alloc>::iterator) [with _Tp = tp::Personne*; _Alloc = std::allocator<tp::Personne*>; std::vector<_Tp, _Alloc>::iterator = __gnu_cxx::__normal_iterator<tp::Personne**, std::vector<tp::Personne*> >; typename std::_Vector_base<_Tp, _Alloc>::pointer = tp::Personne**]
+       erase(iterator __first, iterator __last)
+       ^
+/usr/include/c++/5/bits/stl_vector.h:1180:7: note:   candidate expects 2 arguments, 1 provided
+subdir.mk:36 : la recette pour la cible « Annuaire.o » a échouée
+make: *** [Annuaire.o] Erreur 1
+15:13:43 **** Incremental Build of configuration Debug for project Testeur ****
 make all 
 make: rien à faire pour « all ».
-10:48:59 **** Incremental Build of configuration Debug for project Testeur ****
-make all 
-Building file: ../AnnuaireTesteur.cpp
-Invoking: GCC C++ Compiler
-g++ -std=c++98 -I"/home/etudiant/Bureau/GIT/111155105_laboratoirecplusplus/TP3/PersonneLib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"AnnuaireTesteur.d" -MT"AnnuaireTesteur.o" -o "AnnuaireTesteur.o" "../AnnuaireTesteur.cpp"
-../AnnuaireTesteur.cpp:64:25: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
-  const string nomClub = "NOM DU CLUB";
-                         ^
-../AnnuaireTesteur.cpp:66:29: error: invalid in-class initialization of static data member of non-integral type ‘std::__cxx11::string {aka std::__cxx11::basic_string<char>}’
-  static string nom_joueur = "Hockey";
-                             ^
-../AnnuaireTesteur.cpp:66:29: error: call to non-constexpr function ‘std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::basic_string(const _CharT*, const _Alloc&) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>]’
-../AnnuaireTesteur.cpp:67:25: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
-  string prenom_joueur = "Joueur";
-                         ^
-../AnnuaireTesteur.cpp:68:45: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
-  Date dateNaissance_joueur = Date(5, 5, 2001);
-                                             ^
-../AnnuaireTesteur.cpp:69:28: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
-  string telephone_joueur = "418 658-2222";
-                            ^
-../AnnuaireTesteur.cpp:70:27: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
-  string position_joueur = "CENTRE";
-                           ^
-../AnnuaireTesteur.cpp:72:19: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
-  string nom_ent = "Thibault";
-                   ^
-../AnnuaireTesteur.cpp:73:22: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
-  string prenom_ent = "Marc";
-                      ^
-../AnnuaireTesteur.cpp:74:42: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
-  Date dateNaissance_ent = Date(5, 5, 1980);
-                                          ^
-../AnnuaireTesteur.cpp:75:25: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
-  string telephone_ent = "418 656-2177";
-                         ^
-../AnnuaireTesteur.cpp:76:18: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
-  char sexe_ent = 'M';
-                  ^
-../AnnuaireTesteur.cpp:77:20: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
-  string RAMQ_ent = "THIM 8005 0522";
-                    ^
-make: *** [AnnuaireTesteur.o] Erreur 1
-subdir.mk:27 : la recette pour la cible « AnnuaireTesteur.o » a échouée
-10:49:18 **** Incremental Build of configuration Debug for project Personne ****
+15:14:28 **** Incremental Build of configuration Debug for project Personne ****
 make all 
 make: rien à faire pour « all ».
-10:49:18 **** Incremental Build of configuration Debug for project PersonneLib ****
-make all 
-make: rien à faire pour « all ».
-10:49:18 **** Incremental Build of configuration Debug for project Testeur ****
-make all 
-Building file: ../AnnuaireTesteur.cpp
-Invoking: GCC C++ Compiler
-g++ -std=c++98 -I"/home/etudiant/Bureau/GIT/111155105_laboratoirecplusplus/TP3/PersonneLib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"AnnuaireTesteur.d" -MT"AnnuaireTesteur.o" -o "AnnuaireTesteur.o" "../AnnuaireTesteur.cpp"
-../AnnuaireTesteur.cpp:64:32: error: invalid in-class initialization of static data member of non-integral type ‘const string {aka const std::__cxx11::basic_string<char>}’
-  static const string nomClub = "NOM DU CLUB";
-                                ^
-../AnnuaireTesteur.cpp:64:32: error: call to non-constexpr function ‘std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::basic_string(const _CharT*, const _Alloc&) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>]’
-../AnnuaireTesteur.cpp:66:22: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
-  string nom_joueur = "Hockey";
-                      ^
-../AnnuaireTesteur.cpp:67:25: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
-  string prenom_joueur = "Joueur";
-                         ^
-../AnnuaireTesteur.cpp:68:45: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
-  Date dateNaissance_joueur = Date(5, 5, 2001);
-                                             ^
-../AnnuaireTesteur.cpp:69:28: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
-  string telephone_joueur = "418 658-2222";
-                            ^
-../AnnuaireTesteur.cpp:70:27: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
-  string position_joueur = "CENTRE";
-                           ^
-../AnnuaireTesteur.cpp:72:19: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
-  string nom_ent = "Thibault";
-                   ^
-../AnnuaireTesteur.cpp:73:22: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
-  string prenom_ent = "Marc";
-                      ^
-../AnnuaireTesteur.cpp:74:42: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
-  Date dateNaissance_ent = Date(5, 5, 1980);
-                                          ^
-../AnnuaireTesteur.cpp:75:25: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
-  string telephone_ent = "418 656-2177";
-                         ^
-../AnnuaireTesteur.cpp:76:18: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
-  char sexe_ent = 'M';
-                  ^
-../AnnuaireTesteur.cpp:77:20: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
-  string RAMQ_ent = "THIM 8005 0522";
-                    ^
-subdir.mk:27 : la recette pour la cible « AnnuaireTesteur.o » a échouée
-make: *** [AnnuaireTesteur.o] Erreur 1
-10:49:32 **** Incremental Build of configuration Debug for project Personne ****
-make all 
-make: rien à faire pour « all ».
-10:49:32 **** Incremental Build of configuration Debug for project PersonneLib ****
-make all 
-make: rien à faire pour « all ».
-10:49:32 **** Incremental Build of configuration Debug for project Testeur ****
-make all 
-Building file: ../AnnuaireTesteur.cpp
-Invoking: GCC C++ Compiler
-g++ -std=c++98 -I"/home/etudiant/Bureau/GIT/111155105_laboratoirecplusplus/TP3/PersonneLib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"AnnuaireTesteur.d" -MT"AnnuaireTesteur.o" -o "AnnuaireTesteur.o" "../AnnuaireTesteur.cpp"
-../AnnuaireTesteur.cpp:64:19: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
-  string nomClub = "NOM DU CLUB";
-                   ^
-../AnnuaireTesteur.cpp:66:22: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
-  string nom_joueur = "Hockey";
-                      ^
-../AnnuaireTesteur.cpp:67:25: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
-  string prenom_joueur = "Joueur";
-                         ^
-../AnnuaireTesteur.cpp:68:45: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
-  Date dateNaissance_joueur = Date(5, 5, 2001);
-                                             ^
-../AnnuaireTesteur.cpp:69:28: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
-  string telephone_joueur = "418 658-2222";
-                            ^
-../AnnuaireTesteur.cpp:70:27: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
-  string position_joueur = "CENTRE";
-                           ^
-../AnnuaireTesteur.cpp:72:19: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
-  string nom_ent = "Thibault";
-                   ^
-../AnnuaireTesteur.cpp:73:22: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
-  string prenom_ent = "Marc";
-                      ^
-../AnnuaireTesteur.cpp:74:42: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
-  Date dateNaissance_ent = Date(5, 5, 1980);
-                                          ^
-../AnnuaireTesteur.cpp:75:25: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
-  string telephone_ent = "418 656-2177";
-                         ^
-../AnnuaireTesteur.cpp:76:18: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
-  char sexe_ent = 'M';
-                  ^
-../AnnuaireTesteur.cpp:77:20: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
-  string RAMQ_ent = "THIM 8005 0522";
-                    ^
-Finished building: ../AnnuaireTesteur.cpp
- 
-Building target: Testeur
-Invoking: GCC C++ Linker
-g++ -L"/home/etudiant/Bureau/GIT/111155105_laboratoirecplusplus/TP3/PersonneLib/Debug" -o "Testeur"  ./AnnuaireTesteur.o ./EntraineurTesteur.o ./JoueurTesteur.o ./PersonneTesteur.o   -lPersonneLib -lgtest_main -lgtest -lpthread
-Finished building target: Testeur
- 
-10:49:34 **** Incremental Build of configuration Debug for project Testeur ****
-make all 
-make: rien à faire pour « all ».
-13:36:47 **** Incremental Build of configuration Debug for project Testeur ****
-make all 
-Building file: ../AnnuaireTesteur.cpp
-Invoking: GCC C++ Compiler
-g++ -std=c++98 -I"/home/etudiant/Bureau/GIT/111155105_laboratoirecplusplus/TP3/PersonneLib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"AnnuaireTesteur.d" -MT"AnnuaireTesteur.o" -o "AnnuaireTesteur.o" "../AnnuaireTesteur.cpp"
-../AnnuaireTesteur.cpp:64:19: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
-  string nomClub = "NOM DU CLUB";
-                   ^
-../AnnuaireTesteur.cpp:66:22: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
-  string nom_joueur = "Hockey";
-                      ^
-../AnnuaireTesteur.cpp:67:25: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
-  string prenom_joueur = "Joueur";
-                         ^
-../AnnuaireTesteur.cpp:68:45: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
-  Date dateNaissance_joueur = Date(5, 5, 2001);
-                                             ^
-../AnnuaireTesteur.cpp:69:28: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
-  string telephone_joueur = "418 658-2222";
-                            ^
-../AnnuaireTesteur.cpp:70:27: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
-  string position_joueur = "CENTRE";
-                           ^
-../AnnuaireTesteur.cpp:72:19: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
-  string nom_ent = "Thibault";
-                   ^
-../AnnuaireTesteur.cpp:73:22: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
-  string prenom_ent = "Marc";
-                      ^
-../AnnuaireTesteur.cpp:74:42: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
-  Date dateNaissance_ent = Date(5, 5, 1980);
-                                          ^
-../AnnuaireTesteur.cpp:75:25: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
-  string telephone_ent = "418 656-2177";
-                         ^
-../AnnuaireTesteur.cpp:76:18: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
-  char sexe_ent = 'M';
-                  ^
-../AnnuaireTesteur.cpp:77:20: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
-  string RAMQ_ent = "THIM 8005 0522";
-                    ^
-Finished building: ../AnnuaireTesteur.cpp
- 
-Building file: ../EntraineurTesteur.cpp
-Invoking: GCC C++ Compiler
-g++ -std=c++98 -I"/home/etudiant/Bureau/GIT/111155105_laboratoirecplusplus/TP3/PersonneLib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"EntraineurTesteur.d" -MT"EntraineurTesteur.o" -o "EntraineurTesteur.o" "../EntraineurTesteur.cpp"
-Finished building: ../EntraineurTesteur.cpp
- 
-Building file: ../PersonneTesteur.cpp
-Invoking: GCC C++ Compiler
-g++ -std=c++98 -I"/home/etudiant/Bureau/GIT/111155105_laboratoirecplusplus/TP3/PersonneLib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"PersonneTesteur.d" -MT"PersonneTesteur.o" -o "PersonneTesteur.o" "../PersonneTesteur.cpp"
-Finished building: ../PersonneTesteur.cpp
- 
-Building target: Testeur
-Invoking: GCC C++ Linker
-g++ -L"/home/etudiant/Bureau/GIT/111155105_laboratoirecplusplus/TP3/PersonneLib/Debug" -o "Testeur"  ./AnnuaireTesteur.o ./EntraineurTesteur.o ./JoueurTesteur.o ./PersonneTesteur.o   -lPersonneLib -lgtest_main -lgtest -lpthread
-Finished building target: Testeur
- 
-13:36:50 **** Incremental Build of configuration Debug for project Testeur ****
-make all 
-make: rien à faire pour « all ».
-13:42:46 **** Incremental Build of configuration Debug for project Personne ****
-make all 
-Building file: ../main.cpp
-Invoking: GCC C++ Compiler
-g++ -std=c++98 -I"/home/etudiant/Bureau/GIT/111155105_laboratoirecplusplus/TP3/PersonneLib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
-Finished building: ../main.cpp
- 
-Building target: Personne
-Invoking: GCC C++ Linker
-g++ -L"/home/etudiant/Bureau/GIT/111155105_laboratoirecplusplus/TP3/PersonneLib/Debug" -o "Personne"  ./main.o   -lPersonneLib
-Finished building target: Personne
- 
-13:42:47 **** Incremental Build of configuration Debug for project PersonneLib ****
+15:14:28 **** Incremental Build of configuration Debug for project PersonneLib ****
 make all 
 Building file: ../Annuaire.cpp
 Invoking: GCC C++ Compiler
 g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Annuaire.d" -MT"Annuaire.o" -o "Annuaire.o" "../Annuaire.cpp"
 Finished building: ../Annuaire.cpp
  
-Building file: ../Entraineur.cpp
-Invoking: GCC C++ Compiler
-g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Entraineur.d" -MT"Entraineur.o" -o "Entraineur.o" "../Entraineur.cpp"
-Finished building: ../Entraineur.cpp
- 
 Building target: libPersonneLib.a
 Invoking: GCC Archiver
 ar -r  "libPersonneLib.a"  ./Annuaire.o ./ContratException.o ./Date.o ./Entraineur.o ./Joueur.o ./Personne.o ./validationFormat.o   
 ar: création de libPersonneLib.a
 Finished building target: libPersonneLib.a
  
-13:42:48 **** Incremental Build of configuration Debug for project Testeur ****
-make all 
-Building target: Testeur
-Invoking: GCC C++ Linker
-g++ -L"/home/etudiant/Bureau/GIT/111155105_laboratoirecplusplus/TP3/PersonneLib/Debug" -o "Testeur"  ./AnnuaireTesteur.o ./EntraineurTesteur.o ./JoueurTesteur.o ./PersonneTesteur.o   -lPersonneLib -lgtest_main -lgtest -lpthread
-Finished building target: Testeur
- 
-13:42:55 **** Incremental Build of configuration Debug for project Testeur ****
+15:14:29 **** Incremental Build of configuration Debug for project Testeur ****
 make all 
 make: rien à faire pour « all ».
-/usr/lib/i386-linux-gnu/qt4/bin/qmake -recursive CONFIG+=debug_and_release PersonneGUI.pro 
-14:10:06 **** Clean-only build of project PersonneGUI ****
-make clean 
-make -f Makefile.Release clean
-make[1] : on entre dans le répertoire « /home/etudiant/Bureau/GIT/111155105_tp4/PersonneGUI »
-rm -f release/moc_personnegui.cpp
-rm -f ui_personnegui.h
-rm -f release/main.o release/personnegui.o release/moc_personnegui.o
-rm -f *~ core *.core
-make[1] : on quitte le répertoire « /home/etudiant/Bureau/GIT/111155105_tp4/PersonneGUI »
-make -f Makefile.Debug clean
-make[1] : on entre dans le répertoire « /home/etudiant/Bureau/GIT/111155105_tp4/PersonneGUI »
-rm -f debug/moc_personnegui.cpp
-rm -f ui_personnegui.h
-rm -f debug/main.o debug/personnegui.o debug/moc_personnegui.o
-rm -f *~ core *.core
-make[1] : on quitte le répertoire « /home/etudiant/Bureau/GIT/111155105_tp4/PersonneGUI »
-14:10:06 **** Build of project PersonneGUI ****
-make debug 
-make -f Makefile.Debug
-make[1] : on entre dans le répertoire « /home/etudiant/Bureau/GIT/111155105_tp4/PersonneGUI »
-/usr/lib/i386-linux-gnu/qt4/bin/uic personnegui.ui -o ui_personnegui.h
-g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -Idebug -I. -o debug/main.o main.cpp
-g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -Idebug -I. -o debug/personnegui.o personnegui.cpp
-/usr/lib/i386-linux-gnu/qt4/bin/moc -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -Idebug -I. personnegui.h -o debug/moc_personnegui.cpp
-g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -Idebug -I. -o debug/moc_personnegui.o debug/moc_personnegui.cpp
-g++  -o PersonneGUI debug/main.o debug/personnegui.o debug/moc_personnegui.o    -L/usr/lib/i386-linux-gnu -lQtGui -lQtCore -lpthread 
-{ test -n "" && DESTDIR="" || DESTDIR=.; } && test $(gdb --version | sed -e 's,[^0-9][^0-9]*\([0-9]\)\.\([0-9]\).*,\1\2,;q') -gt 72 && gdb --nx --batch --quiet -ex 'set confirm off' -ex "save gdb-index $DESTDIR" -ex quit 'PersonneGUI' && test -f PersonneGUI.gdb-index && objcopy --add-section '.gdb_index=PersonneGUI.gdb-index' --set-section-flags '.gdb_index=readonly' 'PersonneGUI' 'PersonneGUI' && rm -f PersonneGUI.gdb-index || true
-make[1] : on quitte le répertoire « /home/etudiant/Bureau/GIT/111155105_tp4/PersonneGUI »

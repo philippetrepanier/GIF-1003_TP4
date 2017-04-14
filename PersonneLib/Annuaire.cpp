@@ -8,6 +8,7 @@
 #include "Annuaire.h"
 #include <sstream>
 #include "ContratException.h"
+#include <vector>
 
 using namespace std;
 namespace tp
@@ -28,9 +29,10 @@ Annuaire::Annuaire(const string& p_nomClub) :
 
 Annuaire::~Annuaire()
 {
-	for (size_t i = 0; i < m_vMembres.size(); ++i)
+	vector<Personne*>::iterator it;
+	for (it = m_vMembres.begin(); it != m_vMembres.end(); it++)
 	{
-		delete m_vMembres[i];
+		delete *it;
 	}
 	m_vMembres.clear();
 }
@@ -64,7 +66,16 @@ string Annuaire::reqAnnuaireFormate() const
  */
 void Annuaire::ajouterPersonne(const Personne& p_personne)
 {
-	m_vMembres.push_back(p_personne.clone());
+	if (PersonneEstDejaPresente(p_personne) == false)
+	{
+		m_vMembres.push_back(p_personne.clone());
+	}
+	else
+	{
+		string PersonneDejaPresenteException = p_personne.reqPersonneFormate();
+		throw PersonneDejaPresenteException;
+	}
+
 	INVARIANTS();
 }
 /**
@@ -73,6 +84,38 @@ void Annuaire::ajouterPersonne(const Personne& p_personne)
 void Annuaire::verifieInvariant() const
 {
 	INVARIANT(!(m_nomClub.empty()));
+}
+
+bool Annuaire::PersonneEstDejaPresente(const Personne& p_personne) const
+{
+	vector<Personne*>::const_iterator it;
+	for (it = m_vMembres.begin(); it != m_vMembres.end(); it++)
+	{
+//		if ((*it) == p_personne)
+//		{
+//			return true;
+//		}
+	}
+	return false;
+}
+
+void Annuaire::supprimerPersonne(const std::string& p_nom, const std::string& p_prenom)
+{
+	unsigned int supprime = 0;
+	vector<Personne*>::iterator it;
+	for (it = m_vMembres.begin(); it != m_vMembres.end(); it++)
+	{
+		if ((*it)->reqNom() == p_nom && (*it)->reqPrenom() == p_prenom)
+		{
+			m_vMembres.erase(it);
+			delete *it;
+			supprime++;
+		}
+	}
+	if (supprime == 0)
+	{
+		throw PersonneAbsenteException;
+	}
 }
 
 } /* namespace tp */
