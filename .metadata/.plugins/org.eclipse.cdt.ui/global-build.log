@@ -566,3 +566,970 @@ make: rien à faire pour « all ».
 18:22:39 **** Incremental Build of configuration Debug for project Testeur ****
 make all 
 make: rien à faire pour « all ».
+18:24:24 **** Incremental Build of configuration Debug for project Personne ****
+make all 
+make: rien à faire pour « all ».
+18:24:24 **** Incremental Build of project PersonneGUI ****
+make debug 
+/usr/lib/i386-linux-gnu/qt4/bin/qmake CONFIG+=debug_and_release -o Makefile PersonneGUI.pro
+make -f Makefile.Debug
+make[1] : on entre dans le répertoire « /home/etudiant/Bureau/GIT/111155105_tp4/PersonneGUI »
+/usr/lib/i386-linux-gnu/qt4/bin/uic ajouterjoueur.ui -o ui_ajouterjoueur.h
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. -o debug/ajouterjoueur.o ajouterjoueur.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. -o debug/personnegui.o personnegui.cpp
+/usr/lib/i386-linux-gnu/qt4/bin/moc -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. ajouterjoueur.h -o debug/moc_ajouterjoueur.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. -o debug/moc_ajouterjoueur.o debug/moc_ajouterjoueur.cpp
+/usr/lib/i386-linux-gnu/qt4/bin/moc -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. personnegui.h -o debug/moc_personnegui.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. -o debug/moc_personnegui.o debug/moc_personnegui.cpp
+g++  -o PersonneGUI debug/ajouterjoueur.o debug/supprimerpersonne.o debug/ajouterentraineur.o debug/main.o debug/personnegui.o debug/moc_ajouterjoueur.o debug/moc_supprimerpersonne.o debug/moc_ajouterentraineur.o debug/moc_personnegui.o    -L/usr/lib/i386-linux-gnu ../PersonneLib/Debug/libPersonneLib.a -lQtGui -lQtCore -lpthread 
+{ test -n "" && DESTDIR="" || DESTDIR=.; } && test $(gdb --version | sed -e 's,[^0-9][^0-9]*\([0-9]\)\.\([0-9]\).*,\1\2,;q') -gt 72 && gdb --nx --batch --quiet -ex 'set confirm off' -ex "save gdb-index $DESTDIR" -ex quit 'PersonneGUI' && test -f PersonneGUI.gdb-index && objcopy --add-section '.gdb_index=PersonneGUI.gdb-index' --set-section-flags '.gdb_index=readonly' 'PersonneGUI' 'PersonneGUI' && rm -f PersonneGUI.gdb-index || true
+make[1] : on quitte le répertoire « /home/etudiant/Bureau/GIT/111155105_tp4/PersonneGUI »
+18:24:28 **** Incremental Build of configuration Debug for project PersonneLib ****
+make all 
+make: rien à faire pour « all ».
+18:24:28 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+make: rien à faire pour « all ».
+18:25:34 **** Incremental Build of project PersonneGUI ****
+make debug 
+/usr/lib/i386-linux-gnu/qt4/bin/qmake CONFIG+=debug_and_release -o Makefile PersonneGUI.pro
+make -f Makefile.Debug
+make[1] : on entre dans le répertoire « /home/etudiant/Bureau/GIT/111155105_tp4/PersonneGUI »
+/usr/lib/i386-linux-gnu/qt4/bin/uic supprimerpersonne.ui -o ui_supprimerpersonne.h
+/usr/lib/i386-linux-gnu/qt4/bin/uic ajouterjoueur.ui -o ui_ajouterjoueur.h
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. -o debug/supprimerpersonne.o supprimerpersonne.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. -o debug/ajouterjoueur.o ajouterjoueur.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. -o debug/personnegui.o personnegui.cpp
+/usr/lib/i386-linux-gnu/qt4/bin/moc -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. supprimerpersonne.h -o debug/moc_supprimerpersonne.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. -o debug/moc_supprimerpersonne.o debug/moc_supprimerpersonne.cpp
+/usr/lib/i386-linux-gnu/qt4/bin/moc -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. ajouterjoueur.h -o debug/moc_ajouterjoueur.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. -o debug/moc_ajouterjoueur.o debug/moc_ajouterjoueur.cpp
+g++  -o PersonneGUI debug/supprimerpersonne.o debug/ajouterjoueur.o debug/ajouterentraineur.o debug/main.o debug/personnegui.o debug/moc_supprimerpersonne.o debug/moc_ajouterjoueur.o debug/moc_ajouterentraineur.o debug/moc_personnegui.o    -L/usr/lib/i386-linux-gnu ../PersonneLib/Debug/libPersonneLib.a -lQtGui -lQtCore -lpthread 
+{ test -n "" && DESTDIR="" || DESTDIR=.; } && test $(gdb --version | sed -e 's,[^0-9][^0-9]*\([0-9]\)\.\([0-9]\).*,\1\2,;q') -gt 72 && gdb --nx --batch --quiet -ex 'set confirm off' -ex "save gdb-index $DESTDIR" -ex quit 'PersonneGUI' && test -f PersonneGUI.gdb-index && objcopy --add-section '.gdb_index=PersonneGUI.gdb-index' --set-section-flags '.gdb_index=readonly' 'PersonneGUI' 'PersonneGUI' && rm -f PersonneGUI.gdb-index || true
+make[1] : on quitte le répertoire « /home/etudiant/Bureau/GIT/111155105_tp4/PersonneGUI »
+18:26:18 **** Incremental Build of configuration Debug for project Personne ****
+make all 
+make: rien à faire pour « all ».
+18:26:18 **** Incremental Build of project PersonneGUI ****
+make debug 
+make -f Makefile.Debug
+make[1] : on entre dans le répertoire « /home/etudiant/Bureau/GIT/111155105_tp4/PersonneGUI »
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. -o debug/main.o main.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. -o debug/personnegui.o personnegui.cpp
+/usr/lib/i386-linux-gnu/qt4/bin/moc -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. personnegui.h -o debug/moc_personnegui.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. -o debug/moc_personnegui.o debug/moc_personnegui.cpp
+g++  -o PersonneGUI debug/supprimerpersonne.o debug/ajouterjoueur.o debug/ajouterentraineur.o debug/main.o debug/personnegui.o debug/moc_supprimerpersonne.o debug/moc_ajouterjoueur.o debug/moc_ajouterentraineur.o debug/moc_personnegui.o    -L/usr/lib/i386-linux-gnu ../PersonneLib/Debug/libPersonneLib.a -lQtGui -lQtCore -lpthread 
+{ test -n "" && DESTDIR="" || DESTDIR=.; } && test $(gdb --version | sed -e 's,[^0-9][^0-9]*\([0-9]\)\.\([0-9]\).*,\1\2,;q') -gt 72 && gdb --nx --batch --quiet -ex 'set confirm off' -ex "save gdb-index $DESTDIR" -ex quit 'PersonneGUI' && test -f PersonneGUI.gdb-index && objcopy --add-section '.gdb_index=PersonneGUI.gdb-index' --set-section-flags '.gdb_index=readonly' 'PersonneGUI' 'PersonneGUI' && rm -f PersonneGUI.gdb-index || true
+make[1] : on quitte le répertoire « /home/etudiant/Bureau/GIT/111155105_tp4/PersonneGUI »
+18:26:22 **** Incremental Build of configuration Debug for project PersonneLib ****
+make all 
+make: rien à faire pour « all ».
+18:26:23 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+make: rien à faire pour « all ».
+18:27:29 **** Incremental Build of project PersonneGUI ****
+make debug 
+make -f Makefile.Debug
+make[1] : on entre dans le répertoire « /home/etudiant/Bureau/GIT/111155105_tp4/PersonneGUI »
+/usr/lib/i386-linux-gnu/qt4/bin/uic supprimerpersonne.ui -o ui_supprimerpersonne.h
+/usr/lib/i386-linux-gnu/qt4/bin/uic ajouterjoueur.ui -o ui_ajouterjoueur.h
+/usr/lib/i386-linux-gnu/qt4/bin/uic ajouterentraineur.ui -o ui_ajouterentraineur.h
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. -o debug/supprimerpersonne.o supprimerpersonne.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. -o debug/ajouterjoueur.o ajouterjoueur.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. -o debug/ajouterentraineur.o ajouterentraineur.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. -o debug/personnegui.o personnegui.cpp
+/usr/lib/i386-linux-gnu/qt4/bin/moc -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. supprimerpersonne.h -o debug/moc_supprimerpersonne.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. -o debug/moc_supprimerpersonne.o debug/moc_supprimerpersonne.cpp
+/usr/lib/i386-linux-gnu/qt4/bin/moc -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. ajouterjoueur.h -o debug/moc_ajouterjoueur.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. -o debug/moc_ajouterjoueur.o debug/moc_ajouterjoueur.cpp
+/usr/lib/i386-linux-gnu/qt4/bin/moc -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. ajouterentraineur.h -o debug/moc_ajouterentraineur.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. -o debug/moc_ajouterentraineur.o debug/moc_ajouterentraineur.cpp
+g++  -o PersonneGUI debug/supprimerpersonne.o debug/ajouterjoueur.o debug/ajouterentraineur.o debug/main.o debug/personnegui.o debug/moc_supprimerpersonne.o debug/moc_ajouterjoueur.o debug/moc_ajouterentraineur.o debug/moc_personnegui.o    -L/usr/lib/i386-linux-gnu ../PersonneLib/Debug/libPersonneLib.a -lQtGui -lQtCore -lpthread 
+{ test -n "" && DESTDIR="" || DESTDIR=.; } && test $(gdb --version | sed -e 's,[^0-9][^0-9]*\([0-9]\)\.\([0-9]\).*,\1\2,;q') -gt 72 && gdb --nx --batch --quiet -ex 'set confirm off' -ex "save gdb-index $DESTDIR" -ex quit 'PersonneGUI' && test -f PersonneGUI.gdb-index && objcopy --add-section '.gdb_index=PersonneGUI.gdb-index' --set-section-flags '.gdb_index=readonly' 'PersonneGUI' 'PersonneGUI' && rm -f PersonneGUI.gdb-index || true
+make[1] : on quitte le répertoire « /home/etudiant/Bureau/GIT/111155105_tp4/PersonneGUI »
+19:12:56 **** Incremental Build of project PersonneGUI ****
+make debug 
+make -f Makefile.Debug
+make[1] : on entre dans le répertoire « /home/etudiant/Bureau/GIT/111155105_tp4/PersonneGUI »
+/usr/lib/i386-linux-gnu/qt4/bin/uic ajouterjoueur.ui -o ui_ajouterjoueur.h
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. -o debug/ajouterjoueur.o ajouterjoueur.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. -o debug/personnegui.o personnegui.cpp
+/usr/lib/i386-linux-gnu/qt4/bin/moc -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. ajouterjoueur.h -o debug/moc_ajouterjoueur.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. -o debug/moc_ajouterjoueur.o debug/moc_ajouterjoueur.cpp
+g++  -o PersonneGUI debug/supprimerpersonne.o debug/ajouterjoueur.o debug/ajouterentraineur.o debug/main.o debug/personnegui.o debug/moc_supprimerpersonne.o debug/moc_ajouterjoueur.o debug/moc_ajouterentraineur.o debug/moc_personnegui.o    -L/usr/lib/i386-linux-gnu ../PersonneLib/Debug/libPersonneLib.a -lQtGui -lQtCore -lpthread 
+{ test -n "" && DESTDIR="" || DESTDIR=.; } && test $(gdb --version | sed -e 's,[^0-9][^0-9]*\([0-9]\)\.\([0-9]\).*,\1\2,;q') -gt 72 && gdb --nx --batch --quiet -ex 'set confirm off' -ex "save gdb-index $DESTDIR" -ex quit 'PersonneGUI' && test -f PersonneGUI.gdb-index && objcopy --add-section '.gdb_index=PersonneGUI.gdb-index' --set-section-flags '.gdb_index=readonly' 'PersonneGUI' 'PersonneGUI' && rm -f PersonneGUI.gdb-index || true
+make[1] : on quitte le répertoire « /home/etudiant/Bureau/GIT/111155105_tp4/PersonneGUI »
+19:21:26 **** Incremental Build of project PersonneGUI ****
+make debug 
+make -f Makefile.Debug
+make[1] : on entre dans le répertoire « /home/etudiant/Bureau/GIT/111155105_tp4/PersonneGUI »
+/usr/lib/i386-linux-gnu/qt4/bin/uic ajouterjoueur.ui -o ui_ajouterjoueur.h
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. -o debug/ajouterjoueur.o ajouterjoueur.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. -o debug/personnegui.o personnegui.cpp
+/usr/lib/i386-linux-gnu/qt4/bin/moc -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. ajouterjoueur.h -o debug/moc_ajouterjoueur.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. -o debug/moc_ajouterjoueur.o debug/moc_ajouterjoueur.cpp
+g++  -o PersonneGUI debug/supprimerpersonne.o debug/ajouterjoueur.o debug/ajouterentraineur.o debug/main.o debug/personnegui.o debug/moc_supprimerpersonne.o debug/moc_ajouterjoueur.o debug/moc_ajouterentraineur.o debug/moc_personnegui.o    -L/usr/lib/i386-linux-gnu ../PersonneLib/Debug/libPersonneLib.a -lQtGui -lQtCore -lpthread 
+{ test -n "" && DESTDIR="" || DESTDIR=.; } && test $(gdb --version | sed -e 's,[^0-9][^0-9]*\([0-9]\)\.\([0-9]\).*,\1\2,;q') -gt 72 && gdb --nx --batch --quiet -ex 'set confirm off' -ex "save gdb-index $DESTDIR" -ex quit 'PersonneGUI' && test -f PersonneGUI.gdb-index && objcopy --add-section '.gdb_index=PersonneGUI.gdb-index' --set-section-flags '.gdb_index=readonly' 'PersonneGUI' 'PersonneGUI' && rm -f PersonneGUI.gdb-index || true
+make[1] : on quitte le répertoire « /home/etudiant/Bureau/GIT/111155105_tp4/PersonneGUI »
+19:23:44 **** Incremental Build of project PersonneGUI ****
+make debug 
+make -f Makefile.Debug
+make[1] : on entre dans le répertoire « /home/etudiant/Bureau/GIT/111155105_tp4/PersonneGUI »
+/usr/lib/i386-linux-gnu/qt4/bin/uic ajouterjoueur.ui -o ui_ajouterjoueur.h
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. -o debug/ajouterjoueur.o ajouterjoueur.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. -o debug/personnegui.o personnegui.cpp
+/usr/lib/i386-linux-gnu/qt4/bin/moc -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. ajouterjoueur.h -o debug/moc_ajouterjoueur.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. -o debug/moc_ajouterjoueur.o debug/moc_ajouterjoueur.cpp
+g++  -o PersonneGUI debug/supprimerpersonne.o debug/ajouterjoueur.o debug/ajouterentraineur.o debug/main.o debug/personnegui.o debug/moc_supprimerpersonne.o debug/moc_ajouterjoueur.o debug/moc_ajouterentraineur.o debug/moc_personnegui.o    -L/usr/lib/i386-linux-gnu ../PersonneLib/Debug/libPersonneLib.a -lQtGui -lQtCore -lpthread 
+{ test -n "" && DESTDIR="" || DESTDIR=.; } && test $(gdb --version | sed -e 's,[^0-9][^0-9]*\([0-9]\)\.\([0-9]\).*,\1\2,;q') -gt 72 && gdb --nx --batch --quiet -ex 'set confirm off' -ex "save gdb-index $DESTDIR" -ex quit 'PersonneGUI' && test -f PersonneGUI.gdb-index && objcopy --add-section '.gdb_index=PersonneGUI.gdb-index' --set-section-flags '.gdb_index=readonly' 'PersonneGUI' 'PersonneGUI' && rm -f PersonneGUI.gdb-index || true
+make[1] : on quitte le répertoire « /home/etudiant/Bureau/GIT/111155105_tp4/PersonneGUI »
+19:26:29 **** Incremental Build of project PersonneGUI ****
+make debug 
+make -f Makefile.Debug
+make[1] : on entre dans le répertoire « /home/etudiant/Bureau/GIT/111155105_tp4/PersonneGUI »
+/usr/lib/i386-linux-gnu/qt4/bin/uic ajouterjoueur.ui -o ui_ajouterjoueur.h
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. -o debug/ajouterjoueur.o ajouterjoueur.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. -o debug/personnegui.o personnegui.cpp
+/usr/lib/i386-linux-gnu/qt4/bin/moc -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. ajouterjoueur.h -o debug/moc_ajouterjoueur.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. -o debug/moc_ajouterjoueur.o debug/moc_ajouterjoueur.cpp
+g++  -o PersonneGUI debug/supprimerpersonne.o debug/ajouterjoueur.o debug/ajouterentraineur.o debug/main.o debug/personnegui.o debug/moc_supprimerpersonne.o debug/moc_ajouterjoueur.o debug/moc_ajouterentraineur.o debug/moc_personnegui.o    -L/usr/lib/i386-linux-gnu ../PersonneLib/Debug/libPersonneLib.a -lQtGui -lQtCore -lpthread 
+{ test -n "" && DESTDIR="" || DESTDIR=.; } && test $(gdb --version | sed -e 's,[^0-9][^0-9]*\([0-9]\)\.\([0-9]\).*,\1\2,;q') -gt 72 && gdb --nx --batch --quiet -ex 'set confirm off' -ex "save gdb-index $DESTDIR" -ex quit 'PersonneGUI' && test -f PersonneGUI.gdb-index && objcopy --add-section '.gdb_index=PersonneGUI.gdb-index' --set-section-flags '.gdb_index=readonly' 'PersonneGUI' 'PersonneGUI' && rm -f PersonneGUI.gdb-index || true
+make[1] : on quitte le répertoire « /home/etudiant/Bureau/GIT/111155105_tp4/PersonneGUI »
+19:29:29 **** Incremental Build of configuration Debug for project Personne ****
+make all 
+make: rien à faire pour « all ».
+19:29:29 **** Incremental Build of project PersonneGUI ****
+make debug 
+make -f Makefile.Debug
+make[1] : on entre dans le répertoire « /home/etudiant/Bureau/GIT/111155105_tp4/PersonneGUI »
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. -o debug/ajouterjoueur.o ajouterjoueur.cpp
+ajouterjoueur.cpp: In constructor ‘ajouterJoueur::ajouterJoueur(QWidget*)’:
+ajouterjoueur.cpp:7:22: error: ‘class Ui::ajouterJoueurClass’ has no member named ‘ok_Button’
+  QObject::connect(ui.ok_Button, SIGNAL(clicked()), this, SLOT(validerCommis()));
+                      ^
+Makefile.Debug:205 : la recette pour la cible « debug/ajouterjoueur.o » a échouée
+make[1] : on quitte le répertoire « /home/etudiant/Bureau/GIT/111155105_tp4/PersonneGUI »
+make[1]: *** [debug/ajouterjoueur.o] Erreur 1
+Makefile:50 : la recette pour la cible « debug » a échouée
+make: *** [debug] Erreur 2
+19:29:32 **** Incremental Build of configuration Debug for project PersonneLib ****
+make all 
+make: rien à faire pour « all ».
+19:29:33 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+make: rien à faire pour « all ».
+19:32:56 **** Incremental Build of configuration Debug for project Personne ****
+make all 
+make: rien à faire pour « all ».
+19:32:56 **** Incremental Build of project PersonneGUI ****
+make debug 
+make -f Makefile.Debug
+make[1] : on entre dans le répertoire « /home/etudiant/Bureau/GIT/111155105_tp4/PersonneGUI »
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. -o debug/ajouterjoueur.o ajouterjoueur.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. -o debug/ajouterentraineur.o ajouterentraineur.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. -o debug/personnegui.o personnegui.cpp
+/usr/lib/i386-linux-gnu/qt4/bin/moc -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. ajouterjoueur.h -o debug/moc_ajouterjoueur.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. -o debug/moc_ajouterjoueur.o debug/moc_ajouterjoueur.cpp
+/usr/lib/i386-linux-gnu/qt4/bin/moc -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. ajouterentraineur.h -o debug/moc_ajouterentraineur.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. -o debug/moc_ajouterentraineur.o debug/moc_ajouterentraineur.cpp
+g++  -o PersonneGUI debug/supprimerpersonne.o debug/ajouterjoueur.o debug/ajouterentraineur.o debug/main.o debug/personnegui.o debug/moc_supprimerpersonne.o debug/moc_ajouterjoueur.o debug/moc_ajouterentraineur.o debug/moc_personnegui.o    -L/usr/lib/i386-linux-gnu ../PersonneLib/Debug/libPersonneLib.a -lQtGui -lQtCore -lpthread 
+{ test -n "" && DESTDIR="" || DESTDIR=.; } && test $(gdb --version | sed -e 's,[^0-9][^0-9]*\([0-9]\)\.\([0-9]\).*,\1\2,;q') -gt 72 && gdb --nx --batch --quiet -ex 'set confirm off' -ex "save gdb-index $DESTDIR" -ex quit 'PersonneGUI' && test -f PersonneGUI.gdb-index && objcopy --add-section '.gdb_index=PersonneGUI.gdb-index' --set-section-flags '.gdb_index=readonly' 'PersonneGUI' 'PersonneGUI' && rm -f PersonneGUI.gdb-index || true
+make[1] : on quitte le répertoire « /home/etudiant/Bureau/GIT/111155105_tp4/PersonneGUI »
+19:33:01 **** Incremental Build of configuration Debug for project PersonneLib ****
+make all 
+make: rien à faire pour « all ».
+19:33:01 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+make: rien à faire pour « all ».
+19:41:25 **** Incremental Build of project PersonneGUI ****
+make debug 
+make -f Makefile.Debug
+make[1] : on entre dans le répertoire « /home/etudiant/Bureau/GIT/111155105_tp4/PersonneGUI »
+/usr/lib/i386-linux-gnu/qt4/bin/uic ajouterjoueur.ui -o ui_ajouterjoueur.h
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. -o debug/ajouterjoueur.o ajouterjoueur.cpp
+ajouterjoueur.cpp: In member function ‘QString ajouterJoueur::reqPosition() const’:
+ajouterjoueur.cpp:36:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+ajouterjoueur.cpp: In member function ‘int ajouterJoueur::reqJour() const’:
+ajouterjoueur.cpp:40:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+ajouterjoueur.cpp: In member function ‘int ajouterJoueur::reqMois() const’:
+ajouterjoueur.cpp:43:28: error: qualified-id in declaration before ‘(’ token
+ int ajouterJoueur::reqAnnee() const
+                            ^
+ajouterjoueur.cpp:46:1: error: expected ‘}’ at end of input
+ }
+ ^
+ajouterjoueur.cpp:46:1: warning: no return statement in function returning non-void [-Wreturn-type]
+Makefile.Debug:205 : la recette pour la cible « debug/ajouterjoueur.o » a échouée
+make[1] : on quitte le répertoire « /home/etudiant/Bureau/GIT/111155105_tp4/PersonneGUI »
+make[1]: *** [debug/ajouterjoueur.o] Erreur 1
+Makefile:50 : la recette pour la cible « debug » a échouée
+make: *** [debug] Erreur 2
+/usr/lib/i386-linux-gnu/qt4/bin/qmake -recursive CONFIG+=debug_and_release PersonneGUI.pro 
+19:44:02 **** Incremental Build of configuration Debug for project Personne ****
+make all 
+make: rien à faire pour « all ».
+19:44:03 **** Incremental Build of project PersonneGUI ****
+make debug 
+make -f Makefile.Debug
+make[1] : on entre dans le répertoire « /home/etudiant/Bureau/GIT/111155105_tp4/PersonneGUI »
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. -o debug/ajouterjoueur.o ajouterjoueur.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. -o debug/personnegui.o personnegui.cpp
+/usr/lib/i386-linux-gnu/qt4/bin/moc -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. ajouterjoueur.h -o debug/moc_ajouterjoueur.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. -o debug/moc_ajouterjoueur.o debug/moc_ajouterjoueur.cpp
+g++  -o PersonneGUI debug/supprimerpersonne.o debug/ajouterjoueur.o debug/ajouterentraineur.o debug/main.o debug/personnegui.o debug/moc_supprimerpersonne.o debug/moc_ajouterjoueur.o debug/moc_ajouterentraineur.o debug/moc_personnegui.o    -L/usr/lib/i386-linux-gnu ../PersonneLib/Debug/libPersonneLib.a -lQtGui -lQtCore -lpthread 
+{ test -n "" && DESTDIR="" || DESTDIR=.; } && test $(gdb --version | sed -e 's,[^0-9][^0-9]*\([0-9]\)\.\([0-9]\).*,\1\2,;q') -gt 72 && gdb --nx --batch --quiet -ex 'set confirm off' -ex "save gdb-index $DESTDIR" -ex quit 'PersonneGUI' && test -f PersonneGUI.gdb-index && objcopy --add-section '.gdb_index=PersonneGUI.gdb-index' --set-section-flags '.gdb_index=readonly' 'PersonneGUI' 'PersonneGUI' && rm -f PersonneGUI.gdb-index || true
+make[1] : on quitte le répertoire « /home/etudiant/Bureau/GIT/111155105_tp4/PersonneGUI »
+19:44:07 **** Incremental Build of configuration Debug for project PersonneLib ****
+make all 
+make: rien à faire pour « all ».
+19:44:07 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+make: rien à faire pour « all ».
+19:45:55 **** Incremental Build of project PersonneGUI ****
+make debug 
+make -f Makefile.Debug
+make[1] : on entre dans le répertoire « /home/etudiant/Bureau/GIT/111155105_tp4/PersonneGUI »
+/usr/lib/i386-linux-gnu/qt4/bin/uic ajouterjoueur.ui -o ui_ajouterjoueur.h
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. -o debug/ajouterjoueur.o ajouterjoueur.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. -o debug/personnegui.o personnegui.cpp
+/usr/lib/i386-linux-gnu/qt4/bin/moc -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. ajouterjoueur.h -o debug/moc_ajouterjoueur.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. -o debug/moc_ajouterjoueur.o debug/moc_ajouterjoueur.cpp
+g++  -o PersonneGUI debug/supprimerpersonne.o debug/ajouterjoueur.o debug/ajouterentraineur.o debug/main.o debug/personnegui.o debug/moc_supprimerpersonne.o debug/moc_ajouterjoueur.o debug/moc_ajouterentraineur.o debug/moc_personnegui.o    -L/usr/lib/i386-linux-gnu ../PersonneLib/Debug/libPersonneLib.a -lQtGui -lQtCore -lpthread 
+{ test -n "" && DESTDIR="" || DESTDIR=.; } && test $(gdb --version | sed -e 's,[^0-9][^0-9]*\([0-9]\)\.\([0-9]\).*,\1\2,;q') -gt 72 && gdb --nx --batch --quiet -ex 'set confirm off' -ex "save gdb-index $DESTDIR" -ex quit 'PersonneGUI' && test -f PersonneGUI.gdb-index && objcopy --add-section '.gdb_index=PersonneGUI.gdb-index' --set-section-flags '.gdb_index=readonly' 'PersonneGUI' 'PersonneGUI' && rm -f PersonneGUI.gdb-index || true
+make[1] : on quitte le répertoire « /home/etudiant/Bureau/GIT/111155105_tp4/PersonneGUI »
+19:48:57 **** Incremental Build of configuration Debug for project Personne ****
+make all 
+make: rien à faire pour « all ».
+19:48:57 **** Incremental Build of project PersonneGUI ****
+make debug 
+make -f Makefile.Debug
+make[1] : on entre dans le répertoire « /home/etudiant/Bureau/GIT/111155105_tp4/PersonneGUI »
+/usr/lib/i386-linux-gnu/qt4/bin/uic ajouterjoueur.ui -o ui_ajouterjoueur.h
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. -o debug/ajouterjoueur.o ajouterjoueur.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. -o debug/personnegui.o personnegui.cpp
+/usr/lib/i386-linux-gnu/qt4/bin/moc -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. ajouterjoueur.h -o debug/moc_ajouterjoueur.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. -o debug/moc_ajouterjoueur.o debug/moc_ajouterjoueur.cpp
+g++  -o PersonneGUI debug/supprimerpersonne.o debug/ajouterjoueur.o debug/ajouterentraineur.o debug/main.o debug/personnegui.o debug/moc_supprimerpersonne.o debug/moc_ajouterjoueur.o debug/moc_ajouterentraineur.o debug/moc_personnegui.o    -L/usr/lib/i386-linux-gnu ../PersonneLib/Debug/libPersonneLib.a -lQtGui -lQtCore -lpthread 
+{ test -n "" && DESTDIR="" || DESTDIR=.; } && test $(gdb --version | sed -e 's,[^0-9][^0-9]*\([0-9]\)\.\([0-9]\).*,\1\2,;q') -gt 72 && gdb --nx --batch --quiet -ex 'set confirm off' -ex "save gdb-index $DESTDIR" -ex quit 'PersonneGUI' && test -f PersonneGUI.gdb-index && objcopy --add-section '.gdb_index=PersonneGUI.gdb-index' --set-section-flags '.gdb_index=readonly' 'PersonneGUI' 'PersonneGUI' && rm -f PersonneGUI.gdb-index || true
+make[1] : on quitte le répertoire « /home/etudiant/Bureau/GIT/111155105_tp4/PersonneGUI »
+19:49:00 **** Incremental Build of configuration Debug for project PersonneLib ****
+make all 
+make: rien à faire pour « all ».
+19:49:00 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+make: rien à faire pour « all ».
+19:54:50 **** Incremental Build of project PersonneGUI ****
+make debug 
+make -f Makefile.Debug
+make[1] : on entre dans le répertoire « /home/etudiant/Bureau/GIT/111155105_tp4/PersonneGUI »
+/usr/lib/i386-linux-gnu/qt4/bin/uic ajouterjoueur.ui -o ui_ajouterjoueur.h
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. -o debug/ajouterjoueur.o ajouterjoueur.cpp
+ajouterjoueur.cpp: In member function ‘void ajouterJoueur::validerFormulaire()’:
+ajouterjoueur.cpp:29:3: error: ‘QMessageBox’ has not been declared
+   QMessageBox::information(this, "Erreur!", message);
+   ^
+ajouterjoueur.cpp:35:3: error: ‘QMessageBox’ has not been declared
+   QMessageBox::information(this, "Erreur!", message);
+   ^
+ajouterjoueur.cpp:38:7: error: ‘m_dateSaisie’ was not declared in this scope
+  if (!m_dateSaisie)
+       ^
+ajouterjoueur.cpp:41:3: error: ‘QMessageBox’ has not been declared
+   QMessageBox::information(this, "Erreur!", message);
+   ^
+ajouterjoueur.cpp:47:3: error: ‘QMessageBox’ has not been declared
+   QMessageBox::information(this, "Erreur!", message);
+   ^
+ajouterjoueur.cpp: At global scope:
+ajouterjoueur.cpp:51:1: error: expected unqualified-id before ‘else’
+ else
+ ^
+ajouterjoueur.cpp:55:1: error: expected declaration before ‘}’ token
+ }
+ ^
+Makefile.Debug:205 : la recette pour la cible « debug/ajouterjoueur.o » a échouée
+make[1]: *** [debug/ajouterjoueur.o] Erreur 1
+make[1] : on quitte le répertoire « /home/etudiant/Bureau/GIT/111155105_tp4/PersonneGUI »
+Makefile:50 : la recette pour la cible « debug » a échouée
+make: *** [debug] Erreur 2
+19:55:40 **** Incremental Build of project PersonneGUI ****
+make debug 
+make -f Makefile.Debug
+make[1] : on entre dans le répertoire « /home/etudiant/Bureau/GIT/111155105_tp4/PersonneGUI »
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. -o debug/ajouterjoueur.o ajouterjoueur.cpp
+ajouterjoueur.cpp: In member function ‘void ajouterJoueur::validerFormulaire()’:
+ajouterjoueur.cpp:39:7: error: ‘m_dateSaisie’ was not declared in this scope
+  if (!m_dateSaisie)
+       ^
+Makefile.Debug:205 : la recette pour la cible « debug/ajouterjoueur.o » a échouée
+make[1]: *** [debug/ajouterjoueur.o] Erreur 1
+make[1] : on quitte le répertoire « /home/etudiant/Bureau/GIT/111155105_tp4/PersonneGUI »
+Makefile:50 : la recette pour la cible « debug » a échouée
+make: *** [debug] Erreur 2
+19:55:58 **** Incremental Build of project PersonneGUI ****
+make debug 
+make -f Makefile.Debug
+make[1] : on entre dans le répertoire « /home/etudiant/Bureau/GIT/111155105_tp4/PersonneGUI »
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. -o debug/ajouterjoueur.o ajouterjoueur.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. -o debug/personnegui.o personnegui.cpp
+/usr/lib/i386-linux-gnu/qt4/bin/moc -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. ajouterjoueur.h -o debug/moc_ajouterjoueur.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. -o debug/moc_ajouterjoueur.o debug/moc_ajouterjoueur.cpp
+g++  -o PersonneGUI debug/supprimerpersonne.o debug/ajouterjoueur.o debug/ajouterentraineur.o debug/main.o debug/personnegui.o debug/moc_supprimerpersonne.o debug/moc_ajouterjoueur.o debug/moc_ajouterentraineur.o debug/moc_personnegui.o    -L/usr/lib/i386-linux-gnu ../PersonneLib/Debug/libPersonneLib.a -lQtGui -lQtCore -lpthread 
+{ test -n "" && DESTDIR="" || DESTDIR=.; } && test $(gdb --version | sed -e 's,[^0-9][^0-9]*\([0-9]\)\.\([0-9]\).*,\1\2,;q') -gt 72 && gdb --nx --batch --quiet -ex 'set confirm off' -ex "save gdb-index $DESTDIR" -ex quit 'PersonneGUI' && test -f PersonneGUI.gdb-index && objcopy --add-section '.gdb_index=PersonneGUI.gdb-index' --set-section-flags '.gdb_index=readonly' 'PersonneGUI' 'PersonneGUI' && rm -f PersonneGUI.gdb-index || true
+make[1] : on quitte le répertoire « /home/etudiant/Bureau/GIT/111155105_tp4/PersonneGUI »
+19:56:02 **** Incremental Build of configuration Debug for project Personne ****
+make all 
+make: rien à faire pour « all ».
+19:56:03 **** Incremental Build of configuration Debug for project PersonneLib ****
+make all 
+make: rien à faire pour « all ».
+19:56:03 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+make: rien à faire pour « all ».
+19:56:54 **** Incremental Build of configuration Debug for project Personne ****
+make all 
+make: rien à faire pour « all ».
+19:56:54 **** Incremental Build of project PersonneGUI ****
+make debug 
+make -f Makefile.Debug
+make[1] : on entre dans le répertoire « /home/etudiant/Bureau/GIT/111155105_tp4/PersonneGUI »
+/usr/lib/i386-linux-gnu/qt4/bin/uic ajouterjoueur.ui -o ui_ajouterjoueur.h
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. -o debug/ajouterjoueur.o ajouterjoueur.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. -o debug/personnegui.o personnegui.cpp
+/usr/lib/i386-linux-gnu/qt4/bin/moc -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. ajouterjoueur.h -o debug/moc_ajouterjoueur.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. -o debug/moc_ajouterjoueur.o debug/moc_ajouterjoueur.cpp
+g++  -o PersonneGUI debug/supprimerpersonne.o debug/ajouterjoueur.o debug/ajouterentraineur.o debug/main.o debug/personnegui.o debug/moc_supprimerpersonne.o debug/moc_ajouterjoueur.o debug/moc_ajouterentraineur.o debug/moc_personnegui.o    -L/usr/lib/i386-linux-gnu ../PersonneLib/Debug/libPersonneLib.a -lQtGui -lQtCore -lpthread 
+{ test -n "" && DESTDIR="" || DESTDIR=.; } && test $(gdb --version | sed -e 's,[^0-9][^0-9]*\([0-9]\)\.\([0-9]\).*,\1\2,;q') -gt 72 && gdb --nx --batch --quiet -ex 'set confirm off' -ex "save gdb-index $DESTDIR" -ex quit 'PersonneGUI' && test -f PersonneGUI.gdb-index && objcopy --add-section '.gdb_index=PersonneGUI.gdb-index' --set-section-flags '.gdb_index=readonly' 'PersonneGUI' 'PersonneGUI' && rm -f PersonneGUI.gdb-index || true
+make[1] : on quitte le répertoire « /home/etudiant/Bureau/GIT/111155105_tp4/PersonneGUI »
+19:56:57 **** Incremental Build of configuration Debug for project PersonneLib ****
+make all 
+make: rien à faire pour « all ».
+19:56:58 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+make: rien à faire pour « all ».
+19:57:32 **** Incremental Build of configuration Debug for project Personne ****
+make all 
+make: rien à faire pour « all ».
+19:57:32 **** Incremental Build of project PersonneGUI ****
+make debug 
+make -f Makefile.Debug
+make[1] : on entre dans le répertoire « /home/etudiant/Bureau/GIT/111155105_tp4/PersonneGUI »
+/usr/lib/i386-linux-gnu/qt4/bin/uic ajouterjoueur.ui -o ui_ajouterjoueur.h
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. -o debug/ajouterjoueur.o ajouterjoueur.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. -o debug/personnegui.o personnegui.cpp
+/usr/lib/i386-linux-gnu/qt4/bin/moc -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. ajouterjoueur.h -o debug/moc_ajouterjoueur.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. -o debug/moc_ajouterjoueur.o debug/moc_ajouterjoueur.cpp
+g++  -o PersonneGUI debug/supprimerpersonne.o debug/ajouterjoueur.o debug/ajouterentraineur.o debug/main.o debug/personnegui.o debug/moc_supprimerpersonne.o debug/moc_ajouterjoueur.o debug/moc_ajouterentraineur.o debug/moc_personnegui.o    -L/usr/lib/i386-linux-gnu ../PersonneLib/Debug/libPersonneLib.a -lQtGui -lQtCore -lpthread 
+{ test -n "" && DESTDIR="" || DESTDIR=.; } && test $(gdb --version | sed -e 's,[^0-9][^0-9]*\([0-9]\)\.\([0-9]\).*,\1\2,;q') -gt 72 && gdb --nx --batch --quiet -ex 'set confirm off' -ex "save gdb-index $DESTDIR" -ex quit 'PersonneGUI' && test -f PersonneGUI.gdb-index && objcopy --add-section '.gdb_index=PersonneGUI.gdb-index' --set-section-flags '.gdb_index=readonly' 'PersonneGUI' 'PersonneGUI' && rm -f PersonneGUI.gdb-index || true
+make[1] : on quitte le répertoire « /home/etudiant/Bureau/GIT/111155105_tp4/PersonneGUI »
+19:57:35 **** Incremental Build of configuration Debug for project PersonneLib ****
+make all 
+make: rien à faire pour « all ».
+19:57:35 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+make: rien à faire pour « all ».
+20:08:54 **** Incremental Build of configuration Debug for project Personne ****
+make all 
+make: rien à faire pour « all ».
+20:08:54 **** Incremental Build of project PersonneGUI ****
+make debug 
+make -f Makefile.Debug
+make[1] : on entre dans le répertoire « /home/etudiant/Bureau/GIT/111155105_tp4/PersonneGUI »
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. -o debug/ajouterjoueur.o ajouterjoueur.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. -o debug/main.o main.cpp
+In file included from main.cpp:1:0:
+personnegui.h:22:48: error: expected identifier before string constant
+  Ui::PersonneGUIClass ui;tp::Annuaire annuaire("Club bebe rexo");
+                                                ^
+personnegui.h:22:48: error: expected ‘,’ or ‘...’ before string constant
+make[1]: *** [debug/main.o] Erreur 1
+Makefile.Debug:213 : la recette pour la cible « debug/main.o » a échouée
+make[1] : on quitte le répertoire « /home/etudiant/Bureau/GIT/111155105_tp4/PersonneGUI »
+make: *** [debug] Erreur 2
+Makefile:50 : la recette pour la cible « debug » a échouée
+20:08:57 **** Incremental Build of configuration Debug for project PersonneLib ****
+make all 
+make: rien à faire pour « all ».
+20:08:57 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+make: rien à faire pour « all ».
+20:10:34 **** Incremental Build of configuration Debug for project Personne ****
+make all 
+make: rien à faire pour « all ».
+20:10:34 **** Incremental Build of project PersonneGUI ****
+make debug 
+make -f Makefile.Debug
+make[1] : on entre dans le répertoire « /home/etudiant/Bureau/GIT/111155105_tp4/PersonneGUI »
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. -o debug/main.o main.cpp
+In file included from main.cpp:1:0:
+personnegui.h:23:26: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+  std::string m_nomclub = "Club bebe rexo";
+                          ^
+personnegui.h:24:24: error: ‘m_nomclub’ is not a type
+  tp::Annuaire annuaire(m_nomclub);
+                        ^
+Makefile.Debug:213 : la recette pour la cible « debug/main.o » a échouée
+make[1] : on quitte le répertoire « /home/etudiant/Bureau/GIT/111155105_tp4/PersonneGUI »
+make[1]: *** [debug/main.o] Erreur 1
+Makefile:50 : la recette pour la cible « debug » a échouée
+make: *** [debug] Erreur 2
+20:10:36 **** Incremental Build of configuration Debug for project PersonneLib ****
+make all 
+make: rien à faire pour « all ».
+20:10:36 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+make: rien à faire pour « all ».
+20:10:57 **** Incremental Build of configuration Debug for project Personne ****
+make all 
+make: rien à faire pour « all ».
+20:10:57 **** Incremental Build of project PersonneGUI ****
+make debug 
+make -f Makefile.Debug
+make[1] : on entre dans le répertoire « /home/etudiant/Bureau/GIT/111155105_tp4/PersonneGUI »
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. -o debug/main.o main.cpp
+In file included from main.cpp:1:0:
+personnegui.h:23:26: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+  std::string m_nomclub = "Club bebe rexo";
+                          ^
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. -o debug/personnegui.o personnegui.cpp
+In file included from personnegui.cpp:1:0:
+personnegui.h:23:26: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+  std::string m_nomclub = "Club bebe rexo";
+                          ^
+personnegui.cpp: In constructor ‘PersonneGUI::PersonneGUI(QWidget*)’:
+personnegui.cpp:12:21: error: no matching function for call to ‘tp::Annuaire::Annuaire()’
+   QMainWindow(parent)
+                     ^
+In file included from personnegui.h:6:0,
+                 from personnegui.cpp:1:
+../PersonneLib/Annuaire.h:44:2: note: candidate: tp::Annuaire::Annuaire(const tp::Annuaire&)
+  Annuaire(const Annuaire& p_annuaire);
+  ^
+../PersonneLib/Annuaire.h:44:2: note:   candidate expects 1 argument, 0 provided
+../PersonneLib/Annuaire.h:28:2: note: candidate: tp::Annuaire::Annuaire(const string&)
+  Annuaire(const std::string& p_nomClub);
+  ^
+../PersonneLib/Annuaire.h:28:2: note:   candidate expects 1 argument, 0 provided
+Makefile.Debug:223 : la recette pour la cible « debug/personnegui.o » a échouée
+make[1] : on quitte le répertoire « /home/etudiant/Bureau/GIT/111155105_tp4/PersonneGUI »
+Makefile:50 : la recette pour la cible « debug » a échouée
+make[1]: *** [debug/personnegui.o] Erreur 1
+make: *** [debug] Erreur 2
+20:11:00 **** Incremental Build of configuration Debug for project PersonneLib ****
+make all 
+make: rien à faire pour « all ».
+20:11:00 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+make: rien à faire pour « all ».
+20:11:14 **** Incremental Build of configuration Debug for project Personne ****
+make all 
+make: rien à faire pour « all ».
+20:11:14 **** Incremental Build of project PersonneGUI ****
+make debug 
+make -f Makefile.Debug
+make[1] : on entre dans le répertoire « /home/etudiant/Bureau/GIT/111155105_tp4/PersonneGUI »
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. -o debug/main.o main.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. -o debug/personnegui.o personnegui.cpp
+personnegui.cpp: In constructor ‘PersonneGUI::PersonneGUI(QWidget*)’:
+personnegui.cpp:12:21: error: no matching function for call to ‘tp::Annuaire::Annuaire()’
+   QMainWindow(parent)
+                     ^
+In file included from personnegui.h:6:0,
+                 from personnegui.cpp:1:
+../PersonneLib/Annuaire.h:44:2: note: candidate: tp::Annuaire::Annuaire(const tp::Annuaire&)
+  Annuaire(const Annuaire& p_annuaire);
+  ^
+../PersonneLib/Annuaire.h:44:2: note:   candidate expects 1 argument, 0 provided
+../PersonneLib/Annuaire.h:28:2: note: candidate: tp::Annuaire::Annuaire(const string&)
+  Annuaire(const std::string& p_nomClub);
+  ^
+../PersonneLib/Annuaire.h:28:2: note:   candidate expects 1 argument, 0 provided
+make[1]: *** [debug/personnegui.o] Erreur 1
+Makefile.Debug:223 : la recette pour la cible « debug/personnegui.o » a échouée
+make[1] : on quitte le répertoire « /home/etudiant/Bureau/GIT/111155105_tp4/PersonneGUI »
+make: *** [debug] Erreur 2
+Makefile:50 : la recette pour la cible « debug » a échouée
+20:11:17 **** Incremental Build of configuration Debug for project PersonneLib ****
+make all 
+make: rien à faire pour « all ».
+20:11:17 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+make: rien à faire pour « all ».
+20:11:26 **** Incremental Build of configuration Debug for project Personne ****
+make all 
+make: rien à faire pour « all ».
+20:11:26 **** Incremental Build of project PersonneGUI ****
+make debug 
+make -f Makefile.Debug
+make[1] : on entre dans le répertoire « /home/etudiant/Bureau/GIT/111155105_tp4/PersonneGUI »
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. -o debug/main.o main.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. -o debug/personnegui.o personnegui.cpp
+/usr/lib/i386-linux-gnu/qt4/bin/moc -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. personnegui.h -o debug/moc_personnegui.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. -o debug/moc_personnegui.o debug/moc_personnegui.cpp
+g++  -o PersonneGUI debug/supprimerpersonne.o debug/ajouterjoueur.o debug/ajouterentraineur.o debug/main.o debug/personnegui.o debug/moc_supprimerpersonne.o debug/moc_ajouterjoueur.o debug/moc_ajouterentraineur.o debug/moc_personnegui.o    -L/usr/lib/i386-linux-gnu ../PersonneLib/Debug/libPersonneLib.a -lQtGui -lQtCore -lpthread 
+{ test -n "" && DESTDIR="" || DESTDIR=.; } && test $(gdb --version | sed -e 's,[^0-9][^0-9]*\([0-9]\)\.\([0-9]\).*,\1\2,;q') -gt 72 && gdb --nx --batch --quiet -ex 'set confirm off' -ex "save gdb-index $DESTDIR" -ex quit 'PersonneGUI' && test -f PersonneGUI.gdb-index && objcopy --add-section '.gdb_index=PersonneGUI.gdb-index' --set-section-flags '.gdb_index=readonly' 'PersonneGUI' 'PersonneGUI' && rm -f PersonneGUI.gdb-index || true
+make[1] : on quitte le répertoire « /home/etudiant/Bureau/GIT/111155105_tp4/PersonneGUI »
+20:11:29 **** Incremental Build of configuration Debug for project PersonneLib ****
+make all 
+make: rien à faire pour « all ».
+20:11:30 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+make: rien à faire pour « all ».
+20:12:09 **** Incremental Build of configuration Debug for project Personne ****
+make all 
+make: rien à faire pour « all ».
+20:12:09 **** Incremental Build of project PersonneGUI ****
+make debug 
+make -f Makefile.Debug
+make[1] : on entre dans le répertoire « /home/etudiant/Bureau/GIT/111155105_tp4/PersonneGUI »
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. -o debug/main.o main.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. -o debug/personnegui.o personnegui.cpp
+personnegui.cpp: In constructor ‘PersonneGUI::PersonneGUI(QWidget*)’:
+personnegui.cpp:12:21: error: no matching function for call to ‘tp::Annuaire::Annuaire()’
+   QMainWindow(parent)
+                     ^
+In file included from personnegui.h:6:0,
+                 from personnegui.cpp:1:
+../PersonneLib/Annuaire.h:44:2: note: candidate: tp::Annuaire::Annuaire(const tp::Annuaire&)
+  Annuaire(const Annuaire& p_annuaire);
+  ^
+../PersonneLib/Annuaire.h:44:2: note:   candidate expects 1 argument, 0 provided
+../PersonneLib/Annuaire.h:28:2: note: candidate: tp::Annuaire::Annuaire(const string&)
+  Annuaire(const std::string& p_nomClub);
+  ^
+../PersonneLib/Annuaire.h:28:2: note:   candidate expects 1 argument, 0 provided
+Makefile.Debug:223 : la recette pour la cible « debug/personnegui.o » a échouée
+make[1] : on quitte le répertoire « /home/etudiant/Bureau/GIT/111155105_tp4/PersonneGUI »
+make[1]: *** [debug/personnegui.o] Erreur 1
+make: *** [debug] Erreur 2
+Makefile:50 : la recette pour la cible « debug » a échouée
+20:12:11 **** Incremental Build of configuration Debug for project PersonneLib ****
+make all 
+make: rien à faire pour « all ».
+20:12:11 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+make: rien à faire pour « all ».
+20:12:49 **** Incremental Build of configuration Debug for project Personne ****
+make all 
+make: rien à faire pour « all ».
+20:12:50 **** Incremental Build of project PersonneGUI ****
+make debug 
+make -f Makefile.Debug
+make[1] : on entre dans le répertoire « /home/etudiant/Bureau/GIT/111155105_tp4/PersonneGUI »
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. -o debug/personnegui.o personnegui.cpp
+personnegui.cpp: In constructor ‘PersonneGUI::PersonneGUI(QWidget*)’:
+personnegui.cpp:12:21: error: no matching function for call to ‘tp::Annuaire::Annuaire()’
+   QMainWindow(parent)
+                     ^
+In file included from personnegui.h:6:0,
+                 from personnegui.cpp:1:
+../PersonneLib/Annuaire.h:44:2: note: candidate: tp::Annuaire::Annuaire(const tp::Annuaire&)
+  Annuaire(const Annuaire& p_annuaire);
+  ^
+../PersonneLib/Annuaire.h:44:2: note:   candidate expects 1 argument, 0 provided
+../PersonneLib/Annuaire.h:28:2: note: candidate: tp::Annuaire::Annuaire(const string&)
+  Annuaire(const std::string& p_nomClub);
+  ^
+../PersonneLib/Annuaire.h:28:2: note:   candidate expects 1 argument, 0 provided
+personnegui.cpp:19:21: error: ‘annuaire’ was not declared in this scope
+  annuaire (m_nomclub);
+                     ^
+Makefile.Debug:223 : la recette pour la cible « debug/personnegui.o » a échouée
+make[1]: *** [debug/personnegui.o] Erreur 1
+make[1] : on quitte le répertoire « /home/etudiant/Bureau/GIT/111155105_tp4/PersonneGUI »
+Makefile:50 : la recette pour la cible « debug » a échouée
+make: *** [debug] Erreur 2
+20:12:50 **** Incremental Build of configuration Debug for project PersonneLib ****
+make all 
+make: rien à faire pour « all ».
+20:12:51 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+make: rien à faire pour « all ».
+20:12:57 **** Incremental Build of configuration Debug for project Personne ****
+make all 
+make: rien à faire pour « all ».
+20:12:57 **** Incremental Build of project PersonneGUI ****
+make debug 
+make -f Makefile.Debug
+make[1] : on entre dans le répertoire « /home/etudiant/Bureau/GIT/111155105_tp4/PersonneGUI »
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. -o debug/personnegui.o personnegui.cpp
+personnegui.cpp: In constructor ‘PersonneGUI::PersonneGUI(QWidget*)’:
+personnegui.cpp:12:21: error: no matching function for call to ‘tp::Annuaire::Annuaire()’
+   QMainWindow(parent)
+                     ^
+In file included from personnegui.h:6:0,
+                 from personnegui.cpp:1:
+../PersonneLib/Annuaire.h:44:2: note: candidate: tp::Annuaire::Annuaire(const tp::Annuaire&)
+  Annuaire(const Annuaire& p_annuaire);
+  ^
+../PersonneLib/Annuaire.h:44:2: note:   candidate expects 1 argument, 0 provided
+../PersonneLib/Annuaire.h:28:2: note: candidate: tp::Annuaire::Annuaire(const string&)
+  Annuaire(const std::string& p_nomClub);
+  ^
+../PersonneLib/Annuaire.h:28:2: note:   candidate expects 1 argument, 0 provided
+personnegui.cpp:19:23: error: no match for call to ‘(tp::Annuaire) (std::__cxx11::string&)’
+  m_annuaire (m_nomclub);
+                       ^
+Makefile.Debug:223 : la recette pour la cible « debug/personnegui.o » a échouée
+make[1] : on quitte le répertoire « /home/etudiant/Bureau/GIT/111155105_tp4/PersonneGUI »
+make[1]: *** [debug/personnegui.o] Erreur 1
+Makefile:50 : la recette pour la cible « debug » a échouée
+make: *** [debug] Erreur 2
+20:12:57 **** Incremental Build of configuration Debug for project PersonneLib ****
+make all 
+make: rien à faire pour « all ».
+20:12:58 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+make: rien à faire pour « all ».
+20:13:12 **** Incremental Build of configuration Debug for project Personne ****
+make all 
+make: rien à faire pour « all ».
+20:13:12 **** Incremental Build of project PersonneGUI ****
+make debug 
+make -f Makefile.Debug
+make[1] : on entre dans le répertoire « /home/etudiant/Bureau/GIT/111155105_tp4/PersonneGUI »
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. -o debug/main.o main.cpp
+In file included from main.cpp:1:0:
+personnegui.h:24:26: error: ‘m_nomclub’ is not a type
+  tp::Annuaire m_annuaire(m_nomclub);
+                          ^
+Makefile.Debug:213 : la recette pour la cible « debug/main.o » a échouée
+make[1]: *** [debug/main.o] Erreur 1
+make[1] : on quitte le répertoire « /home/etudiant/Bureau/GIT/111155105_tp4/PersonneGUI »
+Makefile:50 : la recette pour la cible « debug » a échouée
+make: *** [debug] Erreur 2
+20:13:13 **** Incremental Build of configuration Debug for project PersonneLib ****
+make all 
+make: rien à faire pour « all ».
+20:13:14 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+make: rien à faire pour « all ».
+20:13:58 **** Incremental Build of configuration Debug for project Personne ****
+make all 
+make: rien à faire pour « all ».
+20:13:58 **** Incremental Build of project PersonneGUI ****
+make debug 
+make -f Makefile.Debug
+make[1] : on entre dans le répertoire « /home/etudiant/Bureau/GIT/111155105_tp4/PersonneGUI »
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. -o debug/main.o main.cpp
+In file included from main.cpp:1:0:
+personnegui.h:23:32: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+  const std::string m_nomClub = "Club de bebe rexo";
+                                ^
+personnegui.h:24:26: error: ‘m_nomclub’ has not been declared
+  tp::Annuaire m_annuaire(m_nomclub);
+                          ^
+Makefile.Debug:213 : la recette pour la cible « debug/main.o » a échouée
+make[1] : on quitte le répertoire « /home/etudiant/Bureau/GIT/111155105_tp4/PersonneGUI »
+make[1]: *** [debug/main.o] Erreur 1
+Makefile:50 : la recette pour la cible « debug » a échouée
+make: *** [debug] Erreur 2
+20:14:00 **** Incremental Build of configuration Debug for project PersonneLib ****
+make all 
+make: rien à faire pour « all ».
+20:14:00 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+make: rien à faire pour « all ».
+20:14:12 **** Incremental Build of configuration Debug for project Personne ****
+make all 
+make: rien à faire pour « all ».
+20:14:12 **** Incremental Build of project PersonneGUI ****
+make debug 
+make -f Makefile.Debug
+make[1] : on entre dans le répertoire « /home/etudiant/Bureau/GIT/111155105_tp4/PersonneGUI »
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. -o debug/main.o main.cpp
+In file included from main.cpp:1:0:
+personnegui.h:23:39: error: invalid in-class initialization of static data member of non-integral type ‘const string {aka const std::__cxx11::basic_string<char>}’
+  static const std::string m_nomClub = "Club de bebe rexo";
+                                       ^
+personnegui.h:23:39: error: call to non-constexpr function ‘std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::basic_string(const _CharT*, const _Alloc&) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>]’
+personnegui.h:24:26: error: ‘m_nomclub’ has not been declared
+  tp::Annuaire m_annuaire(m_nomclub);
+                          ^
+Makefile.Debug:213 : la recette pour la cible « debug/main.o » a échouée
+make[1]: *** [debug/main.o] Erreur 1
+make[1] : on quitte le répertoire « /home/etudiant/Bureau/GIT/111155105_tp4/PersonneGUI »
+Makefile:50 : la recette pour la cible « debug » a échouée
+make: *** [debug] Erreur 2
+20:14:13 **** Incremental Build of configuration Debug for project PersonneLib ****
+make all 
+make: rien à faire pour « all ».
+20:14:14 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+make: rien à faire pour « all ».
+20:14:27 **** Incremental Build of configuration Debug for project Personne ****
+make all 
+make: rien à faire pour « all ».
+20:14:27 **** Incremental Build of project PersonneGUI ****
+make debug 
+make -f Makefile.Debug
+make[1] : on entre dans le répertoire « /home/etudiant/Bureau/GIT/111155105_tp4/PersonneGUI »
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. -o debug/main.o main.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. -o debug/personnegui.o personnegui.cpp
+/usr/lib/i386-linux-gnu/qt4/bin/moc -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. personnegui.h -o debug/moc_personnegui.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. -o debug/moc_personnegui.o debug/moc_personnegui.cpp
+g++  -o PersonneGUI debug/supprimerpersonne.o debug/ajouterjoueur.o debug/ajouterentraineur.o debug/main.o debug/personnegui.o debug/moc_supprimerpersonne.o debug/moc_ajouterjoueur.o debug/moc_ajouterentraineur.o debug/moc_personnegui.o    -L/usr/lib/i386-linux-gnu ../PersonneLib/Debug/libPersonneLib.a -lQtGui -lQtCore -lpthread 
+{ test -n "" && DESTDIR="" || DESTDIR=.; } && test $(gdb --version | sed -e 's,[^0-9][^0-9]*\([0-9]\)\.\([0-9]\).*,\1\2,;q') -gt 72 && gdb --nx --batch --quiet -ex 'set confirm off' -ex "save gdb-index $DESTDIR" -ex quit 'PersonneGUI' && test -f PersonneGUI.gdb-index && objcopy --add-section '.gdb_index=PersonneGUI.gdb-index' --set-section-flags '.gdb_index=readonly' 'PersonneGUI' 'PersonneGUI' && rm -f PersonneGUI.gdb-index || true
+make[1] : on quitte le répertoire « /home/etudiant/Bureau/GIT/111155105_tp4/PersonneGUI »
+20:14:31 **** Incremental Build of configuration Debug for project PersonneLib ****
+make all 
+make: rien à faire pour « all ».
+20:14:31 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+make: rien à faire pour « all ».
+20:16:59 **** Incremental Build of configuration Debug for project Personne ****
+make all 
+make: rien à faire pour « all ».
+20:16:59 **** Incremental Build of project PersonneGUI ****
+make debug 
+make -f Makefile.Debug
+make[1] : on entre dans le répertoire « /home/etudiant/Bureau/GIT/111155105_tp4/PersonneGUI »
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. -o debug/main.o main.cpp
+In file included from main.cpp:1:0:
+personnegui.h:15:39: error: invalid in-class initialization of static data member of non-integral type ‘const string {aka const std::__cxx11::basic_string<char>}’
+  static const std::string m_nomClub = "Club epic";
+                                       ^
+personnegui.h:15:39: error: call to non-constexpr function ‘std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::basic_string(const _CharT*, const _Alloc&) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>]’
+personnegui.h:24:24: error: ‘m_nomClub’ is not a type
+  tp::Annuaire annuaire(m_nomClub);
+                        ^
+make[1]: *** [debug/main.o] Erreur 1
+Makefile.Debug:213 : la recette pour la cible « debug/main.o » a échouée
+make[1] : on quitte le répertoire « /home/etudiant/Bureau/GIT/111155105_tp4/PersonneGUI »
+Makefile:50 : la recette pour la cible « debug » a échouée
+make: *** [debug] Erreur 2
+20:17:01 **** Incremental Build of configuration Debug for project PersonneLib ****
+make all 
+make: rien à faire pour « all ».
+20:17:01 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+make: rien à faire pour « all ».
+20:17:19 **** Incremental Build of configuration Debug for project Personne ****
+make all 
+make: rien à faire pour « all ».
+20:17:19 **** Incremental Build of project PersonneGUI ****
+make debug 
+make -f Makefile.Debug
+make[1] : on entre dans le répertoire « /home/etudiant/Bureau/GIT/111155105_tp4/PersonneGUI »
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. -o debug/main.o main.cpp
+In file included from main.cpp:1:0:
+personnegui.h:25:24: error: ‘m_nomClub’ is not a type
+  tp::Annuaire annuaire(m_nomClub);
+                        ^
+make[1]: *** [debug/main.o] Erreur 1
+Makefile.Debug:213 : la recette pour la cible « debug/main.o » a échouée
+make[1] : on quitte le répertoire « /home/etudiant/Bureau/GIT/111155105_tp4/PersonneGUI »
+Makefile:50 : la recette pour la cible « debug » a échouée
+make: *** [debug] Erreur 2
+20:17:21 **** Incremental Build of configuration Debug for project PersonneLib ****
+make all 
+make: rien à faire pour « all ».
+20:17:21 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+make: rien à faire pour « all ».
+20:17:46 **** Incremental Build of configuration Debug for project Personne ****
+make all 
+make: rien à faire pour « all ».
+20:17:47 **** Incremental Build of project PersonneGUI ****
+make debug 
+make -f Makefile.Debug
+make[1] : on entre dans le répertoire « /home/etudiant/Bureau/GIT/111155105_tp4/PersonneGUI »
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. -o debug/main.o main.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. -o debug/personnegui.o personnegui.cpp
+personnegui.cpp: In constructor ‘PersonneGUI::PersonneGUI(QWidget*)’:
+personnegui.cpp:12:21: error: no matching function for call to ‘tp::Annuaire::Annuaire()’
+   QMainWindow(parent)
+                     ^
+In file included from personnegui.h:6:0,
+                 from personnegui.cpp:1:
+../PersonneLib/Annuaire.h:44:2: note: candidate: tp::Annuaire::Annuaire(const tp::Annuaire&)
+  Annuaire(const Annuaire& p_annuaire);
+  ^
+../PersonneLib/Annuaire.h:44:2: note:   candidate expects 1 argument, 0 provided
+../PersonneLib/Annuaire.h:28:2: note: candidate: tp::Annuaire::Annuaire(const string&)
+  Annuaire(const std::string& p_nomClub);
+  ^
+../PersonneLib/Annuaire.h:28:2: note:   candidate expects 1 argument, 0 provided
+Makefile.Debug:223 : la recette pour la cible « debug/personnegui.o » a échouée
+make[1] : on quitte le répertoire « /home/etudiant/Bureau/GIT/111155105_tp4/PersonneGUI »
+make[1]: *** [debug/personnegui.o] Erreur 1
+Makefile:50 : la recette pour la cible « debug » a échouée
+make: *** [debug] Erreur 2
+20:17:50 **** Incremental Build of configuration Debug for project PersonneLib ****
+make all 
+make: rien à faire pour « all ».
+20:17:50 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+make: rien à faire pour « all ».
+20:18:11 **** Incremental Build of configuration Debug for project Personne ****
+make all 
+make: rien à faire pour « all ».
+20:18:11 **** Incremental Build of project PersonneGUI ****
+make debug 
+make -f Makefile.Debug
+make[1] : on entre dans le répertoire « /home/etudiant/Bureau/GIT/111155105_tp4/PersonneGUI »
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. -o debug/personnegui.o personnegui.cpp
+/usr/lib/i386-linux-gnu/qt4/bin/moc -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. personnegui.h -o debug/moc_personnegui.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. -o debug/moc_personnegui.o debug/moc_personnegui.cpp
+g++  -o PersonneGUI debug/supprimerpersonne.o debug/ajouterjoueur.o debug/ajouterentraineur.o debug/main.o debug/personnegui.o debug/moc_supprimerpersonne.o debug/moc_ajouterjoueur.o debug/moc_ajouterentraineur.o debug/moc_personnegui.o    -L/usr/lib/i386-linux-gnu ../PersonneLib/Debug/libPersonneLib.a -lQtGui -lQtCore -lpthread 
+{ test -n "" && DESTDIR="" || DESTDIR=.; } && test $(gdb --version | sed -e 's,[^0-9][^0-9]*\([0-9]\)\.\([0-9]\).*,\1\2,;q') -gt 72 && gdb --nx --batch --quiet -ex 'set confirm off' -ex "save gdb-index $DESTDIR" -ex quit 'PersonneGUI' && test -f PersonneGUI.gdb-index && objcopy --add-section '.gdb_index=PersonneGUI.gdb-index' --set-section-flags '.gdb_index=readonly' 'PersonneGUI' 'PersonneGUI' && rm -f PersonneGUI.gdb-index || true
+make[1] : on quitte le répertoire « /home/etudiant/Bureau/GIT/111155105_tp4/PersonneGUI »
+20:18:13 **** Incremental Build of configuration Debug for project PersonneLib ****
+make all 
+make: rien à faire pour « all ».
+20:18:14 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+make: rien à faire pour « all ».
+20:18:54 **** Incremental Build of configuration Debug for project Personne ****
+make all 
+make: rien à faire pour « all ».
+20:18:54 **** Incremental Build of project PersonneGUI ****
+make debug 
+make -f Makefile.Debug
+make[1] : on entre dans le répertoire « /home/etudiant/Bureau/GIT/111155105_tp4/PersonneGUI »
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. -o debug/main.o main.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. -o debug/personnegui.o personnegui.cpp
+/usr/lib/i386-linux-gnu/qt4/bin/moc -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. personnegui.h -o debug/moc_personnegui.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. -o debug/moc_personnegui.o debug/moc_personnegui.cpp
+g++  -o PersonneGUI debug/supprimerpersonne.o debug/ajouterjoueur.o debug/ajouterentraineur.o debug/main.o debug/personnegui.o debug/moc_supprimerpersonne.o debug/moc_ajouterjoueur.o debug/moc_ajouterentraineur.o debug/moc_personnegui.o    -L/usr/lib/i386-linux-gnu ../PersonneLib/Debug/libPersonneLib.a -lQtGui -lQtCore -lpthread 
+{ test -n "" && DESTDIR="" || DESTDIR=.; } && test $(gdb --version | sed -e 's,[^0-9][^0-9]*\([0-9]\)\.\([0-9]\).*,\1\2,;q') -gt 72 && gdb --nx --batch --quiet -ex 'set confirm off' -ex "save gdb-index $DESTDIR" -ex quit 'PersonneGUI' && test -f PersonneGUI.gdb-index && objcopy --add-section '.gdb_index=PersonneGUI.gdb-index' --set-section-flags '.gdb_index=readonly' 'PersonneGUI' 'PersonneGUI' && rm -f PersonneGUI.gdb-index || true
+make[1] : on quitte le répertoire « /home/etudiant/Bureau/GIT/111155105_tp4/PersonneGUI »
+20:18:59 **** Incremental Build of configuration Debug for project PersonneLib ****
+make all 
+make: rien à faire pour « all ».
+20:18:59 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+make: rien à faire pour « all ».
+20:25:53 **** Incremental Build of configuration Debug for project Personne ****
+make all 
+make: rien à faire pour « all ».
+20:25:54 **** Incremental Build of project PersonneGUI ****
+make debug 
+make -f Makefile.Debug
+make[1] : on entre dans le répertoire « /home/etudiant/Bureau/GIT/111155105_tp4/PersonneGUI »
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. -o debug/main.o main.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. -o debug/personnegui.o personnegui.cpp
+personnegui.cpp: In member function ‘void PersonneGUI::dialogJoueur()’:
+personnegui.cpp:40:34: error: expected primary-expression before ‘)’ token
+   annuaire.ajouterPersonne(Joueur);
+                                  ^
+make[1]: *** [debug/personnegui.o] Erreur 1
+Makefile.Debug:223 : la recette pour la cible « debug/personnegui.o » a échouée
+make[1] : on quitte le répertoire « /home/etudiant/Bureau/GIT/111155105_tp4/PersonneGUI »
+Makefile:50 : la recette pour la cible « debug » a échouée
+make: *** [debug] Erreur 2
+20:25:57 **** Incremental Build of configuration Debug for project PersonneLib ****
+make all 
+make: rien à faire pour « all ».
+20:25:57 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+make: rien à faire pour « all ».
+20:26:25 **** Incremental Build of configuration Debug for project Personne ****
+make all 
+make: rien à faire pour « all ».
+20:26:25 **** Incremental Build of project PersonneGUI ****
+make debug 
+make -f Makefile.Debug
+make[1] : on entre dans le répertoire « /home/etudiant/Bureau/GIT/111155105_tp4/PersonneGUI »
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. -o debug/personnegui.o personnegui.cpp
+/usr/lib/i386-linux-gnu/qt4/bin/moc -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. personnegui.h -o debug/moc_personnegui.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. -o debug/moc_personnegui.o debug/moc_personnegui.cpp
+g++  -o PersonneGUI debug/supprimerpersonne.o debug/ajouterjoueur.o debug/ajouterentraineur.o debug/main.o debug/personnegui.o debug/moc_supprimerpersonne.o debug/moc_ajouterjoueur.o debug/moc_ajouterentraineur.o debug/moc_personnegui.o    -L/usr/lib/i386-linux-gnu ../PersonneLib/Debug/libPersonneLib.a -lQtGui -lQtCore -lpthread 
+{ test -n "" && DESTDIR="" || DESTDIR=.; } && test $(gdb --version | sed -e 's,[^0-9][^0-9]*\([0-9]\)\.\([0-9]\).*,\1\2,;q') -gt 72 && gdb --nx --batch --quiet -ex 'set confirm off' -ex "save gdb-index $DESTDIR" -ex quit 'PersonneGUI' && test -f PersonneGUI.gdb-index && objcopy --add-section '.gdb_index=PersonneGUI.gdb-index' --set-section-flags '.gdb_index=readonly' 'PersonneGUI' 'PersonneGUI' && rm -f PersonneGUI.gdb-index || true
+make[1] : on quitte le répertoire « /home/etudiant/Bureau/GIT/111155105_tp4/PersonneGUI »
+20:26:28 **** Incremental Build of configuration Debug for project PersonneLib ****
+make all 
+make: rien à faire pour « all ».
+20:26:28 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+make: rien à faire pour « all ».
+/usr/lib/i386-linux-gnu/qt4/bin/qmake -recursive CONFIG+=debug_and_release PersonneGUI.pro 
+20:30:45 **** Incremental Build of configuration Debug for project Personne ****
+make all 
+make: rien à faire pour « all ».
+20:30:46 **** Incremental Build of project PersonneGUI ****
+make debug 
+make -f Makefile.Debug
+make[1] : on entre dans le répertoire « /home/etudiant/Bureau/GIT/111155105_tp4/PersonneGUI »
+/usr/lib/i386-linux-gnu/qt4/bin/uic personnegui.ui -o ui_personnegui.h
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. -o debug/main.o main.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. -o debug/personnegui.o personnegui.cpp
+personnegui.cpp: In member function ‘void PersonneGUI::dialogJoueur()’:
+personnegui.cpp:42:53: error: no matching function for call to ‘QTextEdit::setText(std::__cxx11::string)’
+   ui.textEdit->setText(annuaire.reqAnnuaireFormate());
+                                                     ^
+In file included from /usr/include/qt4/QtGui/QTextEdit:1:0,
+                 from ui_personnegui.h:22,
+                 from personnegui.h:5,
+                 from personnegui.cpp:1:
+/usr/include/qt4/QtGui/qtextedit.h:253:10: note: candidate: void QTextEdit::setText(const QString&)
+     void setText(const QString &text);
+          ^
+/usr/include/qt4/QtGui/qtextedit.h:253:10: note:   no known conversion for argument 1 from ‘std::__cxx11::string {aka std::__cxx11::basic_string<char>}’ to ‘const QString&’
+make[1]: *** [debug/personnegui.o] Erreur 1
+Makefile.Debug:223 : la recette pour la cible « debug/personnegui.o » a échouée
+make[1] : on quitte le répertoire « /home/etudiant/Bureau/GIT/111155105_tp4/PersonneGUI »
+Makefile:50 : la recette pour la cible « debug » a échouée
+make: *** [debug] Erreur 2
+20:30:49 **** Incremental Build of configuration Debug for project PersonneLib ****
+make all 
+make: rien à faire pour « all ».
+20:30:50 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+make: rien à faire pour « all ».
+20:31:05 **** Incremental Build of configuration Debug for project Personne ****
+make all 
+make: rien à faire pour « all ».
+20:31:05 **** Incremental Build of project PersonneGUI ****
+make debug 
+make -f Makefile.Debug
+make[1] : on entre dans le répertoire « /home/etudiant/Bureau/GIT/111155105_tp4/PersonneGUI »
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. -o debug/personnegui.o personnegui.cpp
+/usr/lib/i386-linux-gnu/qt4/bin/moc -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. personnegui.h -o debug/moc_personnegui.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. -o debug/moc_personnegui.o debug/moc_personnegui.cpp
+g++  -o PersonneGUI debug/supprimerpersonne.o debug/ajouterjoueur.o debug/ajouterentraineur.o debug/main.o debug/personnegui.o debug/moc_supprimerpersonne.o debug/moc_ajouterjoueur.o debug/moc_ajouterentraineur.o debug/moc_personnegui.o    -L/usr/lib/i386-linux-gnu ../PersonneLib/Debug/libPersonneLib.a -lQtGui -lQtCore -lpthread 
+{ test -n "" && DESTDIR="" || DESTDIR=.; } && test $(gdb --version | sed -e 's,[^0-9][^0-9]*\([0-9]\)\.\([0-9]\).*,\1\2,;q') -gt 72 && gdb --nx --batch --quiet -ex 'set confirm off' -ex "save gdb-index $DESTDIR" -ex quit 'PersonneGUI' && test -f PersonneGUI.gdb-index && objcopy --add-section '.gdb_index=PersonneGUI.gdb-index' --set-section-flags '.gdb_index=readonly' 'PersonneGUI' 'PersonneGUI' && rm -f PersonneGUI.gdb-index || true
+make[1] : on quitte le répertoire « /home/etudiant/Bureau/GIT/111155105_tp4/PersonneGUI »
+20:31:07 **** Incremental Build of configuration Debug for project PersonneLib ****
+make all 
+make: rien à faire pour « all ».
+20:31:07 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+make: rien à faire pour « all ».
+20:34:02 **** Incremental Build of project PersonneGUI ****
+make debug 
+make -f Makefile.Debug
+make[1] : on entre dans le répertoire « /home/etudiant/Bureau/GIT/111155105_tp4/PersonneGUI »
+/usr/lib/i386-linux-gnu/qt4/bin/uic ajouterjoueur.ui -o ui_ajouterjoueur.h
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. -o debug/ajouterjoueur.o ajouterjoueur.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. -o debug/personnegui.o personnegui.cpp
+/usr/lib/i386-linux-gnu/qt4/bin/moc -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. ajouterjoueur.h -o debug/moc_ajouterjoueur.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. -o debug/moc_ajouterjoueur.o debug/moc_ajouterjoueur.cpp
+g++  -o PersonneGUI debug/supprimerpersonne.o debug/ajouterjoueur.o debug/ajouterentraineur.o debug/main.o debug/personnegui.o debug/moc_supprimerpersonne.o debug/moc_ajouterjoueur.o debug/moc_ajouterentraineur.o debug/moc_personnegui.o    -L/usr/lib/i386-linux-gnu ../PersonneLib/Debug/libPersonneLib.a -lQtGui -lQtCore -lpthread 
+{ test -n "" && DESTDIR="" || DESTDIR=.; } && test $(gdb --version | sed -e 's,[^0-9][^0-9]*\([0-9]\)\.\([0-9]\).*,\1\2,;q') -gt 72 && gdb --nx --batch --quiet -ex 'set confirm off' -ex "save gdb-index $DESTDIR" -ex quit 'PersonneGUI' && test -f PersonneGUI.gdb-index && objcopy --add-section '.gdb_index=PersonneGUI.gdb-index' --set-section-flags '.gdb_index=readonly' 'PersonneGUI' 'PersonneGUI' && rm -f PersonneGUI.gdb-index || true
+make[1] : on quitte le répertoire « /home/etudiant/Bureau/GIT/111155105_tp4/PersonneGUI »
+20:35:04 **** Incremental Build of configuration Debug for project Personne ****
+make all 
+make: rien à faire pour « all ».
+20:35:04 **** Incremental Build of project PersonneGUI ****
+make debug 
+make -f Makefile.Debug
+make[1] : on entre dans le répertoire « /home/etudiant/Bureau/GIT/111155105_tp4/PersonneGUI »
+/usr/lib/i386-linux-gnu/qt4/bin/uic personnegui.ui -o ui_personnegui.h
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. -o debug/main.o main.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. -o debug/personnegui.o personnegui.cpp
+/usr/lib/i386-linux-gnu/qt4/bin/moc -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. personnegui.h -o debug/moc_personnegui.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. -o debug/moc_personnegui.o debug/moc_personnegui.cpp
+g++  -o PersonneGUI debug/supprimerpersonne.o debug/ajouterjoueur.o debug/ajouterentraineur.o debug/main.o debug/personnegui.o debug/moc_supprimerpersonne.o debug/moc_ajouterjoueur.o debug/moc_ajouterentraineur.o debug/moc_personnegui.o    -L/usr/lib/i386-linux-gnu ../PersonneLib/Debug/libPersonneLib.a -lQtGui -lQtCore -lpthread 
+{ test -n "" && DESTDIR="" || DESTDIR=.; } && test $(gdb --version | sed -e 's,[^0-9][^0-9]*\([0-9]\)\.\([0-9]\).*,\1\2,;q') -gt 72 && gdb --nx --batch --quiet -ex 'set confirm off' -ex "save gdb-index $DESTDIR" -ex quit 'PersonneGUI' && test -f PersonneGUI.gdb-index && objcopy --add-section '.gdb_index=PersonneGUI.gdb-index' --set-section-flags '.gdb_index=readonly' 'PersonneGUI' 'PersonneGUI' && rm -f PersonneGUI.gdb-index || true
+make[1] : on quitte le répertoire « /home/etudiant/Bureau/GIT/111155105_tp4/PersonneGUI »
+20:35:08 **** Incremental Build of configuration Debug for project PersonneLib ****
+make all 
+make: rien à faire pour « all ».
+20:35:08 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+make: rien à faire pour « all ».

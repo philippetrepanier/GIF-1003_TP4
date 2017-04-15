@@ -1,0 +1,18 @@
+#include "ajouterjoueur.h"
+
+ajouterJoueur::ajouterJoueur(QWidget *parent) :
+		QDialog(parent)
+{
+	ui.setupUi(this);
+	QObject::connect(ui.OKpushButton, SIGNAL(clicked()), this, SLOT(validerFormulaire()));
+}
+
+ajouterJoueur::~ajouterJoueur()
+{
+
+}
+
+void ajouterJoueur::validerFormulaire()
+{
+	accept();
+}

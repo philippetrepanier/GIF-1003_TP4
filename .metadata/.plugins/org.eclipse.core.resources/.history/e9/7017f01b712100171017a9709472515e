@@ -1,0 +1,29 @@
+#ifndef PERSONNEGUI_H
+#define PERSONNEGUI_H
+
+#include <QtGui/QMainWindow>
+#include "ui_personnegui.h"
+#include "Annuaire.h"
+
+static const std::string m_nomClub = "Club epic";
+
+class PersonneGUI: public QMainWindow
+{
+	Q_OBJECT
+
+public:
+	PersonneGUI(QWidget *parent = 0);
+	~PersonneGUI();
+
+private slots:
+	void dialogEntraineur();
+	void dialogJoueur();
+	void dialogSupprimer();
+
+private:
+	Ui::PersonneGUIClass ui;
+	tp::Annuaire annuaire;
+
+};
+
+#endif // PERSONNEGUI_H

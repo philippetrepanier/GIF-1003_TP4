@@ -1,0 +1,22 @@
+#ifndef AJOUTERJOUEUR_H
+#define AJOUTERJOUEUR_H
+
+#include <QtGui/QDialog>
+#include "ui_ajouterjoueur.h"
+
+class ajouterJoueur: public QDialog
+{
+	Q_OBJECT
+
+public:
+	ajouterJoueur(QWidget *parent = 0);
+	~ajouterJoueur();
+
+private slots:
+	void validerFormulaire();
+
+private:
+	Ui::ajouterJoueurClass ui;
+};
+
+#endif // AJOUTERJOUEUR_H

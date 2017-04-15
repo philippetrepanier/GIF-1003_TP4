@@ -13,8 +13,8 @@
 #include <QtGui/QAction>
 #include <QtGui/QApplication>
 #include <QtGui/QButtonGroup>
+#include <QtGui/QDialog>
 #include <QtGui/QHeaderView>
-#include <QtGui/QWidget>
 
 QT_BEGIN_NAMESPACE
 
@@ -22,7 +22,7 @@ class Ui_supprimerPersonneClass
 {
 public:
 
-    void setupUi(QWidget *supprimerPersonneClass)
+    void setupUi(QDialog *supprimerPersonneClass)
     {
         if (supprimerPersonneClass->objectName().isEmpty())
             supprimerPersonneClass->setObjectName(QString::fromUtf8("supprimerPersonneClass"));
@@ -33,9 +33,9 @@ public:
         QMetaObject::connectSlotsByName(supprimerPersonneClass);
     } // setupUi
 
-    void retranslateUi(QWidget *supprimerPersonneClass)
+    void retranslateUi(QDialog *supprimerPersonneClass)
     {
-        supprimerPersonneClass->setWindowTitle(QApplication::translate("supprimerPersonneClass", "supprimerPersonne", 0, QApplication::UnicodeUTF8));
+        supprimerPersonneClass->setWindowTitle(QApplication::translate("supprimerPersonneClass", "Supprimer une personne", 0, QApplication::UnicodeUTF8));
     } // retranslateUi
 
 };

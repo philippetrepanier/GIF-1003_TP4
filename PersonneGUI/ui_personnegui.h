@@ -13,12 +13,13 @@
 #include <QtGui/QAction>
 #include <QtGui/QApplication>
 #include <QtGui/QButtonGroup>
+#include <QtGui/QGridLayout>
 #include <QtGui/QHeaderView>
 #include <QtGui/QMainWindow>
 #include <QtGui/QMenu>
 #include <QtGui/QMenuBar>
-#include <QtGui/QPlainTextEdit>
 #include <QtGui/QStatusBar>
+#include <QtGui/QTextEdit>
 #include <QtGui/QWidget>
 
 QT_BEGIN_NAMESPACE
@@ -31,7 +32,9 @@ public:
     QAction *actionEntraineur;
     QAction *actionJoueur;
     QWidget *centralwidget;
-    QPlainTextEdit *plainTextEdit;
+    QWidget *gridLayoutWidget;
+    QGridLayout *gridLayout;
+    QTextEdit *textEdit;
     QMenuBar *menubar;
     QMenu *menuAjouter;
     QMenu *menuAjouter_2;
@@ -59,9 +62,22 @@ public:
         actionJoueur->setObjectName(QString::fromUtf8("actionJoueur"));
         centralwidget = new QWidget(PersonneGUIClass);
         centralwidget->setObjectName(QString::fromUtf8("centralwidget"));
-        plainTextEdit = new QPlainTextEdit(centralwidget);
-        plainTextEdit->setObjectName(QString::fromUtf8("plainTextEdit"));
-        plainTextEdit->setGeometry(QRect(0, 0, 500, 500));
+        gridLayoutWidget = new QWidget(centralwidget);
+        gridLayoutWidget->setObjectName(QString::fromUtf8("gridLayoutWidget"));
+        gridLayoutWidget->setGeometry(QRect(-1, -1, 501, 451));
+        gridLayout = new QGridLayout(gridLayoutWidget);
+        gridLayout->setObjectName(QString::fromUtf8("gridLayout"));
+        gridLayout->setContentsMargins(0, 0, 0, 0);
+        textEdit = new QTextEdit(gridLayoutWidget);
+        textEdit->setObjectName(QString::fromUtf8("textEdit"));
+        QFont font;
+        font.setFamily(QString::fromUtf8("Sans Serif"));
+        font.setPointSize(12);
+        textEdit->setFont(font);
+        textEdit->viewport()->setProperty("cursor", QVariant(QCursor(Qt::BusyCursor)));
+
+        gridLayout->addWidget(textEdit, 0, 0, 1, 1);
+
         PersonneGUIClass->setCentralWidget(centralwidget);
         menubar = new QMenuBar(PersonneGUIClass);
         menubar->setObjectName(QString::fromUtf8("menubar"));

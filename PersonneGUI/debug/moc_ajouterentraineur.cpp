@@ -22,25 +22,33 @@ static const uint qt_meta_data_ajouterEntraineur[] = {
        6,       // revision
        0,       // classname
        0,    0, // classinfo
-       0,    0, // methods
+       1,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
        0,       // flags
        0,       // signalCount
 
+ // slots: signature, parameters, type, tag, flags
+      19,   18,   18,   18, 0x08,
+
        0        // eod
 };
 
 static const char qt_meta_stringdata_ajouterEntraineur[] = {
-    "ajouterEntraineur\0"
+    "ajouterEntraineur\0\0validerFormulaire()\0"
 };
 
 void ajouterEntraineur::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
 {
-    Q_UNUSED(_o);
-    Q_UNUSED(_id);
-    Q_UNUSED(_c);
+    if (_c == QMetaObject::InvokeMetaMethod) {
+        Q_ASSERT(staticMetaObject.cast(_o));
+        ajouterEntraineur *_t = static_cast<ajouterEntraineur *>(_o);
+        switch (_id) {
+        case 0: _t->validerFormulaire(); break;
+        default: ;
+        }
+    }
     Q_UNUSED(_a);
 }
 
@@ -75,6 +83,11 @@ int ajouterEntraineur::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     _id = QDialog::qt_metacall(_c, _id, _a);
     if (_id < 0)
         return _id;
+    if (_c == QMetaObject::InvokeMetaMethod) {
+        if (_id < 1)
+            qt_static_metacall(this, _c, _id, _a);
+        _id -= 1;
+    }
     return _id;
 }
 QT_END_MOC_NAMESPACE

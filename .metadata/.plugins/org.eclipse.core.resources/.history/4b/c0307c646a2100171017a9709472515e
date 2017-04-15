@@ -1,0 +1,19 @@
+#ifndef AJOUTERENTRAINEUR_H
+#define AJOUTERENTRAINEUR_H
+
+#include <QtGui/QDialog>
+#include "ui_ajouterentraineur.h"
+
+class ajouterEntraineur : public QDialog
+{
+    Q_OBJECT
+
+public:
+    ajouterEntraineur(QWidget *parent = 0);
+    ~ajouterEntraineur();
+
+private:
+    Ui::ajouterEntraineurClass ui;
+};
+
+#endif // AJOUTERENTRAINEUR_H

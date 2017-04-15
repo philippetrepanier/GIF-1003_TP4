@@ -4,16 +4,20 @@
 #include <QtGui/QDialog>
 #include "ui_ajouterentraineur.h"
 
-class ajouterEntraineur : public QDialog
+class ajouterEntraineur: public QDialog
 {
-    Q_OBJECT
+	Q_OBJECT
 
 public:
-    ajouterEntraineur(QWidget *parent = 0);
-    ~ajouterEntraineur();
+	ajouterEntraineur(QWidget *parent = 0);
+	~ajouterEntraineur();
+
+private slots:
+	void validerFormulaire()
+	{};
 
 private:
-    Ui::ajouterEntraineurClass ui;
+	Ui::ajouterEntraineurClass ui;
 };
 
 #endif // AJOUTERENTRAINEUR_H

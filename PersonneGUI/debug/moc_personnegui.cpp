@@ -22,7 +22,7 @@ static const uint qt_meta_data_PersonneGUI[] = {
        6,       // revision
        0,       // classname
        0,    0, // classinfo
-       1,   14, // methods
+       3,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
@@ -31,12 +31,15 @@ static const uint qt_meta_data_PersonneGUI[] = {
 
  // slots: signature, parameters, type, tag, flags
       13,   12,   12,   12, 0x08,
+      32,   12,   12,   12, 0x08,
+      47,   12,   12,   12, 0x08,
 
        0        // eod
 };
 
 static const char qt_meta_stringdata_PersonneGUI[] = {
     "PersonneGUI\0\0dialogEntraineur()\0"
+    "dialogJoueur()\0dialogSupprimer()\0"
 };
 
 void PersonneGUI::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
@@ -46,6 +49,8 @@ void PersonneGUI::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id,
         PersonneGUI *_t = static_cast<PersonneGUI *>(_o);
         switch (_id) {
         case 0: _t->dialogEntraineur(); break;
+        case 1: _t->dialogJoueur(); break;
+        case 2: _t->dialogSupprimer(); break;
         default: ;
         }
     }
@@ -84,9 +89,9 @@ int PersonneGUI::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 1)
+        if (_id < 3)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 1;
+        _id -= 3;
     }
     return _id;
 }

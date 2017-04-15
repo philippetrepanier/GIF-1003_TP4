@@ -1,0 +1,46 @@
+#include "ajouterjoueur.h"
+
+ajouterJoueur::ajouterJoueur(QWidget *parent) :
+		QDialog(parent)
+{
+	ui.setupUi(this);
+	QObject::connect(ui.OKpushButton, SIGNAL(clicked()), this, SLOT(validerFormulaire()));
+}
+
+ajouterJoueur::~ajouterJoueur()
+{
+
+}
+
+void ajouterJoueur::validerFormulaire()
+{
+	accept();
+}
+
+//Accesseur pour les attributs
+QString ajouterJoueur::reqNom() const
+{
+	return (ui.nomlineEdit->text());
+}
+QString ajouterJoueur::reqPrenom() const
+{
+
+}
+QString ajouterJoueur::reqTelephone() const
+{
+
+}
+QString ajouterJoueur::reqPosition() const
+{
+
+}
+int ajouterJoueur::reqJour() const
+{
+
+}
+int ajouterJoueur::reqMois() const
+{
+int ajouterJoueur::reqAnnee() const
+{
+
+}

@@ -22,25 +22,33 @@ static const uint qt_meta_data_ajouterJoueur[] = {
        6,       // revision
        0,       // classname
        0,    0, // classinfo
-       0,    0, // methods
+       1,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
        0,       // flags
        0,       // signalCount
 
+ // slots: signature, parameters, type, tag, flags
+      15,   14,   14,   14, 0x08,
+
        0        // eod
 };
 
 static const char qt_meta_stringdata_ajouterJoueur[] = {
-    "ajouterJoueur\0"
+    "ajouterJoueur\0\0validerFormulaire()\0"
 };
 
 void ajouterJoueur::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
 {
-    Q_UNUSED(_o);
-    Q_UNUSED(_id);
-    Q_UNUSED(_c);
+    if (_c == QMetaObject::InvokeMetaMethod) {
+        Q_ASSERT(staticMetaObject.cast(_o));
+        ajouterJoueur *_t = static_cast<ajouterJoueur *>(_o);
+        switch (_id) {
+        case 0: _t->validerFormulaire(); break;
+        default: ;
+        }
+    }
     Q_UNUSED(_a);
 }
 
@@ -49,7 +57,7 @@ const QMetaObjectExtraData ajouterJoueur::staticMetaObjectExtraData = {
 };
 
 const QMetaObject ajouterJoueur::staticMetaObject = {
-    { &QWidget::staticMetaObject, qt_meta_stringdata_ajouterJoueur,
+    { &QDialog::staticMetaObject, qt_meta_stringdata_ajouterJoueur,
       qt_meta_data_ajouterJoueur, &staticMetaObjectExtraData }
 };
 
@@ -67,14 +75,19 @@ void *ajouterJoueur::qt_metacast(const char *_clname)
     if (!_clname) return 0;
     if (!strcmp(_clname, qt_meta_stringdata_ajouterJoueur))
         return static_cast<void*>(const_cast< ajouterJoueur*>(this));
-    return QWidget::qt_metacast(_clname);
+    return QDialog::qt_metacast(_clname);
 }
 
 int ajouterJoueur::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
 {
-    _id = QWidget::qt_metacall(_c, _id, _a);
+    _id = QDialog::qt_metacall(_c, _id, _a);
     if (_id < 0)
         return _id;
+    if (_c == QMetaObject::InvokeMetaMethod) {
+        if (_id < 1)
+            qt_static_metacall(this, _c, _id, _a);
+        _id -= 1;
+    }
     return _id;
 }
 QT_END_MOC_NAMESPACE

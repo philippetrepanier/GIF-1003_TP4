@@ -35,7 +35,7 @@ public:
 
     void retranslateUi(QDialog *ajouterEntraineurClass)
     {
-        ajouterEntraineurClass->setWindowTitle(QApplication::translate("ajouterEntraineurClass", "ajouterEntraineur", 0, QApplication::UnicodeUTF8));
+        ajouterEntraineurClass->setWindowTitle(QApplication::translate("ajouterEntraineurClass", "Ajouter un entraineur", 0, QApplication::UnicodeUTF8));
     } // retranslateUi
 
 };

@@ -49,7 +49,7 @@ const QMetaObjectExtraData supprimerPersonne::staticMetaObjectExtraData = {
 };
 
 const QMetaObject supprimerPersonne::staticMetaObject = {
-    { &QWidget::staticMetaObject, qt_meta_stringdata_supprimerPersonne,
+    { &QDialog::staticMetaObject, qt_meta_stringdata_supprimerPersonne,
       qt_meta_data_supprimerPersonne, &staticMetaObjectExtraData }
 };
 
@@ -67,12 +67,12 @@ void *supprimerPersonne::qt_metacast(const char *_clname)
     if (!_clname) return 0;
     if (!strcmp(_clname, qt_meta_stringdata_supprimerPersonne))
         return static_cast<void*>(const_cast< supprimerPersonne*>(this));
-    return QWidget::qt_metacast(_clname);
+    return QDialog::qt_metacast(_clname);
 }
 
 int supprimerPersonne::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
 {
-    _id = QWidget::qt_metacall(_c, _id, _a);
+    _id = QDialog::qt_metacall(_c, _id, _a);
     if (_id < 0)
         return _id;
     return _id;

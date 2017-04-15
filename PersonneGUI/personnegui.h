@@ -5,6 +5,8 @@
 #include "ui_personnegui.h"
 #include "Annuaire.h"
 
+const std::string NOMCLUB = "Club à bébé rexo";
+
 class PersonneGUI: public QMainWindow
 {
 	Q_OBJECT
@@ -16,10 +18,12 @@ public:
 private slots:
 	void dialogEntraineur();
 	void dialogJoueur();
-//	void dialogSupprimer();
+	void dialogSupprimer();
 
 private:
 	Ui::PersonneGUIClass ui;
+	tp::Annuaire annuaire;
+
 };
 
 #endif // PERSONNEGUI_H

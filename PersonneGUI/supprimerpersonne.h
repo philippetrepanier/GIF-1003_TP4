@@ -1,10 +1,10 @@
 #ifndef SUPPRIMERPERSONNE_H
 #define SUPPRIMERPERSONNE_H
 
-#include <QtGui/QWidget>
+#include <QtGui/QDialog>
 #include "ui_supprimerpersonne.h"
 
-class supprimerPersonne : public QWidget
+class supprimerPersonne : public QDialog
 {
     Q_OBJECT
 

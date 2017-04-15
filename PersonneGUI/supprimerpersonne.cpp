@@ -1,7 +1,7 @@
 #include "supprimerpersonne.h"
 
 supprimerPersonne::supprimerPersonne(QWidget *parent)
-    : QWidget(parent)
+    : QDialog(parent)
 {
 	ui.setupUi(this);
 }
