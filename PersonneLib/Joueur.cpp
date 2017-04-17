@@ -1,7 +1,7 @@
 /**
  * \file Joueur.cpp
  * \brief Implémentation de la classe Joueur.
- * \author Philippe Trépanier
+ * \author Philippe Trépanier et Jérémie Roy
  * \date 2017-03-29
  */
 

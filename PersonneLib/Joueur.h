@@ -1,7 +1,7 @@
 /**
  * \file Joueur.h
  * \brief Classe Joueur, dérivée de la classe Joueur.
- * \author Philippe Trépanier
+ * \author Jérémie Roy et Philippe Trépanier
  * \date 2017-03-29
  */
 

@@ -1,7 +1,7 @@
 /**
  * \file Annuaire.h
  * \brief Classe Annuaire
- * \author Philippe Trépanier
+ * \author Jérémie Roy et Philippe Trépanier
  * \date 2017-03-29
  */
 
@@ -33,9 +33,17 @@ public:
 	void ajouterPersonne(const Personne& p_personne);
 	void supprimerPersonne(const std::string& p_nom, const std::string& p_prenom);
 
+	unsigned int reqNombrePersonne() const;
+
 	//-- Protection contre la copie de surface
-//	Annuaire(const Annuaire&);
-//	Annuaire& operator=(const Annuaire&);
+	Annuaire(const Annuaire&)
+	{
+	}
+	;
+	Annuaire& operator=(const Annuaire&)
+	{
+	}
+	;
 
 private:
 	void verifieInvariant() const;

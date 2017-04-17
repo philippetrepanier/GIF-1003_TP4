@@ -9,12 +9,13 @@
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="ajouterEntraineur" key="selection"/>
+		<item value="e" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="é"/>
 			<item value="ajouterJoueur"/>
 			<item value="Employe"/>
 			<item value="Date(1, 10, 1996)"/>
@@ -22,9 +23,9 @@
 			<item value="Jeremie"/>
 			<item value="la personne"/>
 			<item value="valide"/>
-			<item value="joueur"/>
 		</list>
 		<list key="replacehistory">
+			<item value="e"/>
 			<item value="ajouterEntraineur"/>
 			<item value="Personne"/>
 			<item value="Date(18, 5, 1997)"/>
@@ -32,7 +33,6 @@
 			<item value="Philippe"/>
 			<item value="l&apos;entraineur"/>
 			<item value="ent"/>
-			<item value="TREP 9705 1819"/>
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">

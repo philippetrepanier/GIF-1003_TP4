@@ -1,7 +1,7 @@
 /**
  * \file Entraineur.h
  * \brief Classe Entraineur, dérivée de la classe Personne
- * \author Philippe Trépanier
+ * \author Jérémie Roy et Philippe Trépanier
  * \date 2017-03-28
  */
 

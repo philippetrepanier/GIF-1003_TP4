@@ -1,7 +1,7 @@
 /**
  * \file PersonneException.h
  * \brief
- * \author Philippe Trépanier
+ * \author Philippe Trépanier et Jérémie Roy
  * \date 2017-04-14
  */
 

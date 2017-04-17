@@ -1,7 +1,7 @@
 /**
  * \file Personne.cpp
  * \brief Implémentation de la classe de base abstraite Personne. Elle contient les informations de base sur les personnes.
- * \author Philippe Trepanier
+ * \author Jérémie Roy et Philippe Trepanier
  * \date 2017-02-19
  */
 

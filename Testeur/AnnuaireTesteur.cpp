@@ -50,6 +50,29 @@ TEST(Annuaire, AnnuaireReqAnnuaireFormate)
 	ASSERT_EQ(os.str(), annuaire.reqAnnuaireFormate());
 }
 /**
+ * \test Test de la méthode ajout de personne
+ *
+ * 		  Cas valides: Création d'un objet Annuaire avec un nom de club valide et ajout d'une personne
+ */
+TEST(Annuaire, AnnuaireAjouterPersonne)
+{
+	string nomClub = "unClub";
+	string nomJoueur = "Maccali";
+	string prenomJoueur = "Wong";
+	Date dateNaissanceJoueur = Date(5, 5, 2001);
+	string telephoneJoueur = "418 658-2222";
+	string positionJoueur = "centre";
+
+	Joueur unJoueur(nomJoueur,prenomJoueur, dateNaissanceJoueur, telephoneJoueur, positionJoueur);
+
+	Annuaire annuaire(nomClub);
+
+	annuaire.ajouterPersonne(unJoueur);
+
+	ASSERT_EQ(1, annuaire.reqNombrePersonne());
+};
+
+/**
  * \brief Création d'une fixture à utiliser pour les méthodes de la classe Annuaire
  */
 class AnnuaireParam: public ::testing::Test
@@ -113,5 +136,36 @@ TEST_F(AnnuaireParam, reqAnnuaireFormate)
 	os << Entraineur(nom_ent, prenom_ent, dateNaissance_ent, telephone_ent, RAMQ_ent, sexe_ent).reqPersonneFormate();
 
 	ASSERT_EQ(os.str(), annuaire.reqAnnuaireFormate());
+};
+///**
+// * \test Test de la méthode PersonneEstDejaPresente
+// *
+// *     Cas valide: vérifier que le joueur est bien dans l'annuaire
+// *     Cas invalide: le joueur n'est pas dans l'annuaire
+// */
+//TEST_F(AnnuaireParam, PersonneEstDejaPresente)
+//{
+//	Joueur joueurPresent(nom_joueur, prenom_joueur, dateNaissance_joueur, telephone_joueur, position_joueur);
+//	ASSERT_TRUE(annuaire.PersonneEstDejaPresente(joueurPresent));
+//};
+//TEST_F(AnnuaireParam, PersonneEstDejaPresenteInvalide)
+//{
+//	Joueur joueurPresent(nom_ent, prenom_joueur, dateNaissance_joueur, telephone_joueur, position_joueur);
+//	ASSERT_FALSE(annuaire.PersonneEstDejaPresente(joueurPresent));
+//};
+
+/**
+ * \test Test de la méthode suprimerPersonne()
+ *
+ *     Cas valide: vérifier le retour des informations de l'annuaire
+ *     Cas invalide: aucun
+ */
+TEST_F(AnnuaireParam, supprimerPersonne)
+{
+	unsigned int tailleInitiale = annuaire.reqNombrePersonne();
+
+	annuaire.supprimerPersonne(nom_joueur, prenom_joueur);
+
+	ASSERT_LT(annuaire.reqNombrePersonne(), tailleInitiale);
 };
 

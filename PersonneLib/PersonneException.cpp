@@ -1,7 +1,7 @@
 /**
  * \file PersonneException.cpp
  * \brief
- * \author Jérémie Roy
+ * \author Jérémie Roy et Philippe Trépanier
  * \date 2017-04-14
  */
 #include "PersonneException.h"

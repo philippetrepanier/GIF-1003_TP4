@@ -62,6 +62,7 @@ public:
         gridLayout_2->setObjectName(QString::fromUtf8("gridLayout_2"));
         AnnulerPushButton = new QPushButton(supprimerPersonneClass);
         AnnulerPushButton->setObjectName(QString::fromUtf8("AnnulerPushButton"));
+        AnnulerPushButton->setAutoDefault(false);
 
         gridLayout_2->addWidget(AnnulerPushButton, 0, 0, 1, 1);
 
@@ -80,12 +81,16 @@ public:
 
         supprimerPersonnePushButton = new QPushButton(supprimerPersonneClass);
         supprimerPersonnePushButton->setObjectName(QString::fromUtf8("supprimerPersonnePushButton"));
+        supprimerPersonnePushButton->setDefault(true);
 
         gridLayout->addWidget(supprimerPersonnePushButton, 2, 1, 1, 1);
 
 
         gridLayout_3->addLayout(gridLayout, 0, 0, 1, 1);
 
+        QWidget::setTabOrder(nomLineEdit, prenomLineEdit);
+        QWidget::setTabOrder(prenomLineEdit, supprimerPersonnePushButton);
+        QWidget::setTabOrder(supprimerPersonnePushButton, AnnulerPushButton);
 
         retranslateUi(supprimerPersonneClass);
         QObject::connect(AnnulerPushButton, SIGNAL(clicked()), supprimerPersonneClass, SLOT(close()));

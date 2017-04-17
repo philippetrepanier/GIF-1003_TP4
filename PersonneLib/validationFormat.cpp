@@ -2,7 +2,7 @@
  * \file validationFormat.cpp
  * \brief Fichier d'implémentation des fonctions permettant de valider des paramètres du programme
  * \date 2017-02-04
- * \author Philippe Trepanier
+ * \author Philippe Trepanier et Jérémie Roy
  */
 #include "validationFormat.h"
 #include <iostream>

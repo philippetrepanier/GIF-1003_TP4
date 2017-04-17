@@ -1,13 +1,13 @@
 /**
  * \file Annuaire.cpp
  * \brief Implémentation de la classe Annuaire
- * \author Philippe Trépanier
+ * \author Philippe Trépanier et Jérémie Roy
  * \date 2017-03-29
  */
 
 #include "Annuaire.h"
-#include <sstream>
 #include "ContratException.h"
+#include <sstream>
 #include <vector>
 
 using namespace std;
@@ -100,6 +100,11 @@ bool Annuaire::PersonneEstDejaPresente(const Personne& p_personne) const
 
 void Annuaire::supprimerPersonne(const std::string& p_nom, const std::string& p_prenom)
 {
+	PRECONDITION(util::validerFormatNom(p_nom));
+	PRECONDITION(util::validerFormatNom(p_prenom));
+	unsigned int taille = m_vMembres.size();
+	PRECONDITION(taille != 0);
+
 	unsigned int supprime = 0;
 	vector<Personne*>::iterator it;
 	for (it = m_vMembres.begin(); it < m_vMembres.end(); it++)
@@ -115,6 +120,14 @@ void Annuaire::supprimerPersonne(const std::string& p_nom, const std::string& p_
 	{
 		throw PersonneAbsenteException(p_nom);
 	}
+
+	POSTCONDITION(m_vMembres.size() < taille);
+	INVARIANTS();
+
+}
+unsigned int Annuaire::reqNombrePersonne() const
+{
+	return (m_vMembres.size());
 }
 
 } /* namespace tp */

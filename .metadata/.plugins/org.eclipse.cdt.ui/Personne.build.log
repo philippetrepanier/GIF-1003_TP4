@@ -1,6 +1,20 @@
-14:00:54 **** Incremental Build of configuration Debug for project Personne ****
+14:37:30 **** Incremental Build of configuration Debug for project Personne ****
 make all 
-make: rien à faire pour « all ».
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -I"/home/etudiant/Bureau/GIT/111155105_tp4/PersonneLib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+In file included from ../main.cpp:11:0:
+/home/etudiant/Bureau/GIT/111155105_tp4/PersonneLib/Annuaire.h: In member function ‘tp::Annuaire& tp::Annuaire::operator=(const tp::Annuaire&)’:
+/home/etudiant/Bureau/GIT/111155105_tp4/PersonneLib/Annuaire.h:43:2: warning: no return statement in function returning non-void [-Wreturn-type]
+  }
+  ^
+Finished building: ../main.cpp
+ 
+Building target: Personne
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/GIT/111155105_tp4/PersonneLib/Debug" -o "Personne"  ./main.o   -lPersonneLib
+Finished building target: Personne
+ 
 
-14:00:54 Build Finished (took 71ms)
+14:37:31 Build Finished (took 377ms)
 

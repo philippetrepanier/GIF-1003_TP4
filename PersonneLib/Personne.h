@@ -1,7 +1,7 @@
 /**
  * \file Personne.h
  * \brief Fichier qui déclare la classe personne contenant les informations d'un membre partie de l'équipe
- * \author Philippe Trepanier
+ * \author Jérémie Roy et Philippe Trepanier
  * \date 2017-02-19
  */
 

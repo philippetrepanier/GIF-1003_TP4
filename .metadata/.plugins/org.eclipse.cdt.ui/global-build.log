@@ -1,545 +1,35 @@
-12:54:02 **** Build of configuration Debug for project PersonneLib ****
-make all 
-Building file: ../Annuaire.cpp
-Invoking: GCC C++ Compiler
-g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Annuaire.d" -MT"Annuaire.o" -o "Annuaire.o" "../Annuaire.cpp"
-Finished building: ../Annuaire.cpp
- 
-Building file: ../ContratException.cpp
-Invoking: GCC C++ Compiler
-g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"ContratException.d" -MT"ContratException.o" -o "ContratException.o" "../ContratException.cpp"
-Finished building: ../ContratException.cpp
- 
-Building file: ../Date.cpp
-Invoking: GCC C++ Compiler
-g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Date.d" -MT"Date.o" -o "Date.o" "../Date.cpp"
-Finished building: ../Date.cpp
- 
-Building file: ../Entraineur.cpp
-Invoking: GCC C++ Compiler
-g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Entraineur.d" -MT"Entraineur.o" -o "Entraineur.o" "../Entraineur.cpp"
-Finished building: ../Entraineur.cpp
- 
-Building file: ../Joueur.cpp
-Invoking: GCC C++ Compiler
-g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Joueur.d" -MT"Joueur.o" -o "Joueur.o" "../Joueur.cpp"
-Finished building: ../Joueur.cpp
- 
-Building file: ../Personne.cpp
-Invoking: GCC C++ Compiler
-g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Personne.d" -MT"Personne.o" -o "Personne.o" "../Personne.cpp"
-Finished building: ../Personne.cpp
- 
-Building file: ../PersonneException.cpp
-Invoking: GCC C++ Compiler
-g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"PersonneException.d" -MT"PersonneException.o" -o "PersonneException.o" "../PersonneException.cpp"
-Finished building: ../PersonneException.cpp
- 
-Building file: ../validationFormat.cpp
-Invoking: GCC C++ Compiler
-g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"validationFormat.d" -MT"validationFormat.o" -o "validationFormat.o" "../validationFormat.cpp"
-Finished building: ../validationFormat.cpp
- 
-Building target: libPersonneLib.a
-Invoking: GCC Archiver
-ar -r  "libPersonneLib.a"  ./Annuaire.o ./ContratException.o ./Date.o ./Entraineur.o ./Joueur.o ./Personne.o ./PersonneException.o ./validationFormat.o   
-ar: création de libPersonneLib.a
-Finished building target: libPersonneLib.a
- 
-12:54:06 **** Build of configuration Debug for project Personne ****
-make all 
-Building file: ../main.cpp
-Invoking: GCC C++ Compiler
-g++ -std=c++98 -I"/home/etudiant/Bureau/GIT/111155105_tp4/PersonneLib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
-Finished building: ../main.cpp
- 
-Building target: Personne
-Invoking: GCC C++ Linker
-g++ -L"/home/etudiant/Bureau/GIT/111155105_tp4/PersonneLib/Debug" -o "Personne"  ./main.o   -lPersonneLib
-Finished building target: Personne
- 
-12:54:06 **** Build of project PersonneGUI ****
-make debug 
-make -f Makefile.Debug
-make[1] : on entre dans le répertoire « /home/etudiant/Bureau/GIT/111155105_tp4/PersonneGUI »
-/usr/lib/i386-linux-gnu/qt4/bin/uic supprimerpersonne.ui -o ui_supprimerpersonne.h
-/usr/lib/i386-linux-gnu/qt4/bin/uic ajouterjoueur.ui -o ui_ajouterjoueur.h
-/usr/lib/i386-linux-gnu/qt4/bin/uic ajouterentraineur.ui -o ui_ajouterentraineur.h
-/usr/lib/i386-linux-gnu/qt4/bin/uic personnegui.ui -o ui_personnegui.h
-g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. -o debug/supprimerpersonne.o supprimerpersonne.cpp
-g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. -o debug/ajouterjoueur.o ajouterjoueur.cpp
-g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. -o debug/ajouterentraineur.o ajouterentraineur.cpp
-g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. -o debug/main.o main.cpp
-g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. -o debug/personnegui.o personnegui.cpp
-/usr/lib/i386-linux-gnu/qt4/bin/moc -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. supprimerpersonne.h -o debug/moc_supprimerpersonne.cpp
-g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. -o debug/moc_supprimerpersonne.o debug/moc_supprimerpersonne.cpp
-/usr/lib/i386-linux-gnu/qt4/bin/moc -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. ajouterjoueur.h -o debug/moc_ajouterjoueur.cpp
-g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. -o debug/moc_ajouterjoueur.o debug/moc_ajouterjoueur.cpp
-/usr/lib/i386-linux-gnu/qt4/bin/moc -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. ajouterentraineur.h -o debug/moc_ajouterentraineur.cpp
-g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. -o debug/moc_ajouterentraineur.o debug/moc_ajouterentraineur.cpp
-/usr/lib/i386-linux-gnu/qt4/bin/moc -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. personnegui.h -o debug/moc_personnegui.cpp
-g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. -o debug/moc_personnegui.o debug/moc_personnegui.cpp
-g++  -o PersonneGUI debug/supprimerpersonne.o debug/ajouterjoueur.o debug/ajouterentraineur.o debug/main.o debug/personnegui.o debug/moc_supprimerpersonne.o debug/moc_ajouterjoueur.o debug/moc_ajouterentraineur.o debug/moc_personnegui.o    -L/usr/lib/i386-linux-gnu ../PersonneLib/Debug/libPersonneLib.a -lQtGui -lQtCore -lpthread 
-{ test -n "" && DESTDIR="" || DESTDIR=.; } && test $(gdb --version | sed -e 's,[^0-9][^0-9]*\([0-9]\)\.\([0-9]\).*,\1\2,;q') -gt 72 && gdb --nx --batch --quiet -ex 'set confirm off' -ex "save gdb-index $DESTDIR" -ex quit 'PersonneGUI' && test -f PersonneGUI.gdb-index && objcopy --add-section '.gdb_index=PersonneGUI.gdb-index' --set-section-flags '.gdb_index=readonly' 'PersonneGUI' 'PersonneGUI' && rm -f PersonneGUI.gdb-index || true
-make[1] : on quitte le répertoire « /home/etudiant/Bureau/GIT/111155105_tp4/PersonneGUI »
-12:54:12 **** Incremental Build of configuration Debug for project PersonneLib ****
+14:52:50 **** Incremental Build of configuration Debug for project PersonneLib ****
 make all 
 make: rien à faire pour « all ».
-12:54:12 **** Build of configuration Debug for project Testeur ****
+14:52:52 **** Incremental Build of configuration Debug for project PersonneLib ****
+make all 
+make: rien à faire pour « all ».
+14:52:52 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+make: rien à faire pour « all ».
+14:53:10 **** Incremental Build of configuration Debug for project PersonneLib ****
+make all 
+make: rien à faire pour « all ».
+14:53:10 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+make: rien à faire pour « all ».
+14:53:45 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+make: rien à faire pour « all ».
+14:54:05 **** Incremental Build of configuration Debug for project PersonneLib ****
+make all 
+make: rien à faire pour « all ».
+14:54:06 **** Incremental Build of configuration Debug for project Testeur ****
 make all 
 Building file: ../AnnuaireTesteur.cpp
 Invoking: GCC C++ Compiler
 g++ -std=c++98 -I"/home/etudiant/Bureau/GIT/111155105_tp4/PersonneLib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"AnnuaireTesteur.d" -MT"AnnuaireTesteur.o" -o "AnnuaireTesteur.o" "../AnnuaireTesteur.cpp"
-../AnnuaireTesteur.cpp:64:19: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
-  string nomClub = "NOM DU CLUB";
-                   ^
-../AnnuaireTesteur.cpp:66:22: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
-  string nom_joueur = "Hockey";
-                      ^
-../AnnuaireTesteur.cpp:67:25: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
-  string prenom_joueur = "Joueur";
-                         ^
-../AnnuaireTesteur.cpp:68:45: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
-  Date dateNaissance_joueur = Date(5, 5, 2001);
-                                             ^
-../AnnuaireTesteur.cpp:69:28: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
-  string telephone_joueur = "418 658-2222";
-                            ^
-../AnnuaireTesteur.cpp:70:27: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
-  string position_joueur = "CENTRE";
-                           ^
-../AnnuaireTesteur.cpp:72:19: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
-  string nom_ent = "Thibault";
-                   ^
-../AnnuaireTesteur.cpp:73:22: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
-  string prenom_ent = "Marc";
-                      ^
-../AnnuaireTesteur.cpp:74:42: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
-  Date dateNaissance_ent = Date(5, 5, 1980);
-                                          ^
-../AnnuaireTesteur.cpp:75:25: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
-  string telephone_ent = "418 656-2177";
-                         ^
-../AnnuaireTesteur.cpp:76:18: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
-  char sexe_ent = 'M';
-                  ^
-../AnnuaireTesteur.cpp:77:20: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
-  string RAMQ_ent = "THIM 8005 0522";
-                    ^
-Finished building: ../AnnuaireTesteur.cpp
- 
-Building file: ../EntraineurTesteur.cpp
-Invoking: GCC C++ Compiler
-g++ -std=c++98 -I"/home/etudiant/Bureau/GIT/111155105_tp4/PersonneLib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"EntraineurTesteur.d" -MT"EntraineurTesteur.o" -o "EntraineurTesteur.o" "../EntraineurTesteur.cpp"
-Finished building: ../EntraineurTesteur.cpp
- 
-Building file: ../JoueurTesteur.cpp
-Invoking: GCC C++ Compiler
-g++ -std=c++98 -I"/home/etudiant/Bureau/GIT/111155105_tp4/PersonneLib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"JoueurTesteur.d" -MT"JoueurTesteur.o" -o "JoueurTesteur.o" "../JoueurTesteur.cpp"
-Finished building: ../JoueurTesteur.cpp
- 
-Building file: ../PersonneTesteur.cpp
-Invoking: GCC C++ Compiler
-g++ -std=c++98 -I"/home/etudiant/Bureau/GIT/111155105_tp4/PersonneLib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"PersonneTesteur.d" -MT"PersonneTesteur.o" -o "PersonneTesteur.o" "../PersonneTesteur.cpp"
-Finished building: ../PersonneTesteur.cpp
- 
-Building target: Testeur
-Invoking: GCC C++ Linker
-g++ -L"/home/etudiant/Bureau/GIT/111155105_tp4/PersonneLib/Debug" -o "Testeur"  ./AnnuaireTesteur.o ./EntraineurTesteur.o ./JoueurTesteur.o ./PersonneTesteur.o   -lPersonneLib -lgtest_main -lgtest -lpthread
-Finished building target: Testeur
- 
-12:56:44 **** Incremental Build of configuration Debug for project Personne ****
-make all 
-make: rien à faire pour « all ».
-12:56:44 **** Incremental Build of project PersonneGUI ****
-make debug 
-make -f Makefile.Debug
-make[1] : on entre dans le répertoire « /home/etudiant/Bureau/GIT/111155105_tp4/PersonneGUI »
-/usr/lib/i386-linux-gnu/qt4/bin/uic ajouterentraineur.ui -o ui_ajouterentraineur.h
-g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. -o debug/ajouterjoueur.o ajouterjoueur.cpp
-g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. -o debug/ajouterentraineur.o ajouterentraineur.cpp
-g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. -o debug/personnegui.o personnegui.cpp
-/usr/lib/i386-linux-gnu/qt4/bin/moc -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. ajouterentraineur.h -o debug/moc_ajouterentraineur.cpp
-g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. -o debug/moc_ajouterentraineur.o debug/moc_ajouterentraineur.cpp
-g++  -o PersonneGUI debug/supprimerpersonne.o debug/ajouterjoueur.o debug/ajouterentraineur.o debug/main.o debug/personnegui.o debug/moc_supprimerpersonne.o debug/moc_ajouterjoueur.o debug/moc_ajouterentraineur.o debug/moc_personnegui.o    -L/usr/lib/i386-linux-gnu ../PersonneLib/Debug/libPersonneLib.a -lQtGui -lQtCore -lpthread 
-{ test -n "" && DESTDIR="" || DESTDIR=.; } && test $(gdb --version | sed -e 's,[^0-9][^0-9]*\([0-9]\)\.\([0-9]\).*,\1\2,;q') -gt 72 && gdb --nx --batch --quiet -ex 'set confirm off' -ex "save gdb-index $DESTDIR" -ex quit 'PersonneGUI' && test -f PersonneGUI.gdb-index && objcopy --add-section '.gdb_index=PersonneGUI.gdb-index' --set-section-flags '.gdb_index=readonly' 'PersonneGUI' 'PersonneGUI' && rm -f PersonneGUI.gdb-index || true
-make[1] : on quitte le répertoire « /home/etudiant/Bureau/GIT/111155105_tp4/PersonneGUI »
-12:56:47 **** Incremental Build of configuration Debug for project PersonneLib ****
-make all 
-make: rien à faire pour « all ».
-12:56:47 **** Incremental Build of configuration Debug for project Testeur ****
-make all 
-make: rien à faire pour « all ».
-13:00:00 **** Incremental Build of configuration Debug for project Personne ****
-make all 
-make: rien à faire pour « all ».
-13:00:00 **** Incremental Build of project PersonneGUI ****
-make debug 
-make -f Makefile.Debug
-make[1] : on entre dans le répertoire « /home/etudiant/Bureau/GIT/111155105_tp4/PersonneGUI »
-g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. -o debug/main.o main.cpp
-g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. -o debug/personnegui.o personnegui.cpp
-/usr/lib/i386-linux-gnu/qt4/bin/moc -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. personnegui.h -o debug/moc_personnegui.cpp
-g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. -o debug/moc_personnegui.o debug/moc_personnegui.cpp
-g++  -o PersonneGUI debug/supprimerpersonne.o debug/ajouterjoueur.o debug/ajouterentraineur.o debug/main.o debug/personnegui.o debug/moc_supprimerpersonne.o debug/moc_ajouterjoueur.o debug/moc_ajouterentraineur.o debug/moc_personnegui.o    -L/usr/lib/i386-linux-gnu ../PersonneLib/Debug/libPersonneLib.a -lQtGui -lQtCore -lpthread 
-{ test -n "" && DESTDIR="" || DESTDIR=.; } && test $(gdb --version | sed -e 's,[^0-9][^0-9]*\([0-9]\)\.\([0-9]\).*,\1\2,;q') -gt 72 && gdb --nx --batch --quiet -ex 'set confirm off' -ex "save gdb-index $DESTDIR" -ex quit 'PersonneGUI' && test -f PersonneGUI.gdb-index && objcopy --add-section '.gdb_index=PersonneGUI.gdb-index' --set-section-flags '.gdb_index=readonly' 'PersonneGUI' 'PersonneGUI' && rm -f PersonneGUI.gdb-index || true
-make[1] : on quitte le répertoire « /home/etudiant/Bureau/GIT/111155105_tp4/PersonneGUI »
-13:00:02 **** Incremental Build of configuration Debug for project PersonneLib ****
-make all 
-make: rien à faire pour « all ».
-13:00:03 **** Incremental Build of configuration Debug for project Testeur ****
-make all 
-make: rien à faire pour « all ».
-13:00:58 **** Incremental Build of configuration Debug for project Personne ****
-make all 
-make: rien à faire pour « all ».
-13:00:58 **** Incremental Build of project PersonneGUI ****
-make debug 
-make -f Makefile.Debug
-make[1] : on entre dans le répertoire « /home/etudiant/Bureau/GIT/111155105_tp4/PersonneGUI »
-g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. -o debug/ajouterjoueur.o ajouterjoueur.cpp
-g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. -o debug/ajouterentraineur.o ajouterentraineur.cpp
-g++  -o PersonneGUI debug/supprimerpersonne.o debug/ajouterjoueur.o debug/ajouterentraineur.o debug/main.o debug/personnegui.o debug/moc_supprimerpersonne.o debug/moc_ajouterjoueur.o debug/moc_ajouterentraineur.o debug/moc_personnegui.o    -L/usr/lib/i386-linux-gnu ../PersonneLib/Debug/libPersonneLib.a -lQtGui -lQtCore -lpthread 
-{ test -n "" && DESTDIR="" || DESTDIR=.; } && test $(gdb --version | sed -e 's,[^0-9][^0-9]*\([0-9]\)\.\([0-9]\).*,\1\2,;q') -gt 72 && gdb --nx --batch --quiet -ex 'set confirm off' -ex "save gdb-index $DESTDIR" -ex quit 'PersonneGUI' && test -f PersonneGUI.gdb-index && objcopy --add-section '.gdb_index=PersonneGUI.gdb-index' --set-section-flags '.gdb_index=readonly' 'PersonneGUI' 'PersonneGUI' && rm -f PersonneGUI.gdb-index || true
-make[1] : on quitte le répertoire « /home/etudiant/Bureau/GIT/111155105_tp4/PersonneGUI »
-13:01:00 **** Incremental Build of configuration Debug for project PersonneLib ****
-make all 
-make: rien à faire pour « all ».
-13:01:00 **** Incremental Build of configuration Debug for project Testeur ****
-make all 
-make: rien à faire pour « all ».
-13:02:15 **** Incremental Build of configuration Debug for project Personne ****
-make all 
-make: rien à faire pour « all ».
-13:02:15 **** Incremental Build of project PersonneGUI ****
-make debug 
-make -f Makefile.Debug
-make[1] : on entre dans le répertoire « /home/etudiant/Bureau/GIT/111155105_tp4/PersonneGUI »
-/usr/lib/i386-linux-gnu/qt4/bin/uic personnegui.ui -o ui_personnegui.h
-g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. -o debug/main.o main.cpp
-g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. -o debug/personnegui.o personnegui.cpp
-/usr/lib/i386-linux-gnu/qt4/bin/moc -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. personnegui.h -o debug/moc_personnegui.cpp
-g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. -o debug/moc_personnegui.o debug/moc_personnegui.cpp
-g++  -o PersonneGUI debug/supprimerpersonne.o debug/ajouterjoueur.o debug/ajouterentraineur.o debug/main.o debug/personnegui.o debug/moc_supprimerpersonne.o debug/moc_ajouterjoueur.o debug/moc_ajouterentraineur.o debug/moc_personnegui.o    -L/usr/lib/i386-linux-gnu ../PersonneLib/Debug/libPersonneLib.a -lQtGui -lQtCore -lpthread 
-{ test -n "" && DESTDIR="" || DESTDIR=.; } && test $(gdb --version | sed -e 's,[^0-9][^0-9]*\([0-9]\)\.\([0-9]\).*,\1\2,;q') -gt 72 && gdb --nx --batch --quiet -ex 'set confirm off' -ex "save gdb-index $DESTDIR" -ex quit 'PersonneGUI' && test -f PersonneGUI.gdb-index && objcopy --add-section '.gdb_index=PersonneGUI.gdb-index' --set-section-flags '.gdb_index=readonly' 'PersonneGUI' 'PersonneGUI' && rm -f PersonneGUI.gdb-index || true
-make[1] : on quitte le répertoire « /home/etudiant/Bureau/GIT/111155105_tp4/PersonneGUI »
-13:02:17 **** Incremental Build of configuration Debug for project PersonneLib ****
-make all 
-make: rien à faire pour « all ».
-13:02:17 **** Incremental Build of configuration Debug for project Testeur ****
-make all 
-make: rien à faire pour « all ».
-13:03:26 **** Incremental Build of configuration Debug for project Personne ****
-make all 
-make: rien à faire pour « all ».
-13:03:26 **** Incremental Build of project PersonneGUI ****
-make debug 
-make -f Makefile.Debug
-make[1] : on entre dans le répertoire « /home/etudiant/Bureau/GIT/111155105_tp4/PersonneGUI »
-/usr/lib/i386-linux-gnu/qt4/bin/uic ajouterentraineur.ui -o ui_ajouterentraineur.h
-g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. -o debug/ajouterentraineur.o ajouterentraineur.cpp
-g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. -o debug/personnegui.o personnegui.cpp
-/usr/lib/i386-linux-gnu/qt4/bin/moc -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. ajouterentraineur.h -o debug/moc_ajouterentraineur.cpp
-g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. -o debug/moc_ajouterentraineur.o debug/moc_ajouterentraineur.cpp
-g++  -o PersonneGUI debug/supprimerpersonne.o debug/ajouterjoueur.o debug/ajouterentraineur.o debug/main.o debug/personnegui.o debug/moc_supprimerpersonne.o debug/moc_ajouterjoueur.o debug/moc_ajouterentraineur.o debug/moc_personnegui.o    -L/usr/lib/i386-linux-gnu ../PersonneLib/Debug/libPersonneLib.a -lQtGui -lQtCore -lpthread 
-{ test -n "" && DESTDIR="" || DESTDIR=.; } && test $(gdb --version | sed -e 's,[^0-9][^0-9]*\([0-9]\)\.\([0-9]\).*,\1\2,;q') -gt 72 && gdb --nx --batch --quiet -ex 'set confirm off' -ex "save gdb-index $DESTDIR" -ex quit 'PersonneGUI' && test -f PersonneGUI.gdb-index && objcopy --add-section '.gdb_index=PersonneGUI.gdb-index' --set-section-flags '.gdb_index=readonly' 'PersonneGUI' 'PersonneGUI' && rm -f PersonneGUI.gdb-index || true
-make[1] : on quitte le répertoire « /home/etudiant/Bureau/GIT/111155105_tp4/PersonneGUI »
-13:03:28 **** Incremental Build of configuration Debug for project PersonneLib ****
-make all 
-make: rien à faire pour « all ».
-13:03:28 **** Incremental Build of configuration Debug for project Testeur ****
-make all 
-make: rien à faire pour « all ».
-13:04:36 **** Incremental Build of configuration Debug for project Personne ****
-make all 
-make: rien à faire pour « all ».
-13:04:36 **** Incremental Build of project PersonneGUI ****
-make debug 
-make -f Makefile.Debug
-make[1] : on entre dans le répertoire « /home/etudiant/Bureau/GIT/111155105_tp4/PersonneGUI »
-/usr/lib/i386-linux-gnu/qt4/bin/uic personnegui.ui -o ui_personnegui.h
-g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. -o debug/main.o main.cpp
-g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. -o debug/personnegui.o personnegui.cpp
-/usr/lib/i386-linux-gnu/qt4/bin/moc -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. personnegui.h -o debug/moc_personnegui.cpp
-g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. -o debug/moc_personnegui.o debug/moc_personnegui.cpp
-g++  -o PersonneGUI debug/supprimerpersonne.o debug/ajouterjoueur.o debug/ajouterentraineur.o debug/main.o debug/personnegui.o debug/moc_supprimerpersonne.o debug/moc_ajouterjoueur.o debug/moc_ajouterentraineur.o debug/moc_personnegui.o    -L/usr/lib/i386-linux-gnu ../PersonneLib/Debug/libPersonneLib.a -lQtGui -lQtCore -lpthread 
-{ test -n "" && DESTDIR="" || DESTDIR=.; } && test $(gdb --version | sed -e 's,[^0-9][^0-9]*\([0-9]\)\.\([0-9]\).*,\1\2,;q') -gt 72 && gdb --nx --batch --quiet -ex 'set confirm off' -ex "save gdb-index $DESTDIR" -ex quit 'PersonneGUI' && test -f PersonneGUI.gdb-index && objcopy --add-section '.gdb_index=PersonneGUI.gdb-index' --set-section-flags '.gdb_index=readonly' 'PersonneGUI' 'PersonneGUI' && rm -f PersonneGUI.gdb-index || true
-make[1] : on quitte le répertoire « /home/etudiant/Bureau/GIT/111155105_tp4/PersonneGUI »
-13:04:39 **** Incremental Build of configuration Debug for project PersonneLib ****
-make all 
-make: rien à faire pour « all ».
-13:04:39 **** Incremental Build of configuration Debug for project Testeur ****
-make all 
-make: rien à faire pour « all ».
-13:10:05 **** Incremental Build of configuration Debug for project Personne ****
-make all 
-make: rien à faire pour « all ».
-13:10:05 **** Incremental Build of project PersonneGUI ****
-make debug 
-make -f Makefile.Debug
-make[1] : on entre dans le répertoire « /home/etudiant/Bureau/GIT/111155105_tp4/PersonneGUI »
-g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. -o debug/personnegui.o personnegui.cpp
-g++  -o PersonneGUI debug/supprimerpersonne.o debug/ajouterjoueur.o debug/ajouterentraineur.o debug/main.o debug/personnegui.o debug/moc_supprimerpersonne.o debug/moc_ajouterjoueur.o debug/moc_ajouterentraineur.o debug/moc_personnegui.o    -L/usr/lib/i386-linux-gnu ../PersonneLib/Debug/libPersonneLib.a -lQtGui -lQtCore -lpthread 
-{ test -n "" && DESTDIR="" || DESTDIR=.; } && test $(gdb --version | sed -e 's,[^0-9][^0-9]*\([0-9]\)\.\([0-9]\).*,\1\2,;q') -gt 72 && gdb --nx --batch --quiet -ex 'set confirm off' -ex "save gdb-index $DESTDIR" -ex quit 'PersonneGUI' && test -f PersonneGUI.gdb-index && objcopy --add-section '.gdb_index=PersonneGUI.gdb-index' --set-section-flags '.gdb_index=readonly' 'PersonneGUI' 'PersonneGUI' && rm -f PersonneGUI.gdb-index || true
-make[1] : on quitte le répertoire « /home/etudiant/Bureau/GIT/111155105_tp4/PersonneGUI »
-13:10:06 **** Incremental Build of configuration Debug for project PersonneLib ****
-make all 
-make: rien à faire pour « all ».
-13:10:06 **** Incremental Build of configuration Debug for project Testeur ****
-make all 
-make: rien à faire pour « all ».
-13:12:56 **** Incremental Build of project PersonneGUI ****
-make debug 
-make -f Makefile.Debug
-make[1] : on entre dans le répertoire « /home/etudiant/Bureau/GIT/111155105_tp4/PersonneGUI »
-/usr/lib/i386-linux-gnu/qt4/bin/uic personnegui.ui -o ui_personnegui.h
-g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. -o debug/main.o main.cpp
-g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. -o debug/personnegui.o personnegui.cpp
-/usr/lib/i386-linux-gnu/qt4/bin/moc -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. personnegui.h -o debug/moc_personnegui.cpp
-g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. -o debug/moc_personnegui.o debug/moc_personnegui.cpp
-g++  -o PersonneGUI debug/supprimerpersonne.o debug/ajouterjoueur.o debug/ajouterentraineur.o debug/main.o debug/personnegui.o debug/moc_supprimerpersonne.o debug/moc_ajouterjoueur.o debug/moc_ajouterentraineur.o debug/moc_personnegui.o    -L/usr/lib/i386-linux-gnu ../PersonneLib/Debug/libPersonneLib.a -lQtGui -lQtCore -lpthread 
-{ test -n "" && DESTDIR="" || DESTDIR=.; } && test $(gdb --version | sed -e 's,[^0-9][^0-9]*\([0-9]\)\.\([0-9]\).*,\1\2,;q') -gt 72 && gdb --nx --batch --quiet -ex 'set confirm off' -ex "save gdb-index $DESTDIR" -ex quit 'PersonneGUI' && test -f PersonneGUI.gdb-index && objcopy --add-section '.gdb_index=PersonneGUI.gdb-index' --set-section-flags '.gdb_index=readonly' 'PersonneGUI' 'PersonneGUI' && rm -f PersonneGUI.gdb-index || true
-make[1] : on quitte le répertoire « /home/etudiant/Bureau/GIT/111155105_tp4/PersonneGUI »
-/usr/lib/i386-linux-gnu/qt4/bin/qmake -recursive CONFIG+=debug_and_release PersonneGUI.pro 
-13:23:40 **** Incremental Build of configuration Debug for project Personne ****
-make all 
-make: rien à faire pour « all ».
-13:23:40 **** Incremental Build of project PersonneGUI ****
-make debug 
-make -f Makefile.Debug
-make[1] : on entre dans le répertoire « /home/etudiant/Bureau/GIT/111155105_tp4/PersonneGUI »
-/usr/lib/i386-linux-gnu/qt4/bin/uic supprimerpersonne.ui -o ui_supprimerpersonne.h
-g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. -o debug/supprimerpersonne.o supprimerpersonne.cpp
-supprimerpersonne.cpp:2:23: fatal error: QmessageBox: Aucun fichier ou dossier de ce type
-compilation terminated.
-make[1]: *** [debug/supprimerpersonne.o] Erreur 1
-Makefile.Debug:201 : la recette pour la cible « debug/supprimerpersonne.o » a échouée
-make[1] : on quitte le répertoire « /home/etudiant/Bureau/GIT/111155105_tp4/PersonneGUI »
-make: *** [debug] Erreur 2
-Makefile:50 : la recette pour la cible « debug » a échouée
-13:23:40 **** Incremental Build of configuration Debug for project PersonneLib ****
-make all 
-make: rien à faire pour « all ».
-13:23:41 **** Incremental Build of configuration Debug for project Testeur ****
-make all 
-make: rien à faire pour « all ».
-13:25:10 **** Incremental Build of configuration Debug for project Personne ****
-make all 
-make: rien à faire pour « all ».
-13:25:10 **** Incremental Build of project PersonneGUI ****
-make debug 
-make -f Makefile.Debug
-make[1] : on entre dans le répertoire « /home/etudiant/Bureau/GIT/111155105_tp4/PersonneGUI »
-g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. -o debug/supprimerpersonne.o supprimerpersonne.cpp
-supprimerpersonne.cpp:2:23: fatal error: QmessageBox: Aucun fichier ou dossier de ce type
-compilation terminated.
-make[1]: *** [debug/supprimerpersonne.o] Erreur 1
-make: *** [debug] Erreur 2
-Makefile.Debug:201 : la recette pour la cible « debug/supprimerpersonne.o » a échouée
-make[1] : on quitte le répertoire « /home/etudiant/Bureau/GIT/111155105_tp4/PersonneGUI »
-Makefile:50 : la recette pour la cible « debug » a échouée
-13:25:11 **** Incremental Build of configuration Debug for project PersonneLib ****
-make all 
-make: rien à faire pour « all ».
-13:25:11 **** Incremental Build of configuration Debug for project Testeur ****
-make all 
-make: rien à faire pour « all ».
-13:25:25 **** Incremental Build of configuration Debug for project Personne ****
-make all 
-make: rien à faire pour « all ».
-13:25:25 **** Incremental Build of project PersonneGUI ****
-make debug 
-make -f Makefile.Debug
-make[1] : on entre dans le répertoire « /home/etudiant/Bureau/GIT/111155105_tp4/PersonneGUI »
-g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. -o debug/supprimerpersonne.o supprimerpersonne.cpp
-g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. -o debug/personnegui.o personnegui.cpp
-/usr/lib/i386-linux-gnu/qt4/bin/moc -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. supprimerpersonne.h -o debug/moc_supprimerpersonne.cpp
-g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. -o debug/moc_supprimerpersonne.o debug/moc_supprimerpersonne.cpp
-g++  -o PersonneGUI debug/supprimerpersonne.o debug/ajouterjoueur.o debug/ajouterentraineur.o debug/main.o debug/personnegui.o debug/moc_supprimerpersonne.o debug/moc_ajouterjoueur.o debug/moc_ajouterentraineur.o debug/moc_personnegui.o    -L/usr/lib/i386-linux-gnu ../PersonneLib/Debug/libPersonneLib.a -lQtGui -lQtCore -lpthread 
-{ test -n "" && DESTDIR="" || DESTDIR=.; } && test $(gdb --version | sed -e 's,[^0-9][^0-9]*\([0-9]\)\.\([0-9]\).*,\1\2,;q') -gt 72 && gdb --nx --batch --quiet -ex 'set confirm off' -ex "save gdb-index $DESTDIR" -ex quit 'PersonneGUI' && test -f PersonneGUI.gdb-index && objcopy --add-section '.gdb_index=PersonneGUI.gdb-index' --set-section-flags '.gdb_index=readonly' 'PersonneGUI' 'PersonneGUI' && rm -f PersonneGUI.gdb-index || true
-make[1] : on quitte le répertoire « /home/etudiant/Bureau/GIT/111155105_tp4/PersonneGUI »
-13:25:27 **** Incremental Build of configuration Debug for project PersonneLib ****
-make all 
-make: rien à faire pour « all ».
-13:25:27 **** Incremental Build of configuration Debug for project Testeur ****
-make all 
-make: rien à faire pour « all ».
-13:28:06 **** Incremental Build of project PersonneGUI ****
-make debug 
-make -f Makefile.Debug
-make[1] : on entre dans le répertoire « /home/etudiant/Bureau/GIT/111155105_tp4/PersonneGUI »
-g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. -o debug/supprimerpersonne.o supprimerpersonne.cpp
-supprimerpersonne.cpp: In member function ‘void supprimerPersonne::validerFormulaire()’:
-supprimerpersonne.cpp:22:6: warning: unused variable ‘ret’ [-Wunused-variable]
-  int ret = msgBox.exec();
-      ^
-g++  -o PersonneGUI debug/supprimerpersonne.o debug/ajouterjoueur.o debug/ajouterentraineur.o debug/main.o debug/personnegui.o debug/moc_supprimerpersonne.o debug/moc_ajouterjoueur.o debug/moc_ajouterentraineur.o debug/moc_personnegui.o    -L/usr/lib/i386-linux-gnu ../PersonneLib/Debug/libPersonneLib.a -lQtGui -lQtCore -lpthread 
-{ test -n "" && DESTDIR="" || DESTDIR=.; } && test $(gdb --version | sed -e 's,[^0-9][^0-9]*\([0-9]\)\.\([0-9]\).*,\1\2,;q') -gt 72 && gdb --nx --batch --quiet -ex 'set confirm off' -ex "save gdb-index $DESTDIR" -ex quit 'PersonneGUI' && test -f PersonneGUI.gdb-index && objcopy --add-section '.gdb_index=PersonneGUI.gdb-index' --set-section-flags '.gdb_index=readonly' 'PersonneGUI' 'PersonneGUI' && rm -f PersonneGUI.gdb-index || true
-make[1] : on quitte le répertoire « /home/etudiant/Bureau/GIT/111155105_tp4/PersonneGUI »
-13:30:05 **** Incremental Build of configuration Debug for project Personne ****
-make all 
-make: rien à faire pour « all ».
-13:30:05 **** Incremental Build of project PersonneGUI ****
-make debug 
-make -f Makefile.Debug
-make[1] : on entre dans le répertoire « /home/etudiant/Bureau/GIT/111155105_tp4/PersonneGUI »
-g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. -o debug/supprimerpersonne.o supprimerpersonne.cpp
-g++  -o PersonneGUI debug/supprimerpersonne.o debug/ajouterjoueur.o debug/ajouterentraineur.o debug/main.o debug/personnegui.o debug/moc_supprimerpersonne.o debug/moc_ajouterjoueur.o debug/moc_ajouterentraineur.o debug/moc_personnegui.o    -L/usr/lib/i386-linux-gnu ../PersonneLib/Debug/libPersonneLib.a -lQtGui -lQtCore -lpthread 
-{ test -n "" && DESTDIR="" || DESTDIR=.; } && test $(gdb --version | sed -e 's,[^0-9][^0-9]*\([0-9]\)\.\([0-9]\).*,\1\2,;q') -gt 72 && gdb --nx --batch --quiet -ex 'set confirm off' -ex "save gdb-index $DESTDIR" -ex quit 'PersonneGUI' && test -f PersonneGUI.gdb-index && objcopy --add-section '.gdb_index=PersonneGUI.gdb-index' --set-section-flags '.gdb_index=readonly' 'PersonneGUI' 'PersonneGUI' && rm -f PersonneGUI.gdb-index || true
-make[1] : on quitte le répertoire « /home/etudiant/Bureau/GIT/111155105_tp4/PersonneGUI »
-13:30:06 **** Incremental Build of configuration Debug for project PersonneLib ****
-make all 
-make: rien à faire pour « all ».
-13:30:06 **** Incremental Build of configuration Debug for project Testeur ****
-make all 
-make: rien à faire pour « all ».
-13:31:43 **** Incremental Build of configuration Debug for project Personne ****
-make all 
-make: rien à faire pour « all ».
-13:31:43 **** Incremental Build of project PersonneGUI ****
-make debug 
-make -f Makefile.Debug
-make[1] : on entre dans le répertoire « /home/etudiant/Bureau/GIT/111155105_tp4/PersonneGUI »
-g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. -o debug/supprimerpersonne.o supprimerpersonne.cpp
-g++  -o PersonneGUI debug/supprimerpersonne.o debug/ajouterjoueur.o debug/ajouterentraineur.o debug/main.o debug/personnegui.o debug/moc_supprimerpersonne.o debug/moc_ajouterjoueur.o debug/moc_ajouterentraineur.o debug/moc_personnegui.o    -L/usr/lib/i386-linux-gnu ../PersonneLib/Debug/libPersonneLib.a -lQtGui -lQtCore -lpthread 
-{ test -n "" && DESTDIR="" || DESTDIR=.; } && test $(gdb --version | sed -e 's,[^0-9][^0-9]*\([0-9]\)\.\([0-9]\).*,\1\2,;q') -gt 72 && gdb --nx --batch --quiet -ex 'set confirm off' -ex "save gdb-index $DESTDIR" -ex quit 'PersonneGUI' && test -f PersonneGUI.gdb-index && objcopy --add-section '.gdb_index=PersonneGUI.gdb-index' --set-section-flags '.gdb_index=readonly' 'PersonneGUI' 'PersonneGUI' && rm -f PersonneGUI.gdb-index || true
-make[1] : on quitte le répertoire « /home/etudiant/Bureau/GIT/111155105_tp4/PersonneGUI »
-13:31:44 **** Incremental Build of configuration Debug for project PersonneLib ****
-make all 
-make: rien à faire pour « all ».
-13:31:44 **** Incremental Build of configuration Debug for project Testeur ****
-make all 
-make: rien à faire pour « all ».
-13:32:29 **** Incremental Build of configuration Debug for project Personne ****
-make all 
-make: rien à faire pour « all ».
-13:32:29 **** Incremental Build of project PersonneGUI ****
-make debug 
-make -f Makefile.Debug
-make[1] : on entre dans le répertoire « /home/etudiant/Bureau/GIT/111155105_tp4/PersonneGUI »
-g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. -o debug/supprimerpersonne.o supprimerpersonne.cpp
-g++  -o PersonneGUI debug/supprimerpersonne.o debug/ajouterjoueur.o debug/ajouterentraineur.o debug/main.o debug/personnegui.o debug/moc_supprimerpersonne.o debug/moc_ajouterjoueur.o debug/moc_ajouterentraineur.o debug/moc_personnegui.o    -L/usr/lib/i386-linux-gnu ../PersonneLib/Debug/libPersonneLib.a -lQtGui -lQtCore -lpthread 
-{ test -n "" && DESTDIR="" || DESTDIR=.; } && test $(gdb --version | sed -e 's,[^0-9][^0-9]*\([0-9]\)\.\([0-9]\).*,\1\2,;q') -gt 72 && gdb --nx --batch --quiet -ex 'set confirm off' -ex "save gdb-index $DESTDIR" -ex quit 'PersonneGUI' && test -f PersonneGUI.gdb-index && objcopy --add-section '.gdb_index=PersonneGUI.gdb-index' --set-section-flags '.gdb_index=readonly' 'PersonneGUI' 'PersonneGUI' && rm -f PersonneGUI.gdb-index || true
-make[1] : on quitte le répertoire « /home/etudiant/Bureau/GIT/111155105_tp4/PersonneGUI »
-13:32:30 **** Incremental Build of configuration Debug for project PersonneLib ****
-make all 
-make: rien à faire pour « all ».
-13:32:30 **** Incremental Build of configuration Debug for project Testeur ****
-make all 
-make: rien à faire pour « all ».
-13:33:34 **** Incremental Build of configuration Debug for project Personne ****
-make all 
-make: rien à faire pour « all ».
-13:33:34 **** Incremental Build of project PersonneGUI ****
-make debug 
-make -f Makefile.Debug
-make[1] : on entre dans le répertoire « /home/etudiant/Bureau/GIT/111155105_tp4/PersonneGUI »
-g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. -o debug/supprimerpersonne.o supprimerpersonne.cpp
-g++  -o PersonneGUI debug/supprimerpersonne.o debug/ajouterjoueur.o debug/ajouterentraineur.o debug/main.o debug/personnegui.o debug/moc_supprimerpersonne.o debug/moc_ajouterjoueur.o debug/moc_ajouterentraineur.o debug/moc_personnegui.o    -L/usr/lib/i386-linux-gnu ../PersonneLib/Debug/libPersonneLib.a -lQtGui -lQtCore -lpthread 
-{ test -n "" && DESTDIR="" || DESTDIR=.; } && test $(gdb --version | sed -e 's,[^0-9][^0-9]*\([0-9]\)\.\([0-9]\).*,\1\2,;q') -gt 72 && gdb --nx --batch --quiet -ex 'set confirm off' -ex "save gdb-index $DESTDIR" -ex quit 'PersonneGUI' && test -f PersonneGUI.gdb-index && objcopy --add-section '.gdb_index=PersonneGUI.gdb-index' --set-section-flags '.gdb_index=readonly' 'PersonneGUI' 'PersonneGUI' && rm -f PersonneGUI.gdb-index || true
-make[1] : on quitte le répertoire « /home/etudiant/Bureau/GIT/111155105_tp4/PersonneGUI »
-13:33:35 **** Incremental Build of configuration Debug for project PersonneLib ****
-make all 
-make: rien à faire pour « all ».
-13:33:36 **** Incremental Build of configuration Debug for project Testeur ****
-make all 
-make: rien à faire pour « all ».
-13:42:26 **** Incremental Build of project PersonneGUI ****
-make debug 
-make -f Makefile.Debug
-make[1] : on entre dans le répertoire « /home/etudiant/Bureau/GIT/111155105_tp4/PersonneGUI »
-/usr/lib/i386-linux-gnu/qt4/bin/uic personnegui.ui -o ui_personnegui.h
-g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. -o debug/main.o main.cpp
-g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. -o debug/personnegui.o personnegui.cpp
-/usr/lib/i386-linux-gnu/qt4/bin/moc -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. personnegui.h -o debug/moc_personnegui.cpp
-g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. -o debug/moc_personnegui.o debug/moc_personnegui.cpp
-g++  -o PersonneGUI debug/supprimerpersonne.o debug/ajouterjoueur.o debug/ajouterentraineur.o debug/main.o debug/personnegui.o debug/moc_supprimerpersonne.o debug/moc_ajouterjoueur.o debug/moc_ajouterentraineur.o debug/moc_personnegui.o    -L/usr/lib/i386-linux-gnu ../PersonneLib/Debug/libPersonneLib.a -lQtGui -lQtCore -lpthread 
-{ test -n "" && DESTDIR="" || DESTDIR=.; } && test $(gdb --version | sed -e 's,[^0-9][^0-9]*\([0-9]\)\.\([0-9]\).*,\1\2,;q') -gt 72 && gdb --nx --batch --quiet -ex 'set confirm off' -ex "save gdb-index $DESTDIR" -ex quit 'PersonneGUI' && test -f PersonneGUI.gdb-index && objcopy --add-section '.gdb_index=PersonneGUI.gdb-index' --set-section-flags '.gdb_index=readonly' 'PersonneGUI' 'PersonneGUI' && rm -f PersonneGUI.gdb-index || true
-make[1] : on quitte le répertoire « /home/etudiant/Bureau/GIT/111155105_tp4/PersonneGUI »
-13:45:03 **** Incremental Build of configuration Debug for project Personne ****
-make all 
-Building file: ../main.cpp
-Invoking: GCC C++ Compiler
-g++ -std=c++98 -I"/home/etudiant/Bureau/GIT/111155105_tp4/PersonneLib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
-Finished building: ../main.cpp
- 
-Building target: Personne
-Invoking: GCC C++ Linker
-g++ -L"/home/etudiant/Bureau/GIT/111155105_tp4/PersonneLib/Debug" -o "Personne"  ./main.o   -lPersonneLib
-Finished building target: Personne
- 
-13:45:04 **** Incremental Build of project PersonneGUI ****
-make debug 
-make -f Makefile.Debug
-make[1] : on entre dans le répertoire « /home/etudiant/Bureau/GIT/111155105_tp4/PersonneGUI »
-/usr/lib/i386-linux-gnu/qt4/bin/uic personnegui.ui -o ui_personnegui.h
-g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. -o debug/main.o main.cpp
-g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. -o debug/personnegui.o personnegui.cpp
-personnegui.cpp:1:28: error: #include expects "FILENAME" or <FILENAME>
-personnegui.cpp:11:1: error: ‘PersonneGUI’ does not name a type
- PersonneGUI::PersonneGUI(QWidget *parent) :
- ^
-personnegui.cpp:21:1: error: ‘PersonneGUI’ does not name a type
- PersonneGUI::~PersonneGUI()
- ^
-personnegui.cpp:26:6: error: ‘PersonneGUI’ has not been declared
- void PersonneGUI::dialogEntraineur()
-      ^
-personnegui.cpp: In function ‘void dialogEntraineur()’:
-personnegui.cpp:28:37: error: invalid use of ‘this’ in non-member function
-  ajouterEntraineur saisieEntraineur(this);
-                                     ^
-personnegui.cpp:35:3: error: ‘annuaire’ was not declared in this scope
-   annuaire.ajouterPersonne(entraineur);
-   ^
-personnegui.cpp:37:3: error: ‘ui’ was not declared in this scope
-   ui.textEdit->setText(annuaire.reqAnnuaireFormate().c_str());
-   ^
-personnegui.cpp: At global scope:
-personnegui.cpp:43:6: error: ‘PersonneGUI’ has not been declared
- void PersonneGUI::dialogJoueur()
-      ^
-personnegui.cpp: In function ‘void dialogJoueur()’:
-personnegui.cpp:45:29: error: invalid use of ‘this’ in non-member function
-  ajouterJoueur saisieJoueur(this);
-                             ^
-personnegui.cpp:51:3: error: ‘annuaire’ was not declared in this scope
-   annuaire.ajouterPersonne(joueur);
-   ^
-personnegui.cpp:53:3: error: ‘ui’ was not declared in this scope
-   ui.textEdit->setText(annuaire.reqAnnuaireFormate().c_str());
-   ^
-personnegui.cpp: At global scope:
-personnegui.cpp:58:6: error: ‘PersonneGUI’ has not been declared
- void PersonneGUI::dialogSupprimer()
-      ^
-personnegui.cpp: In function ‘void dialogSupprimer()’:
-personnegui.cpp:60:36: error: invalid use of ‘this’ in non-member function
-  supprimerPersonne saisieSupprimer(this);
-                                    ^
-Makefile.Debug:223 : la recette pour la cible « debug/personnegui.o » a échouée
-make[1]: *** [debug/personnegui.o] Erreur 1
-make[1] : on quitte le répertoire « /home/etudiant/Bureau/GIT/111155105_tp4/PersonneGUI »
-Makefile:50 : la recette pour la cible « debug » a échouée
-make: *** [debug] Erreur 2
-13:45:05 **** Incremental Build of configuration Debug for project PersonneLib ****
-make all 
-Building file: ../Annuaire.cpp
-Invoking: GCC C++ Compiler
-g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Annuaire.d" -MT"Annuaire.o" -o "Annuaire.o" "../Annuaire.cpp"
-Finished building: ../Annuaire.cpp
- 
-Building target: libPersonneLib.a
-Invoking: GCC Archiver
-ar -r  "libPersonneLib.a"  ./Annuaire.o ./ContratException.o ./Date.o ./Entraineur.o ./Joueur.o ./Personne.o ./PersonneException.o ./validationFormat.o   
-ar: création de libPersonneLib.a
-Finished building target: libPersonneLib.a
- 
-13:45:06 **** Incremental Build of configuration Debug for project Testeur ****
-make all 
-Building file: ../AnnuaireTesteur.cpp
-Invoking: GCC C++ Compiler
-g++ -std=c++98 -I"/home/etudiant/Bureau/GIT/111155105_tp4/PersonneLib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"AnnuaireTesteur.d" -MT"AnnuaireTesteur.o" -o "AnnuaireTesteur.o" "../AnnuaireTesteur.cpp"
+In file included from ../AnnuaireTesteur.cpp:8:0:
+/home/etudiant/Bureau/GIT/111155105_tp4/PersonneLib/Annuaire.h: In member function ‘tp::Annuaire& tp::Annuaire::operator=(const tp::Annuaire&)’:
+/home/etudiant/Bureau/GIT/111155105_tp4/PersonneLib/Annuaire.h:45:2: warning: no return statement in function returning non-void [-Wreturn-type]
+  }
+  ^
+../AnnuaireTesteur.cpp: At global scope:
 ../AnnuaireTesteur.cpp:64:19: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
   string nomClub = "NOM DU CLUB";
                    ^
@@ -583,170 +73,945 @@ Invoking: GCC C++ Linker
 g++ -L"/home/etudiant/Bureau/GIT/111155105_tp4/PersonneLib/Debug" -o "Testeur"  ./AnnuaireTesteur.o ./EntraineurTesteur.o ./JoueurTesteur.o ./PersonneTesteur.o   -lPersonneLib -lgtest_main -lgtest -lpthread
 Finished building target: Testeur
  
-13:45:23 **** Incremental Build of configuration Debug for project Personne ****
-make all 
-Building target: Personne
-Invoking: GCC C++ Linker
-g++ -L"/home/etudiant/Bureau/GIT/111155105_tp4/PersonneLib/Debug" -o "Personne"  ./main.o   -lPersonneLib
-Finished building target: Personne
- 
-13:45:23 **** Incremental Build of project PersonneGUI ****
-make debug 
-make -f Makefile.Debug
-make[1] : on entre dans le répertoire « /home/etudiant/Bureau/GIT/111155105_tp4/PersonneGUI »
-g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. -o debug/personnegui.o personnegui.cpp
-personnegui.cpp:1:28: error: #include expects "FILENAME" or <FILENAME>
-personnegui.cpp:11:1: error: ‘PersonneGUI’ does not name a type
- PersonneGUI::PersonneGUI(QWidget *parent) :
- ^
-personnegui.cpp:21:1: error: ‘PersonneGUI’ does not name a type
- PersonneGUI::~PersonneGUI()
- ^
-personnegui.cpp:26:6: error: ‘PersonneGUI’ has not been declared
- void PersonneGUI::dialogEntraineur()
-      ^
-personnegui.cpp: In function ‘void dialogEntraineur()’:
-personnegui.cpp:28:37: error: invalid use of ‘this’ in non-member function
-  ajouterEntraineur saisieEntraineur(this);
-                                     ^
-personnegui.cpp:35:3: error: ‘annuaire’ was not declared in this scope
-   annuaire.ajouterPersonne(entraineur);
-   ^
-personnegui.cpp:37:3: error: ‘ui’ was not declared in this scope
-   ui.textEdit->setText(annuaire.reqAnnuaireFormate().c_str());
-   ^
-personnegui.cpp: At global scope:
-personnegui.cpp:43:6: error: ‘PersonneGUI’ has not been declared
- void PersonneGUI::dialogJoueur()
-      ^
-personnegui.cpp: In function ‘void dialogJoueur()’:
-personnegui.cpp:45:29: error: invalid use of ‘this’ in non-member function
-  ajouterJoueur saisieJoueur(this);
-                             ^
-personnegui.cpp:51:3: error: ‘annuaire’ was not declared in this scope
-   annuaire.ajouterPersonne(joueur);
-   ^
-personnegui.cpp:53:3: error: ‘ui’ was not declared in this scope
-   ui.textEdit->setText(annuaire.reqAnnuaireFormate().c_str());
-   ^
-personnegui.cpp: At global scope:
-personnegui.cpp:58:6: error: ‘PersonneGUI’ has not been declared
- void PersonneGUI::dialogSupprimer()
-      ^
-personnegui.cpp: In function ‘void dialogSupprimer()’:
-personnegui.cpp:60:36: error: invalid use of ‘this’ in non-member function
-  supprimerPersonne saisieSupprimer(this);
-                                    ^
-personnegui.cpp:63:3: error: break statement not within loop or switch
-   break;
-   ^
-make[1]: *** [debug/personnegui.o] Erreur 1
-make: *** [debug] Erreur 2
-Makefile.Debug:223 : la recette pour la cible « debug/personnegui.o » a échouée
-make[1] : on quitte le répertoire « /home/etudiant/Bureau/GIT/111155105_tp4/PersonneGUI »
-Makefile:50 : la recette pour la cible « debug » a échouée
-13:45:24 **** Incremental Build of configuration Debug for project PersonneLib ****
+14:54:08 **** Incremental Build of configuration Debug for project Testeur ****
 make all 
 make: rien à faire pour « all ».
-13:45:24 **** Incremental Build of configuration Debug for project Testeur ****
+14:54:15 **** Incremental Build of configuration Debug for project PersonneLib ****
 make all 
 make: rien à faire pour « all ».
-13:45:33 **** Incremental Build of configuration Debug for project Personne ****
+14:54:15 **** Incremental Build of configuration Debug for project Testeur ****
 make all 
-make: rien à faire pour « all ».
-13:45:33 **** Incremental Build of project PersonneGUI ****
-make debug 
-make -f Makefile.Debug
-make[1] : on entre dans le répertoire « /home/etudiant/Bureau/GIT/111155105_tp4/PersonneGUI »
-g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. -o debug/personnegui.o personnegui.cpp
-personnegui.cpp: In member function ‘void PersonneGUI::dialogSupprimer()’:
-personnegui.cpp:63:3: error: break statement not within loop or switch
-   break;
-   ^
-Makefile.Debug:223 : la recette pour la cible « debug/personnegui.o » a échouée
-make[1] : on quitte le répertoire « /home/etudiant/Bureau/GIT/111155105_tp4/PersonneGUI »
-make[1]: *** [debug/personnegui.o] Erreur 1
-Makefile:50 : la recette pour la cible « debug » a échouée
-make: *** [debug] Erreur 2
-13:45:33 **** Incremental Build of configuration Debug for project PersonneLib ****
-make all 
-make: rien à faire pour « all ».
-13:45:33 **** Incremental Build of configuration Debug for project Testeur ****
-make all 
-make: rien à faire pour « all ».
-13:46:20 **** Incremental Build of configuration Debug for project Personne ****
-make all 
-make: rien à faire pour « all ».
-13:46:20 **** Incremental Build of project PersonneGUI ****
-make debug 
-make -f Makefile.Debug
-make[1] : on entre dans le répertoire « /home/etudiant/Bureau/GIT/111155105_tp4/PersonneGUI »
-g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. -o debug/personnegui.o personnegui.cpp
-/usr/lib/i386-linux-gnu/qt4/bin/moc -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. personnegui.h -o debug/moc_personnegui.cpp
-g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. -o debug/moc_personnegui.o debug/moc_personnegui.cpp
-g++  -o PersonneGUI debug/supprimerpersonne.o debug/ajouterjoueur.o debug/ajouterentraineur.o debug/main.o debug/personnegui.o debug/moc_supprimerpersonne.o debug/moc_ajouterjoueur.o debug/moc_ajouterentraineur.o debug/moc_personnegui.o    -L/usr/lib/i386-linux-gnu ../PersonneLib/Debug/libPersonneLib.a -lQtGui -lQtCore -lpthread 
-{ test -n "" && DESTDIR="" || DESTDIR=.; } && test $(gdb --version | sed -e 's,[^0-9][^0-9]*\([0-9]\)\.\([0-9]\).*,\1\2,;q') -gt 72 && gdb --nx --batch --quiet -ex 'set confirm off' -ex "save gdb-index $DESTDIR" -ex quit 'PersonneGUI' && test -f PersonneGUI.gdb-index && objcopy --add-section '.gdb_index=PersonneGUI.gdb-index' --set-section-flags '.gdb_index=readonly' 'PersonneGUI' 'PersonneGUI' && rm -f PersonneGUI.gdb-index || true
-make[1] : on quitte le répertoire « /home/etudiant/Bureau/GIT/111155105_tp4/PersonneGUI »
-13:46:22 **** Incremental Build of configuration Debug for project PersonneLib ****
-make all 
-make: rien à faire pour « all ».
-13:46:22 **** Incremental Build of configuration Debug for project Testeur ****
-make all 
-make: rien à faire pour « all ».
-13:47:07 **** Incremental Build of configuration Debug for project Personne ****
-make all 
-make: rien à faire pour « all ».
-13:47:08 **** Incremental Build of project PersonneGUI ****
-make debug 
-make -f Makefile.Debug
-make[1] : on entre dans le répertoire « /home/etudiant/Bureau/GIT/111155105_tp4/PersonneGUI »
-g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. -o debug/personnegui.o personnegui.cpp
-g++  -o PersonneGUI debug/supprimerpersonne.o debug/ajouterjoueur.o debug/ajouterentraineur.o debug/main.o debug/personnegui.o debug/moc_supprimerpersonne.o debug/moc_ajouterjoueur.o debug/moc_ajouterentraineur.o debug/moc_personnegui.o    -L/usr/lib/i386-linux-gnu ../PersonneLib/Debug/libPersonneLib.a -lQtGui -lQtCore -lpthread 
-{ test -n "" && DESTDIR="" || DESTDIR=.; } && test $(gdb --version | sed -e 's,[^0-9][^0-9]*\([0-9]\)\.\([0-9]\).*,\1\2,;q') -gt 72 && gdb --nx --batch --quiet -ex 'set confirm off' -ex "save gdb-index $DESTDIR" -ex quit 'PersonneGUI' && test -f PersonneGUI.gdb-index && objcopy --add-section '.gdb_index=PersonneGUI.gdb-index' --set-section-flags '.gdb_index=readonly' 'PersonneGUI' 'PersonneGUI' && rm -f PersonneGUI.gdb-index || true
-make[1] : on quitte le répertoire « /home/etudiant/Bureau/GIT/111155105_tp4/PersonneGUI »
-13:47:09 **** Incremental Build of configuration Debug for project PersonneLib ****
-make all 
-make: rien à faire pour « all ».
-13:47:09 **** Incremental Build of configuration Debug for project Testeur ****
-make all 
-make: rien à faire pour « all ».
-13:59:43 **** Incremental Build of configuration Debug for project Personne ****
-make all 
-make: rien à faire pour « all ».
-13:59:43 **** Incremental Build of configuration Debug for project PersonneLib ****
-make all 
-Building file: ../Annuaire.cpp
+Building file: ../AnnuaireTesteur.cpp
 Invoking: GCC C++ Compiler
-g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Annuaire.d" -MT"Annuaire.o" -o "Annuaire.o" "../Annuaire.cpp"
-../Annuaire.cpp: In constructor ‘tp::Annuaire::Annuaire(const string&)’:
-../Annuaire.cpp:23:36: error: ‘m_size’ was not declared in this scope
-   m_nomClub(p_nomClub), m_vMembres(m_size, 0)
-                                    ^
-subdir.mk:39 : la recette pour la cible « Annuaire.o » a échouée
-make: *** [Annuaire.o] Erreur 1
-13:59:44 **** Incremental Build of configuration Debug for project Testeur ****
-make all 
-make: rien à faire pour « all ».
-14:00:54 **** Incremental Build of configuration Debug for project Personne ****
-make all 
-make: rien à faire pour « all ».
-14:00:54 **** Incremental Build of configuration Debug for project PersonneLib ****
-make all 
-Building file: ../Annuaire.cpp
-Invoking: GCC C++ Compiler
-g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Annuaire.d" -MT"Annuaire.o" -o "Annuaire.o" "../Annuaire.cpp"
-Finished building: ../Annuaire.cpp
+g++ -std=c++98 -I"/home/etudiant/Bureau/GIT/111155105_tp4/PersonneLib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"AnnuaireTesteur.d" -MT"AnnuaireTesteur.o" -o "AnnuaireTesteur.o" "../AnnuaireTesteur.cpp"
+In file included from ../AnnuaireTesteur.cpp:8:0:
+/home/etudiant/Bureau/GIT/111155105_tp4/PersonneLib/Annuaire.h: In member function ‘tp::Annuaire& tp::Annuaire::operator=(const tp::Annuaire&)’:
+/home/etudiant/Bureau/GIT/111155105_tp4/PersonneLib/Annuaire.h:45:2: warning: no return statement in function returning non-void [-Wreturn-type]
+  }
+  ^
+../AnnuaireTesteur.cpp: At global scope:
+../AnnuaireTesteur.cpp:64:19: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+  string nomClub = "NOM DU CLUB";
+                   ^
+../AnnuaireTesteur.cpp:66:22: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+  string nom_joueur = "Hockey";
+                      ^
+../AnnuaireTesteur.cpp:67:25: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+  string prenom_joueur = "Joueur";
+                         ^
+../AnnuaireTesteur.cpp:68:45: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+  Date dateNaissance_joueur = Date(5, 5, 2001);
+                                             ^
+../AnnuaireTesteur.cpp:69:28: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+  string telephone_joueur = "418 658-2222";
+                            ^
+../AnnuaireTesteur.cpp:70:27: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+  string position_joueur = "CENTRE";
+                           ^
+../AnnuaireTesteur.cpp:72:19: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+  string nom_ent = "Thibault";
+                   ^
+../AnnuaireTesteur.cpp:73:22: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+  string prenom_ent = "Marc";
+                      ^
+../AnnuaireTesteur.cpp:74:42: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+  Date dateNaissance_ent = Date(5, 5, 1980);
+                                          ^
+../AnnuaireTesteur.cpp:75:25: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+  string telephone_ent = "418 656-2177";
+                         ^
+../AnnuaireTesteur.cpp:76:18: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+  char sexe_ent = 'M';
+                  ^
+../AnnuaireTesteur.cpp:77:20: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+  string RAMQ_ent = "THIM 8005 0522";
+                    ^
+Finished building: ../AnnuaireTesteur.cpp
  
-Building target: libPersonneLib.a
-Invoking: GCC Archiver
-ar -r  "libPersonneLib.a"  ./Annuaire.o ./ContratException.o ./Date.o ./Entraineur.o ./Joueur.o ./Personne.o ./PersonneException.o ./validationFormat.o   
-ar: création de libPersonneLib.a
-Finished building target: libPersonneLib.a
- 
-14:00:54 **** Incremental Build of configuration Debug for project Testeur ****
-make all 
 Building target: Testeur
 Invoking: GCC C++ Linker
 g++ -L"/home/etudiant/Bureau/GIT/111155105_tp4/PersonneLib/Debug" -o "Testeur"  ./AnnuaireTesteur.o ./EntraineurTesteur.o ./JoueurTesteur.o ./PersonneTesteur.o   -lPersonneLib -lgtest_main -lgtest -lpthread
 Finished building target: Testeur
  
+14:57:31 **** Incremental Build of configuration Debug for project PersonneLib ****
+make all 
+make: rien à faire pour « all ».
+14:57:31 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+Building file: ../AnnuaireTesteur.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -I"/home/etudiant/Bureau/GIT/111155105_tp4/PersonneLib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"AnnuaireTesteur.d" -MT"AnnuaireTesteur.o" -o "AnnuaireTesteur.o" "../AnnuaireTesteur.cpp"
+In file included from ../AnnuaireTesteur.cpp:8:0:
+/home/etudiant/Bureau/GIT/111155105_tp4/PersonneLib/Annuaire.h: In member function ‘tp::Annuaire& tp::Annuaire::operator=(const tp::Annuaire&)’:
+/home/etudiant/Bureau/GIT/111155105_tp4/PersonneLib/Annuaire.h:45:2: warning: no return statement in function returning non-void [-Wreturn-type]
+  }
+  ^
+../AnnuaireTesteur.cpp: At global scope:
+../AnnuaireTesteur.cpp:64:19: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+  string nomClub = "NOM DU CLUB";
+                   ^
+../AnnuaireTesteur.cpp:66:22: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+  string nom_joueur = "Hockey";
+                      ^
+../AnnuaireTesteur.cpp:67:25: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+  string prenom_joueur = "Joueur";
+                         ^
+../AnnuaireTesteur.cpp:68:45: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+  Date dateNaissance_joueur = Date(5, 5, 2001);
+                                             ^
+../AnnuaireTesteur.cpp:69:28: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+  string telephone_joueur = "418 658-2222";
+                            ^
+../AnnuaireTesteur.cpp:70:27: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+  string position_joueur = "CENTRE";
+                           ^
+../AnnuaireTesteur.cpp:72:19: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+  string nom_ent = "Thibault";
+                   ^
+../AnnuaireTesteur.cpp:73:22: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+  string prenom_ent = "Marc";
+                      ^
+../AnnuaireTesteur.cpp:74:42: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+  Date dateNaissance_ent = Date(5, 5, 1980);
+                                          ^
+../AnnuaireTesteur.cpp:75:25: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+  string telephone_ent = "418 656-2177";
+                         ^
+../AnnuaireTesteur.cpp:76:18: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+  char sexe_ent = 'M';
+                  ^
+../AnnuaireTesteur.cpp:77:20: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+  string RAMQ_ent = "THIM 8005 0522";
+                    ^
+Finished building: ../AnnuaireTesteur.cpp
+ 
+Building target: Testeur
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/GIT/111155105_tp4/PersonneLib/Debug" -o "Testeur"  ./AnnuaireTesteur.o ./EntraineurTesteur.o ./JoueurTesteur.o ./PersonneTesteur.o   -lPersonneLib -lgtest_main -lgtest -lpthread
+Finished building target: Testeur
+ 
+14:57:34 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+make: rien à faire pour « all ».
+14:57:46 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+make: rien à faire pour « all ».
+14:58:11 **** Incremental Build of configuration Debug for project PersonneLib ****
+make all 
+make: rien à faire pour « all ».
+14:58:11 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+Building file: ../AnnuaireTesteur.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -I"/home/etudiant/Bureau/GIT/111155105_tp4/PersonneLib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"AnnuaireTesteur.d" -MT"AnnuaireTesteur.o" -o "AnnuaireTesteur.o" "../AnnuaireTesteur.cpp"
+In file included from ../AnnuaireTesteur.cpp:8:0:
+/home/etudiant/Bureau/GIT/111155105_tp4/PersonneLib/Annuaire.h: In member function ‘tp::Annuaire& tp::Annuaire::operator=(const tp::Annuaire&)’:
+/home/etudiant/Bureau/GIT/111155105_tp4/PersonneLib/Annuaire.h:45:2: warning: no return statement in function returning non-void [-Wreturn-type]
+  }
+  ^
+../AnnuaireTesteur.cpp: At global scope:
+../AnnuaireTesteur.cpp:64:19: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+  string nomClub = "NOM DU CLUB";
+                   ^
+../AnnuaireTesteur.cpp:66:22: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+  string nom_joueur = "Hockey";
+                      ^
+../AnnuaireTesteur.cpp:67:25: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+  string prenom_joueur = "Joueur";
+                         ^
+../AnnuaireTesteur.cpp:68:45: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+  Date dateNaissance_joueur = Date(5, 5, 2001);
+                                             ^
+../AnnuaireTesteur.cpp:69:28: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+  string telephone_joueur = "418 658-2222";
+                            ^
+../AnnuaireTesteur.cpp:70:27: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+  string position_joueur = "CENTRE";
+                           ^
+../AnnuaireTesteur.cpp:72:19: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+  string nom_ent = "Thibault";
+                   ^
+../AnnuaireTesteur.cpp:73:22: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+  string prenom_ent = "Marc";
+                      ^
+../AnnuaireTesteur.cpp:74:42: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+  Date dateNaissance_ent = Date(5, 5, 1980);
+                                          ^
+../AnnuaireTesteur.cpp:75:25: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+  string telephone_ent = "418 656-2177";
+                         ^
+../AnnuaireTesteur.cpp:76:18: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+  char sexe_ent = 'M';
+                  ^
+../AnnuaireTesteur.cpp:77:20: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+  string RAMQ_ent = "THIM 8005 0522";
+                    ^
+Finished building: ../AnnuaireTesteur.cpp
+ 
+Building target: Testeur
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/GIT/111155105_tp4/PersonneLib/Debug" -o "Testeur"  ./AnnuaireTesteur.o ./EntraineurTesteur.o ./JoueurTesteur.o ./PersonneTesteur.o   -lPersonneLib -lgtest_main -lgtest -lpthread
+Finished building target: Testeur
+ 
+14:58:14 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+make: rien à faire pour « all ».
+14:58:39 **** Incremental Build of configuration Debug for project PersonneLib ****
+make all 
+make: rien à faire pour « all ».
+14:58:40 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+Building file: ../AnnuaireTesteur.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -I"/home/etudiant/Bureau/GIT/111155105_tp4/PersonneLib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"AnnuaireTesteur.d" -MT"AnnuaireTesteur.o" -o "AnnuaireTesteur.o" "../AnnuaireTesteur.cpp"
+In file included from ../AnnuaireTesteur.cpp:8:0:
+/home/etudiant/Bureau/GIT/111155105_tp4/PersonneLib/Annuaire.h: In member function ‘tp::Annuaire& tp::Annuaire::operator=(const tp::Annuaire&)’:
+/home/etudiant/Bureau/GIT/111155105_tp4/PersonneLib/Annuaire.h:45:2: warning: no return statement in function returning non-void [-Wreturn-type]
+  }
+  ^
+../AnnuaireTesteur.cpp: At global scope:
+../AnnuaireTesteur.cpp:87:19: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+  string nomClub = "NOM DU CLUB";
+                   ^
+../AnnuaireTesteur.cpp:89:22: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+  string nom_joueur = "Hockey";
+                      ^
+../AnnuaireTesteur.cpp:90:25: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+  string prenom_joueur = "Joueur";
+                         ^
+../AnnuaireTesteur.cpp:91:45: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+  Date dateNaissance_joueur = Date(5, 5, 2001);
+                                             ^
+../AnnuaireTesteur.cpp:92:28: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+  string telephone_joueur = "418 658-2222";
+                            ^
+../AnnuaireTesteur.cpp:93:27: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+  string position_joueur = "CENTRE";
+                           ^
+../AnnuaireTesteur.cpp:95:19: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+  string nom_ent = "Thibault";
+                   ^
+../AnnuaireTesteur.cpp:96:22: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+  string prenom_ent = "Marc";
+                      ^
+../AnnuaireTesteur.cpp:97:42: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+  Date dateNaissance_ent = Date(5, 5, 1980);
+                                          ^
+../AnnuaireTesteur.cpp:98:25: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+  string telephone_ent = "418 656-2177";
+                         ^
+../AnnuaireTesteur.cpp:99:18: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+  char sexe_ent = 'M';
+                  ^
+../AnnuaireTesteur.cpp:100:20: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+  string RAMQ_ent = "THIM 8005 0522";
+                    ^
+Finished building: ../AnnuaireTesteur.cpp
+ 
+Building target: Testeur
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/GIT/111155105_tp4/PersonneLib/Debug" -o "Testeur"  ./AnnuaireTesteur.o ./EntraineurTesteur.o ./JoueurTesteur.o ./PersonneTesteur.o   -lPersonneLib -lgtest_main -lgtest -lpthread
+Finished building target: Testeur
+ 
+14:58:43 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+make: rien à faire pour « all ».
+14:59:07 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+Building file: ../AnnuaireTesteur.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -I"/home/etudiant/Bureau/GIT/111155105_tp4/PersonneLib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"AnnuaireTesteur.d" -MT"AnnuaireTesteur.o" -o "AnnuaireTesteur.o" "../AnnuaireTesteur.cpp"
+In file included from ../AnnuaireTesteur.cpp:8:0:
+/home/etudiant/Bureau/GIT/111155105_tp4/PersonneLib/Annuaire.h: In member function ‘tp::Annuaire& tp::Annuaire::operator=(const tp::Annuaire&)’:
+/home/etudiant/Bureau/GIT/111155105_tp4/PersonneLib/Annuaire.h:45:2: warning: no return statement in function returning non-void [-Wreturn-type]
+  }
+  ^
+../AnnuaireTesteur.cpp: At global scope:
+../AnnuaireTesteur.cpp:87:19: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+  string nomClub = "NOM DU CLUB";
+                   ^
+../AnnuaireTesteur.cpp:89:22: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+  string nom_joueur = "Hockey";
+                      ^
+../AnnuaireTesteur.cpp:90:25: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+  string prenom_joueur = "Joueur";
+                         ^
+../AnnuaireTesteur.cpp:91:45: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+  Date dateNaissance_joueur = Date(5, 5, 2001);
+                                             ^
+../AnnuaireTesteur.cpp:92:28: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+  string telephone_joueur = "418 658-2222";
+                            ^
+../AnnuaireTesteur.cpp:93:27: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+  string position_joueur = "CENTRE";
+                           ^
+../AnnuaireTesteur.cpp:95:19: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+  string nom_ent = "Thibault";
+                   ^
+../AnnuaireTesteur.cpp:96:22: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+  string prenom_ent = "Marc";
+                      ^
+../AnnuaireTesteur.cpp:97:42: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+  Date dateNaissance_ent = Date(5, 5, 1980);
+                                          ^
+../AnnuaireTesteur.cpp:98:25: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+  string telephone_ent = "418 656-2177";
+                         ^
+../AnnuaireTesteur.cpp:99:18: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+  char sexe_ent = 'M';
+                  ^
+../AnnuaireTesteur.cpp:100:20: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+  string RAMQ_ent = "THIM 8005 0522";
+                    ^
+Finished building: ../AnnuaireTesteur.cpp
+ 
+Building target: Testeur
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/GIT/111155105_tp4/PersonneLib/Debug" -o "Testeur"  ./AnnuaireTesteur.o ./EntraineurTesteur.o ./JoueurTesteur.o ./PersonneTesteur.o   -lPersonneLib -lgtest_main -lgtest -lpthread
+Finished building target: Testeur
+ 
+14:59:50 **** Incremental Build of configuration Debug for project PersonneLib ****
+make all 
+make: rien à faire pour « all ».
+14:59:51 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+Building file: ../AnnuaireTesteur.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -I"/home/etudiant/Bureau/GIT/111155105_tp4/PersonneLib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"AnnuaireTesteur.d" -MT"AnnuaireTesteur.o" -o "AnnuaireTesteur.o" "../AnnuaireTesteur.cpp"
+In file included from ../AnnuaireTesteur.cpp:8:0:
+/home/etudiant/Bureau/GIT/111155105_tp4/PersonneLib/Annuaire.h: In member function ‘tp::Annuaire& tp::Annuaire::operator=(const tp::Annuaire&)’:
+/home/etudiant/Bureau/GIT/111155105_tp4/PersonneLib/Annuaire.h:45:2: warning: no return statement in function returning non-void [-Wreturn-type]
+  }
+  ^
+../AnnuaireTesteur.cpp: At global scope:
+../AnnuaireTesteur.cpp:87:19: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+  string nomClub = "NOM DU CLUB";
+                   ^
+../AnnuaireTesteur.cpp:89:22: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+  string nom_joueur = "Hockey";
+                      ^
+../AnnuaireTesteur.cpp:90:25: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+  string prenom_joueur = "Joueur";
+                         ^
+../AnnuaireTesteur.cpp:91:45: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+  Date dateNaissance_joueur = Date(5, 5, 2001);
+                                             ^
+../AnnuaireTesteur.cpp:92:28: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+  string telephone_joueur = "418 658-2222";
+                            ^
+../AnnuaireTesteur.cpp:93:27: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+  string position_joueur = "CENTRE";
+                           ^
+../AnnuaireTesteur.cpp:95:19: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+  string nom_ent = "Thibault";
+                   ^
+../AnnuaireTesteur.cpp:96:22: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+  string prenom_ent = "Marc";
+                      ^
+../AnnuaireTesteur.cpp:97:42: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+  Date dateNaissance_ent = Date(5, 5, 1980);
+                                          ^
+../AnnuaireTesteur.cpp:98:25: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+  string telephone_ent = "418 656-2177";
+                         ^
+../AnnuaireTesteur.cpp:99:18: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+  char sexe_ent = 'M';
+                  ^
+../AnnuaireTesteur.cpp:100:20: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+  string RAMQ_ent = "THIM 8005 0522";
+                    ^
+Finished building: ../AnnuaireTesteur.cpp
+ 
+Building target: Testeur
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/GIT/111155105_tp4/PersonneLib/Debug" -o "Testeur"  ./AnnuaireTesteur.o ./EntraineurTesteur.o ./JoueurTesteur.o ./PersonneTesteur.o   -lPersonneLib -lgtest_main -lgtest -lpthread
+Finished building target: Testeur
+ 
+14:59:53 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+make: rien à faire pour « all ».
+15:00:17 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+Building file: ../AnnuaireTesteur.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -I"/home/etudiant/Bureau/GIT/111155105_tp4/PersonneLib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"AnnuaireTesteur.d" -MT"AnnuaireTesteur.o" -o "AnnuaireTesteur.o" "../AnnuaireTesteur.cpp"
+In file included from ../AnnuaireTesteur.cpp:8:0:
+/home/etudiant/Bureau/GIT/111155105_tp4/PersonneLib/Annuaire.h: In member function ‘tp::Annuaire& tp::Annuaire::operator=(const tp::Annuaire&)’:
+/home/etudiant/Bureau/GIT/111155105_tp4/PersonneLib/Annuaire.h:45:2: warning: no return statement in function returning non-void [-Wreturn-type]
+  }
+  ^
+../AnnuaireTesteur.cpp: At global scope:
+../AnnuaireTesteur.cpp:87:19: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+  string nomClub = "NOM DU CLUB";
+                   ^
+../AnnuaireTesteur.cpp:89:22: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+  string nom_joueur = "Hockey";
+                      ^
+../AnnuaireTesteur.cpp:90:25: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+  string prenom_joueur = "Joueur";
+                         ^
+../AnnuaireTesteur.cpp:91:45: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+  Date dateNaissance_joueur = Date(5, 5, 2001);
+                                             ^
+../AnnuaireTesteur.cpp:92:28: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+  string telephone_joueur = "418 658-2222";
+                            ^
+../AnnuaireTesteur.cpp:93:27: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+  string position_joueur = "CENTRE";
+                           ^
+../AnnuaireTesteur.cpp:95:19: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+  string nom_ent = "Thibault";
+                   ^
+../AnnuaireTesteur.cpp:96:22: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+  string prenom_ent = "Marc";
+                      ^
+../AnnuaireTesteur.cpp:97:42: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+  Date dateNaissance_ent = Date(5, 5, 1980);
+                                          ^
+../AnnuaireTesteur.cpp:98:25: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+  string telephone_ent = "418 656-2177";
+                         ^
+../AnnuaireTesteur.cpp:99:18: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+  char sexe_ent = 'M';
+                  ^
+../AnnuaireTesteur.cpp:100:20: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+  string RAMQ_ent = "THIM 8005 0522";
+                    ^
+Finished building: ../AnnuaireTesteur.cpp
+ 
+Building target: Testeur
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/GIT/111155105_tp4/PersonneLib/Debug" -o "Testeur"  ./AnnuaireTesteur.o ./EntraineurTesteur.o ./JoueurTesteur.o ./PersonneTesteur.o   -lPersonneLib -lgtest_main -lgtest -lpthread
+Finished building target: Testeur
+ 
+15:11:26 **** Incremental Build of configuration Debug for project PersonneLib ****
+make all 
+make: rien à faire pour « all ».
+15:11:26 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+Building file: ../AnnuaireTesteur.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -I"/home/etudiant/Bureau/GIT/111155105_tp4/PersonneLib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"AnnuaireTesteur.d" -MT"AnnuaireTesteur.o" -o "AnnuaireTesteur.o" "../AnnuaireTesteur.cpp"
+In file included from ../AnnuaireTesteur.cpp:8:0:
+/home/etudiant/Bureau/GIT/111155105_tp4/PersonneLib/Annuaire.h: In member function ‘tp::Annuaire& tp::Annuaire::operator=(const tp::Annuaire&)’:
+/home/etudiant/Bureau/GIT/111155105_tp4/PersonneLib/Annuaire.h:45:2: warning: no return statement in function returning non-void [-Wreturn-type]
+  }
+  ^
+../AnnuaireTesteur.cpp: At global scope:
+../AnnuaireTesteur.cpp:87:19: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+  string nomClub = "NOM DU CLUB";
+                   ^
+../AnnuaireTesteur.cpp:89:22: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+  string nom_joueur = "Hockey";
+                      ^
+../AnnuaireTesteur.cpp:90:25: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+  string prenom_joueur = "Joueur";
+                         ^
+../AnnuaireTesteur.cpp:91:45: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+  Date dateNaissance_joueur = Date(5, 5, 2001);
+                                             ^
+../AnnuaireTesteur.cpp:92:28: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+  string telephone_joueur = "418 658-2222";
+                            ^
+../AnnuaireTesteur.cpp:93:27: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+  string position_joueur = "CENTRE";
+                           ^
+../AnnuaireTesteur.cpp:95:19: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+  string nom_ent = "Thibault";
+                   ^
+../AnnuaireTesteur.cpp:96:22: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+  string prenom_ent = "Marc";
+                      ^
+../AnnuaireTesteur.cpp:97:42: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+  Date dateNaissance_ent = Date(5, 5, 1980);
+                                          ^
+../AnnuaireTesteur.cpp:98:25: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+  string telephone_ent = "418 656-2177";
+                         ^
+../AnnuaireTesteur.cpp:99:18: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+  char sexe_ent = 'M';
+                  ^
+../AnnuaireTesteur.cpp:100:20: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+  string RAMQ_ent = "THIM 8005 0522";
+                    ^
+../AnnuaireTesteur.cpp: In member function ‘virtual void AnnuaireParam_PersonneEstDejaPresente_Test::TestBody()’:
+../AnnuaireTesteur.cpp:148:106: error: expected ‘,’ or ‘;’ before ‘)’ token
+  Joueur joueurPresent(nom_joueur, prenom_joueur, dateNaissance_joueur, telephone_joueur, position_joueur));
+                                                                                                          ^
+In file included from ../AnnuaireTesteur.cpp:8:0:
+/home/etudiant/Bureau/GIT/111155105_tp4/PersonneLib/Annuaire.h:53:7: error: ‘bool tp::Annuaire::PersonneEstDejaPresente(const tp::Personne&) const’ is private
+  bool PersonneEstDejaPresente(const Personne& p_personne) const;
+       ^
+In file included from /usr/include/gtest/gtest.h:58:0,
+                 from ../AnnuaireTesteur.cpp:9:
+../AnnuaireTesteur.cpp:149:60: error: within this context
+  EXPECT_TRUE(annuaire.PersonneEstDejaPresente(joueurPresent));
+                                                            ^
+../AnnuaireTesteur.cpp: In member function ‘virtual void AnnuaireParam_PersonneEstDejaPresenteInvalide_Test::TestBody()’:
+../AnnuaireTesteur.cpp:153:103: error: expected ‘,’ or ‘;’ before ‘)’ token
+  Joueur joueurPresent(nom_ent, prenom_joueur, dateNaissance_joueur, telephone_joueur, position_joueur));
+                                                                                                       ^
+In file included from ../AnnuaireTesteur.cpp:8:0:
+/home/etudiant/Bureau/GIT/111155105_tp4/PersonneLib/Annuaire.h:53:7: error: ‘bool tp::Annuaire::PersonneEstDejaPresente(const tp::Personne&) const’ is private
+  bool PersonneEstDejaPresente(const Personne& p_personne) const;
+       ^
+In file included from /usr/include/gtest/gtest.h:58:0,
+                 from ../AnnuaireTesteur.cpp:9:
+../AnnuaireTesteur.cpp:154:61: error: within this context
+  EXPECT_FALSE(annuaire.PersonneEstDejaPresente(joueurPresent));
+                                                             ^
+make: *** [AnnuaireTesteur.o] Erreur 1
+subdir.mk:27 : la recette pour la cible « AnnuaireTesteur.o » a échouée
+15:11:28 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+Building file: ../AnnuaireTesteur.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -I"/home/etudiant/Bureau/GIT/111155105_tp4/PersonneLib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"AnnuaireTesteur.d" -MT"AnnuaireTesteur.o" -o "AnnuaireTesteur.o" "../AnnuaireTesteur.cpp"
+In file included from ../AnnuaireTesteur.cpp:8:0:
+/home/etudiant/Bureau/GIT/111155105_tp4/PersonneLib/Annuaire.h: In member function ‘tp::Annuaire& tp::Annuaire::operator=(const tp::Annuaire&)’:
+/home/etudiant/Bureau/GIT/111155105_tp4/PersonneLib/Annuaire.h:45:2: warning: no return statement in function returning non-void [-Wreturn-type]
+  }
+  ^
+../AnnuaireTesteur.cpp: At global scope:
+../AnnuaireTesteur.cpp:87:19: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+  string nomClub = "NOM DU CLUB";
+                   ^
+../AnnuaireTesteur.cpp:89:22: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+  string nom_joueur = "Hockey";
+                      ^
+../AnnuaireTesteur.cpp:90:25: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+  string prenom_joueur = "Joueur";
+                         ^
+../AnnuaireTesteur.cpp:91:45: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+  Date dateNaissance_joueur = Date(5, 5, 2001);
+                                             ^
+../AnnuaireTesteur.cpp:92:28: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+  string telephone_joueur = "418 658-2222";
+                            ^
+../AnnuaireTesteur.cpp:93:27: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+  string position_joueur = "CENTRE";
+                           ^
+../AnnuaireTesteur.cpp:95:19: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+  string nom_ent = "Thibault";
+                   ^
+../AnnuaireTesteur.cpp:96:22: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+  string prenom_ent = "Marc";
+                      ^
+../AnnuaireTesteur.cpp:97:42: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+  Date dateNaissance_ent = Date(5, 5, 1980);
+                                          ^
+../AnnuaireTesteur.cpp:98:25: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+  string telephone_ent = "418 656-2177";
+                         ^
+../AnnuaireTesteur.cpp:99:18: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+  char sexe_ent = 'M';
+                  ^
+../AnnuaireTesteur.cpp:100:20: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+  string RAMQ_ent = "THIM 8005 0522";
+                    ^
+../AnnuaireTesteur.cpp: In member function ‘virtual void AnnuaireParam_PersonneEstDejaPresente_Test::TestBody()’:
+../AnnuaireTesteur.cpp:148:106: error: expected ‘,’ or ‘;’ before ‘)’ token
+  Joueur joueurPresent(nom_joueur, prenom_joueur, dateNaissance_joueur, telephone_joueur, position_joueur));
+                                                                                                          ^
+In file included from ../AnnuaireTesteur.cpp:8:0:
+/home/etudiant/Bureau/GIT/111155105_tp4/PersonneLib/Annuaire.h:53:7: error: ‘bool tp::Annuaire::PersonneEstDejaPresente(const tp::Personne&) const’ is private
+  bool PersonneEstDejaPresente(const Personne& p_personne) const;
+       ^
+In file included from /usr/include/gtest/gtest.h:58:0,
+                 from ../AnnuaireTesteur.cpp:9:
+../AnnuaireTesteur.cpp:149:60: error: within this context
+  EXPECT_TRUE(annuaire.PersonneEstDejaPresente(joueurPresent));
+                                                            ^
+../AnnuaireTesteur.cpp: In member function ‘virtual void AnnuaireParam_PersonneEstDejaPresenteInvalide_Test::TestBody()’:
+../AnnuaireTesteur.cpp:153:103: error: expected ‘,’ or ‘;’ before ‘)’ token
+  Joueur joueurPresent(nom_ent, prenom_joueur, dateNaissance_joueur, telephone_joueur, position_joueur));
+                                                                                                       ^
+In file included from ../AnnuaireTesteur.cpp:8:0:
+/home/etudiant/Bureau/GIT/111155105_tp4/PersonneLib/Annuaire.h:53:7: error: ‘bool tp::Annuaire::PersonneEstDejaPresente(const tp::Personne&) const’ is private
+  bool PersonneEstDejaPresente(const Personne& p_personne) const;
+       ^
+In file included from /usr/include/gtest/gtest.h:58:0,
+                 from ../AnnuaireTesteur.cpp:9:
+../AnnuaireTesteur.cpp:154:61: error: within this context
+  EXPECT_FALSE(annuaire.PersonneEstDejaPresente(joueurPresent));
+                                                             ^
+make: *** [AnnuaireTesteur.o] Erreur 1
+subdir.mk:27 : la recette pour la cible « AnnuaireTesteur.o » a échouée
+15:11:40 **** Incremental Build of configuration Debug for project PersonneLib ****
+make all 
+make: rien à faire pour « all ».
+15:11:40 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+Building file: ../AnnuaireTesteur.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -I"/home/etudiant/Bureau/GIT/111155105_tp4/PersonneLib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"AnnuaireTesteur.d" -MT"AnnuaireTesteur.o" -o "AnnuaireTesteur.o" "../AnnuaireTesteur.cpp"
+In file included from ../AnnuaireTesteur.cpp:8:0:
+/home/etudiant/Bureau/GIT/111155105_tp4/PersonneLib/Annuaire.h: In member function ‘tp::Annuaire& tp::Annuaire::operator=(const tp::Annuaire&)’:
+/home/etudiant/Bureau/GIT/111155105_tp4/PersonneLib/Annuaire.h:45:2: warning: no return statement in function returning non-void [-Wreturn-type]
+  }
+  ^
+../AnnuaireTesteur.cpp: At global scope:
+../AnnuaireTesteur.cpp:87:19: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+  string nomClub = "NOM DU CLUB";
+                   ^
+../AnnuaireTesteur.cpp:89:22: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+  string nom_joueur = "Hockey";
+                      ^
+../AnnuaireTesteur.cpp:90:25: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+  string prenom_joueur = "Joueur";
+                         ^
+../AnnuaireTesteur.cpp:91:45: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+  Date dateNaissance_joueur = Date(5, 5, 2001);
+                                             ^
+../AnnuaireTesteur.cpp:92:28: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+  string telephone_joueur = "418 658-2222";
+                            ^
+../AnnuaireTesteur.cpp:93:27: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+  string position_joueur = "CENTRE";
+                           ^
+../AnnuaireTesteur.cpp:95:19: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+  string nom_ent = "Thibault";
+                   ^
+../AnnuaireTesteur.cpp:96:22: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+  string prenom_ent = "Marc";
+                      ^
+../AnnuaireTesteur.cpp:97:42: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+  Date dateNaissance_ent = Date(5, 5, 1980);
+                                          ^
+../AnnuaireTesteur.cpp:98:25: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+  string telephone_ent = "418 656-2177";
+                         ^
+../AnnuaireTesteur.cpp:99:18: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+  char sexe_ent = 'M';
+                  ^
+../AnnuaireTesteur.cpp:100:20: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+  string RAMQ_ent = "THIM 8005 0522";
+                    ^
+In file included from ../AnnuaireTesteur.cpp:8:0:
+/home/etudiant/Bureau/GIT/111155105_tp4/PersonneLib/Annuaire.h: In member function ‘virtual void AnnuaireParam_PersonneEstDejaPresente_Test::TestBody()’:
+/home/etudiant/Bureau/GIT/111155105_tp4/PersonneLib/Annuaire.h:53:7: error: ‘bool tp::Annuaire::PersonneEstDejaPresente(const tp::Personne&) const’ is private
+  bool PersonneEstDejaPresente(const Personne& p_personne) const;
+       ^
+In file included from /usr/include/gtest/gtest.h:58:0,
+                 from ../AnnuaireTesteur.cpp:9:
+../AnnuaireTesteur.cpp:149:60: error: within this context
+  EXPECT_TRUE(annuaire.PersonneEstDejaPresente(joueurPresent));
+                                                            ^
+In file included from ../AnnuaireTesteur.cpp:8:0:
+/home/etudiant/Bureau/GIT/111155105_tp4/PersonneLib/Annuaire.h: In member function ‘virtual void AnnuaireParam_PersonneEstDejaPresenteInvalide_Test::TestBody()’:
+/home/etudiant/Bureau/GIT/111155105_tp4/PersonneLib/Annuaire.h:53:7: error: ‘bool tp::Annuaire::PersonneEstDejaPresente(const tp::Personne&) const’ is private
+  bool PersonneEstDejaPresente(const Personne& p_personne) const;
+       ^
+In file included from /usr/include/gtest/gtest.h:58:0,
+                 from ../AnnuaireTesteur.cpp:9:
+../AnnuaireTesteur.cpp:154:61: error: within this context
+  EXPECT_FALSE(annuaire.PersonneEstDejaPresente(joueurPresent));
+                                                             ^
+make: *** [AnnuaireTesteur.o] Erreur 1
+subdir.mk:27 : la recette pour la cible « AnnuaireTesteur.o » a échouée
+15:11:54 **** Incremental Build of configuration Debug for project PersonneLib ****
+make all 
+make: rien à faire pour « all ».
+15:11:55 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+Building file: ../AnnuaireTesteur.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -I"/home/etudiant/Bureau/GIT/111155105_tp4/PersonneLib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"AnnuaireTesteur.d" -MT"AnnuaireTesteur.o" -o "AnnuaireTesteur.o" "../AnnuaireTesteur.cpp"
+In file included from ../AnnuaireTesteur.cpp:8:0:
+/home/etudiant/Bureau/GIT/111155105_tp4/PersonneLib/Annuaire.h: In member function ‘tp::Annuaire& tp::Annuaire::operator=(const tp::Annuaire&)’:
+/home/etudiant/Bureau/GIT/111155105_tp4/PersonneLib/Annuaire.h:45:2: warning: no return statement in function returning non-void [-Wreturn-type]
+  }
+  ^
+../AnnuaireTesteur.cpp: At global scope:
+../AnnuaireTesteur.cpp:87:19: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+  string nomClub = "NOM DU CLUB";
+                   ^
+../AnnuaireTesteur.cpp:89:22: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+  string nom_joueur = "Hockey";
+                      ^
+../AnnuaireTesteur.cpp:90:25: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+  string prenom_joueur = "Joueur";
+                         ^
+../AnnuaireTesteur.cpp:91:45: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+  Date dateNaissance_joueur = Date(5, 5, 2001);
+                                             ^
+../AnnuaireTesteur.cpp:92:28: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+  string telephone_joueur = "418 658-2222";
+                            ^
+../AnnuaireTesteur.cpp:93:27: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+  string position_joueur = "CENTRE";
+                           ^
+../AnnuaireTesteur.cpp:95:19: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+  string nom_ent = "Thibault";
+                   ^
+../AnnuaireTesteur.cpp:96:22: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+  string prenom_ent = "Marc";
+                      ^
+../AnnuaireTesteur.cpp:97:42: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+  Date dateNaissance_ent = Date(5, 5, 1980);
+                                          ^
+../AnnuaireTesteur.cpp:98:25: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+  string telephone_ent = "418 656-2177";
+                         ^
+../AnnuaireTesteur.cpp:99:18: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+  char sexe_ent = 'M';
+                  ^
+../AnnuaireTesteur.cpp:100:20: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+  string RAMQ_ent = "THIM 8005 0522";
+                    ^
+In file included from ../AnnuaireTesteur.cpp:8:0:
+/home/etudiant/Bureau/GIT/111155105_tp4/PersonneLib/Annuaire.h: In member function ‘virtual void AnnuaireParam_PersonneEstDejaPresente_Test::TestBody()’:
+/home/etudiant/Bureau/GIT/111155105_tp4/PersonneLib/Annuaire.h:53:7: error: ‘bool tp::Annuaire::PersonneEstDejaPresente(const tp::Personne&) const’ is private
+  bool PersonneEstDejaPresente(const Personne& p_personne) const;
+       ^
+In file included from /usr/include/gtest/gtest.h:58:0,
+                 from ../AnnuaireTesteur.cpp:9:
+../AnnuaireTesteur.cpp:149:60: error: within this context
+  EXPECT_TRUE(annuaire.PersonneEstDejaPresente(joueurPresent));
+                                                            ^
+In file included from ../AnnuaireTesteur.cpp:8:0:
+/home/etudiant/Bureau/GIT/111155105_tp4/PersonneLib/Annuaire.h: In member function ‘virtual void AnnuaireParam_PersonneEstDejaPresenteInvalide_Test::TestBody()’:
+/home/etudiant/Bureau/GIT/111155105_tp4/PersonneLib/Annuaire.h:53:7: error: ‘bool tp::Annuaire::PersonneEstDejaPresente(const tp::Personne&) const’ is private
+  bool PersonneEstDejaPresente(const Personne& p_personne) const;
+       ^
+In file included from /usr/include/gtest/gtest.h:58:0,
+                 from ../AnnuaireTesteur.cpp:9:
+../AnnuaireTesteur.cpp:154:61: error: within this context
+  EXPECT_FALSE(annuaire.PersonneEstDejaPresente(joueurPresent));
+                                                             ^
+subdir.mk:27 : la recette pour la cible « AnnuaireTesteur.o » a échouée
+make: *** [AnnuaireTesteur.o] Erreur 1
+15:12:19 **** Incremental Build of configuration Debug for project PersonneLib ****
+make all 
+make: rien à faire pour « all ».
+15:12:19 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+Building file: ../AnnuaireTesteur.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -I"/home/etudiant/Bureau/GIT/111155105_tp4/PersonneLib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"AnnuaireTesteur.d" -MT"AnnuaireTesteur.o" -o "AnnuaireTesteur.o" "../AnnuaireTesteur.cpp"
+In file included from ../AnnuaireTesteur.cpp:8:0:
+/home/etudiant/Bureau/GIT/111155105_tp4/PersonneLib/Annuaire.h: In member function ‘tp::Annuaire& tp::Annuaire::operator=(const tp::Annuaire&)’:
+/home/etudiant/Bureau/GIT/111155105_tp4/PersonneLib/Annuaire.h:45:2: warning: no return statement in function returning non-void [-Wreturn-type]
+  }
+  ^
+../AnnuaireTesteur.cpp: At global scope:
+../AnnuaireTesteur.cpp:87:19: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+  string nomClub = "NOM DU CLUB";
+                   ^
+../AnnuaireTesteur.cpp:89:22: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+  string nom_joueur = "Hockey";
+                      ^
+../AnnuaireTesteur.cpp:90:25: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+  string prenom_joueur = "Joueur";
+                         ^
+../AnnuaireTesteur.cpp:91:45: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+  Date dateNaissance_joueur = Date(5, 5, 2001);
+                                             ^
+../AnnuaireTesteur.cpp:92:28: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+  string telephone_joueur = "418 658-2222";
+                            ^
+../AnnuaireTesteur.cpp:93:27: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+  string position_joueur = "CENTRE";
+                           ^
+../AnnuaireTesteur.cpp:95:19: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+  string nom_ent = "Thibault";
+                   ^
+../AnnuaireTesteur.cpp:96:22: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+  string prenom_ent = "Marc";
+                      ^
+../AnnuaireTesteur.cpp:97:42: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+  Date dateNaissance_ent = Date(5, 5, 1980);
+                                          ^
+../AnnuaireTesteur.cpp:98:25: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+  string telephone_ent = "418 656-2177";
+                         ^
+../AnnuaireTesteur.cpp:99:18: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+  char sexe_ent = 'M';
+                  ^
+../AnnuaireTesteur.cpp:100:20: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+  string RAMQ_ent = "THIM 8005 0522";
+                    ^
+In file included from ../AnnuaireTesteur.cpp:8:0:
+/home/etudiant/Bureau/GIT/111155105_tp4/PersonneLib/Annuaire.h: In member function ‘virtual void AnnuaireParam_PersonneEstDejaPresente_Test::TestBody()’:
+/home/etudiant/Bureau/GIT/111155105_tp4/PersonneLib/Annuaire.h:53:7: error: ‘bool tp::Annuaire::PersonneEstDejaPresente(const tp::Personne&) const’ is private
+  bool PersonneEstDejaPresente(const Personne& p_personne) const;
+       ^
+In file included from /usr/include/gtest/gtest.h:58:0,
+                 from ../AnnuaireTesteur.cpp:9:
+../AnnuaireTesteur.cpp:149:60: error: within this context
+  ASSERT_TRUE(annuaire.PersonneEstDejaPresente(joueurPresent));
+                                                            ^
+In file included from ../AnnuaireTesteur.cpp:8:0:
+/home/etudiant/Bureau/GIT/111155105_tp4/PersonneLib/Annuaire.h: In member function ‘virtual void AnnuaireParam_PersonneEstDejaPresenteInvalide_Test::TestBody()’:
+/home/etudiant/Bureau/GIT/111155105_tp4/PersonneLib/Annuaire.h:53:7: error: ‘bool tp::Annuaire::PersonneEstDejaPresente(const tp::Personne&) const’ is private
+  bool PersonneEstDejaPresente(const Personne& p_personne) const;
+       ^
+In file included from /usr/include/gtest/gtest.h:58:0,
+                 from ../AnnuaireTesteur.cpp:9:
+../AnnuaireTesteur.cpp:154:61: error: within this context
+  ASSERT_FALSE(annuaire.PersonneEstDejaPresente(joueurPresent));
+                                                             ^
+subdir.mk:27 : la recette pour la cible « AnnuaireTesteur.o » a échouée
+make: *** [AnnuaireTesteur.o] Erreur 1
+15:14:08 **** Incremental Build of configuration Debug for project PersonneLib ****
+make all 
+make: rien à faire pour « all ».
+15:14:08 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+Building file: ../AnnuaireTesteur.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -I"/home/etudiant/Bureau/GIT/111155105_tp4/PersonneLib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"AnnuaireTesteur.d" -MT"AnnuaireTesteur.o" -o "AnnuaireTesteur.o" "../AnnuaireTesteur.cpp"
+In file included from ../AnnuaireTesteur.cpp:8:0:
+/home/etudiant/Bureau/GIT/111155105_tp4/PersonneLib/Annuaire.h: In member function ‘tp::Annuaire& tp::Annuaire::operator=(const tp::Annuaire&)’:
+/home/etudiant/Bureau/GIT/111155105_tp4/PersonneLib/Annuaire.h:45:2: warning: no return statement in function returning non-void [-Wreturn-type]
+  }
+  ^
+../AnnuaireTesteur.cpp: At global scope:
+../AnnuaireTesteur.cpp:87:19: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+  string nomClub = "NOM DU CLUB";
+                   ^
+../AnnuaireTesteur.cpp:89:22: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+  string nom_joueur = "Hockey";
+                      ^
+../AnnuaireTesteur.cpp:90:25: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+  string prenom_joueur = "Joueur";
+                         ^
+../AnnuaireTesteur.cpp:91:45: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+  Date dateNaissance_joueur = Date(5, 5, 2001);
+                                             ^
+../AnnuaireTesteur.cpp:92:28: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+  string telephone_joueur = "418 658-2222";
+                            ^
+../AnnuaireTesteur.cpp:93:27: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+  string position_joueur = "CENTRE";
+                           ^
+../AnnuaireTesteur.cpp:95:19: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+  string nom_ent = "Thibault";
+                   ^
+../AnnuaireTesteur.cpp:96:22: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+  string prenom_ent = "Marc";
+                      ^
+../AnnuaireTesteur.cpp:97:42: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+  Date dateNaissance_ent = Date(5, 5, 1980);
+                                          ^
+../AnnuaireTesteur.cpp:98:25: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+  string telephone_ent = "418 656-2177";
+                         ^
+../AnnuaireTesteur.cpp:99:18: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+  char sexe_ent = 'M';
+                  ^
+../AnnuaireTesteur.cpp:100:20: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+  string RAMQ_ent = "THIM 8005 0522";
+                    ^
+Finished building: ../AnnuaireTesteur.cpp
+ 
+Building target: Testeur
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/GIT/111155105_tp4/PersonneLib/Debug" -o "Testeur"  ./AnnuaireTesteur.o ./EntraineurTesteur.o ./JoueurTesteur.o ./PersonneTesteur.o   -lPersonneLib -lgtest_main -lgtest -lpthread
+Finished building target: Testeur
+ 
+15:14:11 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+make: rien à faire pour « all ».
+15:14:22 **** Incremental Build of configuration Debug for project PersonneLib ****
+make all 
+make: rien à faire pour « all ».
+15:14:22 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+Building file: ../AnnuaireTesteur.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -I"/home/etudiant/Bureau/GIT/111155105_tp4/PersonneLib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"AnnuaireTesteur.d" -MT"AnnuaireTesteur.o" -o "AnnuaireTesteur.o" "../AnnuaireTesteur.cpp"
+In file included from ../AnnuaireTesteur.cpp:8:0:
+/home/etudiant/Bureau/GIT/111155105_tp4/PersonneLib/Annuaire.h: In member function ‘tp::Annuaire& tp::Annuaire::operator=(const tp::Annuaire&)’:
+/home/etudiant/Bureau/GIT/111155105_tp4/PersonneLib/Annuaire.h:45:2: warning: no return statement in function returning non-void [-Wreturn-type]
+  }
+  ^
+../AnnuaireTesteur.cpp: At global scope:
+../AnnuaireTesteur.cpp:87:19: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+  string nomClub = "NOM DU CLUB";
+                   ^
+../AnnuaireTesteur.cpp:89:22: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+  string nom_joueur = "Hockey";
+                      ^
+../AnnuaireTesteur.cpp:90:25: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+  string prenom_joueur = "Joueur";
+                         ^
+../AnnuaireTesteur.cpp:91:45: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+  Date dateNaissance_joueur = Date(5, 5, 2001);
+                                             ^
+../AnnuaireTesteur.cpp:92:28: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+  string telephone_joueur = "418 658-2222";
+                            ^
+../AnnuaireTesteur.cpp:93:27: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+  string position_joueur = "CENTRE";
+                           ^
+../AnnuaireTesteur.cpp:95:19: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+  string nom_ent = "Thibault";
+                   ^
+../AnnuaireTesteur.cpp:96:22: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+  string prenom_ent = "Marc";
+                      ^
+../AnnuaireTesteur.cpp:97:42: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+  Date dateNaissance_ent = Date(5, 5, 1980);
+                                          ^
+../AnnuaireTesteur.cpp:98:25: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+  string telephone_ent = "418 656-2177";
+                         ^
+../AnnuaireTesteur.cpp:99:18: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+  char sexe_ent = 'M';
+                  ^
+../AnnuaireTesteur.cpp:100:20: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+  string RAMQ_ent = "THIM 8005 0522";
+                    ^
+Finished building: ../AnnuaireTesteur.cpp
+ 
+Building target: Testeur
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/GIT/111155105_tp4/PersonneLib/Debug" -o "Testeur"  ./AnnuaireTesteur.o ./EntraineurTesteur.o ./JoueurTesteur.o ./PersonneTesteur.o   -lPersonneLib -lgtest_main -lgtest -lpthread
+Finished building target: Testeur
+ 
+15:16:09 **** Incremental Build of project PersonneGUI ****
+make debug 
+make -f Makefile.Debug
+make[1] : on entre dans le répertoire « /home/etudiant/Bureau/GIT/111155105_tp4/PersonneGUI »
+/usr/lib/i386-linux-gnu/qt4/bin/uic personnegui.ui -o ui_personnegui.h
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. -o debug/main.o main.cpp
+In file included from personnegui.h:6:0,
+                 from main.cpp:1:
+../PersonneLib/Annuaire.h: In member function ‘tp::Annuaire& tp::Annuaire::operator=(const tp::Annuaire&)’:
+../PersonneLib/Annuaire.h:45:2: warning: no return statement in function returning non-void [-Wreturn-type]
+  }
+  ^
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. -o debug/personnegui.o personnegui.cpp
+In file included from personnegui.h:6:0,
+                 from personnegui.cpp:1:
+../PersonneLib/Annuaire.h: In member function ‘tp::Annuaire& tp::Annuaire::operator=(const tp::Annuaire&)’:
+../PersonneLib/Annuaire.h:45:2: warning: no return statement in function returning non-void [-Wreturn-type]
+  }
+  ^
+/usr/lib/i386-linux-gnu/qt4/bin/moc -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. personnegui.h -o debug/moc_personnegui.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. -o debug/moc_personnegui.o debug/moc_personnegui.cpp
+In file included from debug/../personnegui.h:6:0,
+                 from debug/moc_personnegui.cpp:9:
+../PersonneLib/Annuaire.h: In member function ‘tp::Annuaire& tp::Annuaire::operator=(const tp::Annuaire&)’:
+../PersonneLib/Annuaire.h:45:2: warning: no return statement in function returning non-void [-Wreturn-type]
+  }
+  ^
+g++  -o PersonneGUI debug/supprimerpersonne.o debug/ajouterjoueur.o debug/ajouterentraineur.o debug/main.o debug/personnegui.o debug/moc_supprimerpersonne.o debug/moc_ajouterjoueur.o debug/moc_ajouterentraineur.o debug/moc_personnegui.o    -L/usr/lib/i386-linux-gnu ../PersonneLib/Debug/libPersonneLib.a -lQtGui -lQtCore -lpthread 
+{ test -n "" && DESTDIR="" || DESTDIR=.; } && test $(gdb --version | sed -e 's,[^0-9][^0-9]*\([0-9]\)\.\([0-9]\).*,\1\2,;q') -gt 72 && gdb --nx --batch --quiet -ex 'set confirm off' -ex "save gdb-index $DESTDIR" -ex quit 'PersonneGUI' && test -f PersonneGUI.gdb-index && objcopy --add-section '.gdb_index=PersonneGUI.gdb-index' --set-section-flags '.gdb_index=readonly' 'PersonneGUI' 'PersonneGUI' && rm -f PersonneGUI.gdb-index || true
+make[1] : on quitte le répertoire « /home/etudiant/Bureau/GIT/111155105_tp4/PersonneGUI »
+15:16:12 **** Incremental Build of configuration Debug for project PersonneLib ****
+make all 
+make: rien à faire pour « all ».
+15:16:12 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+make: rien à faire pour « all ».
+15:16:13 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+make: rien à faire pour « all ».
+15:18:03 **** Incremental Build of configuration Debug for project PersonneLib ****
+make all 
+make: rien à faire pour « all ».
+15:18:04 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+make: rien à faire pour « all ».

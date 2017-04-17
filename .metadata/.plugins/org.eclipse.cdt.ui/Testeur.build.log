@@ -1,10 +1,6 @@
-14:00:54 **** Incremental Build of configuration Debug for project Testeur ****
+15:18:04 **** Incremental Build of configuration Debug for project Testeur ****
 make all 
-Building target: Testeur
-Invoking: GCC C++ Linker
-g++ -L"/home/etudiant/Bureau/GIT/111155105_tp4/PersonneLib/Debug" -o "Testeur"  ./AnnuaireTesteur.o ./EntraineurTesteur.o ./JoueurTesteur.o ./PersonneTesteur.o   -lPersonneLib -lgtest_main -lgtest -lpthread
-Finished building target: Testeur
- 
+make: rien à faire pour « all ».
 
-14:00:54 Build Finished (took 274ms)
+15:18:04 Build Finished (took 79ms)
 

@@ -1,7 +1,7 @@
 /**
  * \file Entraineur.cpp
  * \brief Implémentation de la classe Entraineur.
- * \author Philippe Trépanier
+ * \author Philippe Trépanier et Jérémie Roy
  * \date 2017-03-28
  */
 

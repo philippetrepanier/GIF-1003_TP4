@@ -1,16 +1,6 @@
-14:00:54 **** Incremental Build of configuration Debug for project PersonneLib ****
+15:18:03 **** Incremental Build of configuration Debug for project PersonneLib ****
 make all 
-Building file: ../Annuaire.cpp
-Invoking: GCC C++ Compiler
-g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Annuaire.d" -MT"Annuaire.o" -o "Annuaire.o" "../Annuaire.cpp"
-Finished building: ../Annuaire.cpp
- 
-Building target: libPersonneLib.a
-Invoking: GCC Archiver
-ar -r  "libPersonneLib.a"  ./Annuaire.o ./ContratException.o ./Date.o ./Entraineur.o ./Joueur.o ./Personne.o ./PersonneException.o ./validationFormat.o   
-ar: création de libPersonneLib.a
-Finished building target: libPersonneLib.a
- 
+make: rien à faire pour « all ».
 
-14:00:54 Build Finished (took 368ms)
+15:18:04 Build Finished (took 90ms)
 
