@@ -31,7 +31,7 @@ void ajouterJoueur::validerFormulaire()
 		QMessageBox::information(this, "Erreur!", message);
 		return;
 	}
-	if (util::validerFormatNom(ui.nomlineEdit->text().toStdString()))
+	if (!util::validerFormatNom(ui.nomlineEdit->text().toStdString()))
 	{
 		QString message("Le format du nom n'est pas valide");
 		QMessageBox::information(this, "Erreur!", message);
@@ -45,17 +45,23 @@ void ajouterJoueur::validerFormulaire()
 		QMessageBox::information(this, "Erreur!", message);
 		return;
 	}
+	if (!util::validerFormatNom(ui.prenomlineEdit->text().toStdString()))
+	{
+		QString message("Le format du prenom n'est pas valide");
+		QMessageBox::information(this, "Erreur!", message);
+		return;
+	}
 
 	//Telepone
 	if (ui.telephonelineEdit->text().isEmpty())
 	{
-		QString message("Le numéro de telephone ne doit pas être vide");
+		QString message("Le numero de telephone ne doit pas être vide");
 		QMessageBox::information(this, "Erreur!", message);
 		return;
 	}
-	if (util::validerTelephone(ui.telephonelineEdit->text().toStdString()))
+	if (!util::validerTelephone(ui.telephonelineEdit->text().toStdString()))
 	{
-		QString message("Le format du numéra de téléphone n'est pas valide");
+		QString message("Le format du numero de telephone n'est pas valide");
 		QMessageBox::information(this, "Erreur!", message);
 		return;
 	}

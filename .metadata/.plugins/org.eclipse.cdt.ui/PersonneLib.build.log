@@ -1,44 +1,9 @@
-12:39:26 **** Build of configuration Debug for project PersonneLib ****
+14:00:54 **** Incremental Build of configuration Debug for project PersonneLib ****
 make all 
 Building file: ../Annuaire.cpp
 Invoking: GCC C++ Compiler
 g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Annuaire.d" -MT"Annuaire.o" -o "Annuaire.o" "../Annuaire.cpp"
 Finished building: ../Annuaire.cpp
- 
-Building file: ../ContratException.cpp
-Invoking: GCC C++ Compiler
-g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"ContratException.d" -MT"ContratException.o" -o "ContratException.o" "../ContratException.cpp"
-Finished building: ../ContratException.cpp
- 
-Building file: ../Date.cpp
-Invoking: GCC C++ Compiler
-g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Date.d" -MT"Date.o" -o "Date.o" "../Date.cpp"
-Finished building: ../Date.cpp
- 
-Building file: ../Entraineur.cpp
-Invoking: GCC C++ Compiler
-g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Entraineur.d" -MT"Entraineur.o" -o "Entraineur.o" "../Entraineur.cpp"
-Finished building: ../Entraineur.cpp
- 
-Building file: ../Joueur.cpp
-Invoking: GCC C++ Compiler
-g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Joueur.d" -MT"Joueur.o" -o "Joueur.o" "../Joueur.cpp"
-Finished building: ../Joueur.cpp
- 
-Building file: ../Personne.cpp
-Invoking: GCC C++ Compiler
-g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Personne.d" -MT"Personne.o" -o "Personne.o" "../Personne.cpp"
-Finished building: ../Personne.cpp
- 
-Building file: ../PersonneException.cpp
-Invoking: GCC C++ Compiler
-g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"PersonneException.d" -MT"PersonneException.o" -o "PersonneException.o" "../PersonneException.cpp"
-Finished building: ../PersonneException.cpp
- 
-Building file: ../validationFormat.cpp
-Invoking: GCC C++ Compiler
-g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"validationFormat.d" -MT"validationFormat.o" -o "validationFormat.o" "../validationFormat.cpp"
-Finished building: ../validationFormat.cpp
  
 Building target: libPersonneLib.a
 Invoking: GCC Archiver
@@ -47,5 +12,5 @@ ar: création de libPersonneLib.a
 Finished building target: libPersonneLib.a
  
 
-12:39:30 Build Finished (took 4s.489ms)
+14:00:54 Build Finished (took 368ms)
 

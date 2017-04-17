@@ -57,5 +57,9 @@ void PersonneGUI::dialogJoueur()
 void PersonneGUI::dialogSupprimer()
 {
 	supprimerPersonne saisieSupprimer(this);
-	saisieSupprimer.exec();
+	if (saisieSupprimer.exec())
+	{
+		annuaire.supprimerPersonne(saisieSupprimer.reqNom().toStdString(), saisieSupprimer.reqPrenom().toStdString());
+		ui.textEdit->setText(annuaire.reqAnnuaireFormate().c_str());
+	}
 }

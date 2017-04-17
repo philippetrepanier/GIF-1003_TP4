@@ -177,8 +177,18 @@ public:
 
         gridLayout->addLayout(gridLayout_2, 5, 2, 1, 1);
 
+        QWidget::setTabOrder(nomlineEdit, prenomlineEdit);
+        QWidget::setTabOrder(prenomlineEdit, telephonelineEdit);
+        QWidget::setTabOrder(telephonelineEdit, ramqlineEdit);
+        QWidget::setTabOrder(ramqlineEdit, sexeComboBox);
+        QWidget::setTabOrder(sexeComboBox, jourspinBox);
+        QWidget::setTabOrder(jourspinBox, moisspinBox);
+        QWidget::setTabOrder(moisspinBox, anneespinBox);
+        QWidget::setTabOrder(anneespinBox, OKpushButton);
+        QWidget::setTabOrder(OKpushButton, annulerpushButton);
 
         retranslateUi(ajouterEntraineurClass);
+        QObject::connect(annulerpushButton, SIGNAL(clicked()), ajouterEntraineurClass, SLOT(close()));
 
         QMetaObject::connectSlotsByName(ajouterEntraineurClass);
     } // setupUi

@@ -1,0 +1,25 @@
+#include "supprimerpersonne.h"
+#include <QMessageBox>
+
+supprimerPersonne::supprimerPersonne(QWidget *parent) :
+		QDialog(parent)
+{
+	ui.setupUi(this);
+	QObject::connect(ui.supprimerPersonnePushButton, SIGNAL(clicked()), this, SLOT(validerFormulaire()));
+}
+
+supprimerPersonne::~supprimerPersonne()
+{
+
+}
+
+void supprimerPersonne::validerFormulaire()
+{
+	QMessageBox msgBox;
+	msgBox.setText("Voulez-vous supprimer la personne?");
+	msgBox.setStandardButtons(QMessageBox::Yes | QMessageBox::No);
+	msgBox.setDefaultButton(QMessageBox::Yes);
+	int ret = msgBox.exec();
+
+	accept();
+}

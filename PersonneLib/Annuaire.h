@@ -31,6 +31,8 @@ public:
 	std::string reqAnnuaireFormate() const;
 
 	void ajouterPersonne(const Personne& p_personne);
+	void supprimerPersonne(const std::string& p_nom, const std::string& p_prenom);
+
 	//-- Protection contre la copie de surface
 //	Annuaire(const Annuaire&);
 //	Annuaire& operator=(const Annuaire&);
@@ -41,7 +43,6 @@ private:
 	std::vector<Personne*> m_vMembres;
 
 	bool PersonneEstDejaPresente(const Personne& p_personne) const;
-	void supprimerPersonne(const std::string& p_nom, const std::string& p_prenom);
 
 };
 

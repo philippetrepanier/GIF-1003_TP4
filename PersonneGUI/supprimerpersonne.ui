@@ -6,15 +6,76 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>400</width>
-    <height>300</height>
+    <width>344</width>
+    <height>140</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>Supprimer une personne</string>
   </property>
+  <layout class="QGridLayout" name="gridLayout_3">
+   <item row="0" column="0">
+    <layout class="QGridLayout" name="gridLayout">
+     <item row="0" column="0">
+      <widget class="QLabel" name="label">
+       <property name="text">
+        <string>Nom</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0">
+      <widget class="QLabel" name="label_2">
+       <property name="text">
+        <string>Prenom</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="0">
+      <layout class="QGridLayout" name="gridLayout_2">
+       <item row="0" column="0">
+        <widget class="QPushButton" name="AnnulerPushButton">
+         <property name="text">
+          <string>Annuler</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item row="0" column="1">
+      <widget class="QLineEdit" name="nomLineEdit"/>
+     </item>
+     <item row="1" column="1">
+      <widget class="QLineEdit" name="prenomLineEdit"/>
+     </item>
+     <item row="2" column="1">
+      <widget class="QPushButton" name="supprimerPersonnePushButton">
+       <property name="text">
+        <string>Supprimer personne</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
  <resources/>
- <connections/>
+ <connections>
+  <connection>
+   <sender>AnnulerPushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>supprimerPersonneClass</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>53</x>
+     <y>108</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>171</x>
+     <y>69</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
 </ui>

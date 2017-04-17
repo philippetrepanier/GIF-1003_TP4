@@ -1,0 +1,14 @@
+#include "supprimerpersonne.h"
+#include <QmessageBox>
+
+supprimerPersonne::supprimerPersonne(QWidget *parent) :
+		QDialog(parent)
+{
+	ui.setupUi(this);
+	QObject::connect(ui.supprimerPersonnePushButton, SIGNAL(clicked()), this, SLOT(validerFormulaire()));
+}
+
+supprimerPersonne::~supprimerPersonne()
+{
+
+}

@@ -71,10 +71,11 @@ public:
         textEdit = new QTextEdit(gridLayoutWidget);
         textEdit->setObjectName(QString::fromUtf8("textEdit"));
         QFont font;
-        font.setFamily(QString::fromUtf8("Sans Serif"));
-        font.setPointSize(12);
+        font.setFamily(QString::fromUtf8("Courier 10 Pitch"));
+        font.setPointSize(10);
         textEdit->setFont(font);
         textEdit->viewport()->setProperty("cursor", QVariant(QCursor(Qt::IBeamCursor)));
+        textEdit->setStyleSheet(QString::fromUtf8("color: rgb(201, 0, 22);"));
 
         gridLayout->addWidget(textEdit, 0, 0, 1, 1);
 
@@ -111,6 +112,19 @@ public:
         actionQuitter->setText(QApplication::translate("PersonneGUIClass", "Quitter", 0, QApplication::UnicodeUTF8));
         actionEntraineur->setText(QApplication::translate("PersonneGUIClass", "Entraineur", 0, QApplication::UnicodeUTF8));
         actionJoueur->setText(QApplication::translate("PersonneGUIClass", "Joueur", 0, QApplication::UnicodeUTF8));
+        textEdit->setHtml(QApplication::translate("PersonneGUIClass", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Courier 10 Pitch'; font-size:10pt; font-weight:400; font-style:normal;\">\n"
+"<table border=\"0\" style=\"-qt-table-type: root; margin-top:4px; margin-bottom:4px; margin-left:4px; margin-right:4px;\">\n"
+"<tr>\n"
+"<td style=\"border: none;\">\n"
+"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Noto Sans'; font-size:9pt;\"></p>\n"
+"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; font-size:12pt;\"></p>\n"
+"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-ind"
+                        "ent:0; text-indent:0px; font-family:'Noto Sans'; font-size:9pt; color:#ff5500;\"></p>\n"
+"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; font-size:12pt; color:#ff5500;\"></p>\n"
+"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; font-size:12pt; color:#ff5500;\"></p></td></tr></table></body></html>", 0, QApplication::UnicodeUTF8));
         menuAjouter->setTitle(QApplication::translate("PersonneGUIClass", "Menu", 0, QApplication::UnicodeUTF8));
         menuAjouter_2->setTitle(QApplication::translate("PersonneGUIClass", "Ajouter", 0, QApplication::UnicodeUTF8));
     } // retranslateUi

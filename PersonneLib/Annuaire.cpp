@@ -23,6 +23,7 @@ Annuaire::Annuaire(const string& p_nomClub) :
 		m_nomClub(p_nomClub)
 {
 	PRECONDITION(!(p_nomClub.empty()));
+	m_vMembres.clear(); //"Initialise" le vecteur en le vidant, évite une erreur de violation mémoire
 
 	POSTCONDITION(p_nomClub == m_nomClub);
 }
@@ -87,13 +88,12 @@ void Annuaire::verifieInvariant() const
 
 bool Annuaire::PersonneEstDejaPresente(const Personne& p_personne) const
 {
-	vector<Personne*>::const_iterator it;
-	for (it = m_vMembres.begin(); it < m_vMembres.end(); it++)
+	for (size_t i = 0; i < m_vMembres.size(); i++)
 	{
-//		//if ((*it) == p_personne)
-//		{
-//			return true;
-//		}
+		if ((*m_vMembres[i]) == p_personne)
+		{
+			return true;
+		}
 	}
 	return false;
 }

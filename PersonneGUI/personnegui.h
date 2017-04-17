@@ -5,7 +5,7 @@
 #include "ui_personnegui.h"
 #include "Annuaire.h"
 
-const std::string NOMCLUB = "Club à bébé rexo";
+const std::string NOMCLUB = "Club de Hockey de la Rive-Sud";
 
 class PersonneGUI: public QMainWindow
 {

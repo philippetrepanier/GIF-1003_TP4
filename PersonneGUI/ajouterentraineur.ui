@@ -178,6 +178,35 @@
   </widget>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
+ <tabstops>
+  <tabstop>nomlineEdit</tabstop>
+  <tabstop>prenomlineEdit</tabstop>
+  <tabstop>telephonelineEdit</tabstop>
+  <tabstop>ramqlineEdit</tabstop>
+  <tabstop>sexeComboBox</tabstop>
+  <tabstop>jourspinBox</tabstop>
+  <tabstop>moisspinBox</tabstop>
+  <tabstop>anneespinBox</tabstop>
+  <tabstop>OKpushButton</tabstop>
+  <tabstop>annulerpushButton</tabstop>
+ </tabstops>
  <resources/>
- <connections/>
+ <connections>
+  <connection>
+   <sender>annulerpushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>ajouterEntraineurClass</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>71</x>
+     <y>256</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>214</x>
+     <y>137</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
 </ui>

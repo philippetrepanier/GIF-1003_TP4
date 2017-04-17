@@ -1,17 +1,6 @@
-12:39:15 **** Build of configuration Debug for project Personne ****
+14:00:54 **** Incremental Build of configuration Debug for project Personne ****
 make all 
-Building file: ../main.cpp
-Invoking: GCC C++ Compiler
-g++ -std=c++98 -I"/home/etudiant/Bureau/111155105_tp4/PersonneLib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
-Finished building: ../main.cpp
- 
-Building target: Personne
-Invoking: GCC C++ Linker
-g++ -L"/home/etudiant/Bureau/111155105_tp4/PersonneLib/Debug" -o "Personne"  ./main.o   -lPersonneLib
-/usr/bin/ld : ne peut trouver -lPersonneLib
-collect2: error: ld returned 1 exit status
-make: *** [Personne] Erreur 1
-makefile:44 : la recette pour la cible « Personne » a échouée
+make: rien à faire pour « all ».
 
-12:39:15 Build Finished (took 737ms)
+14:00:54 Build Finished (took 71ms)
 

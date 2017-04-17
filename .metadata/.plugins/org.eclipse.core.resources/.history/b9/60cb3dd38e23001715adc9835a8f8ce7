@@ -1,0 +1,98 @@
+#include "ajouterjoueur.h"
+#include <QMessageBox>
+
+ajouterJoueur::ajouterJoueur(QWidget *parent) :
+		QDialog(parent)
+{
+	ui.setupUi(this);
+	QString centre = "centre";
+	QString ailier = "ailier";
+	QString defenseur = "defenseur";
+	QString gardien = "gardien";
+	ui.positioncomboBox->addItem(centre);
+	ui.positioncomboBox->addItem(ailier);
+	ui.positioncomboBox->addItem(defenseur);
+	ui.positioncomboBox->addItem(gardien);
+
+	QObject::connect(ui.OKpushButton, SIGNAL(clicked()), this, SLOT(validerFormulaire()));
+}
+
+ajouterJoueur::~ajouterJoueur()
+{
+
+}
+
+void ajouterJoueur::validerFormulaire()
+{
+	//Nom
+	if (ui.nomlineEdit->text().isEmpty())
+	{
+		QString message("Le nom ne doit pas être vide");
+		QMessageBox::information(this, "Erreur!", message);
+		return;
+	}
+	if (!util::validerFormatNom(ui.nomlineEdit->text().toStdString()))
+	{
+		QString message("Le format du nom n'est pas valide");
+		QMessageBox::information(this, "Erreur!", message);
+		return;
+	}
+
+	//Prenom
+	if (ui.prenomlineEdit->text().isEmpty())
+	{
+		QString message("Le prenom ne doit pas être vide");
+		QMessageBox::information(this, "Erreur!", message);
+		return;
+	}
+
+	//Telepone
+	if (ui.telephonelineEdit->text().isEmpty())
+	{
+		QString message("Le numéro de telephone ne doit pas être vide");
+		QMessageBox::information(this, "Erreur!", message);
+		return;
+	}
+	if (!util::validerTelephone(ui.telephonelineEdit->text().toStdString()))
+	{
+		QString message("Le format du numéra de téléphone n'est pas valide");
+		QMessageBox::information(this, "Erreur!", message);
+		return;
+	}
+
+	else
+	{
+		accept();
+	}
+}
+
+//Accesseur pour les attributs
+QString ajouterJoueur::reqNom() const
+{
+	return (ui.nomlineEdit->text());
+}
+QString ajouterJoueur::reqPrenom() const
+{
+	return (ui.prenomlineEdit->text());
+}
+QString ajouterJoueur::reqTelephone() const
+{
+	return (ui.telephonelineEdit->text());
+}
+QString ajouterJoueur::reqPosition() const
+{
+	return (ui.positioncomboBox->currentText());
+}
+int ajouterJoueur::reqJour() const
+{
+	return (ui.jourspinBox->value());
+}
+int ajouterJoueur::reqMois() const
+{
+	return (ui.moisspinBox->value());
+}
+
+int ajouterJoueur::reqAnnee() const
+{
+	return (ui.anneespinBox->value());
+}

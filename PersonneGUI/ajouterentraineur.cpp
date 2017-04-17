@@ -28,7 +28,7 @@ void ajouterEntraineur::validerFormulaire()
 		QMessageBox::information(this, "Erreur!", message);
 		return;
 	}
-	if (util::validerFormatNom(ui.nomlineEdit->text().toStdString()))
+	if (!util::validerFormatNom(ui.nomlineEdit->text().toStdString()))
 	{
 		QString message("Le format du nom n'est pas valide");
 		QMessageBox::information(this, "Erreur!", message);
@@ -42,7 +42,7 @@ void ajouterEntraineur::validerFormulaire()
 		QMessageBox::information(this, "Erreur!", message);
 		return;
 	}
-	if (util::validerFormatNom(ui.prenomlineEdit->text().toStdString()))
+	if (!util::validerFormatNom(ui.prenomlineEdit->text().toStdString()))
 	{
 		QString message("Le format du prenom n'est pas valide");
 		QMessageBox::information(this, "Erreur!", message);
@@ -52,13 +52,13 @@ void ajouterEntraineur::validerFormulaire()
 	//Telephone
 	if (ui.telephonelineEdit->text().isEmpty())
 	{
-		QString message("Le numéro de telephone ne doit pas être vide");
+		QString message("Le numero de telephone ne doit pas être vide");
 		QMessageBox::information(this, "Erreur!", message);
 		return;
 	}
-	if (util::validerTelephone(ui.telephonelineEdit->text().toStdString()))
+	if (!util::validerTelephone(ui.telephonelineEdit->text().toStdString()))
 	{
-		QString message("Le format du numéra de téléphone n'est pas valide");
+		QString message("Le format du numero de telephone n'est pas valide");
 		QMessageBox::information(this, "Erreur!", message);
 		return;
 	}
@@ -66,14 +66,14 @@ void ajouterEntraineur::validerFormulaire()
 //RAMQ
 	if (ui.ramqlineEdit->text().isEmpty())
 	{
-		QString message("Le numéro de RAMQ ne doit pas être vide");
+		QString message("Le numero de RAMQ ne doit pas être vide");
 		QMessageBox::information(this, "Erreur!", message);
 		return;
 	}
-	if (util::validerNumRAMQ(ui.ramqlineEdit->text().toStdString(), ui.nomlineEdit->text().toStdString(),
+	if (!util::validerNumRAMQ(ui.ramqlineEdit->text().toStdString(), ui.nomlineEdit->text().toStdString(),
 			ui.prenomlineEdit->text().toStdString(), reqJour(), reqMois(), reqAnnee(), reqSexe()))
 	{
-		QString message("Le numéro de RAMQ n'est pas valide. Il ne correspond pas avec les informations entrées!");
+		QString message("Le numero de RAMQ n'est pas valide. Il ne correspond pas avec les informations entrees!");
 		QMessageBox::information(this, "Erreur!", message);
 		return;
 	}
