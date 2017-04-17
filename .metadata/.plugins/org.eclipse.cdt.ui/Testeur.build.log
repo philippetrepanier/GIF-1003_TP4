@@ -1,6 +1,12 @@
-20:35:08 **** Incremental Build of configuration Debug for project Testeur ****
+22:11:10 **** Incremental Build of configuration Debug for project Testeur ****
 make all 
-make: rien à faire pour « all ».
+Building target: Testeur
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/GIT/111155105_tp4/PersonneLib/Debug" -o "Testeur"  ./AnnuaireTesteur.o ./EntraineurTesteur.o ./JoueurTesteur.o ./PersonneTesteur.o   -lPersonneLib -lgtest_main -lgtest -lpthread
+makefile:44 : la recette pour la cible « Testeur » a échouée
+/usr/bin/ld : ne peut trouver -lPersonneLib
+collect2: error: ld returned 1 exit status
+make: *** [Testeur] Erreur 1
 
-20:35:09 Build Finished (took 68ms)
+22:11:10 Build Finished (took 80ms)
 

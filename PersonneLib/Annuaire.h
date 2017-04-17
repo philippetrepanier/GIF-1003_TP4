@@ -31,6 +31,9 @@ public:
 	std::string reqAnnuaireFormate() const;
 
 	void ajouterPersonne(const Personne& p_personne);
+	//-- Protection contre la copie de surface
+//	Annuaire(const Annuaire&);
+//	Annuaire& operator=(const Annuaire&);
 
 private:
 	void verifieInvariant() const;
@@ -39,10 +42,6 @@ private:
 
 	bool PersonneEstDejaPresente(const Personne& p_personne) const;
 	void supprimerPersonne(const std::string& p_nom, const std::string& p_prenom);
-
-	//-- Protection contre la copie de surface
-	Annuaire(const Annuaire& p_annuaire);
-	const std::string& operator=(const std::string& p_annuaire);
 
 };
 

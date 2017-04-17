@@ -39,32 +39,4 @@ public:
 	PersonneAbsenteException(const std::string& raison);
 };
 
-// --- Définition des macros de contrôle de la théorie du contrat
-
-#if !defined(NDEBUG)
-// --- Mode debug
-
-#  define INVARIANTS() \
-      verifieInvariant()
-
-#  define ASSERTION(f)     \
-      if (!(f)) throw AssertionException(__FILE__,__LINE__, #f);
-#  define PRECONDITION(f)  \
-      if (!(f)) throw PreconditionException(__FILE__, __LINE__, #f);
-#  define POSTCONDITION(f) \
-      if (!(f)) throw PostconditionException(__FILE__, __LINE__, #f);
-#  define INVARIANT(f)   \
-      if (!(f)) throw InvariantException(__FILE__,__LINE__, #f);
-
-// --- LE MODE RELEASE
-#else
-
-#  define PRECONDITION(f);
-#  define POSTCONDITION(f);
-#  define INVARIANTS();
-#  define INVARIANT(f);
-#  define ASSERTION(f);
-
-#endif  // --- if !defined (NDEBUG)
-
 #endif /* PERSONNEEXCEPTION_H_ */

@@ -1,6 +1,14 @@
-20:35:08 **** Incremental Build of configuration Debug for project PersonneLib ****
+22:11:09 **** Incremental Build of configuration Debug for project PersonneLib ****
 make all 
-make: rien à faire pour « all ».
+Building file: ../Annuaire.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Annuaire.d" -MT"Annuaire.o" -o "Annuaire.o" "../Annuaire.cpp"
+../Annuaire.cpp: In member function ‘bool tp::Annuaire::PersonneEstDejaPresente(const tp::Personne&) const’:
+../Annuaire.cpp:93:16: error: no match for ‘operator*’ (operand type is ‘const tp::Personne’)
+   if ((*it) == *p_personne)
+                ^
+subdir.mk:39 : la recette pour la cible « Annuaire.o » a échouée
+make: *** [Annuaire.o] Erreur 1
 
-20:35:08 Build Finished (took 66ms)
+22:11:09 Build Finished (took 173ms)
 

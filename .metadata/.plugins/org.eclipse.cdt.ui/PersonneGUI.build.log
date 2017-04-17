@@ -1,8 +1,7 @@
-20:35:04 **** Incremental Build of project PersonneGUI ****
+13:31:46 **** Incremental Build of project PersonneGUI ****
 make debug 
 make -f Makefile.Debug
 make[1] : on entre dans le répertoire « /home/etudiant/Bureau/GIT/111155105_tp4/PersonneGUI »
-/usr/lib/i386-linux-gnu/qt4/bin/uic personnegui.ui -o ui_personnegui.h
 g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. -o debug/main.o main.cpp
 g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. -o debug/personnegui.o personnegui.cpp
 /usr/lib/i386-linux-gnu/qt4/bin/moc -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. personnegui.h -o debug/moc_personnegui.cpp
@@ -11,5 +10,5 @@ g++  -o PersonneGUI debug/supprimerpersonne.o debug/ajouterjoueur.o debug/ajoute
 { test -n "" && DESTDIR="" || DESTDIR=.; } && test $(gdb --version | sed -e 's,[^0-9][^0-9]*\([0-9]\)\.\([0-9]\).*,\1\2,;q') -gt 72 && gdb --nx --batch --quiet -ex 'set confirm off' -ex "save gdb-index $DESTDIR" -ex quit 'PersonneGUI' && test -f PersonneGUI.gdb-index && objcopy --add-section '.gdb_index=PersonneGUI.gdb-index' --set-section-flags '.gdb_index=readonly' 'PersonneGUI' 'PersonneGUI' && rm -f PersonneGUI.gdb-index || true
 make[1] : on quitte le répertoire « /home/etudiant/Bureau/GIT/111155105_tp4/PersonneGUI »
 
-20:35:08 Build Finished (took 3s.975ms)
+13:31:50 Build Finished (took 3s.903ms)
 

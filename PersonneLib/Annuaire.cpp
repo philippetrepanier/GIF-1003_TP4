@@ -90,10 +90,10 @@ bool Annuaire::PersonneEstDejaPresente(const Personne& p_personne) const
 	vector<Personne*>::const_iterator it;
 	for (it = m_vMembres.begin(); it < m_vMembres.end(); it++)
 	{
-//		if ((*it) == p_personne)
-//		{
-//			return true;
-//		}
+		if ((*it) == p_personne)
+		{
+			return true;
+		}
 	}
 	return false;
 }

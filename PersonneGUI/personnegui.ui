@@ -51,7 +51,7 @@
         </font>
        </property>
        <property name="cursor" stdset="0">
-        <cursorShape>BusyCursor</cursorShape>
+        <cursorShape>IBeamCursor</cursorShape>
        </property>
       </widget>
      </item>

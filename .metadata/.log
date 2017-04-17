@@ -3514,3 +3514,16 @@ org.eclipse.jface.text.BadLocationException
 	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:669)
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:608)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1515)
+!SESSION 2017-04-15 13:31:32.499 -----------------------------------------------
+eclipse.buildId=4.5.2.M20160212-1500
+java.version=1.8.0_111
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86, WS=gtk, NL=fr_CA
+Framework arguments:  -product org.eclipse.epp.package.cpp.product
+Command-line arguments:  -os linux -ws gtk -arch x86 -product org.eclipse.epp.package.cpp.product -data .
+
+!ENTRY org.eclipse.cdt.core 1 0 2017-04-15 13:42:17.655
+!MESSAGE Indexed 'PersonneLib' (8 sources, 150 headers) in 2,47 sec: 13 974 declarations; 25 449 references; 0 unresolved inclusions; 0 syntax errors; 663 unresolved names (1,7 %)
+
+!ENTRY org.eclipse.cdt.core 1 0 2017-04-15 13:43:24.560
+!MESSAGE Indexed 'Testeur' (4 sources, 201 headers) in 3,53 sec: 33 580 declarations; 47 721 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0 %)
