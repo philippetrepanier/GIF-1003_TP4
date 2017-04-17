@@ -24,24 +24,42 @@ ajouterJoueur::~ajouterJoueur()
 
 void ajouterJoueur::validerFormulaire()
 {
+	//Nom
 	if (ui.nomlineEdit->text().isEmpty())
 	{
 		QString message("Le nom ne doit pas être vide");
 		QMessageBox::information(this, "Erreur!", message);
 		return;
 	}
+	if (util::validerFormatNom(ui.nomlineEdit->text().toStdString()))
+	{
+		QString message("Le format du nom n'est pas valide");
+		QMessageBox::information(this, "Erreur!", message);
+		return;
+	}
+
+	//Prenom
 	if (ui.prenomlineEdit->text().isEmpty())
 	{
 		QString message("Le prenom ne doit pas être vide");
 		QMessageBox::information(this, "Erreur!", message);
 		return;
 	}
+
+	//Telepone
 	if (ui.telephonelineEdit->text().isEmpty())
 	{
-		QString message("Le telephone ne doit pas être vide");
+		QString message("Le numéro de telephone ne doit pas être vide");
 		QMessageBox::information(this, "Erreur!", message);
 		return;
 	}
+	if (util::validerTelephone(ui.telephonelineEdit->text().toStdString()))
+	{
+		QString message("Le format du numéra de téléphone n'est pas valide");
+		QMessageBox::information(this, "Erreur!", message);
+		return;
+	}
+
 	else
 	{
 		accept();

@@ -31,7 +31,7 @@
      <x>10</x>
      <y>10</y>
      <width>411</width>
-     <height>221</height>
+     <height>225</height>
     </rect>
    </property>
    <layout class="QGridLayout" name="gridLayout">
@@ -59,7 +59,11 @@
     <item row="2" column="0">
      <widget class="QLabel" name="label_tel">
       <property name="text">
-       <string>Numéro de téléphone</string>
+       <string>Numéro de téléphone
+(XXX XXX-XXXX)</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
       </property>
      </widget>
     </item>

@@ -3,6 +3,7 @@
 
 #include <QtGui/QDialog>
 #include "ui_ajouterjoueur.h"
+#include "validationFormat.h"
 
 class ajouterJoueur: public QDialog
 {

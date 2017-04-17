@@ -58,7 +58,7 @@ public:
         ajouterJoueurClass->setMaximumSize(QSize(430, 245));
         gridLayoutWidget = new QWidget(ajouterJoueurClass);
         gridLayoutWidget->setObjectName(QString::fromUtf8("gridLayoutWidget"));
-        gridLayoutWidget->setGeometry(QRect(10, 10, 411, 221));
+        gridLayoutWidget->setGeometry(QRect(10, 10, 411, 225));
         gridLayout = new QGridLayout(gridLayoutWidget);
         gridLayout->setSpacing(6);
         gridLayout->setContentsMargins(11, 11, 11, 11);
@@ -81,6 +81,7 @@ public:
 
         label_tel = new QLabel(gridLayoutWidget);
         label_tel->setObjectName(QString::fromUtf8("label_tel"));
+        label_tel->setAlignment(Qt::AlignCenter);
 
         gridLayout->addWidget(label_tel, 2, 0, 1, 1);
 
@@ -201,7 +202,8 @@ public:
         nomLabel->setText(QApplication::translate("ajouterJoueurClass", "Nom", 0, QApplication::UnicodeUTF8));
         label_naissance->setText(QApplication::translate("ajouterJoueurClass", "Date de naissance", 0, QApplication::UnicodeUTF8));
         label_prenom->setText(QApplication::translate("ajouterJoueurClass", "Prenom", 0, QApplication::UnicodeUTF8));
-        label_tel->setText(QApplication::translate("ajouterJoueurClass", "Num\303\251ro de t\303\251l\303\251phone", 0, QApplication::UnicodeUTF8));
+        label_tel->setText(QApplication::translate("ajouterJoueurClass", "Num\303\251ro de t\303\251l\303\251phone\n"
+"(XXX XXX-XXXX)", 0, QApplication::UnicodeUTF8));
         label_position->setText(QApplication::translate("ajouterJoueurClass", "Position", 0, QApplication::UnicodeUTF8));
         label_6->setText(QApplication::translate("ajouterJoueurClass", "Jour", 0, QApplication::UnicodeUTF8));
         label_7->setText(QApplication::translate("ajouterJoueurClass", "Mois", 0, QApplication::UnicodeUTF8));

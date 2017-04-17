@@ -1,0 +1,19 @@
+#include "ajouterentraineur.h"
+
+ajouterEntraineur::ajouterEntraineur(QWidget *parent) :
+		QDialog(parent)
+{
+	ui.setupUi(this);
+	QString masculin = "M";
+	QString feminin = "F";
+	ui.sexeComboBox->addItem(masculin);
+	ui.sexeComboBox->addItem(feminin);
+
+	QObject::connect(ui.OKpushButton, SIGNAL(clicked()), this, SLOT(validerFormulaire()));
+
+}
+
+ajouterEntraineur::~ajouterEntraineur()
+{
+
+}

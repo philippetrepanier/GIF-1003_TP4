@@ -1,12 +1,66 @@
-22:11:10 **** Incremental Build of configuration Debug for project Testeur ****
+12:39:31 **** Build of configuration Debug for project Testeur ****
 make all 
+Building file: ../AnnuaireTesteur.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -I"/home/etudiant/Bureau/111155105_tp4/PersonneLib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"AnnuaireTesteur.d" -MT"AnnuaireTesteur.o" -o "AnnuaireTesteur.o" "../AnnuaireTesteur.cpp"
+../AnnuaireTesteur.cpp:64:19: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+  string nomClub = "NOM DU CLUB";
+                   ^
+../AnnuaireTesteur.cpp:66:22: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+  string nom_joueur = "Hockey";
+                      ^
+../AnnuaireTesteur.cpp:67:25: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+  string prenom_joueur = "Joueur";
+                         ^
+../AnnuaireTesteur.cpp:68:45: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+  Date dateNaissance_joueur = Date(5, 5, 2001);
+                                             ^
+../AnnuaireTesteur.cpp:69:28: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+  string telephone_joueur = "418 658-2222";
+                            ^
+../AnnuaireTesteur.cpp:70:27: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+  string position_joueur = "CENTRE";
+                           ^
+../AnnuaireTesteur.cpp:72:19: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+  string nom_ent = "Thibault";
+                   ^
+../AnnuaireTesteur.cpp:73:22: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+  string prenom_ent = "Marc";
+                      ^
+../AnnuaireTesteur.cpp:74:42: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+  Date dateNaissance_ent = Date(5, 5, 1980);
+                                          ^
+../AnnuaireTesteur.cpp:75:25: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+  string telephone_ent = "418 656-2177";
+                         ^
+../AnnuaireTesteur.cpp:76:18: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+  char sexe_ent = 'M';
+                  ^
+../AnnuaireTesteur.cpp:77:20: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+  string RAMQ_ent = "THIM 8005 0522";
+                    ^
+Finished building: ../AnnuaireTesteur.cpp
+ 
+Building file: ../EntraineurTesteur.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -I"/home/etudiant/Bureau/111155105_tp4/PersonneLib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"EntraineurTesteur.d" -MT"EntraineurTesteur.o" -o "EntraineurTesteur.o" "../EntraineurTesteur.cpp"
+Finished building: ../EntraineurTesteur.cpp
+ 
+Building file: ../JoueurTesteur.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -I"/home/etudiant/Bureau/111155105_tp4/PersonneLib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"JoueurTesteur.d" -MT"JoueurTesteur.o" -o "JoueurTesteur.o" "../JoueurTesteur.cpp"
+Finished building: ../JoueurTesteur.cpp
+ 
+Building file: ../PersonneTesteur.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -I"/home/etudiant/Bureau/111155105_tp4/PersonneLib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"PersonneTesteur.d" -MT"PersonneTesteur.o" -o "PersonneTesteur.o" "../PersonneTesteur.cpp"
+Finished building: ../PersonneTesteur.cpp
+ 
 Building target: Testeur
 Invoking: GCC C++ Linker
-g++ -L"/home/etudiant/Bureau/GIT/111155105_tp4/PersonneLib/Debug" -o "Testeur"  ./AnnuaireTesteur.o ./EntraineurTesteur.o ./JoueurTesteur.o ./PersonneTesteur.o   -lPersonneLib -lgtest_main -lgtest -lpthread
-makefile:44 : la recette pour la cible « Testeur » a échouée
-/usr/bin/ld : ne peut trouver -lPersonneLib
-collect2: error: ld returned 1 exit status
-make: *** [Testeur] Erreur 1
+g++ -L"/home/etudiant/Bureau/111155105_tp4/PersonneLib/Debug" -o "Testeur"  ./AnnuaireTesteur.o ./EntraineurTesteur.o ./JoueurTesteur.o ./PersonneTesteur.o   -lPersonneLib -lgtest_main -lgtest -lpthread
+Finished building target: Testeur
+ 
 
-22:11:10 Build Finished (took 80ms)
+12:39:35 Build Finished (took 4s.210ms)
 

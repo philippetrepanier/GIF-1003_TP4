@@ -1,0 +1,53 @@
+#include "ajouterentraineur.h"
+#include <QMessageBox>
+
+ajouterEntraineur::ajouterEntraineur(QWidget *parent) :
+		QDialog(parent)
+{
+	ui.setupUi(this);
+	QString masculin = "M";
+	QString feminin = "F";
+	ui.sexeComboBox->addItem(masculin);
+	ui.sexeComboBox->addItem(feminin);
+
+	QObject::connect(ui.OKpushButton, SIGNAL(clicked()), this, SLOT(validerFormulaire()));
+
+}
+
+ajouterEntraineur::~ajouterEntraineur()
+{
+
+}
+
+void ajouterEntraineur::validerFormulaire()
+{
+	if (ui.nomlineEdit->text().isEmpty())
+	{
+		QString message("Le nom ne doit pas être vide");
+		QMessageBox::information(this, "Erreur!", message);
+		return;
+	}
+	if (ui.prenomlineEdit->text().isEmpty())
+	{
+		QString message("Le prenom ne doit pas être vide");
+		QMessageBox::information(this, "Erreur!", message);
+		return;
+	}
+	if (ui.telephonelineEdit->text().isEmpty())
+	{
+		QString message("Le numéro de telephone ne doit pas être vide");
+		QMessageBox::information(this, "Erreur!", message);
+		return;
+	}
+	if (ui.ramqlineEdit->text().isEmpty())
+	{
+		QString message("Le numéro de RAMQ ne doit pas être vide");
+		QMessageBox::information(this, "Erreur!", message);
+		return;
+	}
+	else
+	{
+		accept();
+	}
+}
+

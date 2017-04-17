@@ -2,10 +2,13 @@
 <?scdStore version="2"?><scannerInfo id="org.eclipse.cdt.make.core.discoveredScannerInfo">
 <collector id="org.eclipse.cdt.make.core.PerProjectSICollector">
 <includePath path="/usr/share/qt4/mkspecs/linux-g++"/>
+<includePath path="/home/etudiant/Bureau/111155105_tp4/PersonneGUI"/>
 <includePath path="/home/etudiant/Bureau/GIT/111155105_tp4/PersonneGUI"/>
 <includePath path="/usr/include/qt4/QtCore"/>
 <includePath path="/usr/include/qt4/QtGui"/>
 <includePath path="/usr/include/qt4"/>
+<includePath path="/home/etudiant/Bureau/111155105_tp4/PersonneLib"/>
+<includePath path="/home/etudiant/Bureau/111155105_tp4/PersonneGUI/debug"/>
 <includePath path="/home/etudiant/Bureau/GIT/111155105_tp4/PersonneLib"/>
 <includePath path="/home/etudiant/Bureau/GIT/111155105_tp4/PersonneGUI/debug"/>
 <includePath path="/usr/include/c++/5"/>

@@ -74,7 +74,7 @@ public:
         font.setFamily(QString::fromUtf8("Sans Serif"));
         font.setPointSize(12);
         textEdit->setFont(font);
-        textEdit->viewport()->setProperty("cursor", QVariant(QCursor(Qt::BusyCursor)));
+        textEdit->viewport()->setProperty("cursor", QVariant(QCursor(Qt::IBeamCursor)));
 
         gridLayout->addWidget(textEdit, 0, 0, 1, 1);
 

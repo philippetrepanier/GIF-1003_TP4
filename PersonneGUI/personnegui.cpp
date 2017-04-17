@@ -26,7 +26,17 @@ PersonneGUI::~PersonneGUI()
 void PersonneGUI::dialogEntraineur()
 {
 	ajouterEntraineur saisieEntraineur(this);
-	saisieEntraineur.exec();
+	if (saisieEntraineur.exec())
+	{
+		util::Date dateNaissance(saisieEntraineur.reqJour(), saisieEntraineur.reqMois(), saisieEntraineur.reqAnnee());
+		tp::Entraineur entraineur(saisieEntraineur.reqNom().toStdString(), saisieEntraineur.reqPrenom().toStdString(),
+				dateNaissance, saisieEntraineur.reqTelephone().toStdString(),
+				saisieEntraineur.reqNumRamq().toStdString(), saisieEntraineur.reqSexe());
+		annuaire.ajouterPersonne(entraineur);
+
+		ui.textEdit->setText(annuaire.reqAnnuaireFormate().c_str());
+
+	}
 }
 
 void PersonneGUI::dialogJoueur()

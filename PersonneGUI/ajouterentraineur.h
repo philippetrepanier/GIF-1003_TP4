@@ -3,6 +3,7 @@
 
 #include <QtGui/QDialog>
 #include "ui_ajouterentraineur.h"
+#include "validationFormat.h"
 
 class ajouterEntraineur: public QDialog
 {
@@ -12,9 +13,18 @@ public:
 	ajouterEntraineur(QWidget *parent = 0);
 	~ajouterEntraineur();
 
+	//Acesseurs
+	QString reqNom() const;
+	QString reqPrenom() const;
+	QString reqTelephone() const;
+	char reqSexe() const;
+	QString reqNumRamq() const;
+	int reqJour() const;
+	int reqMois() const;
+	int reqAnnee() const;
+
 private slots:
-	void validerFormulaire()
-	{};
+	void validerFormulaire();
 
 private:
 	Ui::ajouterEntraineurClass ui;
