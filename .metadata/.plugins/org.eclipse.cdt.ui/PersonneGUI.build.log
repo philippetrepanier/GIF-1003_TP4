@@ -1,26 +1,10 @@
-15:16:09 **** Incremental Build of project PersonneGUI ****
+20:54:01 **** Incremental Build of project PersonneGUI ****
 make debug 
 make -f Makefile.Debug
 make[1] : on entre dans le répertoire « /home/etudiant/Bureau/GIT/111155105_tp4/PersonneGUI »
-/usr/lib/i386-linux-gnu/qt4/bin/uic personnegui.ui -o ui_personnegui.h
-g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. -o debug/main.o main.cpp
-In file included from personnegui.h:6:0,
-                 from main.cpp:1:
-../PersonneLib/Annuaire.h: In member function ‘tp::Annuaire& tp::Annuaire::operator=(const tp::Annuaire&)’:
-../PersonneLib/Annuaire.h:45:2: warning: no return statement in function returning non-void [-Wreturn-type]
-  }
-  ^
 g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. -o debug/personnegui.o personnegui.cpp
 In file included from personnegui.h:6:0,
                  from personnegui.cpp:1:
-../PersonneLib/Annuaire.h: In member function ‘tp::Annuaire& tp::Annuaire::operator=(const tp::Annuaire&)’:
-../PersonneLib/Annuaire.h:45:2: warning: no return statement in function returning non-void [-Wreturn-type]
-  }
-  ^
-/usr/lib/i386-linux-gnu/qt4/bin/moc -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. personnegui.h -o debug/moc_personnegui.cpp
-g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. -o debug/moc_personnegui.o debug/moc_personnegui.cpp
-In file included from debug/../personnegui.h:6:0,
-                 from debug/moc_personnegui.cpp:9:
 ../PersonneLib/Annuaire.h: In member function ‘tp::Annuaire& tp::Annuaire::operator=(const tp::Annuaire&)’:
 ../PersonneLib/Annuaire.h:45:2: warning: no return statement in function returning non-void [-Wreturn-type]
   }
@@ -29,5 +13,5 @@ g++  -o PersonneGUI debug/supprimerpersonne.o debug/ajouterjoueur.o debug/ajoute
 { test -n "" && DESTDIR="" || DESTDIR=.; } && test $(gdb --version | sed -e 's,[^0-9][^0-9]*\([0-9]\)\.\([0-9]\).*,\1\2,;q') -gt 72 && gdb --nx --batch --quiet -ex 'set confirm off' -ex "save gdb-index $DESTDIR" -ex quit 'PersonneGUI' && test -f PersonneGUI.gdb-index && objcopy --add-section '.gdb_index=PersonneGUI.gdb-index' --set-section-flags '.gdb_index=readonly' 'PersonneGUI' 'PersonneGUI' && rm -f PersonneGUI.gdb-index || true
 make[1] : on quitte le répertoire « /home/etudiant/Bureau/GIT/111155105_tp4/PersonneGUI »
 
-15:16:12 Build Finished (took 3s.465ms)
+20:54:02 Build Finished (took 1s.48ms)
 

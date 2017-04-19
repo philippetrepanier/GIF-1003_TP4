@@ -88,7 +88,7 @@ void Annuaire::verifieInvariant() const
 
 bool Annuaire::PersonneEstDejaPresente(const Personne& p_personne) const
 {
-	for (size_t i = 0; i < m_vMembres.size(); i++)
+	for (size_t i = 0; i != m_vMembres.size(); i++)
 	{
 		if ((*m_vMembres[i]) == p_personne)
 		{
@@ -103,16 +103,16 @@ void Annuaire::supprimerPersonne(const std::string& p_nom, const std::string& p_
 	PRECONDITION(util::validerFormatNom(p_nom));
 	PRECONDITION(util::validerFormatNom(p_prenom));
 	unsigned int taille = m_vMembres.size();
-	PRECONDITION(taille != 0);
+	PRECONDITION(taille != 0); // Nécessaire??
 
 	unsigned int supprime = 0;
 	vector<Personne*>::iterator it;
-	for (it = m_vMembres.begin(); it < m_vMembres.end(); it++)
+	for (it = m_vMembres.begin(); it != m_vMembres.end(); it++)
 	{
 		if ((*it)->reqNom() == p_nom && (*it)->reqPrenom() == p_prenom)
 		{
-			m_vMembres.erase(it);
 			delete *it;
+			m_vMembres.erase(it);
 			supprime++;
 		}
 	}
