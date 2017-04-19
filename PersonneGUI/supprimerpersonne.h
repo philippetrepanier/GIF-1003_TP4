@@ -1,3 +1,10 @@
+/**
+ * \file supprimerpersonne.h
+ * \brief Déclaration la classe supprimerPersonne dérivé de QDialog
+ * \author Philippe Trépanier et Jérémie Roy
+ * \date 2017-03-29
+ */
+
 #ifndef SUPPRIMERPERSONNE_H
 #define SUPPRIMERPERSONNE_H
 

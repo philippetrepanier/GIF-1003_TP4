@@ -1,3 +1,9 @@
+/**
+ * \file ajouterentraineur.cpp
+ * \brief Implémentation de la classe ajouterentraineur dérivé de la classe QDialog
+ * \author Philippe Trépanier et Jérémie Roy
+ * \date 2017-03-29
+ */
 #include "ajouterentraineur.h"
 #include <QMessageBox>
 
@@ -63,7 +69,7 @@ void ajouterEntraineur::validerFormulaire()
 		return;
 	}
 
-//RAMQ
+	//RAMQ
 	if (ui.ramqlineEdit->text().isEmpty())
 	{
 		QString message("Le numero de RAMQ ne doit pas être vide");
@@ -77,8 +83,6 @@ void ajouterEntraineur::validerFormulaire()
 		QMessageBox::information(this, "Erreur!", message);
 		return;
 	}
-
-//Telephone
 
 	else
 	{

@@ -88,9 +88,10 @@ void Annuaire::verifieInvariant() const
 
 bool Annuaire::PersonneEstDejaPresente(const Personne& p_personne) const
 {
-	for (size_t i = 0; i != m_vMembres.size(); i++)
+	vector<Personne*>::const_iterator it;
+	for (it = m_vMembres.begin(); it != m_vMembres.end(); it++)
 	{
-		if ((*m_vMembres[i]) == p_personne)
+		if (*(*it) == p_personne)
 		{
 			return true;
 		}
@@ -98,24 +99,29 @@ bool Annuaire::PersonneEstDejaPresente(const Personne& p_personne) const
 	return false;
 }
 
+/**
+ * \brief Supprime une personne dans l'annuaire
+ * \param[in] Le nom (p_nom) et la personne (p_personne) que l'on souhaite supprimer
+ */
 void Annuaire::supprimerPersonne(const std::string& p_nom, const std::string& p_prenom)
 {
 	PRECONDITION(util::validerFormatNom(p_nom));
 	PRECONDITION(util::validerFormatNom(p_prenom));
 	unsigned int taille = m_vMembres.size();
-	PRECONDITION(taille != 0); // Nécessaire??
 
 	unsigned int supprime = 0;
 	vector<Personne*>::iterator it;
-	for (it = m_vMembres.begin(); it != m_vMembres.end(); it++)
+	for (it = m_vMembres.begin(); it < m_vMembres.end(); it++)
 	{
 		if ((*it)->reqNom() == p_nom && (*it)->reqPrenom() == p_prenom)
 		{
 			delete *it;
 			m_vMembres.erase(it);
 			supprime++;
+			break;
 		}
 	}
+
 	if (supprime == 0)
 	{
 		throw PersonneAbsenteException(p_nom);
@@ -125,6 +131,11 @@ void Annuaire::supprimerPersonne(const std::string& p_nom, const std::string& p_
 	INVARIANTS();
 
 }
+
+/**
+ * \brief Retourne un unsigned int qui indique le nombre de personne présent dans l'annuaire
+ * \return le nombre de personnes dans l'annuaire
+ */
 unsigned int Annuaire::reqNombrePersonne() const
 {
 	return (m_vMembres.size());

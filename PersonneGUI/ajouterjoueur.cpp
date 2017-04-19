@@ -1,3 +1,9 @@
+/**
+ * \file ajouterjoueur.cpp
+ * \brief Implémentation de la classe ajouteurjoueur dérivé de la classe QDialog
+ * \author Philippe Trépanier et Jérémie Roy
+ * \date 2017-03-29
+ */
 #include "ajouterjoueur.h"
 #include <QMessageBox>
 

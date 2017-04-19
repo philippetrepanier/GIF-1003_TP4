@@ -1,3 +1,9 @@
+/**
+ * \file ajouterjoueur.h
+ * \brief Déclaration de la classe ajouteurjoueur dérivé de la classe QDialog
+ * \author Philippe Trépanier et Jérémie Roy
+ * \date 2017-03-29
+ */
 #ifndef AJOUTERJOUEUR_H
 #define AJOUTERJOUEUR_H
 

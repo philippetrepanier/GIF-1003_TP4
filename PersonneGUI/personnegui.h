@@ -1,3 +1,10 @@
+/**
+ * \file personnegui.h
+ * \brief Déclaration des méthodes de la fenetre principal du programme GIU
+ * \author Philippe Trépanier et Jérémie Roy
+ * \date 2017-03-29
+ */
+
 #ifndef PERSONNEGUI_H
 #define PERSONNEGUI_H
 

@@ -1,3 +1,10 @@
+/**
+ * \file personnegui.cpp
+ * \brief Fenetre principal du programme GIU
+ * \author Philippe Trépanier et Jérémie Roy
+ * \date 2017-03-29
+ */
+
 #include "personnegui.h"
 #include "Annuaire.h"
 #include "ajouterentraineur.h"
@@ -43,6 +50,10 @@ void PersonneGUI::dialogEntraineur()
 			QString message = "La personne est deja presente dans l'annuaire ";
 			message.append(e.what());
 			QMessageBox::warning(this, "La personne est deja presente!", message);
+		} catch (PreconditionException &e)
+		{
+			QString message = "L'entraineur n'a pas les caracteristiques requises! \n";
+			QMessageBox::warning(this, "L'entraineur n'est pas valide!", message);
 		}
 
 		ui.textEdit->setText(annuaire.reqAnnuaireFormate().c_str());
@@ -66,6 +77,10 @@ void PersonneGUI::dialogJoueur()
 			QString message = "La personne est deja presente dans l'annuaire \n";
 			message.append(e.what());
 			QMessageBox::warning(this, "La personne est deja presente!", message);
+		} catch (PreconditionException &e)
+		{
+			QString message = "Le joueur n'a pas les caracteristiques requises! \n";
+			QMessageBox::warning(this, "Le joueur n'est pas valide!", message);
 		}
 
 		ui.textEdit->setText(annuaire.reqAnnuaireFormate().c_str());

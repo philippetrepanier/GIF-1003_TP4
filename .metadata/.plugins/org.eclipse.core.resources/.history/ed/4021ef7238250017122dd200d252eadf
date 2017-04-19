@@ -1,0 +1,134 @@
+/**
+ * \file ajouterentraineur.cpp
+ * \brief Implémentation de la classe ajouterentraineur
+ * \author Philippe Trépanier et Jérémie Roy
+ * \date 2017-03-29
+ */
+#include "ajouterentraineur.h"
+#include <QMessageBox>
+
+ajouterEntraineur::ajouterEntraineur(QWidget *parent) :
+		QDialog(parent)
+{
+	ui.setupUi(this);
+	QString masculin = "Masculin";
+	QString feminin = "Feminin";
+	ui.sexeComboBox->addItem(masculin);
+	ui.sexeComboBox->addItem(feminin);
+
+	QObject::connect(ui.OKpushButton, SIGNAL(clicked()), this, SLOT(validerFormulaire()));
+
+}
+
+ajouterEntraineur::~ajouterEntraineur()
+{
+
+}
+
+void ajouterEntraineur::validerFormulaire()
+{
+	//Nom
+	if (ui.nomlineEdit->text().isEmpty())
+	{
+		QString message("Le nom ne doit pas être vide");
+		QMessageBox::information(this, "Erreur!", message);
+		return;
+	}
+	if (!util::validerFormatNom(ui.nomlineEdit->text().toStdString()))
+	{
+		QString message("Le format du nom n'est pas valide");
+		QMessageBox::information(this, "Erreur!", message);
+		return;
+	}
+
+	//Prenom
+	if (ui.prenomlineEdit->text().isEmpty())
+	{
+		QString message("Le prenom ne doit pas être vide");
+		QMessageBox::information(this, "Erreur!", message);
+		return;
+	}
+	if (!util::validerFormatNom(ui.prenomlineEdit->text().toStdString()))
+	{
+		QString message("Le format du prenom n'est pas valide");
+		QMessageBox::information(this, "Erreur!", message);
+		return;
+	}
+
+	//Telephone
+	if (ui.telephonelineEdit->text().isEmpty())
+	{
+		QString message("Le numero de telephone ne doit pas être vide");
+		QMessageBox::information(this, "Erreur!", message);
+		return;
+	}
+	if (!util::validerTelephone(ui.telephonelineEdit->text().toStdString()))
+	{
+		QString message("Le format du numero de telephone n'est pas valide");
+		QMessageBox::information(this, "Erreur!", message);
+		return;
+	}
+
+	//RAMQ
+	if (ui.ramqlineEdit->text().isEmpty())
+	{
+		QString message("Le numero de RAMQ ne doit pas être vide");
+		QMessageBox::information(this, "Erreur!", message);
+		return;
+	}
+	if (!util::validerNumRAMQ(ui.ramqlineEdit->text().toStdString(), ui.nomlineEdit->text().toStdString(),
+			ui.prenomlineEdit->text().toStdString(), reqJour(), reqMois(), reqAnnee(), reqSexe()))
+	{
+		QString message("Le numero de RAMQ n'est pas valide. Il ne correspond pas avec les informations entrees!");
+		QMessageBox::information(this, "Erreur!", message);
+		return;
+	}
+
+	else
+	{
+		accept();
+	}
+}
+
+//Accesseur pour les attributs
+QString ajouterEntraineur::reqNom() const
+{
+	return (ui.nomlineEdit->text());
+}
+QString ajouterEntraineur::reqPrenom() const
+{
+	return (ui.prenomlineEdit->text());
+}
+QString ajouterEntraineur::reqTelephone() const
+{
+	return (ui.telephonelineEdit->text());
+}
+QString ajouterEntraineur::reqNumRamq() const
+{
+	return (ui.ramqlineEdit->text());
+}
+char ajouterEntraineur::reqSexe() const
+{
+	if (ui.sexeComboBox->currentText().toStdString() == "Masculin")
+	{
+		return 'M';
+	}
+	else if (ui.sexeComboBox->currentText().toStdString() == "Feminin")
+	{
+		return 'F';
+	}
+	return 1;
+}
+int ajouterEntraineur::reqJour() const
+{
+	return (ui.jourspinBox->value());
+}
+int ajouterEntraineur::reqMois() const
+{
+	return (ui.moisspinBox->value());
+}
+
+int ajouterEntraineur::reqAnnee() const
+{
+	return (ui.anneespinBox->value());
+}

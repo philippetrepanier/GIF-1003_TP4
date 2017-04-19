@@ -1,7 +1,7 @@
 /**
  * \file AnnuaireTesteur.cpp
  * \brief Test unitaire de la classe Annuaire
- * \author Philippe Trépanier
+ * \author Jérémie Roy et Philippe Trépanier
  * \date 2017-04-06
  */
 
@@ -137,22 +137,6 @@ TEST_F(AnnuaireParam, reqAnnuaireFormate)
 
 	ASSERT_EQ(os.str(), annuaire.reqAnnuaireFormate());
 };
-///**
-// * \test Test de la méthode PersonneEstDejaPresente
-// *
-// *     Cas valide: vérifier que le joueur est bien dans l'annuaire
-// *     Cas invalide: le joueur n'est pas dans l'annuaire
-// */
-//TEST_F(AnnuaireParam, PersonneEstDejaPresente)
-//{
-//	Joueur joueurPresent(nom_joueur, prenom_joueur, dateNaissance_joueur, telephone_joueur, position_joueur);
-//	ASSERT_TRUE(annuaire.PersonneEstDejaPresente(joueurPresent));
-//};
-//TEST_F(AnnuaireParam, PersonneEstDejaPresenteInvalide)
-//{
-//	Joueur joueurPresent(nom_ent, prenom_joueur, dateNaissance_joueur, telephone_joueur, position_joueur);
-//	ASSERT_FALSE(annuaire.PersonneEstDejaPresente(joueurPresent));
-//};
 
 /**
  * \test Test de la méthode suprimerPersonne()
@@ -160,6 +144,7 @@ TEST_F(AnnuaireParam, reqAnnuaireFormate)
  *     Cas valide: vérifier le retour des informations de l'annuaire
  *     Cas invalide: aucun
  */
+
 TEST_F(AnnuaireParam, supprimerPersonne)
 {
 	unsigned int tailleInitiale = annuaire.reqNombrePersonne();

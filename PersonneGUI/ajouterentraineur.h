@@ -1,3 +1,9 @@
+/**
+ * \file ajouterentraineur.h
+ * \brief Déclaration de la classe ajouterentraineur dérivé de la classe QDialog
+ * \author Philippe Trépanier et Jérémie Roy
+ * \date 2017-03-29
+ */
 #ifndef AJOUTERENTRAINEUR_H
 #define AJOUTERENTRAINEUR_H
 

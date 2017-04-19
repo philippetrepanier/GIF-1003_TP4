@@ -1,0 +1,18 @@
+/**
+ * \file main.cpp
+ * \brief Déclaration de la classe ajouteurjoueur dérivé de la classe QDialog
+ * \author Philippe Trépanier et Jérémie Roy
+ * \date 2017-03-29
+ */
+#include "personnegui.h"
+
+#include <QtGui>
+#include <QApplication>
+
+int main(int argc, char *argv[])
+{
+	QApplication a(argc, argv);
+	PersonneGUI w;
+	w.show();
+	return a.exec();
+}

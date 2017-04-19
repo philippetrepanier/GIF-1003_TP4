@@ -1,3 +1,10 @@
+/**
+ * \file supprimerpersonne.cpp
+ * \brief Implémentationde la classe supprimerPersonne dérivé de QDialog
+ * \author Philippe Trépanier et Jérémie Roy
+ * \date 2017-03-29
+ */
+
 #include "supprimerpersonne.h"
 #include <QMessageBox>
 
