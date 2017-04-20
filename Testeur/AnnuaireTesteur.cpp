@@ -78,12 +78,6 @@ TEST(Annuaire, AnnuaireAjouterPersonne)
 class AnnuaireParam: public ::testing::Test
 {
 public:
-	AnnuaireParam() :
-			annuaire("NOM DU CLUB")
-	{
-	}
-
-protected:
 	string nomClub = "NOM DU CLUB";
 
 	string nom_joueur = "Hockey";
@@ -99,16 +93,16 @@ protected:
 	char sexe_ent = 'M';
 	string RAMQ_ent = "THIM 8005 0522";
 
-	Annuaire annuaire;
-
-	virtual void SetUp()
+	AnnuaireParam() :
+			annuaire("NOM DU CLUB")
 	{
-		annuaire = Annuaire(nomClub);
 		annuaire.ajouterPersonne(
 				Joueur(nom_joueur, prenom_joueur, dateNaissance_joueur, telephone_joueur, position_joueur));
 		annuaire.ajouterPersonne(Entraineur(nom_ent, prenom_ent, dateNaissance_ent, telephone_ent, RAMQ_ent, sexe_ent));
-
 	}
+	;
+
+	Annuaire annuaire;
 
 };
 /**

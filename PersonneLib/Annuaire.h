@@ -36,16 +36,10 @@ public:
 	unsigned int reqNombrePersonne() const;
 
 	//-- Protection contre la copie de surface
-	Annuaire(const Annuaire&)
-	{
-	}
-	;
-	Annuaire& operator=(const Annuaire&)
-	{
-	}
-	;
 
 private:
+	Annuaire(const Annuaire&);
+	Annuaire& operator=(const Annuaire&);
 	void verifieInvariant() const;
 	std::string m_nomClub;
 	std::vector<Personne*> m_vMembres;
