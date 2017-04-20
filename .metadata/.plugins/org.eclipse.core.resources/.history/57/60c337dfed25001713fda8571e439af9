@@ -23,7 +23,6 @@ PersonneGUI::PersonneGUI(QWidget *parent) :
 	QObject::connect(ui.actionEntraineur, SIGNAL(triggered()), this, SLOT(dialogEntraineur()));
 	QObject::connect(ui.actionJoueur, SIGNAL(triggered()), this, SLOT(dialogJoueur()));
 	QObject::connect(ui.actionSupprimer, SIGNAL(triggered()), this, SLOT(dialogSupprimer()));
-	ui.textEdit->setText(annuaire.reqAnnuaireFormate().c_str());
 
 }
 

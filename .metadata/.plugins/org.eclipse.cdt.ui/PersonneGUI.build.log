@@ -1,41 +1,11 @@
-16:01:34 **** Incremental Build of project PersonneGUI ****
+13:26:29 **** Incremental Build of project PersonneGUI ****
 make debug 
 make -f Makefile.Debug
 make[1] : on entre dans le répertoire « /home/etudiant/Bureau/GIT/111155105_tp4/PersonneGUI »
-g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. -o debug/supprimerpersonne.o supprimerpersonne.cpp
-g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. -o debug/ajouterjoueur.o ajouterjoueur.cpp
-g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. -o debug/ajouterentraineur.o ajouterentraineur.cpp
-g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. -o debug/main.o main.cpp
-In file included from personnegui.h:13:0,
-                 from main.cpp:7:
-../PersonneLib/Annuaire.h: In member function ‘tp::Annuaire& tp::Annuaire::operator=(const tp::Annuaire&)’:
-../PersonneLib/Annuaire.h:45:2: warning: no return statement in function returning non-void [-Wreturn-type]
-  }
-  ^
 g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. -o debug/personnegui.o personnegui.cpp
-In file included from personnegui.h:13:0,
-                 from personnegui.cpp:8:
-../PersonneLib/Annuaire.h: In member function ‘tp::Annuaire& tp::Annuaire::operator=(const tp::Annuaire&)’:
-../PersonneLib/Annuaire.h:45:2: warning: no return statement in function returning non-void [-Wreturn-type]
-  }
-  ^
-/usr/lib/i386-linux-gnu/qt4/bin/moc -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. supprimerpersonne.h -o debug/moc_supprimerpersonne.cpp
-g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. -o debug/moc_supprimerpersonne.o debug/moc_supprimerpersonne.cpp
-/usr/lib/i386-linux-gnu/qt4/bin/moc -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. ajouterjoueur.h -o debug/moc_ajouterjoueur.cpp
-g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. -o debug/moc_ajouterjoueur.o debug/moc_ajouterjoueur.cpp
-/usr/lib/i386-linux-gnu/qt4/bin/moc -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. ajouterentraineur.h -o debug/moc_ajouterentraineur.cpp
-g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. -o debug/moc_ajouterentraineur.o debug/moc_ajouterentraineur.cpp
-/usr/lib/i386-linux-gnu/qt4/bin/moc -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. personnegui.h -o debug/moc_personnegui.cpp
-g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../PersonneLib -Idebug -I. -o debug/moc_personnegui.o debug/moc_personnegui.cpp
-In file included from debug/../personnegui.h:13:0,
-                 from debug/moc_personnegui.cpp:9:
-../PersonneLib/Annuaire.h: In member function ‘tp::Annuaire& tp::Annuaire::operator=(const tp::Annuaire&)’:
-../PersonneLib/Annuaire.h:45:2: warning: no return statement in function returning non-void [-Wreturn-type]
-  }
-  ^
 g++  -o PersonneGUI debug/supprimerpersonne.o debug/ajouterjoueur.o debug/ajouterentraineur.o debug/main.o debug/personnegui.o debug/moc_supprimerpersonne.o debug/moc_ajouterjoueur.o debug/moc_ajouterentraineur.o debug/moc_personnegui.o    -L/usr/lib/i386-linux-gnu ../PersonneLib/Debug/libPersonneLib.a -lQtGui -lQtCore -lpthread 
 { test -n "" && DESTDIR="" || DESTDIR=.; } && test $(gdb --version | sed -e 's,[^0-9][^0-9]*\([0-9]\)\.\([0-9]\).*,\1\2,;q') -gt 72 && gdb --nx --batch --quiet -ex 'set confirm off' -ex "save gdb-index $DESTDIR" -ex quit 'PersonneGUI' && test -f PersonneGUI.gdb-index && objcopy --add-section '.gdb_index=PersonneGUI.gdb-index' --set-section-flags '.gdb_index=readonly' 'PersonneGUI' 'PersonneGUI' && rm -f PersonneGUI.gdb-index || true
 make[1] : on quitte le répertoire « /home/etudiant/Bureau/GIT/111155105_tp4/PersonneGUI »
 
-16:01:40 Build Finished (took 6s.297ms)
+13:26:30 Build Finished (took 937ms)
 

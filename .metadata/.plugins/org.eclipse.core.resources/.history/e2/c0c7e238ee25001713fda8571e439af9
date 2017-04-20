@@ -89,7 +89,7 @@ void Joueur::verifieInvariant() const
 	string m_positionUpper(m_position);
 	util::convertitEnMajuscules(m_positionUpper);
 	INVARIANT(
-			m_positionUpper == "CENTRE" || m_positionUpper == "AILIER" || m_positionUpper == "DEFENSEUR"
+			m_positionUpper == "CENTRE" || m_positionUpper == "AILIER" || m_positionUpper == "DÉFENSEUR"
 					|| m_positionUpper == "GARDIEN");
 
 }
