@@ -147,4 +147,14 @@ TEST_F(AnnuaireParam, supprimerPersonne)
 
 	ASSERT_LT(annuaire.reqNombrePersonne(), tailleInitiale);
 };
+/**
+ * \test Test de la méthode PersonneEstDejaPresente()
+ *
+ *     Cas invalide: une personne qui est deja dans le vecteur
+ */
 
+TEST_F(AnnuaireParam, personneEstDejaPresente)
+{
+	EXPECT_THROW(annuaire.ajouterPersonne(
+					Joueur(nom_joueur, prenom_joueur, dateNaissance_joueur, telephone_joueur, position_joueur)), PersonneDejaPresenteException);
+};

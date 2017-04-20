@@ -55,3 +55,73 @@ Finished building target: Testeur
 12:02:33 **** Incremental Build of configuration Debug for project Testeur ****
 make all 
 make: rien à faire pour « all ».
+13:03:16 **** Incremental Build of configuration Debug for project PersonneLib ****
+make all 
+make: rien à faire pour « all ».
+13:03:16 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+make: rien à faire pour « all ».
+13:17:19 **** Incremental Build of configuration Debug for project PersonneLib ****
+make all 
+Building file: ../Annuaire.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Annuaire.d" -MT"Annuaire.o" -o "Annuaire.o" "../Annuaire.cpp"
+Finished building: ../Annuaire.cpp
+ 
+Building target: libPersonneLib.a
+Invoking: GCC Archiver
+ar -r  "libPersonneLib.a"  ./Annuaire.o ./ContratException.o ./Date.o ./Entraineur.o ./Joueur.o ./Personne.o ./PersonneException.o ./validationFormat.o   
+ar: création de libPersonneLib.a
+Finished building target: libPersonneLib.a
+ 
+13:17:20 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+Building file: ../AnnuaireTesteur.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -I"/home/etudiant/Bureau/GIT/111155105_tp4/PersonneLib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"AnnuaireTesteur.d" -MT"AnnuaireTesteur.o" -o "AnnuaireTesteur.o" "../AnnuaireTesteur.cpp"
+../AnnuaireTesteur.cpp:81:19: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+  string nomClub = "NOM DU CLUB";
+                   ^
+../AnnuaireTesteur.cpp:83:22: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+  string nom_joueur = "Hockey";
+                      ^
+../AnnuaireTesteur.cpp:84:25: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+  string prenom_joueur = "Joueur";
+                         ^
+../AnnuaireTesteur.cpp:85:45: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+  Date dateNaissance_joueur = Date(5, 5, 2001);
+                                             ^
+../AnnuaireTesteur.cpp:86:28: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+  string telephone_joueur = "418 658-2222";
+                            ^
+../AnnuaireTesteur.cpp:87:27: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+  string position_joueur = "CENTRE";
+                           ^
+../AnnuaireTesteur.cpp:89:19: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+  string nom_ent = "Thibault";
+                   ^
+../AnnuaireTesteur.cpp:90:22: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+  string prenom_ent = "Marc";
+                      ^
+../AnnuaireTesteur.cpp:91:42: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+  Date dateNaissance_ent = Date(5, 5, 1980);
+                                          ^
+../AnnuaireTesteur.cpp:92:25: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+  string telephone_ent = "418 656-2177";
+                         ^
+../AnnuaireTesteur.cpp:93:18: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+  char sexe_ent = 'M';
+                  ^
+../AnnuaireTesteur.cpp:94:20: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+  string RAMQ_ent = "THIM 8005 0522";
+                    ^
+Finished building: ../AnnuaireTesteur.cpp
+ 
+Building target: Testeur
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/GIT/111155105_tp4/PersonneLib/Debug" -o "Testeur"  ./AnnuaireTesteur.o ./EntraineurTesteur.o ./JoueurTesteur.o ./PersonneTesteur.o   -lPersonneLib -lgtest_main -lgtest -lpthread
+Finished building target: Testeur
+ 
+13:17:24 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+make: rien à faire pour « all ».

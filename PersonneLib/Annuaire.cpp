@@ -85,7 +85,11 @@ void Annuaire::verifieInvariant() const
 {
 	INVARIANT(!(m_nomClub.empty()));
 }
-
+/**
+ * \brief Vérifier si une personne est deja dans la classe
+ * \param[in] La personne (p_personne) que l'on souhaite voir si dans le vecteur
+ * \return vrai ou faux si la personne est dedans
+ */
 bool Annuaire::PersonneEstDejaPresente(const Personne& p_personne) const
 {
 	vector<Personne*>::const_iterator it;
